@@ -1,0 +1,43 @@
+.navbarContainer{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.letsTalkButton-nav{
+    background-color: #CA0515;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 100px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.rightArrow-nav{
+    overflow: hidden;
+    transition: 400ms;
+    overflow: hidden;
+}
+
+.rightArrow-nav:hover{
+padding-right: 10px;
+width: 120px;
+}
+
+.rightArrow-nav .rightArrow {
+position: absolute;
+color: #fff;
+margin-left: 10px;
+transform: translateX(50%);
+opacity: 0;
+}
+
+.rightArrow-nav:hover .rightArrow{
+opacity: 1;
+transform: translateX(0);
+}

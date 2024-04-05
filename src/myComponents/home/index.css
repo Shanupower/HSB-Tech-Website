@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
+
+.appContainer{
+}
+
+.landingSection{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 120px;
+}
+
+.ladingPageHeading{
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(to bottom, #2a42aa, #aa1e55);
+  background-clip: text;
+  color: transparent;
+
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.landingSectionSubHeading{
+  font-size: 30px;
+}
+
+.navbarSection{
+  display: flex;
+  margin-top: 100px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.letsTalkButton{
+  background-color: #CA0515;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 90px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.slideRight{
+  overflow: hidden;
+  transition: 400ms;
+  overflow: hidden;
+}
+
+.slideRight:hover{
+  padding-right: 40px;
+  width: 160px;
+}
+
+.slideRight .rightArrow {
+  position: absolute;
+  color: #fff;
+  margin-left: 10px;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.slideRight:hover .rightArrow{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 8888888888888888888888888888888888888888 */
+
+.slideRight-view-applications{
+  overflow: hidden;
+  transition: 400ms;
+  overflow: hidden;
+}
+
+.slideRight-view-applications:hover{
+  width: 280px;
+  padding-right: 40px;
+}
+
+.slideRight-view-applications .rightArrowRed {
+  position: absolute;
+  color: #CA0515;
+  margin-left: 10px;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.slideRight-view-applications:hover .rightArrowRed{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* 6688888888888888888888888888888888888888888888888888 */
+
+.slideRight-blogs{
+  overflow: hidden;
+  transition: 400ms;
+  overflow: hidden;
+}
+
+.slideRight-blogs:hover{
+  width: 140px;
+  padding-right: 40px;
+}
+
+.slideRight-blogs .rightArrowRed {
+  position: absolute;
+  color: #CA0515;
+  margin-left: 10px;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.slideRight-blogs:hover .rightArrowRed{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navItem{
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.navItem:hover{
+  color: #CA0515;
+}
+
+.trustedBySection{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F8FAFA;
+}
+
+.trustedbyImageContainer{
+  width: 160px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.trustedbyImage{
+  height: 70%;
+}
+
+.trustedcomapnies-hovercard{
+  background-color: #fff;
+  width: 700px;
+}
+
+.certifiedPartnersSection{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F4F4F4;
+}
+
+.comapinesContainer{
+  display: flex;
+}
+
+.certifiedPartnersHeading{
+  font-size: 25px;
+}
+
+.caertifiedCompany-card{
+  width: 200px;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.partnerCompanyImage{
+  height: 40px;
+}
+
+.githubImage, .awsImage{
+  height: 80px;
+}
+
+.servicesSection{
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 50px;
+}
+
+.serviesSectionHeading{
+  margin-top: 65px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.serviesContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.serviceItem{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  align-items: flex-end;
+  width: 45%;
+  margin: 5px;
+  height: 230px;
+  font-size: 30px;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.sparkle{
+  background: linear-gradient(to bottom, #273a6a, #3d3f44);
+}
+
+.impact{
+  background: linear-gradient(to bottom, #5c194f , #420323);
+}
+
+.scale{
+  background: linear-gradient(to bottom, #373737  , #000);
+}
+
+.quality{
+  background: linear-gradient(to bottom, #01b480   , #00a08c );
+}
+
+.developmentSection{
+  padding: 120px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  background-color: #F8FAFA;
+}
+
+.sectionHeading{
+  font-size: 40px;
+  margin-bottom: 15px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.sectionDescription{
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.developmentCardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.deveopmentCard{
+  width: 40%;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  margin: 10px;
+  margin-left: 0px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hoverUp{
+  transition: transform 0.1s ease;
+  box-shadow: 2px 2px 10px 2px lightgrey;
+}
+
+.hoverUp:hover{
+  transform: translateY(-10px);
+  box-shadow: 2px 2px 5px 0px lightgrey;
+}
+
+.cardTitle{
+  display: flex;
+}
+
+.developmentCardTitle{
+  font-size: 20px;
+}
+
+.development-title-image{
+  margin-right: 20px;
+}
+
+.technologiesSection{
+  background-color: #fff;
+  padding: 120px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.technologiesContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tehcnologyItem{
+  margin-right: 30px;
+}
+
+.technologyImage{
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.react{
+  background-color: #D6F9FF;
+}
+
+.nextjs{
+  background-color: #F3F3F4;
+}
+
+.flutter{
+  background-color: #D6E4EF;
+}
+
+.graphql{
+  background-color: #FAD6EE;
+}
+
+.nodejs{
+  background-color: #E7F0E6;
+}
+
+.postgresql{
+  background-color: #E5EBF0;
+}
+
+.devops{
+  background-color: #D7F8E5;
+}
+
+.technologyName{
+  text-align: center;
+}
+
+.stretch{
+  transition: transform 0.3s ease;
+}
+
+.stretch:hover{
+  transform: scaleX(1.02) scaleY(1.02);
+  box-shadow: 1px 1px 2px lightgrey;
+}
+
+.customizableSolutionsSection{
+  background-color: #F4F4F4;
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.customizableDescriptionContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customisable-solutions-heading{
+  width: 65%;
+}
+
+.viewApplicationsButton{
+  color: #CA0515;
+  border: none;
+  border-bottom: solid 1px #CA0515;
+  background-color: transparent;
+  margin: 0px;
+  height: 50px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.twoCardsContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourTeamSection{
+  display: flex;
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.ourTeamCard{
+  padding: 20px;
+  width: 45%;
+  background-color: #000;
+  color: #fff;
+  margin: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.cardTitle{
+  font-size: 35px;
+}
+
+.cardDescription{
+  font-size: 20px;
+}
+
+.teamSectionButton{
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: #fff;
+  border-bottom: solid 1px #fff;
+  font-size: 16px;
+}
+
+.insightsSection{
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #F4F4F4;
+}
+
+.closingSection{
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footerSection{
+  background-color: #000;
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.footerSectionLinks{
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerCompanySection{
+  width: 35%;
+}
+
+.footerCompanyLogo{
+  height: 40px;
+  width: 200px;
+}
+
+.certifiersContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 232px;
+  height: 74px;
+  background-color: #222323;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.certifierImage{
+  width: 200px;
+  height: 40px;
+}
+
+.footerSectionItem{
+  color: #D4D4D4;
+}
+
+.footerItemTitle{
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.footerLinkItem{
+  color: #D4D4D4;
+  text-decoration: none;
+  display: block;
+  margin: 10px;
+}
+
+.socialmedia-accounts{
+  display: flex;
+}
+
+.socialMediaLink{
+  color: #D4D4D4;
+  background-color: #222323;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+}
+
+.socialmedia-icon{
+  font-size: 55px;
+  padding: 15px;
+}
+
+.footerLinkItem:hover{
+  color: #fff;
+}
+
+.countryFlagImage{
+  width: 28px;
+  height: 18px;
+}
+
+.footer-countriesContainer, .countryItem, .phoneContainer{
+  color: #A2A2A2;
+}
+
+.phoneIcon{
+  margin-right: 10px;
+}
+
+.footer-countriesContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.phoneContainer{
+  display: flex;
+  align-items: center;
+}
+
+.finalSection{
+  background-color: #161617;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
+  color: #A2A2A2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightsText{
+  margin: 0px;
+}
+
+.policy-TC-container{
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 576px){
+  
+  .landingSection{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    width: 100%;
+  }
+
+  .geekyantlogo{
+    height: 55px;
+    width: 150px;
+  }
+  
+  .ladingPageHeading{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(to bottom, #2a42aa, #aa1e55);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  .landingSectionSubHeading{
+    font-size: 22px;
+  }
+
+  .navbarSection{
+    display: none;
+  }
+  
+  .letsTalkButton{
+    background-color: #CA0515;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 7px;
+    cursor: pointer;
+  }
+
+  .trustedBySection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .certifiedPartnersSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .comapinesContainer{
+    flex-wrap: wrap;
+  }
+
+  .caertifiedCompany-card{
+    height: 70px;
+  }
+
+  .partnerCompanyImage{
+    height: 50px;
+  }
+
+  .servicesSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .serviceItem{
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #fff;
+    padding: 10px;
+  }
+
+  .serviceImage{
+    height: 60px;
+    width: 60px;
+  }
+
+  .serviesSectionHeading{
+    font-size: 30px;
+  }
+
+  .developmentSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .sectionHeading{
+    font-size: 34px;
+  }
+
+  .sectionDescription{
+    font-size: 18px;
+  }
+
+  .deveopmentCard{
+    width: 100%;
+  }
+
+  .cardTitle{
+    display: flex;
+    align-items: center;
+  }
+
+  .development-title-image{
+    height: 60px;
+    width: 60px;
+  }
+
+  .developmentCardTitle{
+    font-size: 24px;
+  }
+
+  .developmentCardDescription{
+    font-size: 18px;
+  }
+
+  .technologiesSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .technologiesContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .tehcnologyItem{
+    font-size: 11px;
+  }
+
+  .technologyImage{
+    width: 140px;
+    height: 140px;
+  }
+
+  .technology-mobile-image{
+    height: 50px;
+    width: 50px;
+  }
+
+  .customizableSolutionsSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .customizableDescriptionContainer{
+    display: block;
+  }
+
+  .twoCardsContainer{
+    display: block;
+  }
+
+  .viewApplicationsButton{
+    display: none;
+  }
+
+  .viewApplicationsButton-mobile{
+    font-size: 8px;
+    padding: 5px;
+    margin-bottom: 10px;
+    color: #CA0515;
+    border: none;
+    border-bottom: solid 1px #CA0515;
+    background-color: transparent;
+  }
+
+  .card{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .materialuiCardTitle{
+    font-size: 12px;
+  }
+
+  .ourTeamSection{
+    padding: 30px;
+    display: block;
+    width: 100%;
+  }
+
+  .ourTeamCard{
+    margin: 0px;
+    margin-bottom: 10px;
+    width: 300px;
+  }
+
+  .cardTitle{
+    font-size: 15px;
+  }
+
+  .cardDescription{
+    font-size: 10px;
+  }
+
+  .teamSectionButton{
+    font-size: 10px;
+  }
+
+  .insightsSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .closingSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .footerSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .line-mobile{
+    width: 100%;
+  }
+
+  .footerSectionLinks{
+    display: block;
+    font-size: 11px;
+  }
+
+  .footerCompanySection{
+    width: 100%;
+  }
+
+  .footerCompanyLogo{
+    height: 20px;
+  }
+
+  .certifiersContainer{
+    width: 30%;
+    height: 30px;
+  }
+
+  .certifierImage{
+    width: 30px;
+    height: 50px;
+  }
+
+  .socialmedia-accounts{
+    flex-wrap: wrap;
+  }
+
+  .socialmedia-icon{
+    font-size: 12px;
+  }
+
+  .socialMediaLink{
+    height: 10px;
+    width: 10px;
+    padding: 8px;
+  }
+
+  .footer-countriesContainer{
+    width: 100%;
+    display: block;
+  }
+
+  .finalSection{
+    width: 100%;
+    padding: 10px;
+    display: block;
+  }
+
+  .rightsText{
+    font-size: 11px;
+  }
+
+  .policy-TC-container{
+  }
+
+  .footerLinkItem-mobile{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .countrItemAddress-mobile{
+    font-size: 11px;
+  }
+
+  .rigthsBreak-mobile{
+    display: block;
+  }
+
+  .footerLinkItem{
+    font-size: 11px;
+    margin: 0px;
+  }
+}
+
+@media (min-width: 577px) {
+  .landingSection{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 70px;
+  }
+
+  .navbarSection{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 70px;
+    margin-top: 50px;
+  }
+
+  .viewApplicationsButton-mobile{
+    display: none;
+  }
+}

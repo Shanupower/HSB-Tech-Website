@@ -1,0 +1,15 @@
+.industrySection{
+}
+
+.industryLandingSection{
+    display: flex;
+    align-items: center;
+    padding-right: 120px;
+    padding-top: 70px;
+}
+
+.sectionHeading{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
