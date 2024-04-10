@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "imageUrl": "../../assets/manufacturing-industry.svg",
+        "industryName": "Manufacturing",
+        "description": "Innovative apps and dashboards to simplify product complexities and operational challenges."
+    },
+    {
+        "id": "2",
+        "imageUrl": "../../assets/manufacturing-industry.svg",
+        "industryName": "Manufacturing",
+        "description": "Innovative apps and dashboards to simplify product complexities and operational challenges."
+    },
+    {
+        "id": "2",
+        "imageUrl": "../../assets/manufacturing-industry.svg",
+        "industryName": "Manufacturing",
+        "description": "Innovative apps and dashboards to simplify product complexities and operational challenges."
+    }
+]

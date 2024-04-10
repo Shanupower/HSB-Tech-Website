@@ -1,6 +1,14 @@
 .industrySection{
 }
 
+.industriesList-Container{
+  background-color: #F4F4F4;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .industryLandingSection{
     display: flex;
     align-items: center;
@@ -12,4 +20,73 @@
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 900;
   font-style: normal;
+}
+
+.searchBar{
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px ;
+  background-color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 2px 5px lightgray;
+}
+
+.searchInput{
+  width: 100%;
+  height: 30px;
+  outline: none;
+}
+
+.indusrtyCardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.industryCard{
+  list-style-type: none;
+  background-color: #fff;
+  padding: 30px;
+  width: 350px;
+  margin: 10px;
+  margin-left: 0px;
+  border-radius: 3px;
+  box-shadow: 1px 2px 5px 1px lightgray;
+}
+
+.industryImage{
+  height: 50px;
+}
+
+.industryCardTitle{
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.industryCardDescription{
+  font-size: 20px;
+  font-weight: 300;
+}
+
+@media(max-width: 576px){
+  .industryLandingSection{
+    padding: 30px;
+  }
+
+  .servies-landingSection{
+    padding: 0px;
+  }
+
+  .industryLandingImage{
+    display: none;
+  }
+
+  .industriesList-Container{
+    padding: 30px;
+  }
 }
