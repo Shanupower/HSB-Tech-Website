@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Component } from "react";
-import geekyAntLogo from "../../assets/geekyants-logo.svg";
+import hsbLogo from "../../assets/hsb-logo.png";
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
 import qualityImage from "../../assets/quality.svg";
@@ -20,6 +20,7 @@ import grpahqlImage from "../../assets/graphql.png";
 import nodejsImage from "../../assets/nodejs.png";
 import postgresqlImage from "../../assets/postgresql.png";
 import devopsImage from "../../assets/devops.png";
+import laravelImage from "../../assets/laravel.svg";
 import supplyChain from "../../assets/supply-chain.png";
 import telemedicineImage from "../../assets/telemedicine.png";
 import oliveGardenImage from "../../assets/oliveGarden.svg";
@@ -34,9 +35,11 @@ import mplImage from "../../assets/mpl.webp";
 import payPoint from "../../assets/paypoint.webp";
 import scrollNewsImage from "../../assets/scroll-news.webp";
 import ibsImage from "../../assets/ips-verlang.webp";
-import vercelImage from '../../assets/vercel.webp'
-import awsImage from "../../assets/aws-partner.webp"
-import githubImage from '../../assets/github.webp'
+import awsImage from "../../assets/aws-partner.webp";
+import githubImage from "../../assets/github.webp";
+
+import salaryDayImage from "../../assets/salaryday-logo.png";
+import ecofinImage from "../../assets/ecofin-logo.png";
 
 import * as HoverCard from "@radix-ui/react-hover-card";
 import React from "react";
@@ -50,10 +53,11 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
-
 import Footer from "../footer";
 
-import './index.css'
+import { Link } from "react-router-dom";
+
+import "./index.css";
 
 const settings = {
   dots: false,
@@ -63,7 +67,7 @@ const settings = {
   slidesToScroll: 1,
   autoplay: true,
   accessibility: false,
-  arrows: false
+  arrows: false,
 };
 
 const trustedbyCompaniesList = [
@@ -71,74 +75,86 @@ const trustedbyCompaniesList = [
     id: 1,
     imageUrl: oliveGardenImage,
     cardTitle: "Olive Garden",
-    cardDescription: "Olive Garden is an American casual dining restaurant chain. It is a subsidiary of Darden Restaurants, Inc., which is headquartered in Orange County, Florida. We have been a part of Olive Garden’s success journey by building their web and mobile applications",
+    cardDescription:
+      "Olive Garden is an American casual dining restaurant chain. It is a subsidiary of Darden Restaurants, Inc., which is headquartered in Orange County, Florida. We have been a part of Olive Garden’s success journey by building their web and mobile applications",
   },
   {
     id: 2,
     imageUrl: khatabookImage,
     cardTitle: "Khatabook",
-    cardDescription: "Khatabook is an Indian initiative to make wealth management simpler for people of all walksof life.They collaborated with us to build a mobile app for their service which was built in ReactNative, a web app built in React and employed MolecularJS and MongoDB + MySQLDB in the backend.The app is live and has already helped 10M+ people manage and save money."
+    cardDescription:
+      "Khatabook is an Indian initiative to make wealth management simpler for people of all walksof life.They collaborated with us to build a mobile app for their service which was built in ReactNative, a web app built in React and employed MolecularJS and MongoDB + MySQLDB in the backend.The app is live and has already helped 10M+ people manage and save money.",
   },
   {
     id: 3,
     imageUrl: icicImage,
     cardTitle: "ICICI Bank",
-    cardDescription: "ICICI Securities is a subsidiary of ICICI Bank. They meet three critical needs of their vast customer base — investments, protection, and borrowing. The virtual financial supermarket www.icicidirect.com is part of their operation. We collaborated with them to create the frontend of their mobile app."
+    cardDescription:
+      "ICICI Securities is a subsidiary of ICICI Bank. They meet three critical needs of their vast customer base — investments, protection, and borrowing. The virtual financial supermarket www.icicidirect.com is part of their operation. We collaborated with them to create the frontend of their mobile app.",
   },
   {
     id: 4,
     imageUrl: amanaImage,
     cardTitle: "Amana",
-    cardDescription: "UK based Amana skincare is one of the fastest growing product based companies that delivers beauty products based on skin types of consumers. We built a typical e-commerce mobile app as well as a web app in React + React Native with Styled components and Firebase."
+    cardDescription:
+      "UK based Amana skincare is one of the fastest growing product based companies that delivers beauty products based on skin types of consumers. We built a typical e-commerce mobile app as well as a web app in React + React Native with Styled components and Firebase.",
   },
   {
     id: 5,
     imageUrl: pepperfryImage,
     cardTitle: "Pepperfry",
-    cardDescription: "Pepperfry is an online marketplace specializing in home décor and furniture. Our collaboration was related to design systems. We Integrated a new design system on existing app screens and made them more responsive."
+    cardDescription:
+      "Pepperfry is an online marketplace specializing in home décor and furniture. Our collaboration was related to design systems. We Integrated a new design system on existing app screens and made them more responsive.",
   },
   {
     id: 6,
     imageUrl: atsignImage,
     cardTitle: "AtSign",
-    cardDescription: "AtSign is the creator of the atPlatform, which revolutionized how data is exchanged over the internet with its end-to-end encrypted communication protocol, called the atProtocol. We worked on two projects for the @company — a location-sharing app, and a UI/UX based project."
+    cardDescription:
+      "AtSign is the creator of the atPlatform, which revolutionized how data is exchanged over the internet with its end-to-end encrypted communication protocol, called the atProtocol. We worked on two projects for the @company — a location-sharing app, and a UI/UX based project.",
   },
   {
     id: 7,
     imageUrl: dardenImage,
     cardTitle: "Darden",
-    cardDescription: "Darden is the world's largest full-service restaurant company, with 175,000+ employees and 1,800 restaurant locations. A member of the Fortune 500 for the last 21 years, the Darden team deals with multiple operational requirements. We’ve been working with them to build their web and mobile applications."
+    cardDescription:
+      "Darden is the world's largest full-service restaurant company, with 175,000+ employees and 1,800 restaurant locations. A member of the Fortune 500 for the last 21 years, the Darden team deals with multiple operational requirements. We’ve been working with them to build their web and mobile applications.",
   },
   {
     id: 8,
     imageUrl: mplImage,
     cardTitle: "MPL",
-    cardDescription: "A long term client with over 2 years of engagement, Mobile Premier League (MPL) is India's biggest online gaming platform that offers the ultimate gaming experience to users, who can play 40+ games including fantasy sports, that we helped redesign using React, React Native with Redux, Sentry, Babel and Objective C."
+    cardDescription:
+      "A long term client with over 2 years of engagement, Mobile Premier League (MPL) is India's biggest online gaming platform that offers the ultimate gaming experience to users, who can play 40+ games including fantasy sports, that we helped redesign using React, React Native with Redux, Sentry, Babel and Objective C.",
   },
   {
     id: 9,
     imageUrl: payPoint,
     cardTitle: "PayPoint",
-    cardDescription: "Taking logistics to the next level with an all-encompassing web app, PayPoint is dominating as UK's largest logistics service provider, backed by React Native, Firebase, a brand new UI &amp; UX design and our guarantee."
+    cardDescription:
+      "Taking logistics to the next level with an all-encompassing web app, PayPoint is dominating as UK's largest logistics service provider, backed by React Native, Firebase, a brand new UI &amp; UX design and our guarantee.",
   },
   {
     id: 10,
     imageUrl: scrollNewsImage,
     cardTitle: "Scroll News",
-    cardDescription: "Scroll News is an independent source for news that covers news, politics, sports, culture and everything in between. We helped build an ideal mobile and web platform for it using Flutter, GCP, Firebase, NodeJS and Postgres."
+    cardDescription:
+      "Scroll News is an independent source for news that covers news, politics, sports, culture and everything in between. We helped build an ideal mobile and web platform for it using Flutter, GCP, Firebase, NodeJS and Postgres.",
   },
   {
     id: 11,
     cardTitle: "100ms",
     imageUrl: hundredmsImage,
-    cardDescription: "Founded in 2020, 100ms is revolutionizing the live-video industry. Their products and APIs simplify real-time video conferring and allow interactive live streaming. We worked on developing video conferencing SDKs to enhance the 100ms application."
+    cardDescription:
+      "Founded in 2020, 100ms is revolutionizing the live-video industry. Their products and APIs simplify real-time video conferring and allow interactive live streaming. We worked on developing video conferencing SDKs to enhance the 100ms application.",
   },
   {
     id: 12,
     imageUrl: ibsImage,
     cardTitle: "IPS Verlang",
-    cardDescription: "IPS Verlag is part of the IPS Group — Germany's largest independent national distributor of press products. They provide a wide range of services and deal with a large network of news organizations. From digital printing and press software to publishing of books, the organization is constantly growing. We’re designing and developing a mobile application for IPS."
-  }
+    cardDescription:
+      "IPS Verlag is part of the IPS Group — Germany's largest independent national distributor of press products. They provide a wide range of services and deal with a large network of news organizations. From digital printing and press software to publishing of books, the organization is constantly growing. We’re designing and developing a mobile application for IPS.",
+  },
 ];
 
 class Home extends Component {
@@ -146,15 +162,17 @@ class Home extends Component {
     return (
       <div className="appContainer">
         <div className="landingSection">
-          <img className="geekyantlogo" src={geekyAntLogo} alt="logo" />
+          <img className="geekyantlogo" src={hsbLogo} alt="logo" />
           <h1 className="ladingPageHeading">
-            Build. <br />
-            Accelerate. <br />
-            Scale. <br />
+            Highly
+            <br />
+            Scalable <br />
+            Bees
+            <br />
           </h1>
           <p className="landingSectionSubHeading">
-            Design & Engineering studio <br />
-            with a user-first & AI approach.
+            Embrace our IT & Managed Services to accelerate your business
+            growth.
           </p>
         </div>
 
@@ -186,28 +204,29 @@ class Home extends Component {
           </h3>
           <div className="serviesContainer">
             <div className="serviceItem sparkle">
-              <p>Using AI for now and future</p>
+              <p>Smart IT solutions for every need.</p>
               <img className="serviceImage" src={sparkleImage} alt="sparkle" />
             </div>
 
             <div className="serviceItem impact">
-              <p>Design expeirence that leaves an impact</p>
+              <p>Seamless managed services with high-performance workspaces.</p>
               <img className="serviceImage" src={impactImage} alt="sparkle" />
             </div>
 
             <div className="serviceItem scale">
-              <p>Architecture that scales to millions</p>
+              <p>Customized approach across industries.</p>
               <img className="serviceImage" src={scaleImage} alt="sparkle" />
             </div>
 
             <div className="serviceItem quality">
-              <p>Standardized approach for speed & quality</p>
+              <p>Seasoned professionals who value business ethics.</p>
               <img className="serviceImage" src={qualityImage} alt="sparkle" />
             </div>
           </div>
         </div>
 
         <div className="trustedBySection">
+          <h1 className="trustedByheading">Trusted By</h1>
           <Slider {...settings}>
             {trustedbyCompaniesList.map((eachCompany) => (
               <HoverCard.Root>
@@ -238,45 +257,49 @@ class Home extends Component {
           </Slider>
         </div>
 
-        <div className="certifiedPartnersSection">
-          <h1 className="certifiedPartnersHeading">Certified Partners</h1>
-          <div className="comapinesContainer">
-            <div className="caertifiedCompany-card">
-              <img className="vercelImage partnerCompanyImage" src={vercelImage} />
+        <div className="appsWeDevelopedSecion section">
+          <h1 className="sectionHeading">Apps We Developed</h1>
+          <div className="appsDeveloped-images-container">
+            <div className="appDevelopedImage">
+              <img
+                className="appDevelopedImage"
+                src={salaryDayImage}
+                alt="app developed image"
+              />
             </div>
-            <div className="caertifiedCompany-card">
-              <img className="awsImage partnerCompanyImage awsImage" src={awsImage} />
-            </div>
-            <div className="caertifiedCompany-card">
-              <img className="githubImage partnerCompanyImage githubImage" src={githubImage} />
-            </div>
+            <img
+              className="appDevelopedImage ecofin"
+              src={ecofinImage}
+              alt="app developed image"
+            />
           </div>
         </div>
 
         <div className="developmentSection">
           <h2 className="sectionHeading">What We Do Best</h2>
           <p className="sectionDescription">
-            500+ projects deep and still going deeper in the mobile & web app
-            development space. From A to Z of building beautiful apps, we do
-            everything in-house, GeekyAnts style.
+            We are well equipped with an updated technical knowledge to serve
+            our customers with advanced IT solutions that can add value to the
+            business.
           </p>
 
           <div className="developmentCardsContainer">
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/1" className="deveopmentCard hoverUp">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
                   src={webappImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">Web App Development</p>
+                <p className="developmentCardTitle">
+                  Web Application Development
+                </p>
               </div>
               <p className="developmentCardDescription">
-                Transform your ideas into reality with our web app development
-                services. With an expert team & modern technologies, we assure
-                you an end-to-end product for your unique needs.
+                Impressive and fully responsive website development that drives
+                higher leads to the business.
               </p>
-            </div>
+            </Link>
 
             <div className="deveopmentCard hoverUp">
               <div className="cardTitle">
@@ -285,11 +308,13 @@ class Home extends Component {
                   src={mobileAppImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">Mobile App Development</p>
+                <p className="developmentCardTitle">
+                  Mobile Application Development
+                </p>
               </div>
               <p className="developmentCardDescription">
-                With mobile applications built in technologies like React Native
-                and Flutter, unleash the full potential of your business.
+                Unleash the full potential of your business with our mobile
+                applications that are developed for both, Android & iOS.
               </p>
             </div>
 
@@ -300,11 +325,11 @@ class Home extends Component {
                   src={uiDesignImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">UI Design</p>
+                <p className="developmentCardTitle">UI/UX Design</p>
               </div>
               <p className="developmentCardDescription">
-                Unique designs for your product, guaranteed to be user-centric
-                and a visual treat!
+                Well-structured, responsive and user-friendly UI/UX designs for
+                your products that are a visual treat to the users.
               </p>
             </div>
 
@@ -315,11 +340,11 @@ class Home extends Component {
                   src={fullstackImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">Full Stack Development</p>
+                <p className="developmentCardTitle">Full-Stack Development</p>
               </div>
               <p className="developmentCardDescription">
-                Our full-stack approach handles both front-end and back-end for
-                a complete product solution.
+                A 360degree full-stack solution for your product that comprises
+                of both, front-end and back-end for your product.
               </p>
             </div>
 
@@ -330,11 +355,14 @@ class Home extends Component {
                   src={qualityAssuranceImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">Quality Assurance</p>
+                <p className="developmentCardTitle">
+                  Quality assurance and software testing
+                </p>
               </div>
               <p className="developmentCardDescription">
-                No compromise on the most important thing - the ‘quality‘ of
-                what we deliver. Exceeding your expectations is in our DNA.
+                We always create a benchmark in delivering quality-oriented
+                solutions. Our comprehensive testing ensures quality on-par with
+                the requirement.
               </p>
             </div>
 
@@ -345,13 +373,33 @@ class Home extends Component {
                   src={businessAnalysisImage}
                   alt="webapp"
                 />
-                <p className="developmentCardTitle">Business Analysis</p>
+                <p className="developmentCardTitle">
+                  Business analysis & consulting
+                </p>
               </div>
               <p className="developmentCardDescription">
-                We discover, study and document business needs in collaboration
-                with stakeholders and propose foolproof solutions that fit like
-                a glove.
+                We analyse, study and document business needs in collaboration
+                with stakeholders and propose fool-proof solutions suitable for
+                your requirement.
               </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="certifiedPartnersSection">
+          <h1 className="certifiedPartnersHeading">We Work With</h1>
+          <div className="comapinesContainer">
+            <div className="caertifiedCompany-card">
+              <img
+                className="githubImage partnerCompanyImage githubImage"
+                src={githubImage}
+              />
+            </div>
+            <div className="caertifiedCompany-card">
+              <img
+                className="awsImage partnerCompanyImage awsImage"
+                src={awsImage}
+              />
             </div>
           </div>
         </div>
@@ -359,9 +407,9 @@ class Home extends Component {
         <div className="technologiesSection">
           <h2 className="sectionHeading">Technologies</h2>
           <p className="sectionDescription">
-            We work with cutting-edge technologies designed to solve your
-            product requirements. Focus on finding solutions for your business
-            needs while we handle the technical aspect.
+            We work with prominent technologies that can solve your product
+            requirements. While you concentrate on your business needs, we take
+            care of your technical aspect.
           </p>
 
           <div className="technologiesContainer">
@@ -421,6 +469,17 @@ class Home extends Component {
             </div>
 
             <div className="tehcnologyItem">
+              <div className="technologyImage laravel stretch">
+                <img
+                  className="technology-mobile-image"
+                  src={laravelImage}
+                  alt="react"
+                />
+              </div>
+              <p className="technologyName">Laravel</p>
+            </div>
+
+            <div className="tehcnologyItem">
               <div className="technologyImage postgresql stretch">
                 <img
                   className="technology-mobile-image"
@@ -444,12 +503,12 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="customizableSolutionsSection">
-          <h2 className="sectionHeading">Customisable Solutions</h2>
+        <div className="openSourceSection">
+          <h2 className="sectionHeading">Open Source</h2>
           <div className="customizableDescriptionContainer">
             <p className="sectionDescription customisable-solutions-heading">
-              Navigate through various solutions and clones of popular apps
-              built by us which can be easily customized to fit your needs.
+              Open-source ignites innovation, removes barriers, and fosters
+              collaboration aggressively.
             </p>
 
             <button
@@ -481,18 +540,17 @@ class Home extends Component {
                     component="div"
                     className="materialuiCardTitle"
                   >
-                    Supply Chain Management App
+                    Start Flutter
                   </Typography>
                   <Typography
                     fontSize="18px"
                     variant="body2"
                     color="text.secondary"
                   >
-                    This fully customizable Supply Chain Management app
-                    streamlines your supply — from procurement to delivery —
-                    with zero hassles. Can be customized based on your project
-                    requirements saving hundreds of design & development hours.
-                    Create your MVP fast and be market-ready in a jiffy.
+                    Start Flutter is a library of free to download Flutter
+                    templates. All themes are available in the form of open
+                    source and can be used for any purpose, including
+                    commercial. Download your choice of theme and get started!
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -513,17 +571,100 @@ class Home extends Component {
                     variant="h5"
                     component="div"
                   >
-                    Telemedicine App
+                    React Native Seed
                   </Typography>
                   <Typography
                     fontSize="18px"
                     variant="body2"
                     color="text.secondary"
                   >
-                    Contains features for daily use in healthcare and
-                    telemedicine-related scenarios like appointment scheduling,
-                    prescription management, and video consultation. This
-                    customizable healthcare app uses
+                    React Native Seed is a starting point for your React Native
+                    project as it serves as a starter kit for your base app. It
+                    can be used with the technologies that you prefer.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </div>
+        </div>
+
+        <div className="customizableSolutionsSection">
+          <h2 className="sectionHeading">Customizable Solutions</h2>
+          <div className="customizableDescriptionContainer">
+            <p className="sectionDescription customisable-solutions-heading">
+              A library of various solutions and clones of popular apps built by
+              us which can be easily customized to fit your needs.
+            </p>
+
+            <button
+              className="viewApplicationsButton slideRight-view-applications"
+              type="button"
+            >
+              View Showcase Applications
+              <FaArrowRight className="rightArrowRed" />
+            </button>
+
+            <button className="viewApplicationsButton-mobile" type="button">
+              View Showcase Applications
+            </button>
+          </div>
+
+          <div className="twoCardsContainer">
+            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="250"
+                  image={supplyChain}
+                  alt="green iguana"
+                />
+                <CardContent sx={{ p: 5 }}>
+                  <Typography
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                    className="materialuiCardTitle"
+                  >
+                    Customer Relationship Management
+                  </Typography>
+                  <Typography
+                    fontSize="18px"
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    Through this fully customizable app manage your customer
+                    relationships, sales, marketing, and service with zero
+                    hassles.
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="250"
+                  image={telemedicineImage}
+                  alt="green iguana"
+                />
+                <CardContent sx={{ p: 5 }}>
+                  <Typography
+                    fontSize="25px"
+                    gutterBottom
+                    variant="h5"
+                    component="div"
+                  >
+                    Cybersecurity
+                  </Typography>
+                  <Typography
+                    fontSize="18px"
+                    variant="body2"
+                    color="text.secondary"
+                  >
+                    We have ready-to-execute and customizable cybersecurity
+                    solutions that can be used to ensure security of your data
+                    and infrastructure.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -532,28 +673,11 @@ class Home extends Component {
         </div>
 
         <div className="ourTeamSection">
-          <div className="ourTeamCard">
-            <h3 className="cardTitle">Our Team</h3>
-            <p className="cardDescription">
-              We are a family of innovative geeks and curious scientists,
-              tinkering away to create the next big thing in tech.
-            </p>
-            <button className="teamSectionButton" type="button">
-              Meet the team
-            </button>
-          </div>
-
-          <div className="ourTeamCard">
-            <h3 className="cardTitle">Our Culture</h3>
-            <p className="cardDescription">
-              We believe in being early adopters of new tech, innovating without
-              boundaries, and contributing actively to the open-source
-              community.
-            </p>
-            <button className="teamSectionButton" type="button">
-              Meet the team
-            </button>
-          </div>
+          <h3 className="sectionHeading">Our Team</h3>
+          <p className="cardDescription">
+            We bring core-specializations from different streams which makes us
+            a best team from overall business perspective.
+          </p>
         </div>
 
         <div className="insightsSection">
@@ -673,13 +797,11 @@ class Home extends Component {
         </div>
 
         <div className="closingSection">
-          <h1 className="sectionHeading">Let's Build Your Product Together!</h1>
-          <p className="sectionDescription">
-            Get a free discovery session and consulting to start your project
-            today.
-          </p>
+          <h1 className="sectionHeading">
+            Let’s Connect to Discuss How We Can Make An Awesome Product For You.
+          </h1>
           <button className="letsTalkButton slideRight" type="button">
-            LET'S TALK
+            CONTACT NOW
             <FaArrowRight className="rightArrow" />
           </button>
         </div>

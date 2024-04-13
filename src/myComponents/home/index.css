@@ -3,6 +3,10 @@
 .appContainer{
 }
 
+.geekyantlogo{
+  width: 150px;
+}
+
 .landingSection{
   padding-left: 120px;
   padding-right: 120px;
@@ -172,7 +176,9 @@
 }
 
 .certifiedPartnersHeading{
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 500;
 }
 
 .caertifiedCompany-card{
@@ -246,7 +252,7 @@
   padding: 120px;
   padding-bottom: 70px;
   padding-top: 70px;
-  background-color: #F8FAFA;
+  background-color: #dee6ff;
 }
 
 .sectionHeading{
@@ -345,6 +351,10 @@
   background-color: #E7F0E6;
 }
 
+.laravel{
+  background-color: #fcc7c7;
+}
+
 .postgresql{
   background-color: #E5EBF0;
 }
@@ -368,6 +378,13 @@
 
 .customizableSolutionsSection{
   background-color: #F4F4F4;
+  padding: 120px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.openSourceSection{
+  background-color: #faffde;
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -400,7 +417,6 @@
 }
 
 .ourTeamSection{
-  display: flex;
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -569,6 +585,30 @@
   align-items: center;
 }
 
+.trustedByheading{
+  color: #757575;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.appDevelopedImage{
+  width: 300px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.ecofin{
+  background-color: #6424A0;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.appsDeveloped-images-container{
+  display: flex;
+}
+
 @media (max-width: 576px){
   
   .landingSection{
@@ -718,6 +758,11 @@
   }
 
   .customizableSolutionsSection{
+    padding: 30px;
+    width: 100%;
+  }
+
+  .openSourceSection{
     padding: 30px;
     width: 100%;
   }
