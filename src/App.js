@@ -10,6 +10,8 @@ import MobileDevelopment from "./myComponents/mobileServiceDetails";
 import QualityAssurance from "./myComponents/qualityAssurance";
 import UIUXDevelopment from "./myComponents/uiuxDetailsPage";
 import BusinessAnalysisServices from "./myComponents/businessAnalysis";
+import FullStackDevelopment from "./myComponents/fullStack";
+import Manufacturing from "./myComponents/manufacturing";
 
 class App extends Component{
   render(){
@@ -25,6 +27,8 @@ class App extends Component{
           <Route exact path="/services/quality assurance" component={QualityAssurance} />
           <Route exact path="/services/uiux development" component={UIUXDevelopment} />
           <Route exact path="/services/busines analysis services" component={BusinessAnalysisServices} />
+          <Route exact path="/services/fullstack development" component={FullStackDevelopment} />
+          <Route exact path="/industries/manufacturing" component={Manufacturing} />
         </Switch>
     )
   }

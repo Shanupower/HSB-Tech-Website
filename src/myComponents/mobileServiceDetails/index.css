@@ -5,3 +5,13 @@
 .getQuoteButton{
     background-color: #1784B2;
 }
+
+.subSections{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sections{
+    width: 50%;
+}

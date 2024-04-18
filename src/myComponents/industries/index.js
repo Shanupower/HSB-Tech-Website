@@ -5,110 +5,91 @@ import Footer from "../footer";
 import IndustryImage from "../../assets/industry.svg";
 import { FaArrowRight } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
-import { v4 as uuidv4 } from 'uuid';
-import ManufacturingIndustry from "../../assets/manufacturing-industry.svg"
-import fintechIndustryImage from "../../assets/fintech-industry.svg"
-import healthIndustryImage from '../../assets/healthcare-industry.svg'
-import eCommerceIndustryImage from '../../assets/ecommerece-industry.svg'
-import educationIndustryImage from '../../assets/education-industry.svg'
-import travelIndustryImage from '../../assets/travel-industry.svg'
-import realestateIndustryImage from '../../assets/realestate-industry.svg'
-import gamingIndustryImage from '../../assets/gaming-industry.svg'
-import onDemandIndustryImage from "../../assets/on-demand-booking-industry.svg"
-import sportsIndustryImage from '../../assets/sports-industry.svg'
-import entertainmentIndustryImage from '../../assets/entertainment-industry.svg'
-import foodIndustryImage from '../../assets/food-industry.svg'
-import socialmediaIndustryImage from "../../assets/socialmedia-industry.svg"
-import marketingIndustryImage from '../../assets/marketing-industry.svg'
+import { v4 as uuidv4 } from "uuid";
+import ManufacturingIndustry from "../../assets/manufacturing-industry.svg";
+import fintechIndustryImage from "../../assets/fintech-industry.svg";
+import healthIndustryImage from "../../assets/healthcare-industry.svg";
+import eCommerceIndustryImage from "../../assets/ecommerece-industry.svg";
+import educationIndustryImage from "../../assets/education-industry.svg";
+import travelIndustryImage from "../../assets/travel-industry.svg";
+import realestateIndustryImage from "../../assets/realestate-industry.svg";
+import foodIndustryImage from "../../assets/food-industry.svg";
+import marketingIndustryImage from "../../assets/marketing-industry.svg";
 
 import "./index.css";
 
 const industriesList = [
   {
     id: uuidv4(),
-    industryName: "Manufacturing",
+    industryName: "Manufacturing & Retail",
     imageUrl: ManufacturingIndustry,
-    description: "Innovative apps and dashboards to simplify product complexities and operational challenges."
+    description:
+      "Applications and dashboard to simplify data, processes, and operational challenges.",
   },
   {
     id: uuidv4(),
     industryName: "Fintech",
     imageUrl: fintechIndustryImage,
-    description: "Safe and customized financial solutions for a great user experience with real-time updates."
+    description:
+      "Financial solutions driven by data security and real-time updates.",
   },
   {
     id: uuidv4(),
     industryName: "Healthcare",
     imageUrl: healthIndustryImage,
-    description: "Robust healthcare apps to empower healthcare professionals and family members."
+    description:
+      "Apps and tools that help in wellness management, data tracking, and promotes healthy lifestyle.",
   },
   {
     id: uuidv4(),
     industryName: "E-commerce",
     imageUrl: eCommerceIndustryImage,
-    description: "High-performing, customer-centric applications for e-commerce businesses."
+    description:
+      "High-performing e-commerce applications designed with customer-centric approach.",
   },
   {
     id: uuidv4(),
     industryName: "Education",
     imageUrl: educationIndustryImage,
-    description: "Applications with multiple features like live streaming, forums, and more."
+    description:
+      "Applications to benefit students with multiple features such as live classroom, forums, etc.",
   },
   {
     id: uuidv4(),
     industryName: "Travel & Hospitality",
     imageUrl: travelIndustryImage,
-    description: "User-friend travel hospitality apps with modern features that increase user satisfaction."
+    description:
+      "Tourism related apps that provide amazing experience to the users.",
   },
   {
     id: uuidv4(),
     industryName: "Real Estate",
     imageUrl: realestateIndustryImage,
-    description: "Let us transform your property buying and selling experience to overcome market challenges."
-  },
-  {
-    id: uuidv4(),
-    industryName: "Gaming",
-    imageUrl: gamingIndustryImage,
-    description: "We help build an immersive gaming experience that caters to the needs of varied users."
-  },
-  {
-    id: uuidv4(),
-    industryName: "On-demand Booking",
-    imageUrl: onDemandIndustryImage,
-    description: "We build customized and intuitive on-demand booking solutions to help you lead the market."
-  },
-  {
-    id: uuidv4(),
-    industryName: "Sports",
-    imageUrl: sportsIndustryImage,
-    description: "We help revolutionize the way traditional sports are broadcasted and presented to the audience."
-  },
-  {
-    id: uuidv4(),
-    industryName: "Entertainment",
-    imageUrl: entertainmentIndustryImage,
-    description: "Interactive applications to deliver an unforgettable entertainment experience."
+    description:
+      "Enhanced experience to buy or sell properties to overcome middlemen challenges.",
   },
   {
     id: uuidv4(),
     industryName: "Food & Beverages",
     imageUrl: foodIndustryImage,
-    description: "State-of-the-art designs and customized features to help users explore new culinary experiences."
+    description:
+      "Applications that are visual treats to attract consumers to food and beverages.",
   },
   {
     id: uuidv4(),
-    industryName: "Social Media & Communication",
-    imageUrl: socialmediaIndustryImage,
-    description: "We design and build visually appealing, accessible, and interactive social media platforms with good user flow."
-  },
-  {
-    id: uuidv4(),
-    industryName: "Marketing",
+    industryName: "Banking & Insurance",
     imageUrl: marketingIndustryImage,
-    description: "We help you automate marketing to increase your conversions, retention, and revenue."
+    description:
+      "BFSI applications with many APIs to serve various financial purposes.",
   },
-]
+  {
+    id: uuidv4(),
+    industryName: "Telecom",
+    imageUrl: marketingIndustryImage,
+    description:
+      "Scalable and cloud-ready applications to handle complex telecom platform with many components.",
+  },
+];
 
 class Industries extends Component {
   render() {
@@ -121,44 +102,52 @@ class Industries extends Component {
             <div className="servies-landingSection">
               <h1 className="pageHeading">Industries</h1>
               <p className="pageDescription">
-                Explore the dynamic world of software development at GeekyAnts.
-                Uncover our expertise and solutions that drive innovation across
-                industries.
+                We serve different industries through our innovative solutions.
+                Explore the dynamic world of software development at HSB and
+                uncover customized solutions for your business synchronized with
+                industry requirements.
               </p>
             </div>
-            <img className="industryLandingImage" src={IndustryImage} alt="industry" />
+            <img
+              className="industryLandingImage"
+              src={IndustryImage}
+              alt="industry"
+            />
           </div>
 
           <div className="industriesList-Container">
             <div className="searchBar">
-              <input placeholder="Search Industries..." className="searchInput" type="search" />
+              <input
+                placeholder="Search Industries..."
+                className="searchInput"
+                type="search"
+              />
               <FaSearch />
             </div>
 
             <ul className="indusrtyCardsContainer">
-              {
-                industriesList.map(eachItem => (
-                  <li className="industryCard hoverUp">
-                    <img className="industryImage" src={eachItem.imageUrl} alt="industry image" />
-                    <p className="industryCardTitle">{eachItem.industryName}</p>
-                    <p className="industryCardDescription">{eachItem.description}</p>
-                  </li>
-                ))
-              }
+              {industriesList.map((eachItem) => (
+                <li className="industryCard hoverUp">
+                  <img
+                    className="industryImage"
+                    src={eachItem.imageUrl}
+                    alt="industry image"
+                  />
+                  <p className="industryCardTitle">{eachItem.industryName}</p>
+                  <p className="industryCardDescription">
+                    {eachItem.description}
+                  </p>
+                </li>
+              ))}
             </ul>
-
           </div>
 
           <div className="closingSection">
             <h1 className="sectionHeading">
-              Let's Build Your Product Together!
+              Let’s connect to learn more about your requirement.
             </h1>
-            <p className="sectionDescription">
-              Get a free discovery session and consulting to start your project
-              today.
-            </p>
             <button className="letsTalkButton slideRight" type="button">
-              LET'S TALK
+              Contact Now
               <FaArrowRight className="rightArrow" />
             </button>
           </div>

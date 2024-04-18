@@ -1,50 +1,96 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import Footer from "../footer/index.js";
 
-import mobileDevelopmentImage from "../../assets/mobileApp.webp";
-import whyChoose1 from "../../assets/wellversedImage.svg";
-import whyChoose3 from "../../assets/openSourceProducrs-in-mobile.svg";
-import whyChoose2 from "../../assets/strong-mobile-portfolio.svg";
-import whyChoose4 from "../../assets/end-to-end-support-mobile.svg";
+import fullStackImage from '../../assets/fullstack.webp'
+import whyChoose1 from "../../assets/user-centric-uiux.svg";
+import whyChoose3 from "../../assets/specialized-design-uiuix.svg";
+import whyChoose2 from "../../assets/industry-agnostic.svg";
+import whyChoose4 from "../../assets/expeirenced-uiux.svg";
+import giftBox from '../../assets/collect-graphic.svg'
+import reactImage from "../../assets/react.png";
+import nextJs from "../../assets/nextjs.png";
+import nodeJs from "../../assets/nodejs.png";
+import postgreSQL from "../../assets/postgresql.png";
+import graphQL from "../../assets/graphql.png";
+import flutter from "../../assets/flutter.png";
+import vueJS from "../../assets/vue.webp";
+import angular from "../../assets/angular.webp";
+import HtmlImage from "../../assets/html.webp";
+import cssImage from "../../assets/css.png";
+import dotNet from "../../assets/dotnet.png";
+import javaImage from "../../assets/java-logo.png";
+import phpImage from "../../assets/php.png";
+import pythonImage from "../../assets/python.png";
+import mongoDb from "../../assets/mongoDB.webp";
+import sqlServer from "../../assets/sql-server.svg";
+import mySql from "../../assets/mysql.svg";
+import oracle from "../../assets/oracle-logo.png";
 
-import crossImage from "../../assets/cross.svg";
-import mobileServices from "../../assets/mobile-icon-services.svg";
-import appMaintenanceImage from "../../assets/appMaintenance.svg";
+import kotlin from "../../assets/kotlin.svg";
+import objectiveC from "../../assets/objective-c.png";
+import nativeScript from "../../assets/nativescript.svg";
+import selenium from "../../assets/selenium.png";
+import cypress from "../../assets/cypress.png";
+import jest from "../../assets/jest.webp";
 
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import AccordionSummary from "@mui/material/AccordionSummary";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import Footer from "../footer/index.js";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
+import { Chrono } from "react-chrono";
 
-import reactImage from '../../assets/react.png'
-import flutter from '../../assets/flutter.png'
-import kotlin from '../../assets/kotlin.svg'
-import nativeScript from '../../assets/nativescript.svg'
-import objectiveC from '../../assets/objective-c.png'
-import angularImage from '../../assets/angular.webp'
-import javaImage from '../../assets/java-logo.png'
-import javascriptImage from '../../assets/javascript-logo.png'
-import dotNet from '../../assets/dotnet.png'
-import cssImage from '../../assets/css.png'
-import sqlServer from '../../assets/sql-server.svg'
-import mySql from '../../assets/mysql.svg'
-import oracle from '../../assets/oracle-logo.png'
-import postgreSql from '../../assets/postgresql.png'
-import graphQl from '../../assets/graphql.png'
-import selenium from '../../assets/selenium.png'
-import cypress from '../../assets/cypress.png'
-import jest from '../../assets/jest.webp'
+
+
 import "./index.css";
+
+const fsdProcessTimeline = [
+  {
+    title: "step-1",
+    cardTitle: "Collecting and Analysing",
+    cardDetailedText:
+      "Initially, we collect all the required information and analyze your business requirements. In the first phase, we validate your idea and find optimal solutions to your requirement by conducting thorough research, risk analysis, estimation, and requirement elicitations.",
+  },
+  {
+    title: "step-2",
+    cardTitle: "Design",
+    cardDetailedText:
+      "Once you agree with our analysis, we strategize a perfect UI/UX strategy, prepare software requirement specifications, create wireframes, and build software architecture, and user interface design. We create prototypes after being validated to create an intuitive, flawless, and great user experience.",
+  },
+  {
+    title: "step-3",
+    cardTitle: "Development",
+    cardDetailedText:
+      "In the development phase, our experienced software developers transform your ideas into digital reality with the chosen languages, frameworks, technologies, and platforms. Through best coding practices and standards, we build customized solutions and perform continuous integration and delivery pipeline.",
+  },
+  {
+    title: "step-4",
+    cardTitle: "Testing",
+    cardDetailedText:
+      "Our testing process is robust, where we rigorously test the developed system for inconsistencies, bugs, security, quality, performance, and errors. We perform automated and manual testing to ensure that your software matches up to all your requirements and showcases the best performance on different devices and platforms.",
+  },
+  {
+    title: "step-5",
+    cardTitle: "Deployment",
+    cardDetailedText:
+      "Once we finish with the testing, we deploy the product either on preferred platforms or the cloud and integrate it with required configurations. We make sure that your product will have less downtime in a production environment and can be managed easily. We also monitor performance of the product in live environment and fix issues with comprehensive and continuous technical support.",
+  },
+  {
+    title: "step-6",
+    cardTitle: "Maintenance And Support",
+    cardDetailedText:
+      "We extend post-sale service in the form of maintenance and support, where we cover fixing issues, performance consistency, and changing user requirements. Our agile approach and continuous improvement cycle help organizations add new features seamlessly to stay relevant and competitive.",
+  },
+];
 
 const frontendTab = [
   {
@@ -52,47 +98,55 @@ const frontendTab = [
     name: "React",
   },
   {
-    imageUrl: flutter,
-    name: "Flutter",
+    imageUrl: HtmlImage,
+    name: "HTML",
   },
   {
-    imageUrl: kotlin,
-    name: "Kotlin",
-  },
-  {
-    imageUrl: nativeScript,
-    name: "Native Script",
-  },
-  {
-    imageUrl: objectiveC,
-    name: "Objective C",
+    imageUrl: angular,
+    name: "Angular",
   },
   {
     imageUrl: cssImage,
-    name: "CSS"
-  }
+    name: "CSS",
+  },
+  {
+    imageUrl: vueJS,
+    name: "Vue.JS",
+  },
+  {
+    imageUrl: nextJs,
+    name: "Next.JS",
+  },
 ];
 
 const backendTab = [
   {
-    imageUrl: angularImage,
-    name: "Angular",
+    imageUrl: dotNet,
+    name: ".Net",
   },
   {
     imageUrl: javaImage,
     name: "Java",
   },
   {
-    imageUrl: javascriptImage,
-    name: "JavaScript",
+    imageUrl: phpImage,
+    name: "PHP",
   },
   {
-    imageUrl: dotNet,
-    name: ".Net",
+    imageUrl: nodeJs,
+    name: "Node.JS",
+  },
+  {
+    imageUrl: pythonImage,
+    name: "Vue.JS",
   },
 ];
 
 const databasesTab = [
+  {
+    imageUrl: mongoDb,
+    name: "Mongo DB",
+  },
   {
     imageUrl: sqlServer,
     name: "SQL Server",
@@ -106,12 +160,35 @@ const databasesTab = [
     name: "Oracle",
   },
   {
-    imageUrl: postgreSql,
+    imageUrl: postgreSQL,
     name: "PostgreSQL",
   },
   {
-    imageUrl: graphQl,
+    imageUrl: graphQL,
     name: "GraphQL",
+  },
+];
+
+const mobileTab = [
+  {
+    imageUrl: flutter,
+    name: "Flutter",
+  },
+  {
+    imageUrl: reactImage,
+    name: "React Native",
+  },
+  {
+    imageUrl: kotlin,
+    name: "Kotlin",
+  },
+  {
+    imageUrl: objectiveC,
+    name: "Objective C",
+  },
+  {
+    imageUrl: nativeScript,
+    name: "Native Script",
   },
 ];
 
@@ -131,15 +208,15 @@ const QaTab = [
 ];
 
 const breadcrumbs = [
-  <Link underline="hover" key="1" color="inherit" href="/">
-    Home
-  </Link>,
-  <Link underline="hover" key="2" color="inherit" href="/services">
-    Services
-  </Link>,
-  <Typography key="3" color="text.primary">
-    Mobile App Development Services
-  </Typography>,
+    <Link underline="hover" key="1" color="inherit" href="/">
+      Home
+    </Link>,
+    <Link underline="hover" key="2" color="inherit" href="/services">
+      Services
+    </Link>,
+    <Typography key="3" color="text.primary">
+      Full Stack App Development Services
+    </Typography>,
 ];
 
 function CustomTabPanel(props) {
@@ -175,16 +252,10 @@ function a11yProps(index) {
   };
 }
 
-class MobileDevelopment extends Component {
+class FullStackDevelopment extends Component {
   state = {
     expanded: false,
     value: 0,
-  };
-
-  toggleToolsAndTechTab = () => {
-    this.setState((prevState) => ({
-      isTechTabActive: !prevState.isTechTabActive,
-    }));
   };
 
   handleChange = (panel) => (event, isExpanded) => {
@@ -204,7 +275,7 @@ class MobileDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <div className="landingSection-services mobileService section">
+        <div className="landingSection-services fullstackLandingSection section">
           <div>
             <Breadcrumbs
               className="breadcrumb"
@@ -213,18 +284,17 @@ class MobileDevelopment extends Component {
             >
               {breadcrumbs}
             </Breadcrumbs>
-            <h1 className="sectionHeading">Mobile App Development Services</h1>
+            <h1 className="sectionHeading">Full Stack Development</h1>
             <p className="sectionDescription">
-              Kick off your business with our time-tested custom mobile app
-              development services. We cover an entire mobile app development
-              lifecycle beginning from deciding on the flow, UI & UX
-              development, approvals, and testing, to launching of mobile app on
-              Android and iStore. Our team is proficient with developing mobile
-              apps on preferred technologies, such as Flutter, and React Native,
-              and exhibits top-notch technologies with proven approaches.
+              We offer Full Stack development services required for a complete
+              development of a product, including frontend, backend, database
+              management, etc. As a Full Stack development company, we ensure
+              that our Full Stack developers are all set to assist you with
+              needed expertise in all areas, identifying roles and
+              responsibilities with corresponding challenges.
             </p>
             <button
-              className="getQuoteButton mobile-getQuoteButton"
+              className="getQuoteButton fullstack-getQuoteButton"
               type="button"
             >
               Get Quote
@@ -232,108 +302,91 @@ class MobileDevelopment extends Component {
           </div>
           <img
             className="landingSectionImage-sericesPage"
-            src={mobileDevelopmentImage}
+            src={fullStackImage}
             alt="web development image"
           />
         </div>
 
-        <div className="whyBuildSection section">
-          <h1 className="sectionHeading">
-            Why Mobile App Is Important For Your Business?
-          </h1>
-          <p className="sectionDescription">
-            A mobile application for your business allows you to be in constant
-            touch with your target segment of customers. Through a robust mobile
-            application, you can deliver a personalized and convenient user
-            experience.
-          </p>
-        </div>
-
         <div className="whyChooseSection section">
           <h1 className="sectionHeading">
-            Why You Should Hire HSB For Mobile App Development?
+            Why You Should Hire HSB For Full Stack Development?
           </h1>
           <p className="sectionDescription">
-            If you're seeking mobile app development services, go no further
-            than HSB. With our professional and one-of-a-kind solutions, you can
-            expect excellent accessibility with next-generation technology and
-            design. Furthermore, our team of skilled developers creates apps
-            that are agile, resilient, and scalable.
+            Hiring HSB for your full-stack development has its own set of
+            benefits as we guarantees a highly lucrative and effective
+            productivity. Our full-stack developers are specialised in all
+            areas, along with an equivalent emphasis on major project areas like
+            quality, user experience, client satisfaction, and timeliness.
           </p>
           <div className="cardsContainer-services">
             <div className="card-service">
               <img src={whyChoose1} alt="why choose us card image" />
-              <p className="cardTitle-service">Futuristic Approach</p>
+              <p className="cardTitle-service">We Are All-Rounder</p>
               <p className="cardDescription-service">
-                We suggest future applications based on the upcoming
-                technologies so that your business will stay of updates and
-                security features. We provide modern and easy software solutions
-                with the greatest potential for future business growth.
+                By full-stack development, we work on different technologies,
+                i.e., front-end technologies like JavaScript, HTML, CSS, and
+                backend technologies like PHP, Node, Java, Python, and so on.
+                Our team also brings the expertise of database and server
+                management, making them all-rounders of web and mobile app
+                development.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose2} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Skilled Mobile App Development Teams
-              </p>
+              <p className="cardTitle-service">We Help Saving on Time & Cost</p>
               <p className="cardDescription-service">
-                The team members have diverse backgrounds in many elements of
-                rapid and effective Android, iOS, and Native mobile app
-                development services. Furthermore, they thoroughly evaluate the
-                nature of business in order to deliver the finest AI automation
-                for it.
+                Our full-stack developers help in solving any issue and greatly
+                reduce infrastructure, personnel, and management cost. As our
+                developers are multi-skilled with different technologies, you
+                can reduce the number of persons required to develop an
+                application. We ensure to keep every part of the web application
+                running smoothly.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose3} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Accelerated Application Development
-              </p>
+              <p className="cardTitle-service">We Deliver Faster</p>
               <p className="cardDescription-service">
-                Through our expertise, you can expect an enormous flexibility
-                for various combinations of databases, web platforms, and
-                applications. Our team provides fast and robust app development
-                services and support.
+                We employ numerous technologies or frameworks to fix issues
+                quickly and deliver rapidly. Through our teamwork we know how to
+                effectively communicate with frontend and backend developers,
+                thus result in a faster time-to-market of an application.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose4} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Comprehensive Product Development
-              </p>
+              <p className="cardTitle-service">Our Services Are Scalable</p>
               <p className="cardDescription-service">
-                From planning to product delivery and post-sale support, our
-                experts offer end-to-end product development services to
-                businesses. It not only boosts your company's value but works to
-                improve results.
-              </p>
-            </div>
-            <div className="card-service">
-              <img src={whyChoose4} alt="why choose us card image" />
-              <p className="cardTitle-service">Agile Development Methodology</p>
-              <p className="cardDescription-service">
-                Our development approach is agile and flexible. Our specialists
-                collaborate on many parts of the assignments and continue to
-                learn and adapt as they increase while enhancing the solution
-                quality.
-              </p>
-            </div>
-            <div className="card-service">
-              <img src={whyChoose4} alt="why choose us card image" />
-              <p className="cardTitle-service">Domain Expertise</p>
-              <p className="cardDescription-service">
-                Our team of expertise provides accurate and appropriate help
-                with respect to domain management. The products are developed by
-                specific subject experts with efficient encoding with an
-                objective analytical approach.
+                We maintain a flexible approach of full-stack development to be
+                adaptable for startups, small teams as well as big enterprises.
+                Our full-stack services will be proven lucrative for startups as
+                they require faster prototyping in less time and within a
+                stipulated budget. Through our collaborative work, innovative
+                thinking, and knowledge of various technologies and approaches
+                we can strategize full-stack development for larger concerns
+                too.
               </p>
             </div>
           </div>
         </div>
 
+        <div className="startBuildingSection section">
+          <div className="startBuildingSectionItem">
+            <h1 className="sectionHeading">
+              Let’s develop your Full Stack app today.
+            </h1>
+            <button
+              type="button"
+              className="getQuoteButton-startBuildingSection"
+            >
+              Connect Now
+            </button>
+          </div>
+          <img src={giftBox} alt="giftImages" />
+        </div>
+
         <div className="techAndToolsSection section">
-          <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
-          
+          <h1 className="sectionHeading">UI/UX Tools We Use</h1>
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
@@ -345,6 +398,7 @@ class MobileDevelopment extends Component {
                 <Tab label="Backend" {...a11yProps(1)} />
                 <Tab label="Databases" {...a11yProps(2)} />
                 <Tab label="Mobile" {...a11yProps(3)} />
+                <Tab label="QA" {...a11yProps(4)} />
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
@@ -397,6 +451,22 @@ class MobileDevelopment extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={3}>
               <div className="technlogiesContainer-technology">
+                {mobileTab.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={4}>
+              <div className="technlogiesContainer-technology">
                 {QaTab.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer">
@@ -414,60 +484,26 @@ class MobileDevelopment extends Component {
           </Box>
         </div>
 
-        <div className="section serciesProvidedSection">
-          <h1 className="sectionHeading">
-          Our Mobile App Development Services
-          </h1>
+        <div className="fsd-process section">
+          <h1 className="sectionHeading">Our Full Stack Development Process</h1>
           <p className="sectionDescription">
-          We provide the best assistance with overall mobile application development for various container-based applications and server-less architectures. 
+            We bring best of each stack through our well-defined strategies – be
+            it frontend, backend, databases, framework, or infrastructure setup.
           </p>
-          <div className="cardsContainer-services">
-            <div className="cardItem-service">
-              <img src={crossImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Android mobile app development</p>
-              <p className="cardDescription-service">
-              We help you in hosting a highly customizable app offering a unified experience across all screens. With our eminent team, we deliver highly immersive VR experiences assuring enterprise-grade mobile security.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={mobileServices} alt="why choose us card image" />
-              <p className="cardTitle-service">iOS mobile app development</p>
-              <p className="cardDescription-service">
-              We design and deliver enterprise and consumer apps for the entire Apple product range, such as watches, smartphones, smart TVs, cars, etc. Our team is proficient with Apple’s Human Interface Guidelines which enables easy compliance as well as ensuring user satisfaction with outstanding mobile apps.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={appMaintenanceImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Cross-platform mobile app development</p>
-              <p className="cardDescription-service">
-              To make your presence on diverse platforms, it is significant to develop a versatile mobile app. Reduce your development and maintenance costs by going cross-platform. Our shared iOS and Android code base allows the fragmentation of Oss and devices to accelerate the market approach without compromising user appeal.
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <div className="section">
-          <h1 className="sectionHeading">
-            We Know What It Takes To Build An Ideal Mobile App
-          </h1>
-          <div className="subSections">
-            <div className="sections">
-              <h1 className="sectionSubHeading">Consulting & Strategy</h1>
-              <p className="sectionDescription">We brainstorm your requirements to align mobile app development with your chosen business strategy.</p>
-            </div>
-            <div className="sections">
-              <h1 className="sectionSubHeading">UI/UX Design</h1>
-              <p className="sectionDescription">Mobile apps that give omnichannel user experiences, meeting customers’ needs and your business goals.</p>
-            </div>
-            <div className="sections">
-              <h1 className="sectionSubHeading">Engineering & Delivery</h1>
-              <p className="sectionDescription">Applies a defined iterative approach that is scalable to changing requirements considering timely delivery and budget-restricted.</p>
-            </div>
-            <div className="sections">
-              <h1 className="sectionSubHeading">QA & Optimization</h1>
-              <p className="sectionDescription">We integrate products into digital space, assuring quality deliverance with insightful performance for future optimization.</p>
-            </div>
-          </div>
+          <Chrono
+            items={fsdProcessTimeline}
+            mode="VERTICAL"
+            slideShow
+            slideItemDuration={3000}
+            cardHeight={250}
+            cardWidth={600}
+            fontSizes={{
+              title: "1.1rem",
+            }}
+            contentDetailsHeight={150}
+            disableToolbar="true"
+          />
         </div>
 
         <div className="faqsSection section">
@@ -794,10 +830,14 @@ class MobileDevelopment extends Component {
 
         <div className="closingSection">
           <h1 className="sectionHeading">
-          For impeccable mobile app experience to your users 
+            Want to hire a Full Stack Developer?
+          </h1>
+          <h1 className="sectionSubHeading">
+            We deliver a full proof and robust application that maximises your
+            ROI.
           </h1>
           <button className="letsTalkButton slideRight" type="button">
-          Contact Us
+            CONTACT NOW
             <FaArrowRight className="rightArrow" />
           </button>
         </div>
@@ -808,4 +848,4 @@ class MobileDevelopment extends Component {
   }
 }
 
-export default MobileDevelopment;
+export default FullStackDevelopment;

@@ -1,0 +1,36 @@
+.manufacturing{
+    background-color: #2B2C42;
+    color: #fff;
+}
+
+.breadcrumb-industries{
+    color: #fff;
+}
+
+.industries-getQuoteButton{
+    background-color: #f4f4f4;
+    color: #2A2C3B;
+}
+
+.solutions{
+    background-color: #FAF9FA;
+}
+
+.whyChooseHSB{
+    background-color: #F9F9FF;
+}
+
+.moduleItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.moduleItemBullet{
+    margin-right: 20px;
+}
+
+.moduleItems-industries{
+    padding: 30px;
+    font-size: 18px;
+}

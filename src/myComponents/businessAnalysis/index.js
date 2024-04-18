@@ -50,6 +50,11 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+
 import "./index.css";
 
 const tab1ItemsList = [
@@ -151,10 +156,43 @@ const breadcrumbs = [
   </Typography>,
 ];
 
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 class BusinessAnalysisServices extends Component {
   state = {
     expanded: false,
-    tabItemsList: tab1ItemsList,
+    value: 0,
   };
 
   handleChange = (panel) => (event, isExpanded) => {
@@ -163,40 +201,14 @@ class BusinessAnalysisServices extends Component {
     }));
   };
 
-  handleActiveTab = (tabName) => {
-    switch (tabName) {
-      case "REQUIREMENTS":
-        this.setState({
-          tabItemsList: tab1ItemsList,
-        });
-        break;
-      case "DATA_ANALYSIS":
-        this.setState({
-          tabItemsList: tab2ItemsList,
-        });
-        break;
-      case "PROCESS_MODELLING":
-        this.setState({
-          tabItemsList: tab3ItemsList,
-        });
-        break;
-      case "COLLABORATION":
-        this.setState({
-          tabItemsList: tab4ItemsList,
-        });
-        break;
-      case "PROTOTYPING":
-        this.setState({
-          tabItemsList: tab5ItemsList,
-        });
-        break;
-      default:
-        break;
-    }
+  handleTabChange = (event, newValue) => {
+    this.setState({
+      value: newValue,
+    });
   };
 
   render() {
-    const { expanded, tabItemsList } = this.state;
+    const { expanded, value } = this.state;
 
     return (
       <div className="servicesDetailsSection">
@@ -211,13 +223,10 @@ class BusinessAnalysisServices extends Component {
             </Breadcrumbs>
             <h1 className="sectionHeading">Business Analysis Services</h1>
             <p className="sectionDescription">
-              Our business analysis services in the UK will help you unlock the
-              true potential of our business. From identifying growth
-              opportunities to optimizing processes, we've got you covered.
-            </p>
-            <p className="tagLine">
-              Take your business to new heights with powerful data and
-              analytics.
+              Accomplish your business goals and push the limits of your success
+              with top-quality business analysis consulting services. By
+              identifying core areas of improvement in your business, we uncover
+              new potential and guarantee the best outcomes in the long run.
             </p>
             <button
               className="getQuoteButton businessAnalysisServices-getQuoteButton"
@@ -233,279 +242,261 @@ class BusinessAnalysisServices extends Component {
           />
         </div>
 
-        <div className="whyBuildSection section">
-          <h1 className="sectionHeading">
-            Why Leverage Business Analysis Services?
-          </h1>
-          <p className="sectionDescription">
-            Business analysis consulting drives success by aligning objectives,
-            improving processes, gathering requirements, mitigating risks, and
-            facilitating better decision-making. The right business analysis
-            process also helps optimize resources and achieve sustainable
-            growth.
-          </p>
-        </div>
-
         <div className="whyChooseSection section">
           <h1 className="sectionHeading">
-            Why Choose GeekyAnts as Your Business Analysis Company in the UK?
+            Why You Should Hire HSB For Business Analysis & Consulting?
           </h1>
+          <p className="sectionDescription">
+            HSB’s business analysis and consulting services are aimed at
+            building a data strategy that covers full-cycle data management,
+            data analytics, and data visualization services to make most of your
+            data assets.
+          </p>
           <div className="cardsContainer-services">
             <div className="card-service">
               <img src={whyChoose1} alt="why choose us card image" />
-              <p className="cardTitle-service">Domain Knowledge</p>
+              <p className="cardTitle-service">Enhanced Customer Experience</p>
               <p className="cardDescription-service">
-                We have a proven track record of delivering high ROI across
-                industries and domains. From finance to healthcare, information
-                technology to manufacturing, we have deep insights into
-                different sectors' specific requirements and intricacies.
+                Our Business Analysis and Consulting serves organizations with
+                different data analysis perspectives. Our detailed reports and
+                dashboards based on real-time data related to customer service,
+                sales, marketing, operations, HR, etc helps in impactful
+                decision-making.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose2} alt="why choose us card image" />
-              <p className="cardTitle-service">Collaborative Philosophy</p>
+              <p className="cardTitle-service">Data-Driven Culture</p>
               <p className="cardDescription-service">
-                Our business analysts excel in building strong relationships and
-                working seamlessly with cross-functional teams. We understand
-                the importance of aligning stakeholders. This makes us create a
-                collaborative environment that drives the success of our
-                projects.
+                As we understand that data is an important asset for any
+                business, we create a data-driven culture based on
+                company-specific metrics and measures to make faster, more
+                accurate, and rational decisions backed by factual and real-time
+                information.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose3} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Expert Requirement Gathering and Analysis
-              </p>
+              <p className="cardTitle-service">Better Decision-Making</p>
               <p className="cardDescription-service">
-                Our business analysts excel in eliciting, analyzing, and
-                documenting requirements from various stakeholders. They employ
-                interviews, workshops, surveys, and observations to understand
-                business needs comprehensively.
+                Our business analysis reporting data enables organizations to
+                have all the key performance indicators listed on their
+                dashboards. Through our BA tools we deliver fast and accurate
+                information with current, historical, and predictive views.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose4} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Dependable Business Process Improvement
-              </p>
+              <p className="cardTitle-service">Competitive Advantage</p>
               <p className="cardDescription-service">
-                We drive efficiency gains through process modeling,
-                reengineering techniques, and optimization strategies. Our
-                business analysts are skilled at evaluating existing processes,
-                identifying areas for improvement, and implementing
-                transformative changes.
+                When the organization have access to 360-degree-view of
+                business, creating a strategic roadmap based on all data sources
+                help them to keep up with the industry trends, deliver superior
+                customer experience, and increase growth.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose5} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Clear Communication and Facilitation
-              </p>
+              <p className="cardTitle-service">Actionable Insights</p>
               <p className="cardDescription-service">
-                Our teams can bridge the gap between technical and non-technical
-                stakeholders fostering collaboration, alignment, and successful
-                project outcomes. They excel at facilitating meetings,
-                workshops, and discussions, ensuring that all stakeholders are
-                heard and understood.
+                Having powerful analytics allows even non-technical users to
+                interact with data and gain actionable insights so that the
+                management can make informed decisions, quickly and safely.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose6} alt="why choose us card image" />
-              <p className="cardTitle-service">Streamlined Change Management</p>
+              <p className="cardTitle-service">
+                Improved Operational Efficiency
+              </p>
               <p className="cardDescription-service">
-                Our business analysts guide organizations through the entire
-                change management process, helping them navigate challenges and
-                embrace new ways of working. We ensure a smooth transition and
-                sustainable adoption of the proposed changes.
+                Our BA consulting help businesses in identifying trends,
+                opportunities/risks, and get insights into the inefficient
+                process and underperforming departments. Such informative data
+                help businesses to innovate new programs to accelerate growth.
               </p>
             </div>
           </div>
         </div>
 
+        <div className="section">
+          <h1 className="sectionHeading">
+            Let’s discuss how our Business Analysis services contribute to your
+            business growth.
+          </h1>
+          <button className="letsTalkButton slideRight" type="button">
+            Connect Now
+            <FaArrowRight className="rightArrow" />
+          </button>
+        </div>
+
+        <div className="techAndToolsSection section">
+          <h1 className="sectionHeading">
+            What Technologies Does Our Business Analysis & Consulting Include?{" "}
+          </h1>
+
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={this.handleTabChange}
+                aria-label="basic tabs example"
+              >
+                <Tab label="Requirement Collection" {...a11yProps(0)} />
+                <Tab label="Data Analysis" {...a11yProps(1)} />
+                <Tab label="Process Modeling" {...a11yProps(2)} />
+                <Tab label="Collaboration" {...a11yProps(3)} />
+                <Tab label="Prototyping" {...a11yProps(4)} />
+              </Tabs>
+            </Box>
+            <CustomTabPanel value={value} index={0}>
+              <div className="technlogiesContainer-technology">
+                {tab1ItemsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={1}>
+              <div className="technlogiesContainer-technology">
+                {tab2ItemsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={2}>
+              <div className="technlogiesContainer-technology">
+                {tab3ItemsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={3}>
+              <div className="technlogiesContainer-technology">
+                {tab4ItemsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={4}>
+              <div className="technlogiesContainer-technology">
+                {tab5ItemsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+          </Box>
+        </div>
+
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-            Business Analysis Services Provided by GeekyAnts
+          What Our Business Analysis & Consulting Service Include?
           </h1>
           <p className="sectionDescription">
-            At GeekyAnts, we take pride in our tech-savvy and innovative
-            culture, which shapes the way we approach various aspects of our
-            work. Here's how we view and prioritize the different processes:
+          We offer a comprehensive suite of business analysis and consulting services that help organizations unleash the power of data to be ready for a data-driven tomorrow.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={servicesImage1} alt="why choose us card image" />
-              <p className="cardTitle-service">Requirement Gathering</p>
+              <p className="cardTitle-service">Collecting and Analysing</p>
               <p className="cardDescription-service">
-                In order to deliver outstanding results, we place a strong
-                emphasis on thorough requirement gathering. Understanding our
-                client's needs and project objectives is crucial to providing
-                tailored solutions that meet and exceed expectations.
+              Initially, we collect all the required information and analyze your business requirements. Based on your business needs and project objectives we provide tailored solutions that meet and exceed expectations.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage2} alt="why choose us card image" />
-              <p className="cardTitle-service">Stakeholder Interviews</p>
+              <p className="cardTitle-service">Engaging with Stakeholders</p>
               <p className="cardDescription-service">
-                Engaging directly with stakeholders is a vital part of our
-                development process. We value their insights and feedback,
-                enabling us to create products that truly resonate with our
-                clients and their users.
+              We value the insights and feedback of stakeholders. By engaging with them directly, we create products that truly resonate with our clients and their users.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage3} alt="why choose us card image" />
-              <p className="cardTitle-service">BRD/PRD/SRS Documentation</p>
+              <p className="cardTitle-service">Project Management</p>
               <p className="cardDescription-service">
-                Well-structured documentation is the foundation of successful
-                projects. By meticulously documenting business, product, and
-                software requirements, we ensure that everyone involved has a
-                clear and unified vision.
+              We bring the efficiency to manage projects meticulously, on-time and on-budget delivery. We ensure client satisfaction through effective planning, task allocation, and progress tracking.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage4} alt="why choose us card image" />
               <p className="cardTitle-service">Process Management</p>
               <p className="cardDescription-service">
-                Efficiency is at the heart of how we work. Our process-oriented
-                approach enables us to streamline workflows, boost productivity,
-                and maintain the highest standards in everything we do.
+              We follow process-oriented approach to streamline workflows, boost productivity, and maintain the highest standards in everything we do.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage5} alt="why choose us card image" />
               <p className="cardTitle-service">Product Management</p>
               <p className="cardDescription-service">
-                Our product management strategy involves market research,
-                customer feedback analysis, and roadmap planning. We develop
-                innovative and successful solutions by staying ahead of industry
-                trends and user demands.
+              The scope of our product management includes market research, customer feedback analysis, and roadmap planning. Through innovative and tested solutions we help companies in staying ahead of industry trends and user demands.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage6} alt="why choose us card image" />
-              <p className="cardTitle-service">Project Management</p>
+              <p className="cardTitle-service">Documentation</p>
               <p className="cardDescription-service">
-                Our projects are meticulously managed to ensure on-time and
-                on-budget delivery. We maintain smooth operations and client
-                satisfaction through effective planning, task allocation, and
-                progress tracking.
+              Well-structured documentation is the key to every successful project. By meticulously documenting business, product, and software requirements, we ensure that everyone involved has a clear and unified vision.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage7} alt="why choose us card image" />
-              <p className="cardTitle-service">Release Management</p>
+              <p className="cardTitle-service">Releasing the Product</p>
               <p className="cardDescription-service">
-                We take great care in our release management process to
-                guarantee seamless product launches and updates. Rigorous
-                testing and feedback collection allow us to deliver reliable and
-                user-friendly software.
+              We are expertise in release management process. Through our experience we guarantee seamless product launches and updates. We ensure rigorous testing and feedback collection to deliver reliable and user-friendly software.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage8} alt="why choose us card image" />
-              <p className="cardTitle-service">Pre-sales Estimation</p>
+              <p className="cardTitle-service">Analysing the Root Cause</p>
               <p className="cardDescription-service">
-                Transparency and accuracy are the cornerstones of our pre-sales
-                estimations. By carefully analyzing project requirements and our
-                team's capabilities, we set realistic expectations for our
-                clients.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={servicesImage9} alt="why choose us card image" />
-              <p className="cardTitle-service">Root Cause Analysis</p>
-              <p className="cardDescription-service">
-                Continuously improving our processes is essential to our growth.
-                Through root cause analysis, we identify and address underlying
-                issues, ensuring long-term success and efficiency.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={servicesImage10} alt="why choose us card image" />
-              <p className="cardTitle-service">Agile and Scrum Practices</p>
-              <p className="cardDescription-service">
-                Embracing Agile and Scrum methodologies empowers us to
-                collaborate effectively, adapt quickly, and deliver incremental
-                value. We thrive in dynamic environments and use these practices
-                to respond to changing requirements with agility.
+              As we understand that continuous improving the processes is crucial for business growth. Through root cause analysis, we identify, analyse, and address underlying issues, and help in streamlining process for long-term success and efficiency.
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="techAndToolsSection section">
-          <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
-          <div className="tabContainer">
-            <button
-              onClick={() => this.handleActiveTab("REQUIREMENTS")}
-              type="button"
-              className="tabItem active"
-            >
-              Requirements
-            </button>
-            <button
-              onClick={() => this.handleActiveTab("DATA_ANALYSIS")}
-              type="button"
-              className="tabItem active"
-            >
-              Data Analysis
-            </button>
-            <button
-              onClick={() => this.handleActiveTab("PROCESS_MODELLING")}
-              type="button"
-              className="tabItem active"
-            >
-              Process Modeling
-            </button>
-            <button
-              onClick={() => this.handleActiveTab("COLLABORATION")}
-              type="button"
-              className="tabItem active"
-            >
-              Collaboration
-            </button>
-            <button
-              onlick={() => this.handleActiveTab("PROTOTYPING")}
-              type="button"
-              className="tabItem active"
-            >
-              Prototyping
-            </button>
-          </div>
-
-          <div className="technlogiesContainer-technology">
-            {tabItemsList.map((eachItem) => (
-              <div className="technologyCard">
-                <div className="technologyIconContainer">
-                  <img
-                    className="technologyIcon"
-                    src={eachItem.imageUrl}
-                    alt="technology icon"
-                  />
-                </div>
-                <p className="iconName-service">{eachItem.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="startBuildingSection section">
-          <div className="startBuildingSectionItem">
-            <h1 className="sectionHeading">
-              Start Building Your Web App Today
-            </h1>
-            <p className="sectionSubheading-service">
-              Book a free discovery session.
-            </p>
-            <button
-              type="button"
-              className="getQuoteButton-startBuildingSection"
-            >
-              GET QUOTE
-            </button>
-          </div>
-          <img src={giftBox} alt="giftImages" />
         </div>
 
         <div className="faqsSection section">
@@ -832,10 +823,11 @@ class BusinessAnalysisServices extends Component {
 
         <div className="closingSection">
           <h1 className="sectionHeading">
-            Let’s Connect to Discuss How We Can Make An Awesome Product For You.
+          Want to hire us for Business Consulting? Leverage our expertise of Business Analytics. 
           </h1>
+          <p className="sectionSubHeading">Book a free session now. </p>
           <button className="letsTalkButton slideRight" type="button">
-            CONTACT NOW
+          Here You Go!
             <FaArrowRight className="rightArrow" />
           </button>
         </div>

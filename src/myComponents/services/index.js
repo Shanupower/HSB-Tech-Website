@@ -15,15 +15,15 @@ class Services extends Component {
   render() {
     return (
       <div className="servicesSectionPage">
-
         <Navbar />
 
         <div className="servies-landingSection">
           <h1 className="pageHeading">Services</h1>
           <p className="pageDescription">
-            500+ projects deep and still going deeper in the mobile & web app
-            development space. From A to Z of building beautiful apps, we do
-            everything in-house, GeekyAnts style.
+            We are a blend of mature methodologies, innovative technologies, and
+            unbeatable domain expertise. Being flexible in our delivery models,
+            HSB designs a progressive workflow for your application development
+            process.
           </p>
         </div>
 
@@ -35,17 +35,18 @@ class Services extends Component {
               alt="service image"
             />
             <div className="serviceSection-info-container rightBorder">
-              <h2 className="serviceSection-heading">
-                Web App Development Services
-              </h2>
+              <h2 className="serviceSection-heading">Web App Development</h2>
               <p className="serviceSection-description">
-                Global leaders like Google, Darden, and PayPoint trust the
-                GeekyAnts web app development team. Our experience and expertise
-                allow us to deliver a solution that aligns with your business
-                goals. Partner with us today. Let us create something awesome.
+                Transforming your custom ideas into future-rich and
+                fast-performing web application is our forte.
+              </p>
+              <p className="serviceSection-description">
+                Starting from basic website designs, including CMS and online
+                store building to highly complex business website apps and
+                design solutions, we will customize the best of web development
+                solutions for you.
               </p>
               <button className="learnMoreButton" type="button">
-                {" "}
                 Learn More
               </button>
             </div>
@@ -62,11 +63,14 @@ class Services extends Component {
                 Mobile App Development Services
               </h2>
               <p className="serviceSection-description">
-                The GeekyAnts mobile app development team are core contributors
-                to popular frameworks like React Native and Flutter. We
-                understand the nuances of building a mobile app better than
-                most. Collaborate with us today to develop a mobile app that is
-                engaging and impactful.
+                We are a mobile app development company that offers end-to-end
+                mobile development services tailored to your business needs.{" "}
+              </p>
+              <p className="serviceSection-description">
+                Intuitive designs combined with compelling user experience are
+                what makes our apps stand ahead in the digital age. Seamless
+                experience driven by out-of-the-box ideas help your business
+                accomplish its goals.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -85,11 +89,17 @@ class Services extends Component {
                 Quality Assurance and Software Testing Services
               </h2>
               <p className="serviceSection-description">
-                Ensure that your product meets the highest standards of quality,
-                performance, and reliability.
+                We offer bug-free software products with our top-notch quality
+                assurance services.{" "}
+              </p>
+              <p className="serviceSection-description">
+                We are committed to delivering exceptional software and digital
+                products by ensuring top-notch quality and reliability. Our team
+                of certified experts follows a meticulous QA testing life cycle
+                to guarantee that your applications meet the highest standards,
+                leaving a lasting impact on your users and stakeholders.
               </p>
               <button className="learnMoreButton" type="button">
-                {" "}
                 Learn More
               </button>
             </div>
@@ -128,9 +138,15 @@ class Services extends Component {
                 Business Analysis Services
               </h2>
               <p className="serviceSection-description">
-                Our business analysis services will help you unlock the true
-                potential of your business. From identifying growth
-                opportunities to optimizing processes, we've got you covered.
+                We follow a “goals-first approach” to ensure the best and most
+                practical solutions for your business analytical needs.{" "}
+              </p>
+              <p className="serviceSection-description">
+                Accomplish your business goals and push the limits of your
+                success with top-quality business analysis consulting services.
+                By identifying core areas of improvement in your business, we
+                uncover new potential and guarantee the best outcomes in the
+                long run.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -149,10 +165,15 @@ class Services extends Component {
                 Full Stack App Development Services
               </h2>
               <p className="serviceSection-description">
-                We specialize in bringing together the best of both worlds —
-                front-end and back-end — to create a high-performance app. Our
-                team consists of core contributors on various tech stacks and
-                are skilled in building apps with great user experience.
+                Full Stack development services that includes frontend, backend,
+                database management, and all that it takes for a complete
+                development setup.{" "}
+              </p>
+              <p className="serviceSection-description">
+                As a Full Stack development company, we ensure that our
+                developers are all set to assist you with needed expertise in
+                all areas, identifying roles and responsibilities with
+                corresponding challenges.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More

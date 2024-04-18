@@ -2,6 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import mobileDevelopmentImage from "../../assets/mobileApp.webp";
+import qualitAssuranceImage from "../../assets/quality-assurance.webp";
 
 import testRail from "../../assets/testrail.webp";
 import kobiton from "../../assets/kobiton.webp";
@@ -27,10 +28,6 @@ import compatability from "../../assets/compatabilty-testing-qa.svg";
 import appStoreOptimization from "../../assets/apps-store-optimization-qa.svg";
 import installationOptimization from "../../assets/installation-optimization-qa.svg";
 import userInteraction from "../../assets/user-interaction-qa.svg";
-import performanceEvaluation from "../../assets/performance-evaluation-qa.svg";
-import securityTesting from "../../assets/security-testing-qa.svg";
-
-import giftBox from "../../assets/collect-graphic.svg";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -42,71 +39,63 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
 import "./index.css";
 
-const technologiesList = [
-  {
-    imageUrl: testRail,
-    name: "TestRail",
-  },
-  {
-    imageUrl: kobiton,
-    name: "Kobiton",
-  },
-  {
-    imageUrl: lambdatest,
-    name: "LambdaTest",
-  },
-  {
-    imageUrl: sauceLabs,
-    name: "SauceLabs",
-  },
-  {
-    imageUrl: webload,
-    name: "WebLOAD",
-  },
-  {
-    imageUrl: loadRunner,
-    name: "LoadRunner",
-  },
-  {
-    imageUrl: jira,
-    name: "JIRA",
-  },
-];
-
-const toolsList = [
+const deploymentToolsList = [
   {
     imageUrl: jenkins,
     name: "Jenkins",
   },
   {
-    imageUrl: tektonPipelines,
-    name: "Tekton Pipelines",
+    imageUrl: gitlab,
+    name: "GitLab",
   },
   {
-    imageUrl: gitlab,
-    name: "Gitlab",
+    imageUrl: screwdriver,
+    name: "Screwdriver",
   },
   {
     imageUrl: bamboo,
     name: "Bamboo",
   },
   {
-    imageUrl: spinnaker,
-    name: "Spinnaker",
+    imageUrl: concourse,
+    name: "Concourse",
   },
   {
     imageUrl: gocd,
     name: "GoCD",
   },
+];
+
+const toolsList = [
   {
-    imageUrl: concourse,
-    name: "Concourse",
+    imageUrl: jira,
+    name: "Jira",
   },
   {
-    imageUrl: screwdriver,
-    name: "Screwdriver",
+    imageUrl: loadRunner,
+    name: "Load Runner",
+  },
+  {
+    imageUrl: lambdatest,
+    name: "Lambda Test",
+  },
+  {
+    imageUrl: kobiton,
+    name: "Kobiton",
+  },
+  {
+    imageUrl: webload,
+    name: "WebLOAD",
+  },
+  {
+    imageUrl: testRail,
+    name: "TestRail",
   },
 ];
 
@@ -122,16 +111,49 @@ const breadcrumbs = [
   </Typography>,
 ];
 
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 class QualityAssurance extends Component {
   state = {
     expanded: false,
-    isTechTabActive: true,
+    value: 0,
   };
 
-  toggleToolsAndTechTab = () => {
-    this.setState((prevState) => ({
-      isTechTabActive: !prevState.isTechTabActive,
-    }));
+  handleTabChange = (event, newValue) => {
+    this.setState({
+      value: newValue,
+    });
   };
 
   handleChange = (panel) => (event, isExpanded) => {
@@ -141,9 +163,7 @@ class QualityAssurance extends Component {
   };
 
   render() {
-    const { expanded, isTechTabActive } = this.state;
-
-    let tabItemsList = isTechTabActive ? technologiesList : toolsList;
+    const { expanded, value } = this.state;
 
     return (
       <div className="servicesDetailsSection">
@@ -160,12 +180,11 @@ class QualityAssurance extends Component {
               Quality Assurance and Software Testing Services
             </h1>
             <p className="sectionDescription">
-              Ensure that your product meets the highest standards of quality,
-              performance, and reliability.
-            </p>
-            <p className="tagLine">
-              We provide the best-in-class quality assurance and software
-              testing services in the UK that give your application the edge.
+              We are committed to delivering exceptional software and digital
+              products by ensuring top-notch quality and reliability. Our team
+              of certified experts follows a meticulous QA testing life cycle to
+              guarantee that your applications meet the highest standards,
+              leaving a lasting impact on your users and stakeholders.
             </p>
             <button
               className="getQuoteButton qualityAssurance-getQuoteButton"
@@ -176,100 +195,180 @@ class QualityAssurance extends Component {
           </div>
           <img
             className="landingSectionImage-sericesPage"
-            src={mobileDevelopmentImage}
+            src={qualitAssuranceImage}
             alt="web development image"
           />
         </div>
 
         <div className="whyBuildSection section">
           <h1 className="sectionHeading">
-            Why is Quality Assurance for Your Product Important?
+            Why You Should Hire HSB For Business Analysis & Consulting?
           </h1>
           <p className="sectionDescription">
-            Quality testing in apps is a crucial step. It determines various
-            performance and business KPIs. Good quality tests ensure high
-            engagement, reduced bugs, and lower development costs for web apps.
-            In the case of mobile apps, it means better optimization, greater
-            platform compatibility, and app store compliance.
+            We offer bug-free software products with our top-notch quality
+            assurance services. Our QA and software testing solutions ensure
+            maximum ROI from any software created.
           </p>
+
+          <div className="subSections">
+            <div className="sections">
+              <h1 className="sectionSubHeading">Reduced QA Costs</h1>
+              <p className="sectionDescription">
+                We employ an appropriate automated and manual QA testing method
+                to retain the quality of software products and services and
+                making QA process more affordable.
+              </p>
+            </div>
+            <div className="sections">
+              <h1 className="sectionSubHeading">Experienced Team</h1>
+              <p className="sectionDescription">
+                Our team members bring over a decade of expertise in quality
+                assurance testing, They are capable of executing projects
+                manually as well as using automated tools.
+              </p>
+            </div>
+            <div className="sections">
+              <h1 className="sectionSubHeading">Global Delivery Model</h1>
+              <p className="sectionDescription">
+                We employ a global delivery model where we can arrange for
+                onshore testing staff across different geographies.
+              </p>
+            </div>
+            <div className="sections">
+              <h1 className="sectionSubHeading">Quality Engineering</h1>
+              <p className="sectionDescription">
+                Our quality engineering services ensure a shift-left approach
+                for optimal test coverage and software quality.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="whyChooseSection section">
+        <div className="section">
           <h1 className="sectionHeading">
-            Why Choose GeekyAnts as Your Quality Assurance & Software Testing
-            Company?
+            Let’s understand how we can Quality Assurance and Software Testing
+            services add value to your product.
           </h1>
-          <p className="cardTitle-service">
-            Well-versed with Modern Mobile Tech Stacks
-          </p>
-          <p className="qaNumber">1000+</p>
-          <p className="cardDescription-service">
-            We have tested over 1000+ mobile apps and web apps, giving us a
-            great understanding of the field. Our QA and software testing
-            solutions ensure you get the maximum ROI from any software created.
-          </p>
+          <button className="letsTalkButton slideRight" type="button">
+            Connect Now
+            <FaArrowRight className="rightArrow" />
+          </button>
+        </div>
+
+        <div className="techAndToolsSection section">
+          <h1 className="sectionHeading">
+            What Technologies Does Our Business Analysis & Consulting Include?
+          </h1>
+
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={this.handleTabChange}
+                aria-label="basic tabs example"
+              >
+                <Tab label="Tools" {...a11yProps(0)} />
+                <Tab label="CI/CD Deployment Tools" {...a11yProps(1)} />
+              </Tabs>
+            </Box>
+            <CustomTabPanel value={value} index={0}>
+              <div className="technlogiesContainer-technology">
+                {toolsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={1}>
+              <div className="technlogiesContainer-technology">
+                {deploymentToolsList.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+          </Box>
         </div>
 
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-            Quality Assurance and Software Testing Services By GeekyAnts
+            What Type of Quality Assurance & Software Testing Services We Offer?
           </h1>
-          <p className="sectionDescription">
-            Creating bug-free software is an essential part of our DNA. All
-            services follow a strict protocol to ensure the application is free
-            from bugs and errors during deployment.
+          <p className="sectionSubHeading">
+            As a renowned quality assurance firm, who provides a comprehensive
+            range of quality assurance and testing services tailored to meet the
+            specific needs of our clients.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={testingImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Testing on Real Devices</p>
+              <p className="cardTitle-service">Functional Testing</p>
               <p className="cardDescription-service">
-                Get your app tested on real devices with our repository of over
-                100+ real devices to cover all form factors and manufacturers.
+                We conduct functional testing rigorously to ensure that the
+                functionalities of your software works as intended, meeting all
+                specified requirements and providing a seamless user experience.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={functionalTests} alt="why choose us card image" />
-              <p className="cardTitle-service">Functional Tests</p>
+              <p className="cardTitle-service">Test Automation</p>
               <p className="cardDescription-service">
-                We test end-to-end interactions and flows, user touchpoints
-                (email, SMS, alerts, notification), and integration with 3rd
-                party systems/interfaces/APIs.
+                We are expert in conducting test automation to accelerate
+                testing cycles. It also helps in faster delivery, error-free
+                releases, and optimized development process.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={businesstesting} alt="why choose us card image" />
-              <p className="cardTitle-service">Business Testing</p>
+              <p className="cardTitle-service">Performance Testing</p>
               <p className="cardDescription-service">
-                We perform competitor app analysis, review analysis
-                post-Go-Live, production issues, and provide debugging support.
+                We perform performance testing to evaluate the speed, stability,
+                and responsiveness of your application under various conditions.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={designChecks} alt="why choose us card image" />
-              <p className="cardTitle-service">Design Checks</p>
+              <p className="cardTitle-service">Security Testing</p>
               <p className="cardDescription-service">
-                We check if the app is optimized for delivering a consistent
-                user experience through tests centered around A/B tests,
-                accessibility, and other key areas.
+                Our security testing helps you in building a secure and
+                resilient software product. We perform thorough security testing
+                to identify vulnerabilities, potential threats, and risks.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={compatability} alt="why choose us card image" />
-              <p className="cardTitle-service">Compatibility Testing</p>
+              <p className="cardTitle-service">Cloud Testing</p>
               <p className="cardDescription-service">
-                We check compatibility on different screen sizes, RAM,
-                processors, OS versions, and makes of the hardware where the app
-                will run.
+                Through our cloud testing services, we ensure optimal
+                performance of your software in cloud environments, thereby,
+                assessing scalability, and other critical aspects for
+                cloud-based applications.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={appStoreOptimization} alt="why choose us card image" />
-              <p className="cardTitle-service">App Store Optimization</p>
+              <p className="cardTitle-service">IoT Testing</p>
               <p className="cardDescription-service">
-                We optimize the app to ensure there is better installation
-                volume through optimization of the description and standards
-                followed.
+                To provide you with seamless IoT ecosystem, our specialized IoT
+                testing service validate the functionality, reliability, and
+                security of your Internet of Things (IoT) applications and
+                devices.
               </p>
             </div>
             <div className="cardItem-service">
@@ -277,92 +376,23 @@ class QualityAssurance extends Component {
                 src={installationOptimization}
                 alt="why choose us card image"
               />
-              <p className="cardTitle-service">Installation Optimization</p>
+              <p className="cardTitle-service">API Testing</p>
               <p className="cardDescription-service">
-                We check the uninstall and reinstall flow, synchronize between
-                updated and non-updated apps, and provide functional validation
-                after updates.
+                We perform robust API testing to validate the functionality,
+                performance, security, and reliability of your application
+                programming interfaces.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={userInteraction} alt="why choose us card image" />
-              <p className="cardTitle-service">User Interaction Checks</p>
+              <p className="cardTitle-service">Accessibility Testing</p>
               <p className="cardDescription-service">
-                We evaluate the app’s content interactions to check for UI/UX
-                standards like ergonomics, gestures, transitions, etc.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={performanceEvaluation} alt="why choose us card image" />
-              <p className="cardTitle-service">Performance Evaluation</p>
-              <p className="cardDescription-service">
-                We check the app’s performance through APIs tests for functional
-                stability, APIs automation for regression suite, and API
-                Performance.
-              </p>
-            </div>
-            <div className="cardItem-service">
-              <img src={securityTesting} alt="why choose us card image" />
-              <p className="cardTitle-service">Security Testing</p>
-              <p className="cardDescription-service">
-                We test to ensure no unintended data leaks or insufficient
-                Transport layer protection. We also perform log analysis.
+                Through comprehensive accessibility testing we assure that your
+                software is accessible to all individuals, and adheres to
+                applicable accessibility standards.
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="techAndToolsSection section">
-          <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
-          <div className="tabContainer">
-            <button
-              onClick={this.toggleToolsAndTechTab}
-              type="button"
-              className={`tabItem ${isTechTabActive && "active"}`}
-            >
-              Tools Used
-            </button>
-            <button
-              onClick={this.toggleToolsAndTechTab}
-              type="button"
-              className={`tabItem ${!isTechTabActive && "active"}`}
-            >
-              CI/CD Deployment Tools
-            </button>
-          </div>
-
-          <div className="technlogiesContainer-technology">
-            {tabItemsList.map((eachItem) => (
-              <div className="technologyCard">
-                <div className="technologyIconContainer">
-                  <img
-                    className="technologyIcon"
-                    src={eachItem.imageUrl}
-                    alt="technology icon"
-                  />
-                </div>
-                <p className="iconName-service">{eachItem.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="startBuildingSection section">
-          <div className="startBuildingSectionItem">
-            <h1 className="sectionHeading">
-              Start Building Your Web App Today
-            </h1>
-            <p className="sectionSubheading-service">
-              Book a free discovery session.
-            </p>
-            <button
-              type="button"
-              className="getQuoteButton-startBuildingSection"
-            >
-              GET QUOTE
-            </button>
-          </div>
-          <img src={giftBox} alt="giftImages" />
         </div>
 
         <div className="faqsSection section">
@@ -689,10 +719,14 @@ class QualityAssurance extends Component {
 
         <div className="closingSection">
           <h1 className="sectionHeading">
-            Let’s Connect to Discuss How We Can Make An Awesome Product For You.
+            Leverage the technical expertise of our Quality Assurance and
+            Testing Experts.
           </h1>
+          <p className="sectionSubHeading">
+            Let’s talk more about the requirement.
+          </p>
           <button className="letsTalkButton slideRight" type="button">
-            CONTACT NOW
+            Here You Go!
             <FaArrowRight className="rightArrow" />
           </button>
         </div>
