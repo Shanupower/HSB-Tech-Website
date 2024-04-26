@@ -11,7 +11,7 @@ import {
 } from "../../components/ui/navigation-menu";
 import { FaArrowRight } from "react-icons/fa6";
 
-import logoImage from "../../assets/geekyants-logo.svg";
+import hsbLogoImage from "../../assets/hsb-logo.png";
 import "./index.css";
 
 class Navbar extends Component {
@@ -20,13 +20,13 @@ class Navbar extends Component {
       <NavigationMenu className="navbarContainer">
         <NavigationMenuList>
           <NavigationMenuItem>
-            <img src={logoImage} alt="logo" />
+            <img style={{width: "120px"}} src={hsbLogoImage} alt="logo" />
           </NavigationMenuItem>
 
           <NavigationMenuItem className="navItem">
-            <NavigationMenuTrigger>What We Do</NavigationMenuTrigger>
+            <NavigationMenuTrigger>Services</NavigationMenuTrigger>
             <NavigationMenuContent>
-              <NavigationMenuLink>Link</NavigationMenuLink>
+              <NavigationMenuLink>Services</NavigationMenuLink>
             </NavigationMenuContent>
           </NavigationMenuItem>
 

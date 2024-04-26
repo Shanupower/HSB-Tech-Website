@@ -7,6 +7,20 @@ import Typography from "@mui/material/Typography";
 
 import manufacturingImage from "../../assets/manufacturing-landingpage.webp";
 import { FaArrowRight } from "react-icons/fa";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
+
+
+import reactImage from '../../assets/react.png'
+import flutterImage from "../../assets/flutter.png"
+import javaScript from "../../assets/javascript-logo.png"
+import HtmlImage from '../../assets/html.webp'
+import angular from '../../assets/angular.webp'
+import cssImage from "../../assets/css.png"
+import nodeJs from '../../assets/nodejs.png'
+import goLang from "../../assets/goLanguage.png"
 
 import "./index.css";
 
@@ -22,8 +36,99 @@ const breadcrumbs = [
   </Typography>,
 ];
 
+const frontendTab = [
+  {
+    imageUrl: reactImage,
+    name: "React Native",
+  },
+  {
+    imageUrl: reactImage,
+    name: "React.js",
+  },
+  {
+    imageUrl: flutterImage,
+    name: "Flutter",
+  },
+  {
+    imageUrl: javaScript,
+    name: "Javascript",
+  },
+  {
+    imageUrl: HtmlImage,
+    name: "HTML",
+  },
+  {
+    imageUrl: cssImage,
+    name: "CSS",
+  },
+  {
+    imageUrl: angular,
+    name: "Angular",
+  },
+];
+
+const backendTab = [
+  {
+    imageUrl: nodeJs,
+    name: "Node.js",
+  },
+  {
+    imageUrl: javaScript,
+    name: "Javascript",
+  },
+  {
+    imageUrl: goLang,
+    name: "GoLang",
+  }
+];
+
+function CustomTabPanel(props) {
+  const { children, value, index, ...other } = props;
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
+}
+
+CustomTabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
+  };
+}
+
 class Manufacturing extends Component {
+  state = {
+    value: 0
+  }
+
+  handleTabChange = (event, newValue) => {
+    this.setState({
+      value: newValue,
+    });
+  };
+
   render() {
+    const { value } = this.state
+
     return (
       <div className="industriesPageContainer">
         <div className="landingSection-services manufacturing section">
@@ -227,6 +332,57 @@ class Manufacturing extends Component {
               <p>Equipment and asset tracking</p>
             </div>
           </div>
+        </div>
+
+        <div className="technologiesSectionIndustries section">
+          <h1 className="sectionHeading">
+            Technologies and Tools We Use for Manufacturing & Retail App
+            Development Services
+          </h1>
+          <Box sx={{ width: "100%" }}>
+            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+              <Tabs
+                value={value}
+                onChange={this.handleTabChange}
+                aria-label="basic tabs example"
+              >
+                <Tab label="Frontend" {...a11yProps(0)} />
+                <Tab label="Backend" {...a11yProps(1)} />
+              </Tabs>
+            </Box>
+            <CustomTabPanel value={value} index={0}>
+              <div className="technlogiesContainer-technology">
+                {frontendTab.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={1}>
+              <div className="technlogiesContainer-technology">
+                {backendTab.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+          </Box>
         </div>
 
         <div className="closingSection">

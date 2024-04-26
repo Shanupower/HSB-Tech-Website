@@ -2,7 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import webDevelopmentImage from "../../assets/webapp-sevice.webp";
-import Navbar from "../navbar";
+import NavigationBar from "../navigationBar";
 import whyChoose1 from "../../assets/whychoose-webapp-1.svg";
 import whyChoose2 from "../../assets/whychoose-webapp-2.svg";
 import whyChoose3 from "../../assets/whychoose-webapp-3.svg";
@@ -203,7 +203,7 @@ class WebDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <Navbar />
+        <NavigationBar />
         <div className="landingSection-services section">
           <div>
           <Breadcrumbs
@@ -298,22 +298,6 @@ class WebDevelopment extends Component {
               </p>
             </div>
           </div>
-        </div>
-
-        <div className="processSection section">
-          <h1 className="sectionHeading">Our Web App Development Process</h1>
-
-          <Chrono
-            disableToolbar="true"
-            theme={{
-              primary: "black",
-              titleColor: "black",
-            }}
-            mode="HORIZONTAL"
-            items={journeyTimelineItems}
-          >
-
-          </Chrono>
         </div>
 
         <div className="section journeySection">

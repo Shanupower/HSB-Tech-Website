@@ -8,14 +8,14 @@ import businessAnalysis from "../../assets/business-analysis.webp";
 import fullstackImage from "../../assets/fullstack.webp";
 import { FaArrowRight } from "react-icons/fa6";
 import Footer from "../footer";
-import Navbar from "../navbar";
+import NavigationBar from "../navigationBar";
 import "./index.css";
 
 class Services extends Component {
   render() {
     return (
       <div className="servicesSectionPage">
-        <Navbar />
+        <NavigationBar />
 
         <div className="servies-landingSection">
           <h1 className="pageHeading">Services</h1>

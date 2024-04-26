@@ -54,7 +54,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Footer from "../footer";
-
+import Navigationbar from "../navigationBar";
 import { Link } from "react-router-dom";
 
 import "./index.css";
@@ -161,6 +161,9 @@ class Home extends Component {
   render() {
     return (
       <div className="appContainer">
+
+        <Navigationbar />
+        
         <div className="landingSection">
           <img className="geekyantlogo" src={hsbLogo} alt="logo" />
           <h1 className="ladingPageHeading">
@@ -284,7 +287,7 @@ class Home extends Component {
           </p>
 
           <div className="developmentCardsContainer">
-            <Link to="/services/1" className="deveopmentCard hoverUp">
+            <Link to="/services/web development" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -301,7 +304,7 @@ class Home extends Component {
               </p>
             </Link>
 
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/mobile development" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -316,9 +319,9 @@ class Home extends Component {
                 Unleash the full potential of your business with our mobile
                 applications that are developed for both, Android & iOS.
               </p>
-            </div>
+            </Link>
 
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/uiux development" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -331,9 +334,9 @@ class Home extends Component {
                 Well-structured, responsive and user-friendly UI/UX designs for
                 your products that are a visual treat to the users.
               </p>
-            </div>
+            </Link>
 
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/fullstack development" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -346,9 +349,9 @@ class Home extends Component {
                 A 360degree full-stack solution for your product that comprises
                 of both, front-end and back-end for your product.
               </p>
-            </div>
+            </Link>
 
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/quality assurance" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -364,9 +367,9 @@ class Home extends Component {
                 solutions. Our comprehensive testing ensures quality on-par with
                 the requirement.
               </p>
-            </div>
+            </Link>
 
-            <div className="deveopmentCard hoverUp">
+            <Link to="/services/busines analysis services" className="deveopmentCard hoverUp cardLink">
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -382,7 +385,7 @@ class Home extends Component {
                 with stakeholders and propose fool-proof solutions suitable for
                 your requirement.
               </p>
-            </div>
+            </Link>
           </div>
         </div>
 

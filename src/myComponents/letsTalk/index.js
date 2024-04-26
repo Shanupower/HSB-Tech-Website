@@ -11,6 +11,7 @@ import Slider from "react-slick";
 import Rating from '@mui/material/Rating';
 import { MdVerified } from "react-icons/md";
 import Footer from "../footer";
+import Navigationbar from "../navigationBar";
 import "./index.css";
 
 const settings = {
@@ -60,7 +61,7 @@ class LetsTalk extends Component {
   render() {
     return (
       <div className="letstalkContainer">
-        <Navbar />
+        <Navigationbar />
 
         <div className="landingSection-letsTalk-Container">
           <div className="landingSection-letsTalk">

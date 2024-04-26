@@ -49,8 +49,6 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import { Chrono } from "react-chrono";
 
-
-
 import "./index.css";
 
 const fsdProcessTimeline = [

@@ -12,7 +12,10 @@ import UIUXDevelopment from "./myComponents/uiuxDetailsPage";
 import BusinessAnalysisServices from "./myComponents/businessAnalysis";
 import FullStackDevelopment from "./myComponents/fullStack";
 import Manufacturing from "./myComponents/manufacturing";
-
+import FintechIndustry from "./myComponents/fintechIndustry";
+import HealthcareIndustry from "./myComponents/healthcareIndustry";
+import EducationIndustry from "./myComponents/educationIndustry"
+import 'bootstrap/dist/css/bootstrap.min.css';
 class App extends Component{
   render(){
     return(
@@ -29,6 +32,9 @@ class App extends Component{
           <Route exact path="/services/busines analysis services" component={BusinessAnalysisServices} />
           <Route exact path="/services/fullstack development" component={FullStackDevelopment} />
           <Route exact path="/industries/manufacturing" component={Manufacturing} />
+          <Route exact path="/industries/fintech" component={FintechIndustry} />
+          <Route exact path="/industries/healthcare" component={HealthcareIndustry} />
+          <Route exact path="/industries/education" component={EducationIndustry} />
         </Switch>
     )
   }

@@ -609,6 +609,11 @@
   display: flex;
 }
 
+.cardLink{
+  text-decoration: none;
+  color: initial;
+}
+
 @media (max-width: 576px){
   
   .landingSection{

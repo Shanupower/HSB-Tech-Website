@@ -1,0 +1,9 @@
+.moduleItems-industries-fintech{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fintechModuleItem{
+    width: 50%;
+}
+

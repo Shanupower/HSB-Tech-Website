@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Component } from "react";
-import Navbar from "../navbar";
+import NavigationBar from "../navigationBar";
 import Footer from "../footer";
 import IndustryImage from "../../assets/industry.svg";
 import { FaArrowRight } from "react-icons/fa6";
@@ -96,7 +96,7 @@ class Industries extends Component {
     return (
       <>
         <div className="industrySection">
-          <Navbar />
+          <NavigationBar />
 
           <div className="industryLandingSection">
             <div className="servies-landingSection">
