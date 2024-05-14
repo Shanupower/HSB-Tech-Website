@@ -95,13 +95,10 @@ class UIUXDevelopment extends Component {
               UI/UX Design And Development Services
             </h1>
             <p className="sectionDescription">
-              We create exceptionally stunning and highly intuitive visual
-              interfaces for your app.Our expert UI/UX designers in the UK
-              guarantee engaging user interfaces that deliver memorable user
-              experiences for every project.
+              Creative, attractive, engaging and usable interfaces are the soul of any designs. We will help design custom user interfaces based on your business requirements for any of your device platforms, including mobile apps, tablets, desktops, etc.
             </p>
             <p className="tagLine">
-              Talk to us today to take your digital products to the next level.
+              UX drives UI. Our experienced team of UX designers collaborate the finer modules of usability and functionality in-line with business goals and end-user needs
             </p>
             <button
               className="getQuoteButton uiux-getQuoteButton"
@@ -119,60 +116,52 @@ class UIUXDevelopment extends Component {
 
         <div className="whyBuildSection section">
           <h1 className="sectionHeading">
-            Why Focus on UI/UX for Your Business?
+           How UI/UX is Prominent for Your Business?
           </h1>
           <p className="sectionDescription">
-            User satisfaction is an essential part of an app’s success. This is
-            where UI/UX comes in. Excellent UI/UX helps to leave a lasting
-            impression in your user’s mind, elevates your digital product, and
-            makes your brand stand out among competitors.
+            We all know that the user satisfaction is essential for any app to succeed, and that is achievable only through an awesome UI/UX. An outstanding UI/UX helps to leave a lasting impression in your user’s mind, elevates your digital product, and makes your brand stand out among competitors.
           </p>
         </div>
 
         <div className="whyChooseSection section">
           <h1 className="sectionHeading">
-            Why Choose GeekyAnts as Your Design Development Company in the UK?
+           Why You Should Hire HSB For UI/UX Services?
           </h1>
+          <p className="sectionDescription">
+            We take into accountability the smallest aspect of the design variant to provide compelling and intuitive user experience. We offer mobile UX design, web UI design, UX design for SAAS, Product UX design for startups and more, while ensuring that the end user enjoys a great value-added experience.          </p>
           <div className="cardsContainer-services">
             <div className="card-service">
               <img src={whyChoose1} alt="why choose us card image" />
               <p className="cardTitle-service">
-                User-centric/User-experience First Mindset
+               User Centric Designs
               </p>
               <p className="cardDescription-service">
-                We keep usability and experience as top priorities for all our
-                designs. This ensures that every product we create drives
-                business and KPIs.
+               We always create designs that are user-friendly and eye-catching to the audience. We assure to give an amazing experience to your customers so that they can revisit often..
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose2} alt="why choose us card image" />
               <p className="cardTitle-service">
-                Specialized Designing Processes
+                Highly Functional Designs
               </p>
               <p className="cardDescription-service">
-                We specialize in creating user-centric designs that are unique,
-                research-based, highly functional and optimized, and scalable.
+                We create UI/UX designs that are highly functional, optimized and scalable to the enterprise. The designs are authentic to create repeated impression on the user.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose3} alt="why choose us card image" />
-              <p className="cardTitle-service">Industry Agnostic</p>
+              <p className="cardTitle-service">Experienced and Seasoned Designers</p>
               <p className="cardDescription-service">
-                We have collaborated across multiple industries and geographies.
-                Our Google, Darden, PayPoint, Pepperfry, Mobile Premier League,
-                and Liviit projects are star examples.
+               Our team of designers is experienced and updated with the latest designing technologies to create UI/UX platform leveraged with required technologies..
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose4} alt="why choose us card image" />
               <p className="cardTitle-service">
-                Experienced and Seasoned Designers
+                Scalable Across Industries
               </p>
               <p className="cardDescription-service">
-                We house a team of experienced UI/UX designers who are
-                passionate and up-to-date with the latest design trends and
-                norms.
+                We are proficient in creating industry-specific UI/UX designs so that the customers can feel the connectivity with the product. 
               </p>
             </div>
           </div>
@@ -180,61 +169,53 @@ class UIUXDevelopment extends Component {
 
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-            UI/UX Design & Development Services Provided by GeekyAnts
+            Our UI/UX Design Services
           </h1>
           <p className="sectionDescription">
-            Our UI/UX Design and Development services are curated to suit your
-            unique business requirements. We offer end-to-end assistance,
-            design, and development services, which we complete on time without
-            compromising quality.
+            We curate UI/UX design and development services in accordance to your unique business requirements. As our comprehensive UI/UX service we assist, design, and develop applications without compromising quality.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={servicesImage1} alt="why choose us card image" />
               <p className="cardTitle-service">
-                User Research and Usability Testing
+                UI/UX for Web and Mobile
               </p>
               <p className="cardDescription-service">
-                We help you understand user behavior and test the responses of
-                the product created for target fit and satisfaction.
+               Through our stunning designs, we aim to provide visual treat to your users. We create an everlasting experience of your brand using the latest tech stack and trending designs.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage2} alt="why choose us card image" />
               <p className="cardTitle-service">
-                Creating Information Architecture
+               Accessibility Testing
               </p>
               <p className="cardDescription-service">
-                We create a clear, intuitive information architecture that makes
-                accessibility and navigation breezy for your users.
+               We repeatedly test your digital products to ensure that they are functional, dynamic, and accessible to everyone including those with disabilities.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage3} alt="why choose us card image" />
               <p className="cardTitle-service">
-                UI/UX Design for Web and Mobile
+                UI/UX Consulting
               </p>
               <p className="cardDescription-service">
-                We create stunning visual experiences for your users and brand
-                using the latest tech stack and trending designs.
+                Consult our team of professional UI/UX designers for expert suggestions. We provide hassle-free guidance from ideation to the finalized product.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage4} alt="why choose us card image" />
               <p className="cardTitle-service">
-                UI/UX Design Consultancy Services
+               Creating Architecture
               </p>
               <p className="cardDescription-service">
-                Our designers will guide you through the entire design process,
-                minus the hassle, from ideation to the finalized product.
+               Before we execute any design, we create clear, intuitive information architecture so that you can access and navigate effortlessly from user’s perspective.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage5} alt="why choose us card image" />
-              <p className="cardTitle-service">Wireframing and Prototyping</p>
+              <p className="cardTitle-service">Maintenance and Support</p>
               <p className="cardDescription-service">
-                We establish a structure and flow for your designs to help
-                streamline the execution of the application development project.
+                We extend UI/UX maintenance and support for your digital products. We ensure to keep your digital products updated and optimized.
               </p>
             </div>
             <div className="cardItem-service">

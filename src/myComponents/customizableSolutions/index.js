@@ -31,33 +31,36 @@ class CustomizableSolutions extends Component {
         <div className="servies-landingSection">
           <h1 className="pageHeading">Customizable Solutions</h1>
           <p className="pageDescription">
-            Explore how our custom-built apps can be tailored to your business.
-            Create your MVP in half the time and cost with these solutions. You
-            don’t have to start from scratch!
+            Save more on your time and cost through our custom-built apps that can be tailored to your business requirements. Our customizable solutions are built-in applications that serves as an immediate solutions to your needs.
           </p>
         </div>
 
         <div className="why-customizable-solutions-section">
-            <h2 className="why-customizable-solutions-section-heading">Why to use our customizable solutions?</h2>
+            <h2 className="why-customizable-solutions-section-heading">Make the Most of Our Customizable Solutions
+</h2>
             <div className="why-custom-solutions-cards-container">
                 <div className="why-custom-solutions-card">
                     <img className="customImage" src={themeImage} alt='custom image' />
-                    <p className="customFeature-card-title">100% themeable</p>
-                </div>
-
-                <div className="why-custom-solutions-card">
-                    <img className="customImage" src={featuresImage} alt='custom image' />
                     <p className="customFeature-card-title">Plug-and-play features</p>
                 </div>
 
                 <div className="why-custom-solutions-card">
+                    <img className="customImage" src={featuresImage} alt='custom image' />
+                    <p className="customFeature-card-title">Saves time as you don’t have to begin from scratch</p>
+                </div>
+
+                <div className="why-custom-solutions-card">
                     <img className="customImage" src={savesImage} alt='custom image' />
-                    <p className="customFeature-card-title">Saves upto 50% cost</p>
+                    <p className="customFeature-card-title">Fully-customizable themes</p>
                 </div>
 
                 <div className="why-custom-solutions-card">
                     <img className="customImage" src={developmentImage} alt='custom image' />
-                    <p className="customFeature-card-title">2x faster development</p>
+                    <p className="customFeature-card-title">Faster development</p>
+                </div>
+                <div className="why-custom-solutions-card">
+                    <img className="customImage" src={developmentImage} alt='custom image' />
+                    <p className="customFeature-card-title">Saves cost on end-to-end development</p>
                 </div>
             </div>
         </div>
@@ -71,13 +74,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable E‑commerce Web App
+               Customer Relationship Management (CRM)
               </h2>
               <p className="serviceSection-description">
-                If you’re looking to build an e-commerce application designed to
-                perform all the essential functions, then don’t build it from
-                scratch. Shoppes has all the necessary features to save you
-                hundreds of development hours.
+               “Customer is the king”. This quote is not unusual for businesses, especially, where customer service drives your business. Check out our comprehensive Customer Relationship Management application, you can select the required modules and we customize them as per your preference.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -93,15 +93,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable Twitter Spaces Clone
+               Document Management System              
               </h2>
               <p className="serviceSection-description">
-                This is an audio conferencing and social application mimicking
-                the functionality of Twitter Spaces. It is created using 100ms
-                and Flutter SDK. The application contains all the features
-                expected in a modern social media application. Using it, one can
-                build various social apps similar to Facebook, Instagram, and
-                Messenger.
+                Leverage our ready-to-use Document Management System to upload, store, and share documents for your non-desk employees. It also has lots of other helpful tools for managing your team from anywhere. Let us know how your requirement and we can modify it for you. 
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -117,16 +112,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable Chat and Messaging App
+               Hospital Management System
               </h2>
               <p className="serviceSection-description">
-                Contains features for daily use in healthcare and
-                telemedicine-related scenarios like appointment scheduling,
-                prescription management, and video consultation. This
-                customizable healthcare app uses React Native and Next.js for
-                the frontend. The backend is Node.js and PostgreSQL. The app is
-                highly customizable and can be created to accommodate multiple
-                healthcare needs.
+               Being in healthcare industry, it becomes more crucial for your business to handle and attend patients and their details responsibly. Our end-to-end Hospital Management System is a secure application for all your daily transactions and storage. It can be simplified to your convenience quickly and easily.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -142,14 +131,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable Food and Grocery Delivery Application
+              Invoice Management System
               </h2>
               <p className="serviceSection-description">
-                An ideal delivery application starter kit that is simple to use,
-                scale, and maintain. The frontend is built using Flutter, and
-                the backend is developed with Node.js, Express.js, TypeScript,
-                GraphQL, Hasura, and PostgreSQL. It can be customized to any
-                delivery & services-based application according to your needs.
+                Our Invoicing Management Software ensures faster and easier invoice generations, invoice and payment tracking, applicable taxes, tax returns and many more. Streamline all your invoicing operations and save on resources and time. It can be customized to match our business requirements very quickly
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -165,14 +150,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable Bike Taxi Booking App
+                Inventory Management 
               </h2>
               <p className="serviceSection-description">
-                Check out this E-hailing or ride-hailing app, which is the clone
-                of the popular app Rapido that lets users book or schedule rides
-                conveniently. Includes features for delivery requests and
-                tracking. It is fully customizable with a rich collection of
-                stunning UI elements.
+                Your business efficiency lies at the core of inventory management. Adjust stock on-the-go through our Inventory Management application. Also support faster billing and barcode scanning. Get our Inventory Management customized for your business and free yourself from the hassles of manual entries.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -188,14 +169,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-                Customizable Video Editing App
+               Learning Management System 
               </h2>
               <p className="serviceSection-description">
-                A web-based video editing platform that offers a variety of
-                tools for editing and recording video and audio files. Can be
-                customized based on your project requirements saving hundreds of
-                design & development hours. Create your MVP fast and be
-                market-ready in a jiffy.
+               Our Learning Management System (LMS) enables online education and eLearning by providing a framework to create, manage, and deliver learning content. You can choose the required modules and get them customized as per your brand. It helps you to enhance the learning experience as well as attracts more number of students from different landscapes.
               </p>
               <button className="learnMoreButton" type="button">
                 Learn More
@@ -211,11 +188,10 @@ class CustomizableSolutions extends Component {
             />
             <div className="serviceSection-info-container rightBorder">
               <h2 className="serviceSection-heading">
-              Customizable Telemedicine App
+              Assessment App / Online Evaluation App
               </h2>
               <p className="serviceSection-description">
-              Contains features for daily use in healthcare and telemedicine-related scenarios like appointment scheduling, prescription management, and video consultation. This customizable healthcare app uses React Native and Next.js for the frontend. The backend is Node.js and PostgreSQL. The app is highly customizable and can be created to accommodate multiple healthcare needs.
-              </p>
+               Wouldn’t it be easy if you can conduct online tests for your students and assess their performances through pre-defined algorithms? Our online Evaluation App not just allows you to feed large number of questions but also let you display the scores soon immediately the student completes the test              </p>
               <button className="learnMoreButton" type="button">
                 Learn More
               </button>

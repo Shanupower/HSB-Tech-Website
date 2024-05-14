@@ -215,15 +215,12 @@ class WebDevelopment extends Component {
           </Breadcrumbs>
             <h1 className="sectionHeading">Web App Development Services</h1>
             <p className="sectionDescription">
-              Global leaders like Google, Darden, and PayPoint trust the
-              GeekyAnts web app development team. Our experience and expertise
-              allow us to deliver a solution that aligns with your business
-              goals. <br />
-              Partner with us today. Let us create something awesome.
+            Transforming your custom ideas into future-rich and fast-performing web application is our forte. Starting from basic website designs, including CMS and online store building to highly complex business website apps and design solutions, we will customize the best of web development solutions for you. <br />
+              
             </p>
-            <p className="tagLine">
+            {/* <p className="tagLine">
               Looking to build a powerful web application in the UK?
-            </p>
+            </p> */}
             <button className="getQuoteButton" type="button">
               Get Quote
             </button>
@@ -233,7 +230,7 @@ class WebDevelopment extends Component {
 
         <div className="whyBuildSection section">
           <h1 className="sectionHeading">
-            Why Build a Web App for Your Business?
+            Why Web App Is Significant For Your Business?
           </h1>
           <p className="sectionDescription">
             A well-designed web application is essential for
@@ -246,55 +243,48 @@ class WebDevelopment extends Component {
 
         <div className="whyChooseSection section">
           <h1 className="sectionHeading">
-            Why Choose GeekyAnts as Your Web App Development Company in the UK?
+           Why You Should Hire HSB For Full Stack Development?
           </h1>
+          <p className="sectionDescription">
+           HSB offers the development of high-quality customized websites, web portals, and web apps. Our team of qualified web app developers promises qualitative deliverables with a secure web experience. Our domain expertise combined with innovative technology enables the building of disruptive user-friendly web applications that assure superior customer satisfaction and higher business agility.
+          </p>
           <div className="cardsContainer-services">
             <div className="card-service">
               <img src={whyChoose1} alt="why choose us card image" />
               <p className="cardTitle-service">
-                10+ Years of Experience in Web App Development Service
+                Customised Web Development
               </p>
               <p className="cardDescription-service">
-                We have created (and are creating) web applications for industry
-                leaders like Darden and PayPoint for over a decade. Leading
-                enterprises highly regard our services for their innovative
-                approach and ROI-focused strategies.
+               We offer tailor-made web solutions uniquely built for your business objectives. We ensure scalable, reliable, secure, and flexible web application solutions that meet changing business demands. Our team delivers a perfect blend of design thinking and innovation to craft value-driven user experiences.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose2} alt="why choose us card image" />
               <p className="cardTitle-service">
-                10+ Years of Experience in Web App Development Service
+                 Full Stack Web Development
               </p>
               <p className="cardDescription-service">
-                We have created (and are creating) web applications for industry
-                leaders like Darden and PayPoint for over a decade. Leading
-                enterprises highly regard our services for their innovative
-                approach and ROI-focused strategies.
+               Through our full-stack web development services, bring your ideas to life. WE are proficient in both – frontend and backend tools and technology along with knowledge about databases, servers, and hosting environments. Our team has the proficiency to build modern web applications from the scratch.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose3} alt="why choose us card image" />
               <p className="cardTitle-service">
-                10+ Years of Experience in Web App Development Service
+                 We Provide SaaS Development
               </p>
               <p className="cardDescription-service">
-                We have created (and are creating) web applications for industry
-                leaders like Darden and PayPoint for over a decade. Leading
-                enterprises highly regard our services for their innovative
-                approach and ROI-focused strategies.
+               Our SaaS development includes the design, implementation, deployment, and maintenance of SaaS-based applications. The entire process is flexible, scalable, and cost-effective. Our experienced developers are proficient in cloud technologies and tools to develop applications that are secure, flexible, scalable, and efficient.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose4} alt="why choose us card image" />
               <p className="cardTitle-service">
-                10+ Years of Experience in Web App Development Service
+                Modernizing Legacy Application
+
               </p>
               <p className="cardDescription-service">
-                We have created (and are creating) web applications for industry
-                leaders like Darden and PayPoint for over a decade. Leading
-                enterprises highly regard our services for their innovative
-                approach and ROI-focused strategies.
+                We, at HSB, understand your requirements closely and modernize your digital platform by determining what approach works best – rebuilding, rehosting, rearchitecting, or replacing. Leverage modern technologies and next-gen tools to overcome business challenges, drive business value, and achieve agility.
+
               </p>
             </div>
           </div>
@@ -369,55 +359,45 @@ class WebDevelopment extends Component {
 
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-            Web App Development Services Provided By GeekyAnts
+            Our Web App Development Services
           </h1>
           <p className="sectionDescription">
-            We provide web app development services augmented by our expertise
-            centered around your requirement. Our development team is adept in
-            using new updates in popular frameworks to create a fresh and modern
-            web app. Our project timelines are also optimized to ensure cost
-            savings.
+           Accelerate your web application development to gain competitive edge.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={crossImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Cross-platform Development</p>
+              <p className="cardTitle-service">Progressive Web Apps</p>
               <p className="cardDescription-service">
-                We create web applications that perform great on multiple
-                platforms, including iOS and Android devices.
+              We create eminent web apps with enhanced technical features, interactive visual content, easy navigation, and faster application loading, and offer distinct user experiences.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={webDesignImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Website App Design</p>
+              <p className="cardTitle-service">Front-end Web Development</p>
               <p className="cardDescription-service">
-                We develop visually appealing, user-friendly interfaces for
-                website applications.
+                Using advanced Frontend technologies, we deliver component-driven architecture. Our web development services combine amazing UI designs with seamless functionalities.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={appMaintenanceImage} alt="why choose us card image" />
-              <p className="cardTitle-service">App Maintenance and Support</p>
+              <p className="cardTitle-service">Back-end Development </p>
               <p className="cardDescription-service">
-                We provide maintenance and support services, including upgrades
-                of website versions and dependencies.
+                We make backend web development effortless. We offer AWS and Azure services to host the backend services over the cloud and SQL and other databases to fetch data reliably
               </p>
             </div>
             <div className="cardItem-service">
               <img src={appOptimizationImage} alt="why choose us card image" />
-              <p className="cardTitle-service">App Optimization</p>
+              <p className="cardTitle-service">E-Commerce Web App Development </p>
               <p className="cardDescription-service">
-                We optimize the performance and user experience of the website
-                applications to improve the overall user experience and
-                engagement.
+                Developing secure and efficient eCommerce websites to boost your online presence and sales. Our adept web developers ensure user engagement platforms by developing secure, user-friendly, and agile eCommerce websites.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={thridPartyImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Third-party Integration</p>
+              <p className="cardTitle-service">Custom Web Application Development</p>
               <p className="cardDescription-service">
-                We integrate the applications with third-party services like
-                social media, payment gateways, and analytics.
+               We bring experience of developing compatible and scalable websites that provides intuitive user experiences. We deliver superior website development services with our technical prowess for utmost customer satisfaction.
               </p>
             </div>
             <div className="cardItem-service">
