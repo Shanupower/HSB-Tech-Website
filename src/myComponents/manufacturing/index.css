@@ -1,44 +1,55 @@
-.manufacturing{
-    background-color: #2B2C42;
-    color: #fff;
+.manufacturing {
+  background-color: #2b2c42;
+  color: #fff;
 }
 
-.breadcrumb-industries{
-    color: #fff;
+.breadcrumb-industries {
+  color: #fff;
 }
 
-.industries-getQuoteButton{
-    background-color: #f4f4f4;
-    color: #2A2C3B;
+.industries-getQuoteButton {
+  background-color: #f4f4f4;
+  color: #2a2c3b;
 }
 
-.solutions{
-    background-color: #FAF9FA;
+.solutions {
+  background-color: #faf9fa;
 }
 
-.whyChooseHSB{
-    background-color: #F9F9FF;
+.whyChooseHSB {
+  background-color: #f9f9ff;
 }
 
-.moduleItem{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.moduleItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.moduleItemBullet{
-    margin-right: 20px;
+.moduleItemBullet {
+  margin-right: 20px;
 }
 
-.moduleItems-industries{
-    padding: 30px;
-    font-size: 18px;
+.moduleItems-industries {
+  padding: 30px;
+  font-size: 18px;
 }
 
-.technologiesSectionIndustries{
-    background-color: #f7f7f7;
+.technologiesSectionIndustries {
+  background-color: #f7f7f7;
 }
 
-.technologiesHeading{
-    font-size: ;
+.technologiesHeading {
+  font-size: ;
+}
+
+.defe {
+  color: #f4f4f4;
+}
+
+.moduleItem:hover {
+  transform: translateY(-6px);
+}
+.moduleItem {
+  cursor: pointer;
 }

@@ -16,7 +16,7 @@ class Footer extends Component {
   render() {
     return (
       <>
-        <div className="footerSection">
+        <div className="footerSection" style={{ paddingInline: "12%" }}>
           <div className="footerSectionLinks">
             <div className="footerCompanySection">
               <img
@@ -196,4 +196,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default Footer;
