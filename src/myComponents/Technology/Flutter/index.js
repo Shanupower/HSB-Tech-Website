@@ -12,7 +12,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import { Chrono } from "react-chrono";
-
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import reactImage from "../../../assets/react.png";
 import flutterImage from "../../../assets/flutter.png";
 import javaScript from "../../../assets/javascript-logo.png";
@@ -28,13 +28,16 @@ import QualityChain from "../../../assets/icons/icons8-quality-control-60.png";
 import Technoligy from "../../../assets/icons/icons8-technology-60.png";
 import Opreation from "../../../assets/icons/icons8-operations-60.png";
 import Accordion from "@mui/material/Accordion";
+import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AWS from "../../../assets/icons/images.png";
 import Azure from "../../../assets/icons/download.png";
 
+import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
+import { useMediaQuery } from "@mui/material";
 import Footer from "../../footer";
 
 const breadcrumbs = [
@@ -48,70 +51,87 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Industries
+    Technoligy
   </Link>,
   <Typography
     key="3"
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    Telecom App Development Services
+    Flutter Development Services
   </Typography>,
 ];
 
-const frontendTab = [
+const DevelopmentTools = [
   {
     imageUrl: reactImage,
-    name: "React Native",
+    name: "VS Code",
   },
   {
     imageUrl: reactImage,
-    name: "React.js",
-  },
-  {
-    imageUrl: flutterImage,
-    name: "Flutter",
-  },
-  {
-    imageUrl: javaScript,
-    name: "Javascript",
-  },
-  {
-    imageUrl: HtmlImage,
-    name: "HTML",
-  },
-  {
-    imageUrl: cssImage,
-    name: "CSS",
-  },
-  {
-    imageUrl: angular,
-    name: "Angular",
+    name: " Dart Dev Tools",
   },
 ];
 
-const backendTab = [
+const Analytics = [
   {
     imageUrl: nodeJs,
-    name: "Node.js",
+    name: "Google Analytics",
   },
   {
     imageUrl: javaScript,
-    name: "Javascript",
+    name: "Amplitude",
   },
   {
     imageUrl: goLang,
-    name: "GoLang",
+    name: "Adobe analytics",
   },
 ];
-const databasetab = [
+const FrontendStore = [
   {
     imageUrl: AWS,
-    name: "AWS",
+    name: "Providers",
   },
   {
     imageUrl: Azure,
-    name: "Azure",
+    name: " Business Logic Components (BLoC)",
+  },
+];
+
+const NotificationService = [
+  {
+    imageUrl: AWS,
+    name: " Cloud Messaging",
+  },
+  {
+    imageUrl: Azure,
+    name: "One Signal",
+  },
+];
+const CDTools = [
+  {
+    imageUrl: AWS,
+    name: "Bitrise",
+  },
+  {
+    imageUrl: Azure,
+    name: "Code Magic",
+  },
+];
+const Testing = [
+  {
+    imageUrl: AWS,
+    name: "Manual",
+  },
+  {
+    imageUrl: Azure,
+    name: "Automation",
+  },
+];
+const CrashReporting = [
+  {
+    imageUrl: AWS,
+    name: "Firebase Crashlytics",
   },
 ];
 function CustomTabPanel(props) {
@@ -223,33 +243,35 @@ class FlutterTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-              Telecom App Development Services
+              Flutter Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              The one and only industry that has undergone rapid change and has
-              witnessed an upserge in its demand is, the telecom. This tidal
-              shift in the telecom software development industry is forcing
-              major and ongoing upgrades to network and data storage
-              infrastructures, as exemplified by the 5G rollout, and continuing
-              new trends. Therefore, a corresponding digital transformation in
-              operations is required in areas such as customer care, sales, and
-              billing.
+              We are a prominent software development company to provide Flutter
+              app development services to create highly functional, advanced
+              applications that aligns your business processes. Our skilled
+              Flutter team is capable of creating business-ready applications
+              with an attractive and high-quality user interface.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
               type="button"
-              style={{ padding: ".8rem 0", fontSize: "20px" }}
+              style={{
+                padding: ".8rem 1rem",
+                fontSize: "20px",
+                width: "fit-content",
+                backgroundColor: "#fff",
+              }}
             >
-              GET QUOTE
+              Build Your Flutter Team Today
             </button>
           </div>
           <div
             style={{
               position: "absolute",
-              right: "22rem",
+              right: "14%",
               bottom: "0",
               width: "320px",
               height: "460px",
@@ -266,16 +288,113 @@ class FlutterTechnoligy extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Solutions We Deliver
+            About Flutter
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Connect your telecommunication business to the world of advanced
-            software solutions and accelerate your digital services
-            transformation, add competitive value to your offerings, and
-            generate new revenue streams. Start your digitalization journey and
-            keep up with the latest technologies to enhance your business
-            revenue streams.
+            Flutter is an open-source UI framework powered by Google. It is
+            commonly considered in building native-like, flexible, and
+            graphically-enhanced cross-platform apps for web, mobile, and
+            desktop using a single codebase.
           </p>
+          <h2>Benefits of Flutter</h2>
+          <div
+            style={{
+              backgroundColor: "#fff",
+              minHeight: "20vh",
+              width: "100%",
+              marginTop: "1rem",
+              display: "flex",
+              flexWrap: "wrap",
+              borderRadius: "8px",
+              padding: "2rem 1.4rem",
+              justifyContent: "space-between",
+              gap: "1rem",
+            }}
+          >
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+                marginBottom: "2.4rem",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />{" "}
+              Cross-platform development framework
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+                marginBottom: "2.4rem",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Same UI
+              and business logic in all platforms
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+                marginBottom: "2.4rem",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> “Hot
+              reload” feature for fast development
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
+              customizable UI design
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Access to
+              native features
+            </p>
+
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Accessible publicly
+            </p>
+          </div>
+          <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
+            Engage our skilled Flutter development team to construct powerful
+            cross-platform development applications, unified with your preferred
+            front-end framework.
+          </h2>
+          <button
+            className="getQuoteButton industries-getQuoteButton bluidtechnoligy"
+            type="button"
+            style={{
+              padding: ".8rem 1rem",
+              fontSize: "20px",
+              width: "fit-content",
+            }}
+          >
+            Build Your Flutter Application Today
+          </button>
+        </div>
+        <div
+          className="section whyChooseHSB"
+          style={{ paddingInline: " 14%", backgroundColor: "#fff" }}
+        >
+          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
+            Our Flutter Development Services
+          </h1>
+
           <div
             className="cardsContainer-services"
             style={{ marginTop: "3.2rem" }}
@@ -291,17 +410,18 @@ class FlutterTechnoligy extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Telecom Software Development
+                Flutter Consulting
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                We can deliver software development solutions connected to
-                self-care portals, CRM, payment systems, provisioning,
-                inventory, monitoring, IN and IMS, IoT, VoIP and roaming to
-                optimize your network performance, improve customer experience
-                and streamline operations.
+                Our Flutter development team helps you in drafting the best
+                roadmap and methodology for your project. We evaluate existing
+                setup in comparison to your requirement, and recommend a
+                tailored Flutter application as a solution. Through our
+                consulting services, you can leverage the benefits of Flutter,
+                its architecture, and technical stack.
               </p>
             </div>
             <div
@@ -314,17 +434,16 @@ class FlutterTechnoligy extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud Native Development
+                Flutter App Design
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Utilize Cloud Native architectures to migrate from legacy
-                SS7-based TDM and IN systems to software-based SIP, IMS and 5G
-                network applications. We design, develop, and deploy tailored
-                telecom enterprise software solutions specific to network
-                applications. 
+                Our UI/UX designers create visually appealing, easy-to-navigate,
+                user-friendly interfaces that are robust, and faster in
+                performance. By making the most of modern-day tools and
+                techniques, our team delivers a flexible output.
               </p>
             </div>
             <div
@@ -338,16 +457,17 @@ class FlutterTechnoligy extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Generative AI Solutions
+                Flutter App Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Generative AI solutions can assist you with predictive
-                decision-making based on data breakdowns that will elevate your
-                company’s competitiveness. AI support automation of sales
-                services and customer support with ChatGPT or Auto-GPT.
+                Using the Flutter technology stack, we develop cross-platform,
+                advance and native apps, as well as enterprise apps. Our
+                developers are skilled and experienced to develop secure,
+                scalable, and multi-platform mobile and web applications for
+                various industry segments.
               </p>
             </div>
             <div
@@ -361,16 +481,17 @@ class FlutterTechnoligy extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Machine Learning for Telecom
+                Flutter App Migration
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Optimize workflows through online and offline machine learning
-                models. Analyse photographic documentation of FTTH networks or
-                examine a set of existing cases to design an internal AI system
-                to boost your organization's effectiveness.
+                Out dedicated Flutter skilled team can help you in migrating
+                your current interface to Flutter. We can also upgrade your
+                existing Flutter interface to the latest version of Flutter to
+                experience better performance and security, with seamless
+                experience.
               </p>
             </div>
             <div
@@ -384,321 +505,17 @@ class FlutterTechnoligy extends Component {
               <img src={Technoligy} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps and CI/CD Methodologies
+                Flutter App Support Maintenance
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                DevOps enables automated and iterative software development,
-                faster release of new features, as well as the ability to detect
-                and fix errors at the initial stages. By implementing continuous
-                integration (CI) and continuous deployment (CD), you can
-                increase your operational agility and reduce maintenance costs.
+                Ensuring continuous support and maintenance for the smooth
+                execution of your Flutter apps is our forte. Our specialized
+                team of experts monitors your applications dedicatedly to assure
+                timely technical aid and less breakdown of the app.
               </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Operations Support Systems (OSS) Development n
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Customized solutions to replace excel in telecommunications OSS.
-                Boost the day-to-day operations of a telecom network, monitor
-                network performance, diagnose issues and instantly troubleshoot
-                problems to reduce downtime and improve results.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Operations Support Systems (OSS) Development n
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Accelerate the business side of telecom operations with
-                customer-facing solutions. Enable your company to efficiently
-                manage its customer base, create and manage pricing plans,
-                generate bills and invoices, process payments and resolve
-                customer queries or complaints with the BSS.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section whyChooseHSB" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Why Hire HSB As Your Telecom App Development Company?
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Accelerate your telecom business operations with customer-oriented
-            solutions. Enable your staff to efficiently manage customer
-            responses, create and manage pricing plans, generate bills and
-            invoices, process payments and resolve customer queries or
-            complaints with smart telecom solutions.
-          </p>
-          <div
-            className="cardsContainer-services"
-            style={{ marginTop: "3.2rem" }}
-          >
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enhance Customer Relationships
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Experience a surge in requests by implementing cloud
-                infrastructure and optimizing networks, leading to improving the
-                delivery of telecom services to end consumers. We provide robust
-                support and self-service applications that foster greater
-                customer loyalty.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Boost Management Efficiency
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We provide efficient network management tools to streamline
-                service delivery and reduce operating costs. Our advanced data
-                analytics helps in prioritizing automation across various
-                network components and operational processes.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Competitive Advantage
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We understand that the telecom industry boasts an abundance of
-                big data sources for both internal use and monetization through
-                data-driven product offerings. By teaming up with our custom
-                telecom solutions you can unlock new revenue streams and
-                business insights from your big data.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Reduced Operational Costs in the Long Run
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                By optimizing infrastructure and automating operations the
-                organization will witness reduced expenses across various levels
-                and departments. We extend support through our business
-                intelligence tools, that maximizes the financial benefits of
-                digital transformation.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Few Modules for Your Custom Telecom App
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            We deliver turnkey solutions that remove the major roadblocks in the
-            telecom business and help firms grow faster. We ensure quality
-            results that meet the expectations and emerging demands of the
-            customers in this industry. Following are the various modules that
-            can be customized for your telecom business requirement –
-          </p>
-
-          <div
-            className="moduleItems-industries"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "1.4rem",
-            }}
-          >
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Online property booking app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>CRM and ERP system software </p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Property management app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>B2B and B2C real estate app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Property rental app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Inventory management software</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Website for property dealers</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Real estate marketplace app</p>
             </div>
           </div>
         </div>
@@ -708,27 +525,33 @@ class FlutterTechnoligy extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Technologies and Tools We Use for Telecom App Development Services
+            Tools We Use to Build Flutter Apps
           </h1>
           <Box sx={{ width: "100%", marginTop: "2rem" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 value={value}
                 onChange={this.handleTabChange}
-                aria-label="basic tabs example"
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable auto tabs example"
               >
-                <Tab label="Frontend" {...a11yProps(0)} />
-                <Tab label="Backend" {...a11yProps(1)} />
-                <Tab label="Database" {...a11yProps(1)} />
+                <Tab
+                  label="Frontend Store / State Management"
+                  {...a11yProps(0)}
+                />
+
+                <Tab label="Build/Development tools" {...a11yProps(1)} />
+                <Tab label="Analytics" {...a11yProps(2)} />
+                <Tab label="Notification Services" {...a11yProps(3)} />
+                <Tab label="CI / CD Deployment Tools " {...a11yProps(4)} />
+                <Tab label="Testing " {...a11yProps(5)} />
+                <Tab label="Crash Reporting " {...a11yProps(6)} />
               </Tabs>
             </Box>
-            <CustomTabPanel
-              value={value}
-              index={0}
-              style={{ marginTop: "2rem" }}
-            >
+            <CustomTabPanel value={value} index={0}>
               <div className="technlogiesContainer-technology">
-                {frontendTab.map((eachItem) => (
+                {FrontendStore.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -742,9 +565,14 @@ class FlutterTechnoligy extends Component {
                 ))}
               </div>
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
+
+            <CustomTabPanel
+              value={value}
+              index={1}
+              style={{ marginTop: "2rem" }}
+            >
               <div className="technlogiesContainer-technology">
-                {backendTab.map((eachItem) => (
+                {DevelopmentTools.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -760,7 +588,71 @@ class FlutterTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
               <div className="technlogiesContainer-technology">
-                {databasetab.map((eachItem) => (
+                {Analytics.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={3}>
+              <div className="technlogiesContainer-technology">
+                {NotificationService.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={4}>
+              <div className="technlogiesContainer-technology">
+                {CDTools.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={5}>
+              <div className="technlogiesContainer-technology">
+                {Testing.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={6}>
+              <div className="technlogiesContainer-technology">
+                {CrashReporting.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -776,38 +668,7 @@ class FlutterTechnoligy extends Component {
             </CustomTabPanel>
           </Box>
         </div>
-        <div
-          // className="technologiesSectionIndustries section"
-          className="closingSection"
-          style={{ paddingInline: " 14%" }}
-        >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our Step-by-Step Process to Build the Outstanding Telecom App
-          </h1>
-          <Chrono
-            disableToolbar="true"
-            theme={{
-              primary: "black",
-              titleColor: "black",
-            }}
-            mode="VERTICAL"
-            items={educationProcessTimelineItems}
-          >
-            <p> Research the market and learn about the competitors</p>
-            <p>List out the app features </p>
-            <p> Choose the right technology</p>
-            <p> Define project timeline and costing</p>
-            <p> Approval from healthcare and legal documentation </p>
-            <p> Design the architecture</p>
-            <p> Scrum calls and sprint planning </p>
-            <p> UI/UX designs and approval</p>
-            <p>Development phase </p>
 
-            <p> Internal testing and UAT</p>
-            <p>Deployment </p>
-            <p> Training, support and maintenance</p>
-          </Chrono>
-        </div>
         {/* Accordion */}
         <div
           className="technologiesSectionIndustries section"
@@ -828,16 +689,13 @@ class FlutterTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How can telecom software development services enhance the
-                customer experience?
+                How long does it take to develop a DevOps project?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                A telecom company that strives to enhance the customer
-                experience embraces a cloud-native architecture for agile,
-                scalable, and easily configurable omnichannel experiences. By
-                focusing on improving the customer service through AI and
-                automation, telecom companies can bring a major difference in
-                their services.
+                The duration required to develop a DevOps project usually
+                depends on the complexity and size of the project.
+                Traditionally, it could take several months or even a year or
+                more.
               </AccordionDetails>
             </Accordion>
 
@@ -848,16 +706,13 @@ class FlutterTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What is the role of network as a service (NaaS) for future
-                connectivity?
+                Is Flutter good for app development?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Network as a service (NaaS) simplifies network management
-                through offering networking services as a subscription. A recent
-                trend in telecommunication software development, NaaS enables
-                businesses to focus on core objectives and conserve capital.
-                Furthermore, NaaS enhances scalability, agility, and the user
-                experience while providing advanced security features.
+                Flutter is the Google’s fastest-growing framework from to create
+                apps for almost any platform. It allows developers to create a
+                beautiful, fast, and secure app for mobile, web, and desktop
+                from a single codebase.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -867,13 +722,102 @@ class FlutterTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                Does HSB provide software development for various levels of
-                Telecom companies?
+                What Apps Are Made With Flutter?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Yes, HSB can develop the software as per your requirement, size
-                of the company, features, business scale, and various other
-                factors.
+                The popular apps built with Flutter are –
+                <ul>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} />{" "}
+                    Reflectly
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Google
+                    Pay
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Google’s
+                    Stadia app
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} />{" "}
+                    Realtor.com
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Google
+                    Assistant
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Square
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Sonos
+                    and many more.
+                  </li>
+                </ul>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                Can I migrate my existing app into Flutter?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                Yes, you can migrate your existing app into Flutter. To know
+                more about migrating your existing app into Flutter, talk to our
+                Flutter expert now!
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                How long will it take to develop an app using Flutter?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                The duration of developing a Flutter app depends on various
+                scenarios such as, the complexity of the app, the features
+                included, and other app specifications.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                What is the average cost of a Flutter app development project?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                The average cost of a Flutter app development service project
+                depends on factors such as, the tech stacks used, the back-end
+                technology, extensiveness of the app, and native interaction is
+                required to be considered. You can reach out to our expert
+                Flutter app developers for further information.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                What are the benefits of outsourcing Flutter app development?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                Maintaining an in-house team of Flutter developers and designers
+                could be time consuming and expensive. Instead, when you
+                outsource the requirement, you can reduce the burden on your
+                development team, as it frees stakeholders from routine tasks.
               </AccordionDetails>
             </Accordion>
           </div>
@@ -881,11 +825,29 @@ class FlutterTechnoligy extends Component {
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Connect us now to avail our Telecom app development services
+            Hire a top Flutter Development Team
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            GET QUOTE
-            <FaArrowRight className="rightArrow" />
+          <p style={{ fontSize: "22px" }}>
+            Gain the Advantage with the Flutter Development
+          </p>
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              width: "fit-content",
+              display: "flex",
+              alignItems: "center",
+              position: "relative",
+            }}
+          >
+            Connect With Us now
+            <FaArrowRight
+              className="rightArrow"
+              style={{
+                position: "absolute",
+                right: "1rem",
+              }}
+            />
           </button>
         </div>
 
