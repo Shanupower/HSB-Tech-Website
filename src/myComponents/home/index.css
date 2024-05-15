@@ -1,17 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
-
-.appContainer {}
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap");
 
 .geekyantlogo {
   width: 150px;
 }
-
-.landingSection {
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 120px;
+.appContainer {
+  padding: 0 10%;
 }
-
+.landingSection {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-left-section {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.landing-right-logo {
+  width: 50%;
+}
 .ladingPageHeading {
   font-size: 80px;
   margin-top: 10px;
@@ -19,7 +29,6 @@
   background: linear-gradient(to bottom, #2a42aa, #aa1e55);
   background-clip: text;
   color: transparent;
-
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -27,6 +36,8 @@
 
 .landingSectionSubHeading {
   font-size: 30px;
+  width: 500px;
+  margin-top: 20px;
 }
 
 .navbarSection {
@@ -37,7 +48,7 @@
 }
 
 .letsTalkButton {
-  background-color: #CA0515;
+  background-color: #ca0515;
   border: none;
   color: #fff;
   padding: 10px;
@@ -88,7 +99,7 @@
 
 .slideRight-view-applications .rightArrowRed {
   position: absolute;
-  color: #CA0515;
+  color: #ca0515;
   margin-left: 10px;
   transform: translateX(-50%);
   opacity: 0;
@@ -98,7 +109,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-
 
 /* 6688888888888888888888888888888888888888888888888888 */
 
@@ -115,7 +125,7 @@
 
 .slideRight-blogs .rightArrowRed {
   position: absolute;
-  color: #CA0515;
+  color: #ca0515;
   margin-left: 10px;
   transform: translateX(-50%);
   opacity: 0;
@@ -135,7 +145,7 @@
 }
 
 .navItem:hover {
-  color: #CA0515;
+  color: #ca0515;
 }
 
 .trustedBySection {
@@ -143,7 +153,7 @@
   padding-right: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F8FAFA;
+  background-color: #f8fafa;
 }
 
 .trustedbyImageContainer {
@@ -167,7 +177,7 @@
   padding-right: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .comapinesContainer {
@@ -332,23 +342,23 @@
 }
 
 .react {
-  background-color: #D6F9FF;
+  background-color: #d6f9ff;
 }
 
 .nextjs {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 
 .flutter {
-  background-color: #D6E4EF;
+  background-color: #d6e4ef;
 }
 
 .graphql {
-  background-color: #FAD6EE;
+  background-color: #fad6ee;
 }
 
 .nodejs {
-  background-color: #E7F0E6;
+  background-color: #e7f0e6;
 }
 
 .laravel {
@@ -356,11 +366,11 @@
 }
 
 .postgresql {
-  background-color: #E5EBF0;
+  background-color: #e5ebf0;
 }
 
 .devops {
-  background-color: #D7F8E5;
+  background-color: #d7f8e5;
 }
 
 .technologyName {
@@ -377,7 +387,7 @@
 }
 
 .customizableSolutionsSection {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -401,9 +411,9 @@
 }
 
 .viewApplicationsButton {
-  color: #CA0515;
+  color: #ca0515;
   border: none;
-  border-bottom: solid 1px #CA0515;
+  border-bottom: solid 1px #ca0515;
   background-color: transparent;
   margin: 0px;
   height: 50px;
@@ -453,7 +463,7 @@
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .closingSection {
@@ -501,7 +511,7 @@
 }
 
 .footerSectionItem {
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .footerItemTitle {
@@ -511,7 +521,7 @@
 }
 
 .footerLinkItem {
-  color: #D4D4D4;
+  color: #d4d4d4;
   text-decoration: none;
   display: block;
   margin: 10px;
@@ -522,7 +532,7 @@
 }
 
 .socialMediaLink {
-  color: #D4D4D4;
+  color: #d4d4d4;
   background-color: #222323;
   border-radius: 30px;
   display: flex;
@@ -548,7 +558,7 @@
 .footer-countriesContainer,
 .countryItem,
 .phoneContainer {
-  color: #A2A2A2;
+  color: #a2a2a2;
 }
 
 .phoneIcon {
@@ -572,7 +582,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0px;
-  color: #A2A2A2;
+  color: #a2a2a2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -601,7 +611,7 @@
 }
 
 .ecofin {
-  background-color: #6424A0;
+  background-color: #6424a0;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -617,7 +627,6 @@
 }
 
 @media (max-width: 576px) {
-
   .landingSection {
     padding-left: 30px;
     padding-right: 30px;
@@ -648,7 +657,7 @@
   }
 
   .letsTalkButton {
-    background-color: #CA0515;
+    background-color: #ca0515;
     border: none;
     color: #fff;
     border-radius: 5px;
@@ -790,9 +799,9 @@
     font-size: 8px;
     padding: 5px;
     margin-bottom: 10px;
-    color: #CA0515;
+    color: #ca0515;
     border: none;
-    border-bottom: solid 1px #CA0515;
+    border-bottom: solid 1px #ca0515;
     background-color: transparent;
   }
 
@@ -900,7 +909,8 @@
     font-size: 11px;
   }
 
-  .policy-TC-container {}
+  .policy-TC-container {
+  }
 
   .footerLinkItem-mobile {
     margin-left: 5px;
@@ -937,5 +947,10 @@
 
   .viewApplicationsButton-mobile {
     display: none;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .appContainer {
+    padding: 0 2rem;
   }
 }

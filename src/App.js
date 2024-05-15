@@ -66,8 +66,6 @@ class App extends Component {
           path="/services/fullstack development"
           component={FullStackDevelopment}
         />
-
-        {/* Industries */}
         <Route
           exact
           path="/industries/manufacturing"
