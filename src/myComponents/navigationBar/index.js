@@ -82,12 +82,48 @@ function Navigationbar() {
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/education">
                   Education
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/telecom">
+                  Telecom
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/realEstate">
+                  Real Estate
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/ecommerce">
+                  Ecommerce
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/travel-hospitality">
+                  Travel and Hospitality
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown
-                title="Technoloies"
-                id="basic-nav-dropdown"
-              ></NavDropdown>
+              <NavDropdown title="Technoloies" id="basic-nav-dropdown">
+                <NavDropdown.Item href="/#">Technologies Page</NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/devOps">
+                  DevOps
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/flutter">
+                  Flutter
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/graphSQl">
+                  GraphSQl
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/laravel">
+                  Laravel
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/nextJs">
+                  NextJs
+                </NavDropdown.Item>
+                <NavDropdown.Item href="/technoligy/nodsJs">
+                  NodsJs
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Item href="/technoligy/react-native">
+                  React Native
+                </NavDropdown.Item>
+              </NavDropdown>
               <NavDropdown
                 title="About Us"
                 id="basic-nav-dropdown"
