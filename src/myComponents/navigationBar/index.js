@@ -65,7 +65,6 @@ function Navigationbar() {
                   Business Analysis
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="">Case Studies</Nav.Link>
               <NavDropdown title="Industries" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/industries">
                   Industries Page
