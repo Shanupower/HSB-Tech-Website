@@ -108,24 +108,24 @@ class App extends Component {
         <Route exact path="/industries/bsfi" component={BFSIIndustry} />
 
         {/* Technology */}
-        <Route exact path="/technoligy/devOps" component={DevOpsTechnoligy} />
-        <Route exact path="/technoligy/flutter" component={FlutterTechnoligy} />
+        <Route exact path="/technology/devOps" component={DevOpsTechnoligy} />
+        <Route exact path="/technology/flutter" component={FlutterTechnoligy} />
         <Route
           exact
-          path="/technoligy/graphSQl"
+          path="/technology/graphSQl"
           component={GraphSQlTechnoligy}
         />
-        <Route exact path="/technoligy/laravel" component={LaravelTechnoligy} />
-        <Route exact path="/technoligy/nextJs" component={NextTechnoligy} />
-        <Route exact path="/technoligy/nodsJs" component={NodeJsTechnoligy} />
+        <Route exact path="/technology/laravel" component={LaravelTechnoligy} />
+        <Route exact path="/technology/nextJs" component={NextTechnoligy} />
+        <Route exact path="/technology/nodsJs" component={NodeJsTechnoligy} />
         <Route
           exact
-          path="/technoligy/postgreSql"
+          path="/technology/postgreSql"
           component={PostgreSQLTechnoligy}
         />
         <Route
           exact
-          path="/technoligy/react-native"
+          path="/technology/react-native"
           component={ReactNativeTechnoligy}
         />
       </Switch>

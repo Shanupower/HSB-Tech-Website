@@ -103,27 +103,27 @@ function Navigationbar() {
                   Travel and Hospitality
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown title="Technoloies" id="basic-nav-dropdown">
+              <NavDropdown title="Technologies" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/#">Technologies Page</NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/devOps">
+                <NavDropdown.Item href="/technology/devOps">
                   DevOps
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/flutter">
+                <NavDropdown.Item href="/technology/flutter">
                   Flutter
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/graphSQl">
+                <NavDropdown.Item href="/technology/graphSQl">
                   GraphSQl
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/laravel">
+                <NavDropdown.Item href="/technology/laravel">
                   Laravel
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/nextJs">
+                <NavDropdown.Item href="/technology/nextJs">
                   NextJs
                 </NavDropdown.Item>
-                <NavDropdown.Item href="/technoligy/nodsJs">
+                <NavDropdown.Item href="/technology/nodsJs">
                   NodsJs
                 </NavDropdown.Item>{" "}
-                <NavDropdown.Item href="/technoligy/react-native">
+                <NavDropdown.Item href="/technology/react-native">
                   React Native
                 </NavDropdown.Item>
               </NavDropdown>
