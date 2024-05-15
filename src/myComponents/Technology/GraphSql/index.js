@@ -58,84 +58,46 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    DevOps Development Services
+    GraphQL Development Services
   </Typography>,
 ];
 
-const Monitoring = [
+const GraphQLCodeGenerator = [
   {
     imageUrl: reactImage,
-    name: "React Native",
-  },
-  {
-    imageUrl: reactImage,
-    name: "React.js",
-  },
-  {
-    imageUrl: flutterImage,
-    name: "Flutter",
-  },
-  {
-    imageUrl: javaScript,
-    name: "Javascript",
-  },
-  {
-    imageUrl: HtmlImage,
-    name: "HTML",
-  },
-  {
-    imageUrl: cssImage,
-    name: "CSS",
-  },
-  {
-    imageUrl: angular,
-    name: "Angular",
+    name: "GraphQL Code Generator",
   },
 ];
 
-const Pipelines = [
+const GraphQL_Playground = [
   {
     imageUrl: nodeJs,
-    name: "Node.js",
-  },
-  {
-    imageUrl: javaScript,
-    name: "Javascript",
-  },
-  {
-    imageUrl: goLang,
-    name: "GoLang",
+    name: "GraphQL",
   },
 ];
-const Deployment_Infra = [
+const Hasura = [
   {
     imageUrl: AWS,
-    name: "AWS",
-  },
-  {
-    imageUrl: Azure,
-    name: "Azure",
+    name: "Hasura ",
   },
 ];
 
-const Containers = [
+const ApolloServer = [
   {
     imageUrl: AWS,
-    name: "AWS",
-  },
-  {
-    imageUrl: Azure,
-    name: "Azure",
+    name: "Apollo Server ",
   },
 ];
-const Os = [
+const Prisma = [
   {
     imageUrl: AWS,
-    name: "AWS",
+    name: "Prisma ",
   },
+];
+const CrashReporting = [
   {
-    imageUrl: Azure,
-    name: "Azure",
+    imageUrl: AWS,
+    name: "Prisma ",
   },
 ];
 function CustomTabPanel(props) {
@@ -247,20 +209,16 @@ class GraphSQlTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-             DevOps Development Services
+              GraphQL Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              We help enterprises in integrating security measures into every
-              phase of your development lifecycle, ensuring that potential
-              vulnerabilities are identified and mitigated proactively. Our
-              DevOps services emphasize on continuous security monitoring and
-              automated compliance checks, and bolstered protection against
-              emerging threats. We empower your development team to innovate
-              with confidence, creating a synergy between development, IT
-              operations, and security that is unparalleled in the market.
+              To explore different technologies for the convenience of our
+              customers, we have been a part of the GraphQL tech community and
+              have been utilizing it to deliver complex, flexible, and scalable
+              apps.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -272,7 +230,7 @@ class GraphSQlTechnoligy extends Component {
                 backgroundColor: "#fff",
               }}
             >
-              Build Your DevOps Team Today
+              Build Your GraphQL Team Today
             </button>
           </div>
           <div
@@ -295,16 +253,15 @@ class GraphSQlTechnoligy extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            About DevOps
+            About GraphQl
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            An agile-inspired development methodology based on continuous
-            integration and delivery. DevOps emphasizes collaboration between
-            development and IT operations teams. Practicing DevOps in today’s
-            business environment enables teams the ability to deploy several
-            times per day if needed.
+            GraphQL is a query language developed by Facebook. It facilitates
+            fast and specific communication with APIs by calling data from
+            various sources and helps in building at cost-effective web and
+            mobile apps.
           </p>
-          <h2>Benefits of DevOps</h2>
+          <h2>Benefits of GraphQL</h2>
           <div
             style={{
               backgroundColor: "#fff",
@@ -326,8 +283,8 @@ class GraphSQlTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Efficient communication transactions
             </p>
             <p
               style={{
@@ -336,8 +293,8 @@ class GraphSQlTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Fast and robust framework
             </p>
             <p
               style={{
@@ -346,8 +303,8 @@ class GraphSQlTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Unified APIs
             </p>
             <p
               style={{
@@ -355,8 +312,8 @@ class GraphSQlTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Autogeneration of API documentation
             </p>
             <p
               style={{
@@ -364,8 +321,8 @@ class GraphSQlTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Excels over REST
             </p>
             <p
               style={{
@@ -373,14 +330,40 @@ class GraphSQlTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Specific data retrieval
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              API callouts are secure and easy to use
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Highly tailored queries
+            </p>
+            <p
+              style={{
+                fontSize: "20px",
+                width: "calc(100%/3 - 1rem)",
+              }}
+            >
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Stable and lightweight
             </p>
           </div>
           <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
-            Engage our skilled DevOps team to construct top-tier business
-            solutions with improved quality, scalability, and heightened
-            security.
+            Engage our skilled GraphQL development team. Leverage GraphQL fo
+            Your Application
           </h2>
           <button
             className="getQuoteButton industries-getQuoteButton bluidtechnoligy"
@@ -391,7 +374,7 @@ class GraphSQlTechnoligy extends Component {
               width: "fit-content",
             }}
           >
-            Build Your DevOps Team Today
+            Build Your GraphQL Team Today
           </button>
         </div>
         <div
@@ -399,7 +382,7 @@ class GraphSQlTechnoligy extends Component {
           style={{ paddingInline: " 14%", backgroundColor: "#fff" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our DevOps Services
+            Our GraphQL Development Services
           </h1>
 
           <div
@@ -417,17 +400,15 @@ class GraphSQlTechnoligy extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Custom DevOps Consulting
+                GraphQL APIs for UI/UX Design
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our DevOps services streamline operations, improve software
-                delivery and enhance business capabilities to stay agile and
-                competitive. Speed up your internal processes and improve
-                software development through our experienced DevOps consulting
-                services.
+                We can create UI/UX interfaces using GraphQL in innovative
+                formats. Our experienced developers can handle all project
+                requirements with ease.
               </p>
             </div>
             <div
@@ -440,16 +421,15 @@ class GraphSQlTechnoligy extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Incorporating DevOps
+                API Architecture
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                By incorporating DevOps, you can integrate automated security
-                practices, develop reliable products, address crucial security
-                concerns and deliver highly secure software faster than your
-                competition.
+                Our GraphQL team is proficient in designing custom APIs based on
+                business requirements. Our developers ensure that each API
+                design does the job flawlessly.
               </p>
             </div>
             <div
@@ -463,16 +443,14 @@ class GraphSQlTechnoligy extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud DevOps and Migration
+                GraphQL Migration
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Leverage efficiency of our DevOps experts to orchestrate a
-                smooth transition to cloud environments. We conduct secure and
-                efficient cloud migrations and implement customized cloud DevOps
-                tools.
+                We help you migrate the existing backend to GraphQL. We also
+                assure the transition to be simple and easy to implement.
               </p>
             </div>
             <div
@@ -486,63 +464,14 @@ class GraphSQlTechnoligy extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Continuous Integration and Deployment Solutions
+                Integrating GraphQL
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Reduce technical barriers with our continuous integration and
-                deployment (CI/CD) solutions. Boost your growth by incorporating
-                CI/CD practices to decrease lead time, reduce operational costs
-                and enhance customer satisfaction.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Technoligy} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps Automation and IaC Services
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Infrastructure as Code (IaC) service provides tools and
-                techniques to automate repetitive tasks throughout the SDLC. IaC
-                provisions infrastructure to improve efficiency, reduce errors,
-                and optimize costs.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Site Reliability Engineering (SRE) and Support
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Incorporate Site Reliability Engineering to increase
-                reliability, boost underlying infrastructures, and ensure
-                proactive monitoring so that the issues can be resolved before
-                they happen. Our support service improves incident management,
-                provide better ongoing assistance and elevate users' experience.
+                We assist in integrating GraphQL to existing backends. Our
+                development team handles the process end-to-end.
               </p>
             </div>
           </div>
@@ -553,7 +482,7 @@ class GraphSQlTechnoligy extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Tools We Use to Provide DevOps Services
+            Tools We Use to Build Flutter Apps
           </h1>
           <Box sx={{ width: "100%", marginTop: "2rem" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -562,17 +491,18 @@ class GraphSQlTechnoligy extends Component {
                 onChange={this.handleTabChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="Deployment Infra" {...a11yProps(0)} />
+                <Tab label="Hasura " {...a11yProps(0)} />
 
-                <Tab label="CI / CD Pipelines" {...a11yProps(1)} />
-                <Tab label="Monitoring Tools" {...a11yProps(2)} />
-                <Tab label="Containers " {...a11yProps(3)} />
-                <Tab label="OS  " {...a11yProps(4)} />
+                <Tab label="GraphQL Playground " {...a11yProps(1)} />
+                <Tab label="Prisma " {...a11yProps(2)} />
+                <Tab label="GraphQL Code Generator " {...a11yProps(3)} />
+                <Tab label="Apollo Server  " {...a11yProps(4)} />
+                <Tab label="Crash Reporting   " {...a11yProps(5)} />
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
               <div className="technlogiesContainer-technology">
-                {Deployment_Infra.map((eachItem) => (
+                {Hasura.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -593,7 +523,7 @@ class GraphSQlTechnoligy extends Component {
               style={{ marginTop: "2rem" }}
             >
               <div className="technlogiesContainer-technology">
-                {Pipelines.map((eachItem) => (
+                {GraphQL_Playground.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -607,9 +537,10 @@ class GraphSQlTechnoligy extends Component {
                 ))}
               </div>
             </CustomTabPanel>
+
             <CustomTabPanel value={value} index={2}>
               <div className="technlogiesContainer-technology">
-                {Monitoring.map((eachItem) => (
+                {Prisma.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -623,9 +554,10 @@ class GraphSQlTechnoligy extends Component {
                 ))}
               </div>
             </CustomTabPanel>
+
             <CustomTabPanel value={value} index={3}>
               <div className="technlogiesContainer-technology">
-                {Containers.map((eachItem) => (
+                {GraphQLCodeGenerator.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -639,9 +571,27 @@ class GraphSQlTechnoligy extends Component {
                 ))}
               </div>
             </CustomTabPanel>
+
             <CustomTabPanel value={value} index={4}>
               <div className="technlogiesContainer-technology">
-                {Os.map((eachItem) => (
+                {ApolloServer.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+
+            <CustomTabPanel value={value} index={5}>
+              <div className="technlogiesContainer-technology">
+                {CrashReporting.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -678,13 +628,15 @@ class GraphSQlTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How long does it take to develop a DevOps project?
+                How long will it take to deliver a GraphQL project?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                The duration required to develop a DevOps project usually
-                depends on the complexity and size of the project.
-                Traditionally, it could take several months or even a year or
-                more.
+                The duration to complete a GraphQL project differs with the
+                complexity, size and various other features. We maintain high
+                standards using the agile development process and ensure that
+                not to run over time. Talk to our experts immediately to receive
+                a quote and a time and effort estimate for finishing your
+                GraphQL project.
               </AccordionDetails>
             </Accordion>
 
@@ -695,14 +647,12 @@ class GraphSQlTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How much does it cost to hire DevOps engineers?
+                Is GraphQL front-end or back-end?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Getting the expertise of DevOps developers might rest upon the
-                factors like location, experience, and the requisites posed by
-                the client. Hence, a systematic review of project needs and
-                choices is paramount to make a decision to induct the DevOps
-                team.
+                It is a query language that can be implemented on both the
+                client and server sides. GraphQL can improve the performance and
+                functionality of both front-end and back-end applications.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -712,25 +662,82 @@ class GraphSQlTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What are the benefits of DevOps consulting services?
+                What are the popular companies that use GraphQL?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                DevOps consulting services presents amplified collaboration
-                among the organization's diverse teams, an augmented capacity
-                for scalability and adaptability, and enhanced safeguarding of
-                security, stability, and dependability, coupled with an
-                accelerated journey to market manifestation.
-                 </AccordionDetails>
+                Many companies use GraphQL for its efficient development
+                features. Few of the leading companies that have used GraphQL in
+                their tech stack are as follows:
+                <ul>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Facebook
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Shopify
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} />{" "}
+                    Instagram
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Twitter
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} />
+                    GitHub
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> The New
+                    York Times
+                  </li>
+                </ul>
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                Will GraphQL help create an omnichannel experience?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                Yes! Frontend apps can be integrated with back-end services with
+                APIs created using GraphQL. These APIs will help developers
+                expose data conveniently. GraphQL will fetch the data from
+                various sources through a query, thus promoting seamless device
+                collaboration to create an omnichannel experience.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                What is the estimated cost of developing a GraphQL Application?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                There are multiple factors that influence the cost of GraphQL
+                development. To obtain an estimated development cost, contact us
+                with your project requirements, and we will provide you with a
+                quote.
+              </AccordionDetails>
             </Accordion>
           </div>
         </div>
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire a top DevOps Team
+            Hire a top GraphQL Development Team
           </h1>
           <p style={{ fontSize: "22px" }}>
-            Improve Efficiency with Proven DevOps Practices
+            Gain the Advantage with the GraphQL Development
           </p>
           <button
             className="letsTalkButton slideRight"
