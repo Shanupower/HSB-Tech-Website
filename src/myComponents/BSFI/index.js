@@ -58,7 +58,7 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    Travel and Hospitality App Development Services
+    BFSI App Development Services
   </Typography>,
 ];
 
@@ -174,9 +174,6 @@ const educationProcessTimelineItems = [
   {
     title: "Step 12",
   },
-  {
-    title: "Step 13",
-  },
 ];
 CustomTabPanel.propTypes = {
   children: PropTypes.node,
@@ -191,7 +188,7 @@ function a11yProps(index) {
   };
 }
 
-class TravelAndHospitalityIndustry extends Component {
+class BFSIIndustry extends Component {
   state = {
     value: 0,
   };
@@ -229,17 +226,20 @@ class TravelAndHospitalityIndustry extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-              Travel and Hospitality App Development Services
+              BFSI App Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              Value-driven travel and hospitality app development solutions for
-              travel businesses of all sizes! Get highly customized travel IT
-              solutions developed by us and overcome the complexities in the
-              tourism business. Team up with us to modernize and speed up
-              tourism-related operations.
+              We are a forward-thinking software development company focusing on
+              serving the Banking, Financial Services, and Insurance (BFSI)
+              sector. We understand the intricacies and challenges of this
+              industry, and our team is equipped with the expertise to address
+              them effectively. Our BFSI app development solutions are tailored
+              to assist banks, financial institutions, insurance companies, and
+              other stakeholders in achieving their strategic goals and
+              enhancing customer experiences.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -269,16 +269,12 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Solutions We Deliver
+            Our BFSI Solutions
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            For this highly competitive industry to survive, it is essential for
-            companies to implement customized travel portal development and
-            hospitality IT consulting solutions that offer the best user
-            experience, efficiency, and robustness. In the space of tourism and
-            hospitality, we offer comprehensive IT solutions with the best of
-            business results in terms of budget, effectiveness, productivity,
-            customer satisfaction, sales, and further growth of the business.
+            We are pioneer in innovation and delivering tailored solutions that
+            empower the BFSI sector. Our commitment to excellence shines through
+            our unique offerings.
           </p>
           <div
             className="cardsContainer-services"
@@ -295,16 +291,15 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enterprise Mobility Solutions
+                BFSI Software Development Services
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Mobility enabled travel and hospitality IT solutions for the
-                enterprise to accurately monitor and reach out to a large
-                segment of on-the-go clientele with ease, efficiency and
-                productive output.
+                We excel in developing custom software solutions for the BFSI
+                domain, incorporating cutting-edge technologies to streamline
+                operations, enhance security, and optimize customer engagement.
               </p>
             </div>
             <div
@@ -317,17 +312,15 @@ class TravelAndHospitalityIndustry extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Travel Management Software
+                Banking Software Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                It focuses on resource planning, management and operational
-                control between different departments, based at different
-                locations. Diverse software modules to focus on separate working
-                areas and integrated with each other through intermediate
-                modules.
+                We provide comprehensive solutions from conceptualization to
+                deployment, ensuring operational efficacy and regulatory
+                compliance.
               </p>
             </div>
             <div
@@ -341,16 +334,15 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Travel & Hospitality Web and Mobile Applications
+                Web Development Services for BFSI
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Customized web and mobile applications catering to exceptional
-                guest service, hotel bookings, restaurant management, enhanced
-                customer loyalty, and other tourism support integrated with
-                payment gateway.
+                Our tailored web development services for the BFSI sector are
+                responsive and intuitive offering a consistent experience across
+                devices.
               </p>
             </div>
             <div
@@ -364,17 +356,15 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Vehicle Tracking System
+                Mobile App Development for Banking
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                GPS based vehicle tracking system and monitoring of fleet owners
-                with an objective to monitor, configure, and track vehicles,
-                keeping a demanding eye on them. Through GPRS connectivity,
-                mobile sends the vehicle information and GSM-based SIM signals
-                to the backend server.
+                Our expertise in mobile app development ensures that your
+                banking applications are cutting-edge, secure, and offer
+                superior user experience.
               </p>
             </div>
             <div
@@ -388,42 +378,15 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Technoligy} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Comprehensive Admin Dashboard
+                Online Banking Software Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Mobility enabled travel & hospitality IT solutions where admins
-                can check availability, track promotions, manage users, collect
-                feedback, and other features that enables the enterprise to
-                reach out to a large segment of on-the-go clientele with ease,
-                efficiency and productive output.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                CRM and ERP Systems
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Custom CRM development for travel and hospitality for each
-                segment such as sales, service, marketing and satisfaction. ERP
-                system helps in accumulation of business software solutions,
-                meant for the industry, that emphasis on resource planning,
-                management and operational control between various departments,
-                and locations.
+                We specialize in creating online banking software that offers a
+                secure, efficient, and user-friendly platform for customers to
+                manage their finances seamlessly.
               </p>
             </div>
           </div>
@@ -431,14 +394,9 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="section whyChooseHSB" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Why Hire HSB As Your Travel and Hospitality App Development Company?
+            Why Hire HSB As Your BFSI App Development Company?
           </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            The integration of cognitive technologies in travel apps can collect
-            and process requests at a much faster pace. Through our smart
-            solutions you can allocate your resources, handle feedback and
-            prepare effective strategies.
-          </p>
+
           <div
             className="cardsContainer-services"
             style={{ marginTop: "3.2rem" }}
@@ -452,16 +410,15 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enhance Customer Experience
+                Comprehensive Solutions
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                The app helps in attending customer queries as and when they are
-                raised which will benefit in building strong customer
-                relationships. The app automates the queries and you can resolve
-                them within no time.
+                We offer end-to-end BFSI software development services, from
+                custom application development to integration. to enhance
+                realtime experience of possessing the property.
               </p>
             </div>
             <div
@@ -473,16 +430,14 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cost-effective
+                Comprehensive Solutions
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Traditionally, hotels hire, train and pay remunerations to the
-                employees who provide concierge services to the management. By
-                making a one-time investment in mobile app solution, it will be
-                economically worth against a traditional pattern.
+                We offer end-to-end BFSI software development services, from
+                custom application development to integration.
               </p>
             </div>
             <div
@@ -494,17 +449,16 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Multiple Revenue App
+                Expert Guidance
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                The same unmatched classic concierge app can be integrated with
-                multiple services which will generate multiple revenues.
-                Ancillary services such as cab booking service, food delivery,
-                etc. can be offered under single paid subscription to generate
-                regular income source.
+                HSB brings the expertise of building finance and fintech web and
+                mobile app solutions. Leverage our experience, in streamlining
+                the complex processes, and building a 100% compliant app that
+                ensures data security.
               </p>
             </div>
             <div
@@ -516,16 +470,15 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                AI-Powered
+                User-centric Approach
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our concierge apps are a replaceable to humans employed at the
-                hotel reception. As we understand that it will be difficult to
-                hire someone for 24hrs at the reception desk, our AI concierge
-                apps can be employed as an alternate.
+                We build applications considering a balance between user’s
+                experience and product vision. Through OCR and other tools we
+                make it easier for the user to share the required details.
               </p>
             </div>
             <div
@@ -537,16 +490,17 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Chatbots to Hold Customers
+                Prioritizing Security
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                With the help of Chatbots, smart and effective communication can
-                be established which will positively impact the users.
+                We understand the significance of customers’ data privacy and
+                therefore, our custom BFSI solutions are developed with
+                high-security standards.
               </p>
-            </div>
+            </div>{" "}
             <div
               className="card-service"
               style={{
@@ -556,16 +510,35 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Branding and Customer Engagement
+                Payment Integrations
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our advance IT solutions specific to travel industry help in
-                delivering effective on-time and hassle-free services to the
-                customers. This will strengthen the brand and uplift the stake
-                and help in better customer engagement.
+                We provide wide variety of payment integrations, such as, QR
+                code, net banking, debit or credit cards, UPI, and payment
+                wallets.
+              </p>
+            </div>{" "}
+            <div
+              className="card-service"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              }}
+            >
+              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+                Highly Compliance Standards
+              </p>
+              <p
+                className="cardDescription-service"
+                style={{ fontSize: "22px" }}
+              >
+                We align software development process with BFSI regulatory
+                compliances to protect customer data and ensuring that the
+                process should comply with the standards.
               </p>
             </div>
           </div>
@@ -573,13 +546,13 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Few Modules for Your Custom Travel and Hospitality App
+            Few Modules for Your Custom BFSI App
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            We can build a wide range of travel and hospitality modules specific
-            to the requirements of a hospitality company. Our developers also
-            make sure that all the modules and corresponding tech stacks work
-            together perfectly.
+            Through our BFSI app development, we aim to create integrated
+            solutions and enhance business processes. Following are our
+            comprehensive manufacturing modules specific to the industry
+            requirement.
           </p>
 
           <div
@@ -604,7 +577,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Travel and tourism guidance</p>
+              <p>Mobile accessibility </p>
             </div>
             <div
               className="moduleItem"
@@ -620,7 +593,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Hotel accommodation booking </p>
+              <p>Real-time alerts and notifications </p>
             </div>
             <div
               className="moduleItem"
@@ -636,7 +609,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Travel booking</p>
+              <p>KYC process automatio</p>
             </div>
             <div
               className="moduleItem"
@@ -652,7 +625,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Flight booking</p>
+              <p>Integrating UPI and other digital payments</p>
             </div>
             <div
               className="moduleItem"
@@ -668,7 +641,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Car rental or fleet management </p>
+              <p>OCR tools</p>
             </div>
             <div
               className="moduleItem"
@@ -684,7 +657,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Custom travel planning</p>
+              <p>GPS Tracking</p>
             </div>
             <div
               className="moduleItem"
@@ -700,7 +673,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>CRM for hotels </p>
+              <p>Send & request money</p>
             </div>
             <div
               className="moduleItem"
@@ -716,7 +689,232 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Cab booking service</p>
+              <p>QR code for scanning</p>
+            </div>
+
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Bulk upload of documents</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Real-time selfie or video update</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Transactional SMS tracking</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Digital wallet for online payments</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Utility bills payment</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Analysing financial risk to create risk score</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Bank statement analyser</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Credit score analyser</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Automated invoicing</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Subscription flow</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Automated EMI debits</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Data-driven reports</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Role based access control</p>
+            </div>
+            <div
+              className="moduleItem"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+                backgroundColor: "#f4f4f4",
+                display: "flex",
+                alignItems: "center",
+                minWidth: "fit-content",
+                width: "30%",
+              }}
+            >
+              <FaArrowRight className="moduleItemBullet" />
+              <p>Compliance monitoring</p>
             </div>
           </div>
         </div>
@@ -738,7 +936,6 @@ class TravelAndHospitalityIndustry extends Component {
               >
                 <Tab label="Frontend" {...a11yProps(0)} />
                 <Tab label="Backend" {...a11yProps(1)} />
-                <Tab label="Database" {...a11yProps(1)} />
               </Tabs>
             </Box>
             <CustomTabPanel
@@ -795,7 +992,7 @@ class TravelAndHospitalityIndustry extends Component {
             </CustomTabPanel>
           </Box>
         </div>
-        <div
+        {/* <div
           // className="technologiesSectionIndustries section"
           className="closingSection"
           style={{ paddingInline: " 14%" }}
@@ -821,14 +1018,13 @@ class TravelAndHospitalityIndustry extends Component {
             <p> Scrum calls and sprint planning </p>
             <p> UI/UX designs and approval</p>
             <p>Development phase </p>
-            <p>Ensuring compliance with travel and tourism regulations </p>
             <p> Internal testing and UAT</p>
             <p>Deployment </p>
             <p> Training, support and maintenance</p>
           </Chrono>
-        </div>
+        </div> */}
         {/* Accordion */}
-        <div
+        {/* <div
           className="technologiesSectionIndustries section"
           style={{ paddingInline: " 14%" }}
         >
@@ -847,14 +1043,45 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What features can be included in a mobile app of travel
-                business?
+                What are some of the features of your real estate software
+                solutions and services?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                It includes features such as trip planning, route filtering,
-                weather information, and currency conversion. It can also allow
-                users to book hotels, flights, and other tourism-related
-                services directly from the app.
+                Our software solutions either through mobile app or web app for
+                the real estate industry include the following features:
+                <ul>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Mobile
+                    Listing management
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Order
+                    CRM integration
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Payment
+                    Lead capture
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Mobile
+                    Mortgage calculator
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> Lending
+                    Home search
+                  </li>
+
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> The cost
+                    Virtual tours
+                  </li>
+                  <li style={{ paddingBlock: ".2rem", fontSize: "20px" }}>
+                    <FiberManualRecordIcon sx={{ fontSize: "12px" }} /> The cost
+                    Agent profiles and more
+                  </li>
+                </ul>
               </AccordionDetails>
             </Accordion>
 
@@ -865,14 +1092,15 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What type of travel related operations does a travel mobile app
-                help with?
+                How long does it take to develop a real estate app? How much
+                would a real estate app cost?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                A mobile application can help with a variety of tourism-related
-                operations, such as booking hotel rooms, managing itineraries,
-                providing information about local attractions and activities,
-                booking tickets, organizing tour packages, and more.
+                The development time for any app including real estate depends
+                on the features and functionality required. We suggest you to
+                contact us with your requirements so that we can help you with
+                estimated time of completion of the app and approximate cost of
+                developing the app.
               </AccordionDetails>
             </Accordion>
 
@@ -883,14 +1111,16 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How does a travel industry benefits from having a mobile app?
+                Which technologies and programming languages your developers
+                employ to create real estate applications?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                By having a travel mobile app, your business can provide handy
-                tool to the customer to register tickets, packages, and
-                accommodation. Reliable technology aids the travel industry to
-                digitalize its services to increase customer reach and
-                satisfaction.
+                Our developers are well experienced in programming languages
+                like Kotlin, Swift, Java, and CSS. As for mobile frameworks, we
+                use React Native, Android Studio, Flutter, iOS SDK, Xcode,
+                Xamarin, Cordova, and Iconic. Using Metaverse, we can develop 3D
+                and multi-dimensional walk-throughs of your property to give a
+                realistic experience to the customers.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -900,21 +1130,22 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                Is your travel software service scalable?
+                How having a real estate app is profitable?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Yes, we create software and apps for the travel and hospitality
-                industry that help you support as many customers as you require.
-                The apps are scalable in accordance to your business expansion.
+                Along with increasing the mobility and customer reach, you can
+                also use real estate apps to create other sources of income such
+                as, selling ad slots to property management companies, mortgage
+                lenders, and other similar businesses and providing premium
+                services to real estate agents.
               </AccordionDetails>
             </Accordion>
           </div>
-        </div>
+        </div> */}
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire Us for Travel and Hospitality Software Development
-            Requirements.
+            Connect us now to avail our BFSI app development services
           </h1>
           <button className="letsTalkButton slideRight" type="button">
             GET QUOTE
@@ -928,4 +1159,4 @@ class TravelAndHospitalityIndustry extends Component {
   }
 }
 
-export default TravelAndHospitalityIndustry;
+export default BFSIIndustry;

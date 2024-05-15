@@ -5,7 +5,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Typography from "@mui/material/Typography";
 
-import manufacturingImage from "../../assets/manufacturing-landingpage.webp";
+import manufacturingImage from "../../../assets/manufacturing-landingpage.webp";
 import { FaArrowRight } from "react-icons/fa";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -13,32 +13,29 @@ import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import { Chrono } from "react-chrono";
 
-import reactImage from "../../assets/react.png";
-import flutterImage from "../../assets/flutter.png";
-import javaScript from "../../assets/javascript-logo.png";
-import HtmlImage from "../../assets/html.webp";
-import angular from "../../assets/angular.webp";
-import cssImage from "../../assets/css.png";
-import nodeJs from "../../assets/nodejs.png";
-import goLang from "../../assets/goLanguage.png";
-import SupplyChain from "../../assets/icons/icons8-supply-chain-60.png";
-import Data from "../../assets/icons/icons8-data-migration-60.png";
-import Production from "../../assets/icons/icons8-production-machine-60.png";
-import QualityChain from "../../assets/icons/icons8-quality-control-60.png";
-import Technoligy from "../../assets/icons/icons8-technology-60.png";
-import Opreation from "../../assets/icons/icons8-operations-60.png";
+import reactImage from "../../../assets/react.png";
+import flutterImage from "../../../assets/flutter.png";
+import javaScript from "../../../assets/javascript-logo.png";
+import HtmlImage from "../../../assets/html.webp";
+import angular from "../../../assets/angular.webp";
+import cssImage from "../../../assets/css.png";
+import nodeJs from "../../../assets/nodejs.png";
+import goLang from "../../../assets/goLanguage.png";
+import SupplyChain from "../../../assets/icons/icons8-supply-chain-60.png";
+import Data from "../../../assets/icons/icons8-data-migration-60.png";
+import Production from "../../../assets/icons/icons8-production-machine-60.png";
+import QualityChain from "../../../assets/icons/icons8-quality-control-60.png";
+import Technoligy from "../../../assets/icons/icons8-technology-60.png";
+import Opreation from "../../../assets/icons/icons8-operations-60.png";
 import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import AWS from "../../assets/icons/images.png";
-import Azure from "../../assets/icons/download.png";
+import AWS from "../../../assets/icons/images.png";
+import Azure from "../../../assets/icons/download.png";
 
-import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
-import { useMediaQuery } from "@mui/material";
-import Footer from "../footer";
+import Footer from "../../footer";
 
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
@@ -58,7 +55,7 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    Travel and Hospitality App Development Services
+    Telecom App Development Services
   </Typography>,
 ];
 
@@ -174,9 +171,6 @@ const educationProcessTimelineItems = [
   {
     title: "Step 12",
   },
-  {
-    title: "Step 13",
-  },
 ];
 CustomTabPanel.propTypes = {
   children: PropTypes.node,
@@ -191,7 +185,7 @@ function a11yProps(index) {
   };
 }
 
-class TravelAndHospitalityIndustry extends Component {
+class FlutterTechnoligy extends Component {
   state = {
     value: 0,
   };
@@ -229,17 +223,20 @@ class TravelAndHospitalityIndustry extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-              Travel and Hospitality App Development Services
+              Telecom App Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              Value-driven travel and hospitality app development solutions for
-              travel businesses of all sizes! Get highly customized travel IT
-              solutions developed by us and overcome the complexities in the
-              tourism business. Team up with us to modernize and speed up
-              tourism-related operations.
+              The one and only industry that has undergone rapid change and has
+              witnessed an upserge in its demand is, the telecom. This tidal
+              shift in the telecom software development industry is forcing
+              major and ongoing upgrades to network and data storage
+              infrastructures, as exemplified by the 5G rollout, and continuing
+              new trends. Therefore, a corresponding digital transformation in
+              operations is required in areas such as customer care, sales, and
+              billing.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -272,13 +269,12 @@ class TravelAndHospitalityIndustry extends Component {
             Solutions We Deliver
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            For this highly competitive industry to survive, it is essential for
-            companies to implement customized travel portal development and
-            hospitality IT consulting solutions that offer the best user
-            experience, efficiency, and robustness. In the space of tourism and
-            hospitality, we offer comprehensive IT solutions with the best of
-            business results in terms of budget, effectiveness, productivity,
-            customer satisfaction, sales, and further growth of the business.
+            Connect your telecommunication business to the world of advanced
+            software solutions and accelerate your digital services
+            transformation, add competitive value to your offerings, and
+            generate new revenue streams. Start your digitalization journey and
+            keep up with the latest technologies to enhance your business
+            revenue streams.
           </p>
           <div
             className="cardsContainer-services"
@@ -295,16 +291,17 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enterprise Mobility Solutions
+                Telecom Software Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Mobility enabled travel and hospitality IT solutions for the
-                enterprise to accurately monitor and reach out to a large
-                segment of on-the-go clientele with ease, efficiency and
-                productive output.
+                We can deliver software development solutions connected to
+                self-care portals, CRM, payment systems, provisioning,
+                inventory, monitoring, IN and IMS, IoT, VoIP and roaming to
+                optimize your network performance, improve customer experience
+                and streamline operations.
               </p>
             </div>
             <div
@@ -317,17 +314,17 @@ class TravelAndHospitalityIndustry extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Travel Management Software
+                Cloud Native Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                It focuses on resource planning, management and operational
-                control between different departments, based at different
-                locations. Diverse software modules to focus on separate working
-                areas and integrated with each other through intermediate
-                modules.
+                Utilize Cloud Native architectures to migrate from legacy
+                SS7-based TDM and IN systems to software-based SIP, IMS and 5G
+                network applications. We design, develop, and deploy tailored
+                telecom enterprise software solutions specific to network
+                applications. 
               </p>
             </div>
             <div
@@ -341,16 +338,16 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Travel & Hospitality Web and Mobile Applications
+                Generative AI Solutions
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Customized web and mobile applications catering to exceptional
-                guest service, hotel bookings, restaurant management, enhanced
-                customer loyalty, and other tourism support integrated with
-                payment gateway.
+                Generative AI solutions can assist you with predictive
+                decision-making based on data breakdowns that will elevate your
+                company’s competitiveness. AI support automation of sales
+                services and customer support with ChatGPT or Auto-GPT.
               </p>
             </div>
             <div
@@ -364,17 +361,16 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Vehicle Tracking System
+                Machine Learning for Telecom
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                GPS based vehicle tracking system and monitoring of fleet owners
-                with an objective to monitor, configure, and track vehicles,
-                keeping a demanding eye on them. Through GPRS connectivity,
-                mobile sends the vehicle information and GSM-based SIM signals
-                to the backend server.
+                Optimize workflows through online and offline machine learning
+                models. Analyse photographic documentation of FTTH networks or
+                examine a set of existing cases to design an internal AI system
+                to boost your organization's effectiveness.
               </p>
             </div>
             <div
@@ -388,17 +384,17 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Technoligy} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Comprehensive Admin Dashboard
+                DevOps and CI/CD Methodologies
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Mobility enabled travel & hospitality IT solutions where admins
-                can check availability, track promotions, manage users, collect
-                feedback, and other features that enables the enterprise to
-                reach out to a large segment of on-the-go clientele with ease,
-                efficiency and productive output.
+                DevOps enables automated and iterative software development,
+                faster release of new features, as well as the ability to detect
+                and fix errors at the initial stages. By implementing continuous
+                integration (CI) and continuous deployment (CD), you can
+                increase your operational agility and reduce maintenance costs.
               </p>
             </div>
             <div
@@ -412,18 +408,40 @@ class TravelAndHospitalityIndustry extends Component {
               <img src={Opreation} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                CRM and ERP Systems
+                Operations Support Systems (OSS) Development n
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Custom CRM development for travel and hospitality for each
-                segment such as sales, service, marketing and satisfaction. ERP
-                system helps in accumulation of business software solutions,
-                meant for the industry, that emphasis on resource planning,
-                management and operational control between various departments,
-                and locations.
+                Customized solutions to replace excel in telecommunications OSS.
+                Boost the day-to-day operations of a telecom network, monitor
+                network performance, diagnose issues and instantly troubleshoot
+                problems to reduce downtime and improve results.
+              </p>
+            </div>
+            <div
+              className="card-service"
+              style={{
+                padding: "1rem 2rem",
+                borderRadius: "10px",
+                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              }}
+            >
+              <img src={Opreation} alt="ene" />
+
+              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+                Operations Support Systems (OSS) Development n
+              </p>
+              <p
+                className="cardDescription-service"
+                style={{ fontSize: "22px" }}
+              >
+                Accelerate the business side of telecom operations with
+                customer-facing solutions. Enable your company to efficiently
+                manage its customer base, create and manage pricing plans,
+                generate bills and invoices, process payments and resolve
+                customer queries or complaints with the BSS.
               </p>
             </div>
           </div>
@@ -431,13 +449,14 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="section whyChooseHSB" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Why Hire HSB As Your Travel and Hospitality App Development Company?
+            Why Hire HSB As Your Telecom App Development Company?
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            The integration of cognitive technologies in travel apps can collect
-            and process requests at a much faster pace. Through our smart
-            solutions you can allocate your resources, handle feedback and
-            prepare effective strategies.
+            Accelerate your telecom business operations with customer-oriented
+            solutions. Enable your staff to efficiently manage customer
+            responses, create and manage pricing plans, generate bills and
+            invoices, process payments and resolve customer queries or
+            complaints with smart telecom solutions.
           </p>
           <div
             className="cardsContainer-services"
@@ -452,16 +471,17 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enhance Customer Experience
+                Enhance Customer Relationships
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                The app helps in attending customer queries as and when they are
-                raised which will benefit in building strong customer
-                relationships. The app automates the queries and you can resolve
-                them within no time.
+                Experience a surge in requests by implementing cloud
+                infrastructure and optimizing networks, leading to improving the
+                delivery of telecom services to end consumers. We provide robust
+                support and self-service applications that foster greater
+                customer loyalty.
               </p>
             </div>
             <div
@@ -473,16 +493,16 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cost-effective
+                Boost Management Efficiency
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Traditionally, hotels hire, train and pay remunerations to the
-                employees who provide concierge services to the management. By
-                making a one-time investment in mobile app solution, it will be
-                economically worth against a traditional pattern.
+                We provide efficient network management tools to streamline
+                service delivery and reduce operating costs. Our advanced data
+                analytics helps in prioritizing automation across various
+                network components and operational processes.
               </p>
             </div>
             <div
@@ -494,17 +514,17 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Multiple Revenue App
+                Competitive Advantage
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                The same unmatched classic concierge app can be integrated with
-                multiple services which will generate multiple revenues.
-                Ancillary services such as cab booking service, food delivery,
-                etc. can be offered under single paid subscription to generate
-                regular income source.
+                We understand that the telecom industry boasts an abundance of
+                big data sources for both internal use and monetization through
+                data-driven product offerings. By teaming up with our custom
+                telecom solutions you can unlock new revenue streams and
+                business insights from your big data.
               </p>
             </div>
             <div
@@ -516,56 +536,17 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                AI-Powered
+                Reduced Operational Costs in the Long Run
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our concierge apps are a replaceable to humans employed at the
-                hotel reception. As we understand that it will be difficult to
-                hire someone for 24hrs at the reception desk, our AI concierge
-                apps can be employed as an alternate.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Chatbots to Hold Customers
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                With the help of Chatbots, smart and effective communication can
-                be established which will positively impact the users.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Branding and Customer Engagement
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Our advance IT solutions specific to travel industry help in
-                delivering effective on-time and hassle-free services to the
-                customers. This will strengthen the brand and uplift the stake
-                and help in better customer engagement.
+                By optimizing infrastructure and automating operations the
+                organization will witness reduced expenses across various levels
+                and departments. We extend support through our business
+                intelligence tools, that maximizes the financial benefits of
+                digital transformation.
               </p>
             </div>
           </div>
@@ -573,13 +554,14 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Few Modules for Your Custom Travel and Hospitality App
+            Few Modules for Your Custom Telecom App
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            We can build a wide range of travel and hospitality modules specific
-            to the requirements of a hospitality company. Our developers also
-            make sure that all the modules and corresponding tech stacks work
-            together perfectly.
+            We deliver turnkey solutions that remove the major roadblocks in the
+            telecom business and help firms grow faster. We ensure quality
+            results that meet the expectations and emerging demands of the
+            customers in this industry. Following are the various modules that
+            can be customized for your telecom business requirement –
           </p>
 
           <div
@@ -604,7 +586,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Travel and tourism guidance</p>
+              <p>Online property booking app</p>
             </div>
             <div
               className="moduleItem"
@@ -620,7 +602,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Hotel accommodation booking </p>
+              <p>CRM and ERP system software </p>
             </div>
             <div
               className="moduleItem"
@@ -636,7 +618,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Travel booking</p>
+              <p>Property management app</p>
             </div>
             <div
               className="moduleItem"
@@ -652,7 +634,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Flight booking</p>
+              <p>B2B and B2C real estate app</p>
             </div>
             <div
               className="moduleItem"
@@ -668,7 +650,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Car rental or fleet management </p>
+              <p>Property rental app</p>
             </div>
             <div
               className="moduleItem"
@@ -684,7 +666,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Custom travel planning</p>
+              <p>Inventory management software</p>
             </div>
             <div
               className="moduleItem"
@@ -700,7 +682,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>CRM for hotels </p>
+              <p>Website for property dealers</p>
             </div>
             <div
               className="moduleItem"
@@ -716,7 +698,7 @@ class TravelAndHospitalityIndustry extends Component {
               }}
             >
               <FaArrowRight className="moduleItemBullet" />
-              <p>Cab booking service</p>
+              <p>Real estate marketplace app</p>
             </div>
           </div>
         </div>
@@ -726,8 +708,7 @@ class TravelAndHospitalityIndustry extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Technologies and Tools We Use for Healthcare App Development
-            Services
+            Technologies and Tools We Use for Telecom App Development Services
           </h1>
           <Box sx={{ width: "100%", marginTop: "2rem" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -801,7 +782,7 @@ class TravelAndHospitalityIndustry extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our Step-by-Step Process to Build the Outstanding Healthcare App
+            Our Step-by-Step Process to Build the Outstanding Telecom App
           </h1>
           <Chrono
             disableToolbar="true"
@@ -821,7 +802,7 @@ class TravelAndHospitalityIndustry extends Component {
             <p> Scrum calls and sprint planning </p>
             <p> UI/UX designs and approval</p>
             <p>Development phase </p>
-            <p>Ensuring compliance with travel and tourism regulations </p>
+
             <p> Internal testing and UAT</p>
             <p>Deployment </p>
             <p> Training, support and maintenance</p>
@@ -847,14 +828,16 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What features can be included in a mobile app of travel
-                business?
+                How can telecom software development services enhance the
+                customer experience?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                It includes features such as trip planning, route filtering,
-                weather information, and currency conversion. It can also allow
-                users to book hotels, flights, and other tourism-related
-                services directly from the app.
+                A telecom company that strives to enhance the customer
+                experience embraces a cloud-native architecture for agile,
+                scalable, and easily configurable omnichannel experiences. By
+                focusing on improving the customer service through AI and
+                automation, telecom companies can bring a major difference in
+                their services.
               </AccordionDetails>
             </Accordion>
 
@@ -865,32 +848,16 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What type of travel related operations does a travel mobile app
-                help with?
+                What is the role of network as a service (NaaS) for future
+                connectivity?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                A mobile application can help with a variety of tourism-related
-                operations, such as booking hotel rooms, managing itineraries,
-                providing information about local attractions and activities,
-                booking tickets, organizing tour packages, and more.
-              </AccordionDetails>
-            </Accordion>
-
-            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2-content"
-                id="panel2-header"
-                sx={{ fontSize: "24px" }}
-              >
-                How does a travel industry benefits from having a mobile app?
-              </AccordionSummary>
-              <AccordionDetails sx={{ fontSize: "20px" }}>
-                By having a travel mobile app, your business can provide handy
-                tool to the customer to register tickets, packages, and
-                accommodation. Reliable technology aids the travel industry to
-                digitalize its services to increase customer reach and
-                satisfaction.
+                Network as a service (NaaS) simplifies network management
+                through offering networking services as a subscription. A recent
+                trend in telecommunication software development, NaaS enables
+                businesses to focus on core objectives and conserve capital.
+                Furthermore, NaaS enhances scalability, agility, and the user
+                experience while providing advanced security features.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -900,12 +867,13 @@ class TravelAndHospitalityIndustry extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                Is your travel software service scalable?
+                Does HSB provide software development for various levels of
+                Telecom companies?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Yes, we create software and apps for the travel and hospitality
-                industry that help you support as many customers as you require.
-                The apps are scalable in accordance to your business expansion.
+                Yes, HSB can develop the software as per your requirement, size
+                of the company, features, business scale, and various other
+                factors.
               </AccordionDetails>
             </Accordion>
           </div>
@@ -913,8 +881,7 @@ class TravelAndHospitalityIndustry extends Component {
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire Us for Travel and Hospitality Software Development
-            Requirements.
+            Connect us now to avail our Telecom app development services
           </h1>
           <button className="letsTalkButton slideRight" type="button">
             GET QUOTE
@@ -928,4 +895,4 @@ class TravelAndHospitalityIndustry extends Component {
   }
 }
 
-export default TravelAndHospitalityIndustry;
+export default FlutterTechnoligy;

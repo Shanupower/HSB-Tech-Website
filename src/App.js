@@ -20,6 +20,9 @@ import TelecomIndustry from "./myComponents/Telecom";
 import RealEstateIndustry from "./myComponents/RealEsate";
 import EcommerceIndustry from "./myComponents/Ecommerce";
 import TravelAndHospitalityIndustry from "./myComponents/Travel&Hospitality";
+import BFSIIndustry from "./myComponents/BSFI";
+import DevOpsTechnoligy from "./myComponents/Technology/DevOps";
+import FlutterTechnoligy from "./myComponents/Technology/Flutter";
 class App extends Component {
   render() {
     return (
@@ -94,9 +97,14 @@ class App extends Component {
         />
         <Route
           exact
-          path="/industries/travel&hospitality"
+          path="/industries/travel-hospitality"
           component={TravelAndHospitalityIndustry}
         />
+        <Route exact path="/industries/bsfi" component={BFSIIndustry} />
+
+        {/* Technology */}
+        <Route exact path="/technoligy/devOps" component={DevOpsTechnoligy} />
+        <Route exact path="/technoligy/flutter" component={FlutterTechnoligy} />
       </Switch>
     );
   }
