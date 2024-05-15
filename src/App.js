@@ -23,6 +23,12 @@ import TravelAndHospitalityIndustry from "./myComponents/Travel&Hospitality";
 import BFSIIndustry from "./myComponents/BSFI";
 import DevOpsTechnoligy from "./myComponents/Technology/DevOps";
 import FlutterTechnoligy from "./myComponents/Technology/Flutter";
+import GraphSQlTechnoligy from "./myComponents/Technology/GraphSql";
+import LaravelTechnoligy from "./myComponents/Technology/Laravel";
+import NextTechnoligy from "./myComponents/Technology/NextJs";
+import NodeJsTechnoligy from "./myComponents/Technology/NodeJS";
+import ReactNativeTechnoligy from "./myComponents/Technology/ReactNative";
+import PostgreSQLTechnoligy from "./myComponents/Technology/PostgreSQL";
 class App extends Component {
   render() {
     return (
@@ -35,7 +41,7 @@ class App extends Component {
           path="/customisable solutions"
           component={CustomizableSolutions}
         />
-        <Route exact path="/lets talk" component={LetsTalk} />
+        <Route exact path="/lets_talk" component={LetsTalk} />
         <Route
           exact
           path="/services/web development"
@@ -66,6 +72,7 @@ class App extends Component {
           path="/services/fullstack development"
           component={FullStackDevelopment}
         />
+        {/* Industries */}
         <Route
           exact
           path="/industries/manufacturing"
@@ -103,6 +110,24 @@ class App extends Component {
         {/* Technology */}
         <Route exact path="/technoligy/devOps" component={DevOpsTechnoligy} />
         <Route exact path="/technoligy/flutter" component={FlutterTechnoligy} />
+        <Route
+          exact
+          path="/technoligy/graphSQl"
+          component={GraphSQlTechnoligy}
+        />
+        <Route exact path="/technoligy/laravel" component={LaravelTechnoligy} />
+        <Route exact path="/technoligy/nextJs" component={NextTechnoligy} />
+        <Route exact path="/technoligy/nodsJs" component={NodeJsTechnoligy} />
+        <Route
+          exact
+          path="/technoligy/postgreSql"
+          component={PostgreSQLTechnoligy}
+        />
+        <Route
+          exact
+          path="/technoligy/react-native"
+          component={ReactNativeTechnoligy}
+        />
       </Switch>
     );
   }

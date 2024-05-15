@@ -57,6 +57,16 @@ import Footer from "../footer";
 import Navigationbar from "../navigationBar";
 import { Link } from "react-router-dom";
 
+// Home Trasted Image
+import Interexsemi from "../../assets/icons/Interex.svg";
+import Glance from "../../assets/icons/Glance Logo V1.jpg";
+import Aries from "../../assets/icons/Aries.png";
+import Pangu from "../../assets/icons/PGM_logo_big.png";
+import Serole from "../../assets/icons/serole-new-logo1.png";
+import Cosmosksa from "../../assets/icons/cosmos_Logo.svg";
+import Arce from "../../assets/icons/arcImgae.png";
+import WSC from "../../assets/icons/WSC.webp";
+
 import "./index.css";
 
 const settings = {
@@ -73,87 +83,59 @@ const settings = {
 const trustedbyCompaniesList = [
   {
     id: 1,
-    imageUrl: oliveGardenImage,
-    cardTitle: "Olive Garden",
+    imageUrl: Interexsemi,
+    cardTitle: "Interes Semi",
     cardDescription:
-      "Olive Garden is an American casual dining restaurant chain. It is a subsidiary of Darden Restaurants, Inc., which is headquartered in Orange County, Florida. We have been a part of Olive Garden’s success journey by building their web and mobile applications",
+      " We are on a mission to redefine what’s possible, and we’re looking for diverse, talented individuals to join us in this exciting journey",
   },
   {
     id: 2,
-    imageUrl: khatabookImage,
-    cardTitle: "Khatabook",
+    imageUrl: Glance,
+    cardTitle: "Glance",
     cardDescription:
-      "Khatabook is an Indian initiative to make wealth management simpler for people of all walksof life.They collaborated with us to build a mobile app for their service which was built in ReactNative, a web app built in React and employed MolecularJS and MongoDB + MySQLDB in the backend.The app is live and has already helped 10M+ people manage and save money.",
+      "We are a unique hub of expertise driven by the concept of excellence since more than 20 years in providing services across multidisciplinary functions of any Business / Projects. We utilize a Best Practice approach to work with the clients to determine the appropriate size and scope of the development.",
   },
   {
     id: 3,
-    imageUrl: icicImage,
-    cardTitle: "ICICI Bank",
+    imageUrl: Aries,
+    cardTitle: "Aries",
     cardDescription:
-      "ICICI Securities is a subsidiary of ICICI Bank. They meet three critical needs of their vast customer base — investments, protection, and borrowing. The virtual financial supermarket www.icicidirect.com is part of their operation. We collaborated with them to create the frontend of their mobile app.",
+      " Aries is the largest Engineering, Inspection & Maintenance firm in the Middle East. Founded by Dr. Sohan Roy in 1998, Aries Marine is the flagship brand of Aries Group, a world-class consortium of diversified independent firms. Headquartered in Sharjah, UAE, this ISO 9001:2015, ISO 14001:2015, ISO 29001:2020 & ISO 45001:2018 certified company has business branches in Singapore, Malaysia, Indonesia, China, India, Qatar, Bahrain, Oman, Saudi Arabia, Kuwait, Azerbaijan, Germany, UK, Angola, Srilanka, Netherlands,Turkey and the USA. ",
   },
   {
     id: 4,
-    imageUrl: amanaImage,
-    cardTitle: "Amana",
+    imageUrl: Pangu,
+    cardTitle: "PGM",
     cardDescription:
-      "UK based Amana skincare is one of the fastest growing product based companies that delivers beauty products based on skin types of consumers. We built a typical e-commerce mobile app as well as a web app in React + React Native with Styled components and Firebase.",
+      "The honorable state, may God bless it, has harnessed its capabilities to serve its sons and daughters and support them materially and morally, and even provide them with scientific and practical qualifications so that they can become active and productive members of society. The state pays great attention to people with disabilities, and one of its concerns is employing them according to their abilities. Pan Gulf Marketing Company is keen to benefit from their abilities through providing them withappropriate training and work qualifications to be able to work and become productive.We believe that following this direction,blessing will come, God willing. ",
   },
   {
     id: 5,
-    imageUrl: pepperfryImage,
-    cardTitle: "Pepperfry",
+    imageUrl: WSC,
+    cardTitle: "WATANIYA SOLUTIONS COMPANY (WSC)",
     cardDescription:
-      "Pepperfry is an online marketplace specializing in home décor and furniture. Our collaboration was related to design systems. We Integrated a new design system on existing app screens and made them more responsive.",
+      " Our Vision To let WATANIYA SOLUTIONS COMPANY (WSC) for Communications and Information Technology (IT) be the leading provider of electronic solutions in the region. WATANIYA SOLUTIONS COMPANY (WSC) for Communications and Information Technology (IT) is a leading and qualified company in the integration and service field of information and communication systems. WSC for Communications and Information Technology has achieved a 100 % completion rate for projects and for several diverse projects by building all its capacities to achieve the standards that were put forward in the framework of the Kingdom's Vision 2030. All of this will be achieved by simplifying e-governance procedures through digital transformation, digital solutions, and the establishment of confidence in the distinctive Saudi talent, where 70 % of the jobs have been localized.",
   },
   {
     id: 6,
-    imageUrl: atsignImage,
+    imageUrl: Serole,
     cardTitle: "AtSign",
     cardDescription:
-      "AtSign is the creator of the atPlatform, which revolutionized how data is exchanged over the internet with its end-to-end encrypted communication protocol, called the atProtocol. We worked on two projects for the @company — a location-sharing app, and a UI/UX based project.",
+      "Serole Technologies is a Global IT Solutions and Services provider bringing Innovative and Value-added Solutions to Enterprise Customers in the areas of Application Services, Integration Services, Smart Data Visualization & Analytics, and Digital Solutions to help its Customers businesses become High-Performance Enterprises. In every business engagement, Serole seek the opportunity to build long-lasting, strategic relationships.",
   },
   {
     id: 7,
-    imageUrl: dardenImage,
-    cardTitle: "Darden",
+    imageUrl: Cosmosksa,
+    cardTitle: "Cosmos",
     cardDescription:
-      "Darden is the world's largest full-service restaurant company, with 175,000+ employees and 1,800 restaurant locations. A member of the Fortune 500 for the last 21 years, the Darden team deals with multiple operational requirements. We’ve been working with them to build their web and mobile applications.",
+      "Cosmos was formed in 2019 and is based in the Kingdom’s capital, Riyadh - and is part of the successful family-owned Lemal Holding Group. Cosmos operates a diverse portfolio of Art, Entertainment and Sports related businesses.",
   },
   {
     id: 8,
-    imageUrl: mplImage,
-    cardTitle: "MPL",
+    imageUrl: Arce,
+    cardTitle: "American Research Center ",
     cardDescription:
-      "A long term client with over 2 years of engagement, Mobile Premier League (MPL) is India's biggest online gaming platform that offers the ultimate gaming experience to users, who can play 40+ games including fantasy sports, that we helped redesign using React, React Native with Redux, Sentry, Babel and Objective C.",
-  },
-  {
-    id: 9,
-    imageUrl: payPoint,
-    cardTitle: "PayPoint",
-    cardDescription:
-      "Taking logistics to the next level with an all-encompassing web app, PayPoint is dominating as UK's largest logistics service provider, backed by React Native, Firebase, a brand new UI &amp; UX design and our guarantee.",
-  },
-  {
-    id: 10,
-    imageUrl: scrollNewsImage,
-    cardTitle: "Scroll News",
-    cardDescription:
-      "Scroll News is an independent source for news that covers news, politics, sports, culture and everything in between. We helped build an ideal mobile and web platform for it using Flutter, GCP, Firebase, NodeJS and Postgres.",
-  },
-  {
-    id: 11,
-    cardTitle: "100ms",
-    imageUrl: hundredmsImage,
-    cardDescription:
-      "Founded in 2020, 100ms is revolutionizing the live-video industry. Their products and APIs simplify real-time video conferring and allow interactive live streaming. We worked on developing video conferencing SDKs to enhance the 100ms application.",
-  },
-  {
-    id: 12,
-    imageUrl: ibsImage,
-    cardTitle: "IPS Verlang",
-    cardDescription:
-      "IPS Verlag is part of the IPS Group — Germany's largest independent national distributor of press products. They provide a wide range of services and deal with a large network of news organizations. From digital printing and press software to publishing of books, the organization is constantly growing. We’re designing and developing a mobile application for IPS.",
+      "The American Research Center in Egypt actively supports scholarship, training and conservation efforts in Egypt through grants, fieldwork and field schools",
   },
 ];
 
@@ -182,10 +164,32 @@ class Home extends Component {
         </div>
 
         <div className="navbarSection">
-          <button className="letsTalkButton slideRight" type="button">
-            LET'S TALK
-            <FaArrowRight className="rightArrow" />
-          </button>
+          <Link
+            to="lets_talk"
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            <button
+              className="letsTalkButton slideRight"
+              type="button"
+              style={{
+                display: "flex",
+                alignItems: "center",
+                position: "relative",
+              }}
+            >
+              LET'S TALK
+              <FaArrowRight
+                className="rightArrow"
+                style={{
+                  position: "absolute",
+                  right: "1rem",
+                }}
+              />
+            </button>
+          </Link>
+
           <button className="navItem" type="button">
             What we do
           </button>
@@ -236,11 +240,24 @@ class Home extends Component {
             {trustedbyCompaniesList.map((eachCompany) => (
               <HoverCard.Root>
                 <HoverCard.Trigger asChild>
-                  <div key={eachCompany.id} className="trustedbyImageContainer">
+                  <div
+                    key={eachCompany.id}
+                    className="trustedbyImageContainer"
+                    style={{
+                      width: "100px",
+                      height: "54px",
+                    }}
+                  >
                     <img
                       className="trustedbyImage"
                       src={eachCompany.imageUrl}
                       alt="trusted by company image"
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        filter: "grayscale(100%)",
+                        objectFit: "fill",
+                      }}
                     />
                   </div>
                 </HoverCard.Trigger>
