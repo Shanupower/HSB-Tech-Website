@@ -1,9 +1,9 @@
-import { Component } from "react"
-import { Route, Switch } from 'react-router-dom';
+import { Component } from "react";
+import { Route, Switch } from "react-router-dom";
 import Home from "./myComponents/home";
 import Services from "./myComponents/services";
 import Industries from "./myComponents/industries";
-import CustomizableSolutions from './myComponents/customizableSolutions'
+import CustomizableSolutions from "./myComponents/customizableSolutions";
 import LetsTalk from "./myComponents/letsTalk";
 import WebDevelopment from "./myComponents/serviceDetailedPage";
 import MobileDevelopment from "./myComponents/mobileServiceDetails";
@@ -14,30 +14,70 @@ import FullStackDevelopment from "./myComponents/fullStack";
 import Manufacturing from "./myComponents/manufacturing";
 import FintechIndustry from "./myComponents/fintechIndustry";
 import HealthcareIndustry from "./myComponents/healthcareIndustry";
-import EducationIndustry from "./myComponents/educationIndustry"
-import 'bootstrap/dist/css/bootstrap.min.css';
-class App extends Component{
-  render(){
-    return(
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/services" component={Services} />
-          <Route exact path='/industries' component={Industries} />
-          <Route exact path='/customisable solutions' component={CustomizableSolutions} />
-          <Route exact path='/lets talk' component={LetsTalk} />
-          <Route exact path="/services/web development" component={WebDevelopment} />
-          <Route exact path="/services/mobile development" component={MobileDevelopment} />
-          <Route exact path="/services/quality assurance" component={QualityAssurance} />
-          <Route exact path="/services/uiux development" component={UIUXDevelopment} />
-          <Route exact path="/services/busines analysis services" component={BusinessAnalysisServices} />
-          <Route exact path="/services/fullstack development" component={FullStackDevelopment} />
-          <Route exact path="/industries/manufacturing" component={Manufacturing} />
-          <Route exact path="/industries/fintech" component={FintechIndustry} />
-          <Route exact path="/industries/healthcare" component={HealthcareIndustry} />
-          <Route exact path="/industries/education" component={EducationIndustry} />
-        </Switch>
-    )
+import EducationIndustry from "./myComponents/educationIndustry";
+import "bootstrap/dist/css/bootstrap.min.css";
+class App extends Component {
+  render() {
+    return (
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/industries" component={Industries} />
+        <Route
+          exact
+          path="/customisable solutions"
+          component={CustomizableSolutions}
+        />
+        <Route exact path="/lets talk" component={LetsTalk} />
+        <Route
+          exact
+          path="/services/web development"
+          component={WebDevelopment}
+        />
+        <Route
+          exact
+          path="/services/mobile development"
+          component={MobileDevelopment}
+        />
+        <Route
+          exact
+          path="/services/quality assurance"
+          component={QualityAssurance}
+        />
+        <Route
+          exact
+          path="/services/uiux development"
+          component={UIUXDevelopment}
+        />
+        <Route
+          exact
+          path="/services/busines analysis services"
+          component={BusinessAnalysisServices}
+        />
+        <Route
+          exact
+          path="/services/fullstack development"
+          component={FullStackDevelopment}
+        />
+        <Route
+          exact
+          path="/industries/manufacturing"
+          component={Manufacturing}
+        />
+        <Route exact path="/industries/fintech" component={FintechIndustry} />
+        <Route
+          exact
+          path="/industries/healthcare"
+          component={HealthcareIndustry}
+        />
+        <Route
+          exact
+          path="/industries/education"
+          component={EducationIndustry}
+        />
+      </Switch>
+    );
   }
 }
 
-export default App
+export default App;

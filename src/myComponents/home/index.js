@@ -161,22 +161,24 @@ class Home extends Component {
   render() {
     return (
       <div className="appContainer">
-
         <Navigationbar />
-        
+
         <div className="landingSection">
-          <img className="geekyantlogo" src={hsbLogo} alt="logo" />
-          <h1 className="ladingPageHeading">
-            Highly
-            <br />
-            Scalable <br />
-            Bees
-            <br />
-          </h1>
-          <p className="landingSectionSubHeading">
-            Embrace our IT & Managed Services to accelerate your business
-            growth.
-          </p>
+          <div className="landing-left-section">
+            <img className="geekyantlogo" src={hsbLogo} alt="logo" />
+            <h1 className="ladingPageHeading">
+              Highly
+              <br />
+              Scalable <br />
+              Bees
+              <br />
+            </h1>
+            <p className="landingSectionSubHeading">
+              Embrace our IT & Managed Services to accelerate your business
+              growth.
+            </p>
+          </div>
+          <img className="landing-right-logo" src={hsbLogo} alt="logo" />
         </div>
 
         <div className="navbarSection">
@@ -287,7 +289,10 @@ class Home extends Component {
           </p>
 
           <div className="developmentCardsContainer">
-            <Link to="/services/web development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/web development"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -304,7 +309,10 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/mobile development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/mobile development"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -321,7 +329,10 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/uiux development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/uiux development"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -336,7 +347,10 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/fullstack development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/fullstack development"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -351,7 +365,10 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/quality assurance" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/quality assurance"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -369,7 +386,10 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/busines analysis services" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/busines analysis services"
+              className="deveopmentCard hoverUp cardLink"
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
