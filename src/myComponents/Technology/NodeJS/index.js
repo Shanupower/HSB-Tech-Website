@@ -58,77 +58,137 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    DevOps Development Services
+    Node.js Development Services
   </Typography>,
 ];
 
-const Monitoring = [
+const FrontendStore = [
   {
     imageUrl: reactImage,
-    name: "React Native",
+    name: "React",
   },
   {
     imageUrl: reactImage,
-    name: "React.js",
+    name: "Angular",
   },
   {
     imageUrl: flutterImage,
-    name: "Flutter",
+    name: " Vue.js",
   },
   {
     imageUrl: javaScript,
-    name: "Javascript",
-  },
-  {
-    imageUrl: HtmlImage,
     name: "HTML",
   },
   {
-    imageUrl: cssImage,
+    imageUrl: HtmlImage,
     name: "CSS",
-  },
-  {
-    imageUrl: angular,
-    name: "Angular",
   },
 ];
 
-const Pipelines = [
+const Language = [
   {
     imageUrl: nodeJs,
-    name: "Node.js",
+    name: " TypeScript",
   },
   {
     imageUrl: javaScript,
     name: "Javascript",
   },
-  {
-    imageUrl: goLang,
-    name: "GoLang",
-  },
 ];
-const Deployment_Infra = [
+const Database = [
   {
     imageUrl: AWS,
-    name: "AWS",
+    name: "MongoDB",
   },
   {
     imageUrl: Azure,
-    name: "Azure",
+    name: "Postgres",
+  },
+  {
+    imageUrl: Azure,
+    name: " Mysql",
   },
 ];
 
-const Containers = [
+const OMR = [
   {
     imageUrl: AWS,
-    name: "AWS",
+    name: "Prisma",
   },
   {
     imageUrl: Azure,
-    name: "Azure",
+    name: " Mongoose",
   },
 ];
-const Os = [
+const CDPipelines = [
+  {
+    imageUrl: AWS,
+    name: "Github Actions",
+  },
+  {
+    imageUrl: Azure,
+    name: " Jenkins",
+  },
+  {
+    imageUrl: Azure,
+    name: "Gitlab",
+  },
+  {
+    imageUrl: Azure,
+    name: "AWS Pipeline",
+  },
+];
+const Cron = [
+  {
+    imageUrl: AWS,
+    name: "Bullrun",
+  },
+];
+const Testing = [
+  {
+    imageUrl: AWS,
+    name: "Jest",
+  },
+  {
+    imageUrl: Azure,
+    name: "Mocha",
+  },
+  {
+    imageUrl: Azure,
+    name: " Cypress",
+  },
+];
+const Pub = [
+  {
+    imageUrl: AWS,
+    name: "Azure",
+  },
+  {
+    imageUrl: Azure,
+    name: "Azure Pub-Sub",
+  },
+];
+const ProcessManager = [
+  {
+    imageUrl: AWS,
+    name: "Forever",
+  },
+  {
+    imageUrl: Azure,
+    name: "PM2",
+  },
+];
+const Containers = [
+  {
+    imageUrl: AWS,
+    name: "Dockers",
+  },
+  {
+    imageUrl: Azure,
+    name: "  Kubernets",
+  },
+];
+const CloudPlatform = [
   {
     imageUrl: AWS,
     name: "AWS",
@@ -247,20 +307,18 @@ class NodeJsTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-             DevOps Development Services
+              Node.js Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              We help enterprises in integrating security measures into every
-              phase of your development lifecycle, ensuring that potential
-              vulnerabilities are identified and mitigated proactively. Our
-              DevOps services emphasize on continuous security monitoring and
-              automated compliance checks, and bolstered protection against
-              emerging threats. We empower your development team to innovate
-              with confidence, creating a synergy between development, IT
-              operations, and security that is unparalleled in the market.
+              HSB takes pride in being the go-to choice for clients seeking
+              top-notch Node.js development services on delivering the best
+              possible outcomes. Partner with us to experience a seamless blend
+              of innovation, performance, and user-centricity which we achieve
+              by pushing the boundaries of innovation and excellence in the
+              digital realm.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -272,7 +330,7 @@ class NodeJsTechnoligy extends Component {
                 backgroundColor: "#fff",
               }}
             >
-              Build Your DevOps Team Today
+              Build Your Node.js Team Today
             </button>
           </div>
           <div
@@ -295,16 +353,19 @@ class NodeJsTechnoligy extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            About DevOps
+            About Node.js
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            An agile-inspired development methodology based on continuous
-            integration and delivery. DevOps emphasizes collaboration between
-            development and IT operations teams. Practicing DevOps in today’s
-            business environment enables teams the ability to deploy several
-            times per day if needed.
+            Node.js is a revolutionary platform that empowers developers to
+            build unparalleled scalability and performance applications. The
+            interface is designed create seamless app integrations, and has
+            evolved into one of the most extensive multipurpose tools worldwide,
+            boasting over 4 million plus active users. When combined with
+            ReactJS and Angular, Node.js offers comprehensive enterprise
+            solutions that elevate end-user experiences and drive exceptional
+            business growth.
           </p>
-          <h2>Benefits of DevOps</h2>
+          <h2>Benefits of Node.js</h2>
           <div
             style={{
               backgroundColor: "#fff",
@@ -326,8 +387,8 @@ class NodeJsTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />{" "}
+              Exceptional user experience
             </p>
             <p
               style={{
@@ -336,8 +397,8 @@ class NodeJsTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />{" "}
+              Hassle-free server-side development
             </p>
             <p
               style={{
@@ -346,8 +407,8 @@ class NodeJsTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy
+              scalable for microservices
             </p>
             <p
               style={{
@@ -355,8 +416,8 @@ class NodeJsTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Rich
+              ecosystem of tools
             </p>
             <p
               style={{
@@ -364,8 +425,8 @@ class NodeJsTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
+              customizable
             </p>
             <p
               style={{
@@ -373,14 +434,14 @@ class NodeJsTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Support building cross
             </p>
           </div>
           <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
-            Engage our skilled DevOps team to construct top-tier business
-            solutions with improved quality, scalability, and heightened
-            security.
+            Engage our skilled Node.js development team to construct powerful
+            server-side applications, unified with your preferred front-end
+            framework.
           </h2>
           <button
             className="getQuoteButton industries-getQuoteButton bluidtechnoligy"
@@ -391,7 +452,7 @@ class NodeJsTechnoligy extends Component {
               width: "fit-content",
             }}
           >
-            Build Your DevOps Team Today
+            Build Your Node.js Application Today
           </button>
         </div>
         <div
@@ -399,7 +460,7 @@ class NodeJsTechnoligy extends Component {
           style={{ paddingInline: " 14%", backgroundColor: "#fff" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our DevOps Services
+            Our Node.js Development Services
           </h1>
 
           <div
@@ -417,17 +478,17 @@ class NodeJsTechnoligy extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Custom DevOps Consulting
+                Custom Node.js Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our DevOps services streamline operations, improve software
-                delivery and enhance business capabilities to stay agile and
-                competitive. Speed up your internal processes and improve
-                software development through our experienced DevOps consulting
-                services.
+                Our Node.js developers understand the discrete requirement of
+                your business and therefore, develop tailored solutions which
+                are scalable, secure, and high-performing. We build Node.js apps
+                in accordance to your custom requirements, sizes, and
+                complexity.
               </p>
             </div>
             <div
@@ -440,16 +501,16 @@ class NodeJsTechnoligy extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Incorporating DevOps
+                Node.js API Integration and Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                By incorporating DevOps, you can integrate automated security
-                practices, develop reliable products, address crucial security
-                concerns and deliver highly secure software faster than your
-                competition.
+                Our Node.js developer develops robust, secure, scalable REST and
+                JSON API as per your requirements. We also integrate your
+                existing API with the existing technologies to enhance your
+                application's performance technically.
               </p>
             </div>
             <div
@@ -463,16 +524,17 @@ class NodeJsTechnoligy extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud DevOps and Migration
+                Node.js Plugin Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Leverage efficiency of our DevOps experts to orchestrate a
-                smooth transition to cloud environments. We conduct secure and
-                efficient cloud migrations and implement customized cloud DevOps
-                tools.
+                We build and customize plugins and write the backend of your
+                application in JavaScript. These customized plugins enables
+                expansion and enhances performance regardless of the business
+                size. Through tailored plugins new features and functionalities
+                can be added to the application.
               </p>
             </div>
             <div
@@ -486,16 +548,17 @@ class NodeJsTechnoligy extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Continuous Integration and Deployment Solutions
+                Node.js Upgrade and Migration Services
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Reduce technical barriers with our continuous integration and
-                deployment (CI/CD) solutions. Boost your growth by incorporating
-                CI/CD practices to decrease lead time, reduce operational costs
-                and enhance customer satisfaction.
+                Irrespective of the platforms being .Net, PHP, or JAVA, our
+                Node.js developers have successfully migrated many applications
+                to Node.js. The migration would be to eliminate specific issues
+                of the existing platform or to increase the performance,
+                scalability, and user experience.
               </p>
             </div>
             <div
@@ -509,40 +572,19 @@ class NodeJsTechnoligy extends Component {
               <img src={Technoligy} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps Automation and IaC Services
+                Node.js Maintenance and Support
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Infrastructure as Code (IaC) service provides tools and
-                techniques to automate repetitive tasks throughout the SDLC. IaC
-                provisions infrastructure to improve efficiency, reduce errors,
-                and optimize costs.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Site Reliability Engineering (SRE) and Support
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Incorporate Site Reliability Engineering to increase
-                reliability, boost underlying infrastructures, and ensure
-                proactive monitoring so that the issues can be resolved before
-                they happen. Our support service improves incident management,
-                provide better ongoing assistance and elevate users' experience.
+                HSB got you covered for every requirement related to Node.js. We
+                undertake scaling, bug detection, code review, and performance
+                issues to implementing web development best practices based on
+                your project specifications and business vertical. We also
+                provide both front-end and back-end maintenance and support
+                services to regularly update, scale, and enhance the performance
+                of your application.
               </p>
             </div>
           </div>
@@ -553,7 +595,7 @@ class NodeJsTechnoligy extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Tools We Use to Provide DevOps Services
+            Tools We Use to Build Beautiful Node.js Apps
           </h1>
           <Box sx={{ width: "100%", marginTop: "2rem" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -562,17 +604,26 @@ class NodeJsTechnoligy extends Component {
                 onChange={this.handleTabChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="Deployment Infra" {...a11yProps(0)} />
+                <Tab
+                  label="Frontend Store / State Management"
+                  {...a11yProps(0)}
+                />
 
-                <Tab label="CI / CD Pipelines" {...a11yProps(1)} />
-                <Tab label="Monitoring Tools" {...a11yProps(2)} />
-                <Tab label="Containers " {...a11yProps(3)} />
-                <Tab label="OS  " {...a11yProps(4)} />
+                <Tab label="Language" {...a11yProps(1)} />
+                <Tab label="Database" {...a11yProps(2)} />
+                <Tab label="OMR" {...a11yProps(3)} />
+                <Tab label="CI / CD Pipelines " {...a11yProps(4)} />
+                <Tab label="Cron  " {...a11yProps(5)} />
+                <Tab label="Testing " {...a11yProps(6)} />
+                <Tab label="Pub/Sub " {...a11yProps(7)} />
+                <Tab label="Process Manager" {...a11yProps(8)} />
+                <Tab label="Containers " {...a11yProps(9)} />
+                <Tab label="Cloud Platform " {...a11yProps(10)} />
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
               <div className="technlogiesContainer-technology">
-                {Deployment_Infra.map((eachItem) => (
+                {FrontendStore.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -593,7 +644,7 @@ class NodeJsTechnoligy extends Component {
               style={{ marginTop: "2rem" }}
             >
               <div className="technlogiesContainer-technology">
-                {Pipelines.map((eachItem) => (
+                {Language.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -609,7 +660,7 @@ class NodeJsTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
               <div className="technlogiesContainer-technology">
-                {Monitoring.map((eachItem) => (
+                {Database.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -625,7 +676,7 @@ class NodeJsTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={3}>
               <div className="technlogiesContainer-technology">
-                {Containers.map((eachItem) => (
+                {OMR.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -641,7 +692,119 @@ class NodeJsTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={4}>
               <div className="technlogiesContainer-technology">
-                {Os.map((eachItem) => (
+                {CDPipelines.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={4}>
+              <div className="technlogiesContainer-technology">
+                {CDPipelines.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={5}>
+              <div className="technlogiesContainer-technology">
+                {Cron.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={6}>
+              <div className="technlogiesContainer-technology">
+                {Testing.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={7}>
+              <div className="technlogiesContainer-technology">
+                {Pub.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={8}>
+              <div className="technlogiesContainer-technology">
+                {ProcessManager.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={9}>
+              <div className="technlogiesContainer-technology">
+                {Containers.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={10}>
+              <div className="technlogiesContainer-technology">
+                {CloudPlatform.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -720,17 +883,17 @@ class NodeJsTechnoligy extends Component {
                 for scalability and adaptability, and enhanced safeguarding of
                 security, stability, and dependability, coupled with an
                 accelerated journey to market manifestation.
-                 </AccordionDetails>
+              </AccordionDetails>
             </Accordion>
           </div>
         </div>
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire a top DevOps Team
+            Hire a top Node.js Development Team
           </h1>
           <p style={{ fontSize: "22px" }}>
-            Improve Efficiency with Proven DevOps Practices
+            Gain the Advantage with the Node.js Development
           </p>
           <button
             className="letsTalkButton slideRight"

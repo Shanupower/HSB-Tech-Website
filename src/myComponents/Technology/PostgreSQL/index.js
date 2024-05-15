@@ -58,7 +58,7 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    DevOps Development Services
+    PostgreSQL Development Services
   </Typography>,
 ];
 
@@ -247,20 +247,17 @@ class PostgreSQLTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-             DevOps Development Services
+              PostgreSQL Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              We help enterprises in integrating security measures into every
-              phase of your development lifecycle, ensuring that potential
-              vulnerabilities are identified and mitigated proactively. Our
-              DevOps services emphasize on continuous security monitoring and
-              automated compliance checks, and bolstered protection against
-              emerging threats. We empower your development team to innovate
-              with confidence, creating a synergy between development, IT
-              operations, and security that is unparalleled in the market.
+              HSB has the skilled PostgreSQL team who are determined to provide
+              versatility of relational database management system. We have been
+              part of PostgreSQL open-source community, allowing us to build
+              mobile and web applications that scale from idea to enterprise
+              fast.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -272,7 +269,7 @@ class PostgreSQLTechnoligy extends Component {
                 backgroundColor: "#fff",
               }}
             >
-              Build Your DevOps Team Today
+              Build Your Laravel Development Team Today
             </button>
           </div>
           <div
@@ -295,16 +292,16 @@ class PostgreSQLTechnoligy extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            About DevOps
+            About PostgreSQL
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            An agile-inspired development methodology based on continuous
-            integration and delivery. DevOps emphasizes collaboration between
-            development and IT operations teams. Practicing DevOps in today’s
-            business environment enables teams the ability to deploy several
-            times per day if needed.
+            PostgreSQL is an advanced, enterprise-class open-source relational
+            database that supports both SQL (relational) and JSON
+            (non-relational) querying. It is a highly stable database management
+            system and is used as the primary data store or data warehouse for
+            many web, mobile, geospatial, and analytics applications.
           </p>
-          <h2>Benefits of DevOps</h2>
+          <h2>Benefits of PostgreSQL</h2>
           <div
             style={{
               backgroundColor: "#fff",
@@ -326,8 +323,8 @@ class PostgreSQLTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Enriched
+              with features and extensions
             </p>
             <p
               style={{
@@ -336,8 +333,8 @@ class PostgreSQLTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
+              fault tolerant database
             </p>
             <p
               style={{
@@ -346,8 +343,8 @@ class PostgreSQLTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Support of
+              open source license and community
             </p>
             <p
               style={{
@@ -355,8 +352,8 @@ class PostgreSQLTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Multi-version concurrency control (MVCC)
             </p>
             <p
               style={{
@@ -364,8 +361,8 @@ class PostgreSQLTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Support
+              for full-text search and geospatial data
             </p>
             <p
               style={{
@@ -373,14 +370,12 @@ class PostgreSQLTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Advanced
+              data types — hstore, json, and jsonb
             </p>
           </div>
           <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
-            Engage our skilled DevOps team to construct top-tier business
-            solutions with improved quality, scalability, and heightened
-            security.
+            Engage our skilled PostgreSQL development team.
           </h2>
           <button
             className="getQuoteButton industries-getQuoteButton bluidtechnoligy"
@@ -391,7 +386,7 @@ class PostgreSQLTechnoligy extends Component {
               width: "fit-content",
             }}
           >
-            Build Your DevOps Team Today
+            Build Your PostgreSQL Application Today
           </button>
         </div>
         <div
@@ -399,7 +394,7 @@ class PostgreSQLTechnoligy extends Component {
           style={{ paddingInline: " 14%", backgroundColor: "#fff" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our DevOps Services
+            Our PostgreSQL Development Services
           </h1>
 
           <div
@@ -417,17 +412,16 @@ class PostgreSQLTechnoligy extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Custom DevOps Consulting
+                Creating Custom Event Triggers
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our DevOps services streamline operations, improve software
-                delivery and enhance business capabilities to stay agile and
-                competitive. Speed up your internal processes and improve
-                software development through our experienced DevOps consulting
-                services.
+                Identify the events you want to trigger actions on, such as new
+                user sign-ups, data updates, or changes to specific fields in a
+                database. After identifying these events, we can help you in
+                creating custom event triggers as a response to them.
               </p>
             </div>
             <div
@@ -440,16 +434,16 @@ class PostgreSQLTechnoligy extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Incorporating DevOps
+                PostgreSQL to Automate Tasks
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                By incorporating DevOps, you can integrate automated security
-                practices, develop reliable products, address crucial security
-                concerns and deliver highly secure software faster than your
-                competition.
+                Our team helps in improving efficiency of your application by
+                automating the tasks through function development, monitoring,
+                integration, and optimization for any business application
+                requirement.
               </p>
             </div>
             <div
@@ -463,199 +457,19 @@ class PostgreSQLTechnoligy extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud DevOps and Migration
+                Database Control Access Through an RBAC System
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Leverage efficiency of our DevOps experts to orchestrate a
-                smooth transition to cloud environments. We conduct secure and
-                efficient cloud migrations and implement customized cloud DevOps
-                tools.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Data} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Continuous Integration and Deployment Solutions
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Reduce technical barriers with our continuous integration and
-                deployment (CI/CD) solutions. Boost your growth by incorporating
-                CI/CD practices to decrease lead time, reduce operational costs
-                and enhance customer satisfaction.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Technoligy} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps Automation and IaC Services
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Infrastructure as Code (IaC) service provides tools and
-                techniques to automate repetitive tasks throughout the SDLC. IaC
-                provisions infrastructure to improve efficiency, reduce errors,
-                and optimize costs.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Site Reliability Engineering (SRE) and Support
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Incorporate Site Reliability Engineering to increase
-                reliability, boost underlying infrastructures, and ensure
-                proactive monitoring so that the issues can be resolved before
-                they happen. Our support service improves incident management,
-                provide better ongoing assistance and elevate users' experience.
+                Our team is skilled in leveraging the technology to design
+                robust database control workflows for your application and
+                feature targets. We can help you with RBAC design, maintenance,
+                implementation, and training.
               </p>
             </div>
           </div>
-        </div>
-
-        <div
-          className="technologiesSectionIndustries section"
-          style={{ paddingInline: " 14%" }}
-        >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Tools We Use to Provide DevOps Services
-          </h1>
-          <Box sx={{ width: "100%", marginTop: "2rem" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={this.handleTabChange}
-                aria-label="basic tabs example"
-              >
-                <Tab label="Deployment Infra" {...a11yProps(0)} />
-
-                <Tab label="CI / CD Pipelines" {...a11yProps(1)} />
-                <Tab label="Monitoring Tools" {...a11yProps(2)} />
-                <Tab label="Containers " {...a11yProps(3)} />
-                <Tab label="OS  " {...a11yProps(4)} />
-              </Tabs>
-            </Box>
-            <CustomTabPanel value={value} index={0}>
-              <div className="technlogiesContainer-technology">
-                {Deployment_Infra.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-
-            <CustomTabPanel
-              value={value}
-              index={1}
-              style={{ marginTop: "2rem" }}
-            >
-              <div className="technlogiesContainer-technology">
-                {Pipelines.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-              <div className="technlogiesContainer-technology">
-                {Monitoring.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={3}>
-              <div className="technlogiesContainer-technology">
-                {Containers.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={4}>
-              <div className="technlogiesContainer-technology">
-                {Os.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-          </Box>
         </div>
 
         {/* Accordion */}
@@ -720,17 +534,17 @@ class PostgreSQLTechnoligy extends Component {
                 for scalability and adaptability, and enhanced safeguarding of
                 security, stability, and dependability, coupled with an
                 accelerated journey to market manifestation.
-                 </AccordionDetails>
+              </AccordionDetails>
             </Accordion>
           </div>
         </div>
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire a top DevOps Team
+            Hire an Efficient PostgreSQL Development Team
           </h1>
           <p style={{ fontSize: "22px" }}>
-            Improve Efficiency with Proven DevOps Practices
+            Gain the Advantage with the PostgreSQL Development
           </p>
           <button
             className="letsTalkButton slideRight"
