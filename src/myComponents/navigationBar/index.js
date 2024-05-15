@@ -24,7 +24,10 @@ function Navigationbar() {
     };
   }, []);
   return (
-    <div className={navBarShow ? "navBarContainerShow" : "navBarContainerHide"}>
+    <div
+      className={navBarShow ? "navBarContainerShow" : "navBarContainerHide"}
+      style={{ zIndex: 1, width: "100%" }}
+    >
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="/">
