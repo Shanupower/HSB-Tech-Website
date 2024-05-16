@@ -492,13 +492,16 @@ class PostgreSQLTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How long does it take to develop a DevOps project?
+                What is the efficacy of PostgreSQL compare to other open-source
+                databases such as MySQL and MongoDB?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                The duration required to develop a DevOps project usually
-                depends on the complexity and size of the project.
-                Traditionally, it could take several months or even a year or
-                more.
+                PostgreSQL is often considered to be more powerful and
+                feature-rich than MySQL. Being a relational database, PostgreSQL
+                is less less performant than MongoDB as it is a
+                document-oriented database. As both of them are suited for
+                different use cases and workloads, the selection depends on the
+                specific requirements of the application.
               </AccordionDetails>
             </Accordion>
 
@@ -509,14 +512,12 @@ class PostgreSQLTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How much does it cost to hire DevOps engineers?
+                When should I use the PostgreSQL database?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Getting the expertise of DevOps developers might rest upon the
-                factors like location, experience, and the requisites posed by
-                the client. Hence, a systematic review of project needs and
-                choices is paramount to make a decision to induct the DevOps
-                team.
+                You should use PostgreSQL when you require a high level of
+                reliability, flexibility, and performance for your application's
+                data storage and retrieval needs.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -526,14 +527,35 @@ class PostgreSQLTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What are the benefits of DevOps consulting services?
+                What is PostgreSQL used for?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                DevOps consulting services presents amplified collaboration
-                among the organization's diverse teams, an augmented capacity
-                for scalability and adaptability, and enhanced safeguarding of
-                security, stability, and dependability, coupled with an
-                accelerated journey to market manifestation.
+                PostgreSQL is a popular and powerful database management system
+                having advanced features, such as concurrency control, ACID
+                compliance, and extensibility. Its robust and scalable nature
+                makes it ideal for handling large volumes of data in industries
+                such as finance, healthcare, and government applications.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                How much would it cost to develop an application using
+                PostgreSQL?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                There are numerous factors that contribute the cost of
+                developing an application with PostgreSQL. These factors are the
+                size of the website, type of website, the platform used,
+                development time duration, developer’s experience, number of
+                resources, engagement model of hiring the resource,
+                complexity/number of functionalities/features, custom
+                development requirements, and even the country/region of the
+                resource your hire.
               </AccordionDetails>
             </Accordion>
           </div>

@@ -926,7 +926,7 @@ class NextTechnoligy extends Component {
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire a top Nide.js Development Team
+            Hire a top Next.js Development Team
           </h1>
           <p style={{ fontSize: "22px" }}>
             Gain the Advantage with the Next.js Development

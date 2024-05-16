@@ -66,10 +66,6 @@ function Navigationbar() {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Industries" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/industries">
-                  Industries Page
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/manufacturing">
                   Manufacturing
                 </NavDropdown.Item>
@@ -103,7 +99,6 @@ function Navigationbar() {
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/#">Technologies Page</NavDropdown.Item>
                 <NavDropdown.Item href="/technology/devOps">
                   DevOps
                 </NavDropdown.Item>
@@ -116,6 +111,9 @@ function Navigationbar() {
                 <NavDropdown.Item href="/technology/laravel">
                   Laravel
                 </NavDropdown.Item>
+                <NavDropdown.Item href="/technology/postgreSql">
+                  PostgreSQL
+                </NavDropdown.Item>
                 <NavDropdown.Item href="/technology/nextJs">
                   NextJs
                 </NavDropdown.Item>
@@ -126,10 +124,8 @@ function Navigationbar() {
                   React Native
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown
-                title="About Us"
-                id="basic-nav-dropdown"
-              ></NavDropdown>
+
+              <Nav.Link href="/lets talk">About Us</Nav.Link>
               <Nav.Link href="/lets talk">Blogs</Nav.Link>
               <Nav.Link href="/lets talk">Lets talk</Nav.Link>
             </Nav>

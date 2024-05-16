@@ -8,54 +8,60 @@ import MenuItem from "@mui/material/MenuItem";
 import InputLabel from "@mui/material/InputLabel";
 import FormControl from "@mui/material/FormControl";
 import Slider from "react-slick";
-import Rating from '@mui/material/Rating';
+import Rating from "@mui/material/Rating";
 import { MdVerified } from "react-icons/md";
 import Footer from "../footer";
 import Navigationbar from "../navigationBar";
 import "./index.css";
 
 const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    accessibility: false,
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  accessibility: false,
 };
 
 const reviewsList = [
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    },
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    },
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    },
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    },
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    },
-    {
-        rating: 5.0,
-        review: "GeekyAnts shines because their human relationships meet their offering of top talent.",
-        reviewPersonName: "Executive, Lumica"
-    }
-]
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+  {
+    rating: 5.0,
+    review:
+      "GeekyAnts shines because their human relationships meet their offering of top talent.",
+    reviewPersonName: "Executive, Lumica",
+  },
+];
 
 class LetsTalk extends Component {
   render() {
@@ -63,23 +69,74 @@ class LetsTalk extends Component {
       <div className="letstalkContainer">
         <Navigationbar />
 
-        <div className="landingSection-letsTalk-Container">
-          <div className="landingSection-letsTalk">
-            <h1 className="sectionHeading-letsTalk">
+        <div
+          className="landingSection-letsTalk-Container"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            padding: "6rem 12%",
+            gap: "2rem",
+            justifyContent: "space-between",
+          }}
+        >
+          <div
+            className="landingSection-letsTalk"
+            style={{
+              width: "60%",
+            }}
+          >
+            <h1
+              className="sectionHeading-letsTalk"
+              style={{
+                fontSize: "80px",
+              }}
+            >
               Build with Us. Accelerate your Growth.
             </h1>
             <div className="highlights-letsTalk">
-              <div className="hightlightItem">
+              <div
+                className="hightlightItem"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+              >
                 <MdOutlineDone className="rightBullet" />
-                <p className="higlight">Customized solutions and strategies</p>
+                <p
+                  style={{ fontSize: "22px", marginTop: ".8rem" }}
+                  className="higlight"
+                >
+                  Customized solutions and strategies
+                </p>
               </div>
-              <div className="hightlightItem">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="hightlightItem"
+              >
                 <MdOutlineDone className="rightBullet" />
-                <p className="higlight">Faster-than-market project delivery</p>
+
+                <p
+                  style={{ fontSize: "22px", marginTop: ".8rem" }}
+                  className="higlight"
+                >
+                  Faster-than-market project delivery
+                </p>
               </div>
-              <div className="hightlightItem">
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                }}
+                className="hightlightItem"
+              >
                 <MdOutlineDone className="rightBullet" />
-                <p className="higlight">
+                <p
+                  style={{ fontSize: "22px", marginTop: ".8rem" }}
+                  className="higlight"
+                >
                   End-to-end digital transformation services
                 </p>
               </div>
@@ -87,17 +144,33 @@ class LetsTalk extends Component {
           </div>
 
           <div className="requestCallbackForm-container">
-            <p className="formTitle">Schedule a Call</p>
+            <p
+              className="formTitle"
+              style={{
+                fontSize: "26px",
+              }}
+            >
+              Schedule a Call
+            </p>
             <form className="requestCallbackForm">
-              <div className="inputFileds">
+              <div
+                className="inputFileds"
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  gap: "1rem",
+                  alignItems: "center",
+                }}
+              >
                 <TextField
-                  style={{ marginRight: "15px" }}
+                  style={{ width: "50%" }}
                   className="textInput"
                   id="outlined-basic"
                   label="Full Name*"
                   variant="outlined"
                 />
                 <TextField
+                  style={{ width: "50%" }}
                   id="outlined-basic"
                   label="Email ID*"
                   variant="outlined"
@@ -196,25 +269,29 @@ class LetsTalk extends Component {
         </div>
 
         <div className="reviewsContainer">
-            <h2 className="sectionHeading">We are Empowering Businesses to Lead their Industry</h2>
-            <Slider {...settings}>
+          <h2 className="sectionHeading">
+            We are Empowering Businesses to Lead their Industry
+          </h2>
+          <Slider {...settings}>
             {reviewsList.map((eachReview) => (
-                <>
-                    <div key={eachReview.id} className="reviewCard">
-                        <div className="starsContainer-rating">
-                            <p>{eachReview.rating}</p>
-                            <Rating style={{color:"#E62415"}} name="read-only" value={5} readOnly />
-                        </div>
-                        <p className="rating">{`" ${eachReview.review} "`}</p>
-                        <div className="verifiedReviewContianer">
-                        <MdVerified className="verifiedIcon" />
-                        <p className="verifiedReview">
-                            Veirifed Review
-                        </p>
-                        </div>
-                        
-                    </div>
-                </>
+              <>
+                <div key={eachReview.id} className="reviewCard">
+                  <div className="starsContainer-rating">
+                    <p>{eachReview.rating}</p>
+                    <Rating
+                      style={{ color: "#E62415" }}
+                      name="read-only"
+                      value={5}
+                      readOnly
+                    />
+                  </div>
+                  <p className="rating">{`" ${eachReview.review} "`}</p>
+                  <div className="verifiedReviewContianer">
+                    <MdVerified className="verifiedIcon" />
+                    <p className="verifiedReview">Veirifed Review</p>
+                  </div>
+                </div>
+              </>
             ))}
           </Slider>
         </div>

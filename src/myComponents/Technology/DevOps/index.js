@@ -247,7 +247,7 @@ class DevOpsTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-             DevOps Development Services
+              DevOps Development Services
             </h1>
             <p
               className="sectionDescription"
@@ -336,8 +336,8 @@ class DevOpsTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Enhanced
+              collaboration
             </p>
             <p
               style={{
@@ -346,8 +346,8 @@ class DevOpsTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Increased scalability and flexibility
             </p>
             <p
               style={{
@@ -355,17 +355,8 @@ class DevOpsTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
-            </p>
-            <p
-              style={{
-                fontSize: "20px",
-                width: "calc(100%/3 - 1rem)",
-              }}
-            >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Improved security, reliability, and stability
             </p>
             <p
               style={{
@@ -720,7 +711,7 @@ class DevOpsTechnoligy extends Component {
                 for scalability and adaptability, and enhanced safeguarding of
                 security, stability, and dependability, coupled with an
                 accelerated journey to market manifestation.
-                 </AccordionDetails>
+              </AccordionDetails>
             </Accordion>
           </div>
         </div>

@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { Component } from "react";
 import hsbLogo from "../../assets/hsb-logo.png";
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
@@ -23,18 +19,7 @@ import devopsImage from "../../assets/devops.png";
 import laravelImage from "../../assets/laravel.svg";
 import supplyChain from "../../assets/supply-chain.png";
 import telemedicineImage from "../../assets/telemedicine.png";
-import oliveGardenImage from "../../assets/oliveGarden.svg";
-import khatabookImage from "../../assets/khatabook.svg";
-import icicImage from "../../assets/icici-bank-logo.webp";
-import amanaImage from "../../assets/amana.webp";
-import pepperfryImage from "../../assets/pepperfry.webp";
-import atsignImage from "../../assets/atsign.webp";
-import hundredmsImage from "../../assets/100ms.svg";
-import dardenImage from "../../assets/darden.svg";
-import mplImage from "../../assets/mpl.webp";
-import payPoint from "../../assets/paypoint.webp";
-import scrollNewsImage from "../../assets/scroll-news.webp";
-import ibsImage from "../../assets/ips-verlang.webp";
+
 import awsImage from "../../assets/aws-partner.webp";
 import githubImage from "../../assets/github.webp";
 
@@ -52,7 +37,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, useMediaQuery } from "@mui/material";
 import Footer from "../footer";
 import Navigationbar from "../navigationBar";
 import { Link } from "react-router-dom";
@@ -139,44 +124,102 @@ const trustedbyCompaniesList = [
   },
 ];
 
-class Home extends Component {
-  render() {
-    return (
-      <div className="appContainer">
-        <Navigationbar />
-
-        <div className="landingSection">
-          <div className="landing-left-section">
-            <img className="geekyantlogo" src={hsbLogo} alt="logo" />
-            <h1 className="ladingPageHeading">
-              Highly
-              <br />
-              Scalable <br />
-              Bees
-              <br />
-            </h1>
-            <p className="landingSectionSubHeading">
+const Home = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+  return (
+    <>
+      {!isMd && <Navigationbar />}
+      <div>
+        <div
+          className="appContainer"
+          style={{
+            paddingInline: isMd ? "2rem" : "12%",
+          }}
+        >
+          <div className="landingSection">
+            <div
+              className="landing-left-section"
+              style={{
+                paddingBlock: isMd ? "2rem" : "2rem",
+                width: isMd && "50%",
+              }}
+            >
+              <div
+                style={{
+                  width: isMd ? "7.5rem" : "8.6rem",
+                  height: isMd ? "2rem" : "2.5rem",
+                  objectFit: "cover",
+                }}
+              >
+                <img
+                  className="geekyantlogo"
+                  src={hsbLogo}
+                  alt="logo"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+              <h1
+                className="ladingPageHeading"
+                style={{
+                  fontSize: isMd ? "3rem" : "4rem",
+                }}
+              >
+                Highly
+                <br />
+                Scalable <br />
+                Bees
+                <br />
+              </h1>
+              {!isMd && (
+                <p className="landingSectionSubHeading">
+                  Embrace our IT & Managed Services to accelerate your business
+                  growth.
+                </p>
+              )}
+            </div>
+            <div
+              style={{
+                width: isMd ? "40%" : "40%",
+                height: isMd ? "160px" : "200px",
+              }}
+            >
+              <img
+                className="landing-right-logo"
+                style={{ width: "100%", height: "100%", objectFit: "contain" }}
+                src={hsbLogo}
+                alt="logo"
+              />
+            </div>
+          </div>
+          {isMd && (
+            <p className="landingSectionSubHeading" style={{ marginTop: "0" }}>
               Embrace our IT & Managed Services to accelerate your business
               growth.
             </p>
-          </div>
-          <img className="landing-right-logo" src={hsbLogo} alt="logo" />
-        </div>
+          )}
 
-        <div className="navbarSection">
-          <Link
-            to="lets_talk"
+          <div
+            className="navbarSection"
             style={{
-              textDecoration: "none",
+              marginTop: isMd && "4rem",
+              padding: isMd && "0",
             }}
           >
-            <button
-              className="letsTalkButton slideRight"
-              type="button"
+            <Link
+              to="lets_talk"
               style={{
+                textDecoration: "none",
                 display: "flex",
                 alignItems: "center",
                 position: "relative",
+                backgroundColor: "#ca0515",
+                color: "#fff",
+                width: isMd ? "80%" : "20%",
+                textAlign: "center",
+                padding: ".8rem 1rem",
+                fontSize: "20px",
+                marginRight: "1rem",
+                borderRadius: "8px",
               }}
             >
               LET'S TALK
@@ -187,117 +230,177 @@ class Home extends Component {
                   right: "1rem",
                 }}
               />
-            </button>
-          </Link>
+            </Link>
+            {!isMd && (
+              <>
+                <button className="navItem" type="button">
+                  What we do
+                </button>
+                <button className="navItem" type="button">
+                  Case studies
+                </button>
+                <button className="navItem" type="button">
+                  Technologies
+                </button>
+                <button className="navItem" type="button">
+                  About us
+                </button>
+                <button className="navItem" type="button">
+                  Blogs
+                </button>
+              </>
+            )}
+          </div>
 
-          <button className="navItem" type="button">
-            What we do
-          </button>
-          <button className="navItem" type="button">
-            Case studies
-          </button>
-          <button className="navItem" type="button">
-            Technologies
-          </button>
-          <button className="navItem" type="button">
-            About us
-          </button>
-          <button className="navItem" type="button">
-            Blogs
-          </button>
-        </div>
+          <div
+            className="servicesSection"
+            style={{
+              padding: isMd && "0",
+            }}
+          >
+            <h3
+              className="serviesSectionHeading"
+              style={{
+                fontSize: isMd && "36px",
+              }}
+            >
+              We Deliver Extraordinary Digital Experiences.
+            </h3>
+            <div
+              className="serviesContainer"
+              style={{
+                marginTop: isMd ? "2rem" : "4rem",
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+                gap: "1rem",
+              }}
+            >
+              <div
+                className="serviceItem sparkle"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p>Smart IT solutions for every need.</p>
+                <img
+                  className="serviceImage"
+                  src={sparkleImage}
+                  alt="sparkle"
+                />
+              </div>
 
-        <div className="servicesSection">
-          <h3 className="serviesSectionHeading">
-            We Deliver Extraordinary Digital Experiences.
-          </h3>
-          <div className="serviesContainer">
-            <div className="serviceItem sparkle">
-              <p>Smart IT solutions for every need.</p>
-              <img className="serviceImage" src={sparkleImage} alt="sparkle" />
-            </div>
+              <div
+                className="serviceItem impact"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p>
+                  Seamless managed services with high-performance workspaces.
+                </p>
+                <img className="serviceImage" src={impactImage} alt="sparkle" />
+              </div>
 
-            <div className="serviceItem impact">
-              <p>Seamless managed services with high-performance workspaces.</p>
-              <img className="serviceImage" src={impactImage} alt="sparkle" />
-            </div>
+              <div
+                className="serviceItem scale"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p>Customized approach across industries.</p>
+                <img className="serviceImage" src={scaleImage} alt="sparkle" />
+              </div>
 
-            <div className="serviceItem scale">
-              <p>Customized approach across industries.</p>
-              <img className="serviceImage" src={scaleImage} alt="sparkle" />
-            </div>
-
-            <div className="serviceItem quality">
-              <p>Seasoned professionals who value business ethics.</p>
-              <img className="serviceImage" src={qualityImage} alt="sparkle" />
+              <div
+                className="serviceItem quality"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p>Seasoned professionals who value business ethics.</p>
+                <img
+                  className="serviceImage"
+                  src={qualityImage}
+                  alt="sparkle"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="trustedBySection">
-          <h1 className="trustedByheading">Trusted By</h1>
-          <Slider {...settings}>
-            {trustedbyCompaniesList.map((eachCompany) => (
-              <HoverCard.Root>
-                <HoverCard.Trigger asChild>
-                  <div
-                    key={eachCompany.id}
-                    className="trustedbyImageContainer"
-                    style={{
-                      width: "100px",
-                      height: "54px",
-                    }}
-                  >
-                    <img
-                      className="trustedbyImage"
-                      src={eachCompany.imageUrl}
-                      alt="trusted by company image"
+          <div
+            className="trustedBySection"
+            style={{
+              padding: isMd && "4rem 2rem",
+            }}
+          >
+            <h1 className="trustedByheading">Trusted By</h1>
+            <Slider {...settings}>
+              {trustedbyCompaniesList.map((eachCompany) => (
+                <HoverCard.Root>
+                  <HoverCard.Trigger asChild>
+                    <div
+                      key={eachCompany.id}
+                      className="trustedbyImageContainer"
                       style={{
-                        width: "100%",
-                        height: "100%",
-                        filter: "grayscale(100%)",
-                        objectFit: "fill",
+                        width: "90px",
+                        height: "50px",
                       }}
-                    />
-                  </div>
-                </HoverCard.Trigger>
-                <HoverCard.Portal>
-                  <HoverCard.Content
-                    className="HoverCardContent"
-                    sideOffset={5}
-                  >
-                    <div className="trustedcomapnies-hovercard">
-                      <p>{eachCompany.cardTitle}</p>
-                      <p>{eachCompany.cardDescription}</p>
+                    >
+                      <img
+                        className="trustedbyImage"
+                        src={eachCompany.imageUrl}
+                        alt="trusted by company image"
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          filter: "grayscale(100%)",
+                          objectFit: "fill",
+                        }}
+                      />
                     </div>
+                  </HoverCard.Trigger>
+                  <HoverCard.Portal>
+                    <HoverCard.Content
+                      className="HoverCardContent"
+                      sideOffset={5}
+                    >
+                      <div className="trustedcomapnies-hovercard">
+                        <p>{eachCompany.cardTitle}</p>
+                        <p>{eachCompany.cardDescription}</p>
+                      </div>
 
-                    <HoverCard.Arrow className="HoverCardArrow" />
-                  </HoverCard.Content>
-                </HoverCard.Portal>
-              </HoverCard.Root>
-            ))}
-          </Slider>
-        </div>
+                      <HoverCard.Arrow className="HoverCardArrow" />
+                    </HoverCard.Content>
+                  </HoverCard.Portal>
+                </HoverCard.Root>
+              ))}
+            </Slider>
+          </div>
 
-        <div className="appsWeDevelopedSecion section">
-          <h1 className="sectionHeading">Apps We Developed</h1>
-          <div className="appsDeveloped-images-container">
-            <div className="appDevelopedImage">
+          <div className="appsWeDevelopedSecion section">
+            <h1
+              className="sectionHeading"
+              style={{
+                textAlign: "left",
+              }}
+            >
+              Apps We Developed
+            </h1>
+            <div className="appsDeveloped-images-container">
+              <div className="appDevelopedImage">
+                <img
+                  className="appDevelopedImage"
+                  src={salaryDayImage}
+                  alt="app developed image"
+                />
+              </div>
               <img
-                className="appDevelopedImage"
-                src={salaryDayImage}
+                className="appDevelopedImage ecofin"
+                src={ecofinImage}
                 alt="app developed image"
               />
             </div>
-            <img
-              className="appDevelopedImage ecofin"
-              src={ecofinImage}
-              alt="app developed image"
-            />
           </div>
         </div>
-
-        <div className="developmentSection">
+        <div
+          className="developmentSection"
+          style={{
+            padding: isMd ? "2rem" : " 2rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">What We Do Best</h2>
           <p className="sectionDescription">
             We are well equipped with an updated technical knowledge to serve
@@ -309,6 +412,7 @@ class Home extends Component {
             <Link
               to="/services/web development"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -329,6 +433,7 @@ class Home extends Component {
             <Link
               to="/services/mobile development"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -349,6 +454,7 @@ class Home extends Component {
             <Link
               to="/services/uiux development"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -367,6 +473,7 @@ class Home extends Component {
             <Link
               to="/services/fullstack development"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -385,6 +492,7 @@ class Home extends Component {
             <Link
               to="/services/quality assurance"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -406,6 +514,7 @@ class Home extends Component {
             <Link
               to="/services/busines analysis services"
               className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
             >
               <div className="cardTitle">
                 <img
@@ -426,9 +535,16 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="certifiedPartnersSection">
-          <h1 className="certifiedPartnersHeading">We Work With</h1>
-          <div className="comapinesContainer">
+        <div
+          className="certifiedPartnersSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
+          <h1 className="certifiedPartnersHeading" style={{ fontSize: "38px" }}>
+            We Work With
+          </h1>
+          <div className="comapinesContainer" style={{ display: "flex" }}>
             <div className="caertifiedCompany-card">
               <img
                 className="githubImage partnerCompanyImage githubImage"
@@ -444,7 +560,12 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="technologiesSection">
+        <div
+          className="technologiesSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Technologies</h2>
           <p className="sectionDescription">
             We work with prominent technologies that can solve your product
@@ -452,7 +573,10 @@ class Home extends Component {
             care of your technical aspect.
           </p>
 
-          <div className="technologiesContainer">
+          <div
+            className="technologiesContainer"
+            style={{ justifyContent: isMd && "center" }}
+          >
             <div className="tehcnologyItem">
               <div className="technologyImage react stretch">
                 <img
@@ -543,29 +667,43 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="openSourceSection">
+        <div
+          className="openSourceSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Open Source</h2>
-          <div className="customizableDescriptionContainer">
-            <p className="sectionDescription customisable-solutions-heading">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
+            <p
+              className="sectionDescription customisable-solutions-heading"
+              style={{
+                width: isMd && "100%",
+              }}
+            >
               Open-source ignites innovation, removes barriers, and fosters
               collaboration aggressively.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-view-applications"
               type="button"
             >
               View Showcase Applications
               <FaArrowRight className="rightArrowRed" />
-            </button>
-
-            <button className="viewApplicationsButton-mobile" type="button">
-              View Showcase Applications
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -596,7 +734,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -628,29 +769,38 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="customizableSolutionsSection">
+        <div
+          className="customizableSolutionsSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Customizable Solutions</h2>
-          <div className="customizableDescriptionContainer">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
             <p className="sectionDescription customisable-solutions-heading">
               A library of various solutions and clones of popular apps built by
               us which can be easily customized to fit your needs.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-view-applications"
               type="button"
             >
               View Showcase Applications
               <FaArrowRight className="rightArrowRed" />
-            </button>
-
-            <button className="viewApplicationsButton-mobile" type="button">
-              View Showcase Applications
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -680,7 +830,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -712,7 +865,12 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="ourTeamSection">
+        <div
+          className="ourTeamSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h3 className="sectionHeading">Our Team</h3>
           <p className="cardDescription">
             We bring core-specializations from different streams which makes us
@@ -720,26 +878,39 @@ class Home extends Component {
           </p>
         </div>
 
-        <div className="insightsSection">
+        <div
+          className="insightsSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Insights</h2>
-          <div className="customizableDescriptionContainer">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
             <p className="sectionDescription">
               Discover the inner workings of our brilliant minds at <br />
               GeekyAnts through our blogs, gaining a deeper understanding of who
               we are.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-blogs"
               type="button"
             >
               More Blogs
               <FaArrowRight className="rightArrowRed" />
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -771,7 +942,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -803,7 +977,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -836,20 +1013,47 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div
+          className="closingSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h1 className="sectionHeading">
             Let’s Connect to Discuss How We Can Make An Awesome Product For You.
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            CONTACT NOW
-            <FaArrowRight className="rightArrow" />
-          </button>
-        </div>
 
-        <Footer />
+          <Link
+            to="lets_talk"
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              position: "relative",
+              backgroundColor: "#ca0515",
+              color: "#fff",
+              width: isMd ? "80%" : "20%",
+              textAlign: "center",
+              padding: ".8rem 1rem",
+              fontSize: "20px",
+              marginRight: "1rem",
+              borderRadius: "8px",
+            }}
+          >
+            CONTACT NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{
+                position: "absolute",
+                right: "1rem",
+              }}
+            />
+          </Link>
+        </div>
       </div>
-    );
-  }
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

@@ -58,84 +58,140 @@ const breadcrumbs = [
     color="text.primary"
     sx={{ color: "#fff", fontSize: "16px" }}
   >
-    DevOps Development Services
+    React Native App Development Services
   </Typography>,
 ];
 
-const Monitoring = [
+const commonly = [
   {
     imageUrl: reactImage,
-    name: "React Native",
+    name: " React Navigation",
   },
   {
     imageUrl: reactImage,
-    name: "React.js",
+    name: " React Vector icons",
   },
   {
     imageUrl: flutterImage,
-    name: "Flutter",
+    name: "Lottie component for React Native",
   },
   {
     imageUrl: javaScript,
-    name: "Javascript",
+    name: " React Native Code Push",
   },
   {
     imageUrl: HtmlImage,
-    name: "HTML",
-  },
-  {
-    imageUrl: cssImage,
-    name: "CSS",
-  },
-  {
-    imageUrl: angular,
-    name: "Angular",
+    name: "React Native Navigation  ",
   },
 ];
 
-const Pipelines = [
+const Deployment = [
   {
     imageUrl: nodeJs,
-    name: "Node.js",
+    name: "Gihub Actions",
   },
   {
     imageUrl: javaScript,
-    name: "Javascript",
+    name: "Jenkins",
   },
   {
     imageUrl: goLang,
-    name: "GoLang",
-  },
-];
-const Deployment_Infra = [
-  {
-    imageUrl: AWS,
-    name: "AWS",
-  },
-  {
-    imageUrl: Azure,
-    name: "Azure",
+    name: "TravesCI",
   },
 ];
 
-const Containers = [
+const Reporting = [
   {
-    imageUrl: AWS,
-    name: "AWS",
+    imageUrl: nodeJs,
+    name: "BugSnag",
   },
   {
-    imageUrl: Azure,
-    name: "Azure",
+    imageUrl: javaScript,
+    name: "Instabug",
+  },
+  {
+    imageUrl: goLang,
+    name: "Firebase Crashlytics",
   },
 ];
-const Os = [
+
+const Libraries = [
+  {
+    imageUrl: nodeJs,
+    name: " Ant Design",
+  },
+  {
+    imageUrl: javaScript,
+    name: "ArtDesign",
+  },
+  {
+    imageUrl: goLang,
+    name: "Material UI",
+  },
+  {
+    imageUrl: goLang,
+    name: "NAtiveBs ",
+  },
+];
+const Build = [
   {
     imageUrl: AWS,
-    name: "AWS",
+    name: "Typescript",
   },
   {
     imageUrl: Azure,
-    name: "Azure",
+    name: "Webpack",
+  },
+  {
+    imageUrl: AWS,
+    name: "Create React App",
+  },
+  {
+    imageUrl: Azure,
+    name: " React Extension Pack (for VS Studio)",
+  },
+];
+const Frontend = [
+  {
+    imageUrl: AWS,
+    name: "React Hooks",
+  },
+  {
+    imageUrl: Azure,
+    name: "Zustand",
+  },
+  {
+    imageUrl: Azure,
+    name: "Xstate",
+  },
+  {
+    imageUrl: Azure,
+    name: "Redux",
+  },
+];
+
+const Testing = [
+  {
+    imageUrl: AWS,
+    name: "Manual",
+  },
+  {
+    imageUrl: Azure,
+    name: "Automation",
+  },
+];
+const Analytics = [
+  {
+    imageUrl: AWS,
+    name: "Google Analytics",
+  },
+  {
+    imageUrl: Azure,
+    name: "Amplitude",
+  },
+  {
+    imageUrl: Azure,
+    name: " Adobe analytics ",
   },
 ];
 function CustomTabPanel(props) {
@@ -247,20 +303,14 @@ class ReactNativeTechnoligy extends Component {
               className="sectionHeading"
               style={{ marginTop: "3.2rem", fontSize: "48px" }}
             >
-              DevOps Development Services
+              React Native App Development Services
             </h1>
             <p
               className="sectionDescription"
               style={{ fontSize: "20px", marginTop: "2rem" }}
             >
-              We help enterprises in integrating security measures into every
-              phase of your development lifecycle, ensuring that potential
-              vulnerabilities are identified and mitigated proactively. Our
-              DevOps services emphasize on continuous security monitoring and
-              automated compliance checks, and bolstered protection against
-              emerging threats. We empower your development team to innovate
-              with confidence, creating a synergy between development, IT
-              operations, and security that is unparalleled in the market.
+              Looking for the best cross-platform app development experience? We
+              are here to help.
             </p>
             <button
               className="getQuoteButton industries-getQuoteButton"
@@ -272,7 +322,7 @@ class ReactNativeTechnoligy extends Component {
                 backgroundColor: "#fff",
               }}
             >
-              Build Your DevOps Team Today
+              Hire React Native Developers
             </button>
           </div>
           <div
@@ -295,16 +345,15 @@ class ReactNativeTechnoligy extends Component {
 
         <div className="solutions section" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            About DevOps
+            About React Native
           </h1>
           <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            An agile-inspired development methodology based on continuous
-            integration and delivery. DevOps emphasizes collaboration between
-            development and IT operations teams. Practicing DevOps in today’s
-            business environment enables teams the ability to deploy several
-            times per day if needed.
+            React Native combines the best parts of native development with
+            React, a best-in-class JavaScript library for building user
+            interfaces. It allows you to create efficient mobile apps for iOS
+            and Android with one single codebase.
           </p>
-          <h2>Benefits of DevOps</h2>
+          <h2>Benefits of React Native</h2>
           <div
             style={{
               backgroundColor: "#fff",
@@ -326,8 +375,8 @@ class ReactNativeTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Support cross-platform
             </p>
             <p
               style={{
@@ -336,8 +385,8 @@ class ReactNativeTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Native
+              components for everyone
             </p>
             <p
               style={{
@@ -346,8 +395,8 @@ class ReactNativeTechnoligy extends Component {
                 marginBottom: "2.4rem",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Reusable
+              codebase
             </p>
             <p
               style={{
@@ -355,8 +404,8 @@ class ReactNativeTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Widely
+              accepted
             </p>
             <p
               style={{
@@ -364,8 +413,8 @@ class ReactNativeTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy and
+              affordable maintenance
             </p>
             <p
               style={{
@@ -373,14 +422,14 @@ class ReactNativeTechnoligy extends Component {
                 width: "calc(100%/3 - 1rem)",
               }}
             >
-              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster
-              time to market through automation
+              <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+              Community driven
             </p>
           </div>
           <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
-            Engage our skilled DevOps team to construct top-tier business
-            solutions with improved quality, scalability, and heightened
-            security.
+            We develop and actively support our own open-source solutions. With
+            the undisputed quality of these products, we successfully use them
+            in our projects.
           </h2>
           <button
             className="getQuoteButton industries-getQuoteButton bluidtechnoligy"
@@ -391,7 +440,7 @@ class ReactNativeTechnoligy extends Component {
               width: "fit-content",
             }}
           >
-            Build Your DevOps Team Today
+            Get Your React Native App Today
           </button>
         </div>
         <div
@@ -399,7 +448,7 @@ class ReactNativeTechnoligy extends Component {
           style={{ paddingInline: " 14%", backgroundColor: "#fff" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our DevOps Services
+            Our React Native App Development Services
           </h1>
 
           <div
@@ -417,17 +466,14 @@ class ReactNativeTechnoligy extends Component {
               <img src={QualityChain} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Custom DevOps Consulting
+                Cross-Platform App Development
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Our DevOps services streamline operations, improve software
-                delivery and enhance business capabilities to stay agile and
-                competitive. Speed up your internal processes and improve
-                software development through our experienced DevOps consulting
-                services.
+                We create React Native apps that run seamlessly on multiple
+                platforms, including iOS and Android.
               </p>
             </div>
             <div
@@ -440,16 +486,14 @@ class ReactNativeTechnoligy extends Component {
             >
               <img src={SupplyChain} alt="ene" />
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Incorporating DevOps
+                UI/UX Design
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                By incorporating DevOps, you can integrate automated security
-                practices, develop reliable products, address crucial security
-                concerns and deliver highly secure software faster than your
-                competition.
+                We design/redesign visually appealing and customer-friendly
+                UI/UX of your React Native application.
               </p>
             </div>
             <div
@@ -463,16 +507,14 @@ class ReactNativeTechnoligy extends Component {
               <img src={Production} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud DevOps and Migration
+                App Optimization
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Leverage efficiency of our DevOps experts to orchestrate a
-                smooth transition to cloud environments. We conduct secure and
-                efficient cloud migrations and implement customized cloud DevOps
-                tools.
+                We optimize the performance and user experience of your React
+                Native apps to enhance the overall customer engagement.
               </p>
             </div>
             <div
@@ -486,16 +528,14 @@ class ReactNativeTechnoligy extends Component {
               <img src={Data} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Continuous Integration and Deployment Solutions
+                Quality Assurance
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Reduce technical barriers with our continuous integration and
-                deployment (CI/CD) solutions. Boost your growth by incorporating
-                CI/CD practices to decrease lead time, reduce operational costs
-                and enhance customer satisfaction.
+                We build high-quality React Native apps that are engineered
+                according to industry standards.
               </p>
             </div>
             <div
@@ -509,16 +549,14 @@ class ReactNativeTechnoligy extends Component {
               <img src={Technoligy} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps Automation and IaC Services
+                Third-Party Integration
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Infrastructure as Code (IaC) service provides tools and
-                techniques to automate repetitive tasks throughout the SDLC. IaC
-                provisions infrastructure to improve efficiency, reduce errors,
-                and optimize costs.
+                We integrate React Native apps with various third-party
+                services, such as social media, payment gateways, and analytics.
               </p>
             </div>
             <div
@@ -532,17 +570,16 @@ class ReactNativeTechnoligy extends Component {
               <img src={Opreation} alt="ene" />
 
               <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Site Reliability Engineering (SRE) and Support
+                App Maintenance and Support
               </p>
               <p
                 className="cardDescription-service"
                 style={{ fontSize: "22px" }}
               >
-                Incorporate Site Reliability Engineering to increase
-                reliability, boost underlying infrastructures, and ensure
-                proactive monitoring so that the issues can be resolved before
-                they happen. Our support service improves incident management,
-                provide better ongoing assistance and elevate users' experience.
+                Leverage our maintenance and support for React Native app
+                development services to upgrade versions and dependencies,
+                allowing you to keep up with the evolving needs of your
+                business.
               </p>
             </div>
           </div>
@@ -553,7 +590,7 @@ class ReactNativeTechnoligy extends Component {
           style={{ paddingInline: " 14%" }}
         >
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Tools We Use to Provide DevOps Services
+            Tools We Use to Build Beautiful React Native Apps
           </h1>
           <Box sx={{ width: "100%", marginTop: "2rem" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -562,17 +599,26 @@ class ReactNativeTechnoligy extends Component {
                 onChange={this.handleTabChange}
                 aria-label="basic tabs example"
               >
-                <Tab label="Deployment Infra" {...a11yProps(0)} />
+                <Tab
+                  label="Frontend Store / State Management "
+                  {...a11yProps(0)}
+                />
 
-                <Tab label="CI / CD Pipelines" {...a11yProps(1)} />
-                <Tab label="Monitoring Tools" {...a11yProps(2)} />
-                <Tab label="Containers " {...a11yProps(3)} />
-                <Tab label="OS  " {...a11yProps(4)} />
+                <Tab label="Build/Development tools" {...a11yProps(1)} />
+                <Tab label="CI / CD Deployment Tools " {...a11yProps(2)} />
+                <Tab label="Testing  " {...a11yProps(3)} />
+                <Tab label="Analytics   " {...a11yProps(4)} />
+                <Tab label="Crash Reporting    " {...a11yProps(5)} />
+                <Tab label="UI Libraries   " {...a11yProps(6)} />
+                <Tab
+                  label="Other commonly used libraries    "
+                  {...a11yProps(4)}
+                />
               </Tabs>
             </Box>
             <CustomTabPanel value={value} index={0}>
               <div className="technlogiesContainer-technology">
-                {Deployment_Infra.map((eachItem) => (
+                {Frontend.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -593,7 +639,7 @@ class ReactNativeTechnoligy extends Component {
               style={{ marginTop: "2rem" }}
             >
               <div className="technlogiesContainer-technology">
-                {Pipelines.map((eachItem) => (
+                {Build.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -609,7 +655,7 @@ class ReactNativeTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
               <div className="technlogiesContainer-technology">
-                {Monitoring.map((eachItem) => (
+                {Deployment.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -625,7 +671,7 @@ class ReactNativeTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={3}>
               <div className="technlogiesContainer-technology">
-                {Containers.map((eachItem) => (
+                {Testing.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -641,7 +687,55 @@ class ReactNativeTechnoligy extends Component {
             </CustomTabPanel>
             <CustomTabPanel value={value} index={4}>
               <div className="technlogiesContainer-technology">
-                {Os.map((eachItem) => (
+                {Analytics.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={5}>
+              <div className="technlogiesContainer-technology">
+                {Reporting.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={6}>
+              <div className="technlogiesContainer-technology">
+                {Libraries.map((eachItem) => (
+                  <div className="technologyCard">
+                    <div className="technologyIconContainer stretch">
+                      <img
+                        className="technologyIcon"
+                        src={eachItem.imageUrl}
+                        alt="technology icon"
+                      />
+                    </div>
+                    <p className="iconName-service">{eachItem.name}</p>
+                  </div>
+                ))}
+              </div>
+            </CustomTabPanel>
+            <CustomTabPanel value={value} index={7}>
+              <div className="technlogiesContainer-technology">
+                {commonly.map((eachItem) => (
                   <div className="technologyCard">
                     <div className="technologyIconContainer stretch">
                       <img
@@ -678,13 +772,12 @@ class ReactNativeTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How long does it take to develop a DevOps project?
+                What applications can you develop using React Native?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                The duration required to develop a DevOps project usually
-                depends on the complexity and size of the project.
-                Traditionally, it could take several months or even a year or
-                more.
+                The range of applications that can be build using React Native
+                includes enterprise apps, finance apps, streaming apps,
+                real-time apps, social networking apps, and eCommerce apps.
               </AccordionDetails>
             </Accordion>
 
@@ -695,14 +788,14 @@ class ReactNativeTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                How much does it cost to hire DevOps engineers?
+                How is React Native better for App development?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                Getting the expertise of DevOps developers might rest upon the
-                factors like location, experience, and the requisites posed by
-                the client. Hence, a systematic review of project needs and
-                choices is paramount to make a decision to induct the DevOps
-                team.
+                React Native is relatively easy to monitor and test. It has
+                singe data binding built to manage modifications. Additionally,
+                it uses the DOM model for utmost flexibility and scalability.
+                Its code can be reused to create apps more quickly and
+                affordably.
               </AccordionDetails>
             </Accordion>
             <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
@@ -712,14 +805,32 @@ class ReactNativeTechnoligy extends Component {
                 id="panel2-header"
                 sx={{ fontSize: "24px" }}
               >
-                What are the benefits of DevOps consulting services?
+                Can we migrate to React from other libraries/frameworks?
               </AccordionSummary>
               <AccordionDetails sx={{ fontSize: "20px" }}>
-                DevOps consulting services presents amplified collaboration
-                among the organization's diverse teams, an augmented capacity
-                for scalability and adaptability, and enhanced safeguarding of
-                security, stability, and dependability, coupled with an
-                accelerated journey to market manifestation.
+                Yes. Migrating to React from the existing platform is much
+                easier as it doesn’t necessitate recreating the entire code or
+                using tools when you wish to make a change. Our skilled React
+                Native App development team guarantees a simple migration from
+                any platform to React. We help in end-to-end migration without
+                impacting the app's performance.
+              </AccordionDetails>
+            </Accordion>
+            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2-content"
+                id="panel2-header"
+                sx={{ fontSize: "24px" }}
+              >
+                What is the estimated cost of developing a React App?
+              </AccordionSummary>
+              <AccordionDetails sx={{ fontSize: "20px" }}>
+                The cost of developing a React Native can be estimated only
+                after assessing other factors such as, development platform, app
+                categories, app complexity, features and functionalities, and
+                the number of developers. Contact us today with your
+                requirement, and we will provide you with a quote.
               </AccordionDetails>
             </Accordion>
           </div>
@@ -727,10 +838,11 @@ class ReactNativeTechnoligy extends Component {
 
         <div className="closingSection" style={{ paddingInline: " 14%" }}>
           <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Hire a top DevOps Team
+            Hire a top React Native Development Team
           </h1>
           <p style={{ fontSize: "22px" }}>
-            Improve Efficiency with Proven DevOps Practices
+            We’re available as a dedicated team: we can build a white-label
+            React Native app from scratch.
           </p>
           <button
             className="letsTalkButton slideRight"
@@ -742,7 +854,7 @@ class ReactNativeTechnoligy extends Component {
               position: "relative",
             }}
           >
-            Connect With Us now
+            Contact Us
             <FaArrowRight
               className="rightArrow"
               style={{

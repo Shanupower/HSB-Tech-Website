@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./myComponents/home";
 import Services from "./myComponents/services";
 import Industries from "./myComponents/industries";
 import CustomizableSolutions from "./myComponents/customizableSolutions";
@@ -29,9 +28,16 @@ import NextTechnoligy from "./myComponents/Technology/NextJs";
 import NodeJsTechnoligy from "./myComponents/Technology/NodeJS";
 import ReactNativeTechnoligy from "./myComponents/Technology/ReactNative";
 import PostgreSQLTechnoligy from "./myComponents/Technology/PostgreSQL";
-class App extends Component {
-  render() {
-    return (
+import Home from "./myComponents/home";
+import MenuBar from "./myComponents/menu";
+import { useMediaQuery } from "@mui/material";
+const App = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+
+  return (
+    <>
+      {isMd && <MenuBar />}
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component={Services} />
@@ -129,8 +135,8 @@ class App extends Component {
           component={ReactNativeTechnoligy}
         />
       </Switch>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default App;
