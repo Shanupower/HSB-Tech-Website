@@ -32,7 +32,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa6";
-
+import { Carousel } from "antd";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -126,6 +126,8 @@ const trustedbyCompaniesList = [
 
 const Home = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
+  const isSm = useMediaQuery("(max-width:468px)");
+
   return (
     <>
       {!isMd && <Navigationbar />}
@@ -177,19 +179,25 @@ const Home = () => {
                 </p>
               )}
             </div>
-            <div
-              style={{
-                width: isMd ? "40%" : "40%",
-                height: isMd ? "160px" : "200px",
-              }}
-            >
-              <img
-                className="landing-right-logo"
-                style={{ width: "100%", height: "100%", objectFit: "contain" }}
-                src={hsbLogo}
-                alt="logo"
-              />
-            </div>
+            {!isSm && (
+              <div
+                style={{
+                  width: isMd ? "40%" : "40%",
+                  height: isMd ? "160px" : "200px",
+                }}
+              >
+                <img
+                  className="landing-right-logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  src={hsbLogo}
+                  alt="logo"
+                />
+              </div>
+            )}
           </div>
           {isMd && (
             <p className="landingSectionSubHeading" style={{ marginTop: "0" }}>
@@ -261,7 +269,7 @@ const Home = () => {
             <h3
               className="serviesSectionHeading"
               style={{
-                fontSize: isMd && "36px",
+                fontSize: isMd && "30px",
               }}
             >
               We Deliver Extraordinary Digital Experiences.
@@ -280,7 +288,9 @@ const Home = () => {
                 className="serviceItem sparkle"
                 style={{ width: isMd ? "100%" : "46%" }}
               >
-                <p>Smart IT solutions for every need.</p>
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Smart IT solutions for every need.
+                </p>
                 <img
                   className="serviceImage"
                   src={sparkleImage}
@@ -292,7 +302,7 @@ const Home = () => {
                 className="serviceItem impact"
                 style={{ width: isMd ? "100%" : "46%" }}
               >
-                <p>
+                <p style={{ fontSize: isSm && "24px" }}>
                   Seamless managed services with high-performance workspaces.
                 </p>
                 <img className="serviceImage" src={impactImage} alt="sparkle" />
@@ -302,7 +312,9 @@ const Home = () => {
                 className="serviceItem scale"
                 style={{ width: isMd ? "100%" : "46%" }}
               >
-                <p>Customized approach across industries.</p>
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Customized approach across industries.
+                </p>
                 <img className="serviceImage" src={scaleImage} alt="sparkle" />
               </div>
 
@@ -310,7 +322,9 @@ const Home = () => {
                 className="serviceItem quality"
                 style={{ width: isMd ? "100%" : "46%" }}
               >
-                <p>Seasoned professionals who value business ethics.</p>
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Seasoned professionals who value business ethics.
+                </p>
                 <img
                   className="serviceImage"
                   src={qualityImage}
@@ -327,47 +341,85 @@ const Home = () => {
             }}
           >
             <h1 className="trustedByheading">Trusted By</h1>
-            <Slider {...settings}>
-              {trustedbyCompaniesList.map((eachCompany) => (
-                <HoverCard.Root>
-                  <HoverCard.Trigger asChild>
-                    <div
-                      key={eachCompany.id}
-                      className="trustedbyImageContainer"
+            {isMd ? (
+              <Carousel
+                arrows
+                infinite={false}
+                dots={false}
+                className="custom-carousel"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              >
+                {trustedbyCompaniesList.map((item, id) => (
+                  <div
+                    key={id}
+                    className="trustedbyImageContainer"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
+                      textAlign: "center",
+                    }}
+                  >
+                    <img
                       style={{
-                        width: "90px",
-                        height: "50px",
+                        margin: "0 auto",
+                        widht: "80%",
                       }}
-                    >
-                      <img
-                        className="trustedbyImage"
-                        src={eachCompany.imageUrl}
-                        alt="trusted by company image"
+                      src={item.imageUrl}
+                      alt=""
+                    />
+                  </div>
+                ))}
+              </Carousel>
+            ) : (
+              <Slider {...settings}>
+                {trustedbyCompaniesList.map((eachCompany) => (
+                  <HoverCard.Root>
+                    <HoverCard.Trigger asChild>
+                      <div
+                        key={eachCompany.id}
+                        className="trustedbyImageContainer"
                         style={{
-                          width: "100%",
-                          height: "100%",
-                          filter: "grayscale(100%)",
-                          objectFit: "fill",
+                          width: "90px",
+                          height: "50px",
                         }}
-                      />
-                    </div>
-                  </HoverCard.Trigger>
-                  <HoverCard.Portal>
-                    <HoverCard.Content
-                      className="HoverCardContent"
-                      sideOffset={5}
-                    >
-                      <div className="trustedcomapnies-hovercard">
-                        <p>{eachCompany.cardTitle}</p>
-                        <p>{eachCompany.cardDescription}</p>
+                      >
+                        <img
+                          className="trustedbyImage"
+                          src={eachCompany.imageUrl}
+                          alt="trusted by company image"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            filter: "grayscale(100%)",
+                            objectFit: "fill",
+                          }}
+                        />
                       </div>
+                    </HoverCard.Trigger>
+                    <HoverCard.Portal>
+                      <HoverCard.Content
+                        className="HoverCardContent"
+                        sideOffset={5}
+                      >
+                        <div className="trustedcomapnies-hovercard">
+                          <p>{eachCompany.cardTitle}</p>
+                          <p>{eachCompany.cardDescription}</p>
+                        </div>
 
-                      <HoverCard.Arrow className="HoverCardArrow" />
-                    </HoverCard.Content>
-                  </HoverCard.Portal>
-                </HoverCard.Root>
-              ))}
-            </Slider>
+                        <HoverCard.Arrow className="HoverCardArrow" />
+                      </HoverCard.Content>
+                    </HoverCard.Portal>
+                  </HoverCard.Root>
+                ))}
+              </Slider>
+            )}
           </div>
 
           <div className="appsWeDevelopedSecion section">
@@ -380,18 +432,30 @@ const Home = () => {
               Apps We Developed
             </h1>
             <div className="appsDeveloped-images-container">
-              <div className="appDevelopedImage">
+              <div
+                className="appDevelopedImage"
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: isMd ? "center" : "left",
+                }}
+              >
+                {" "}
                 <img
+                  style={{
+                    objectFit: "contain",
+                  }}
                   className="appDevelopedImage"
                   src={salaryDayImage}
                   alt="app developed image"
                 />
+                <img
+                  className="appDevelopedImage ecofin"
+                  src={ecofinImage}
+                  alt="app developed image"
+                />
               </div>
-              <img
-                className="appDevelopedImage ecofin"
-                src={ecofinImage}
-                alt="app developed image"
-              />
             </div>
           </div>
         </div>

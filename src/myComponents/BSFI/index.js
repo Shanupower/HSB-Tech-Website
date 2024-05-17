@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Component } from "react";
+import { Component, useState } from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -188,71 +188,64 @@ function a11yProps(index) {
   };
 }
 
-class BFSIIndustry extends Component {
-  state = {
-    value: 0,
+const BFSIIndustry = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+  const [value, setValue] = useState(0);
+  const handleTabChange = (event, newValue) => {
+    setValue(newValue);
   };
-
-  handleTabChange = (event, newValue) => {
-    this.setState({
-      value: newValue,
-    });
-  };
-
-  render() {
-    const { value } = this.state;
-
-    return (
-      <div className="industriesPageContainer">
-        <div
-          className="landingSection-services manufacturing section"
-          style={{
-            paddingInline: " 14%",
-            display: "flex",
-            gap: "5%",
-            position: "relative",
-          }}
-        >
-          <div style={{ width: "60%" }}>
-            <Breadcrumbs
-              style={{ color: "#fff" }}
-              className="breadcrumb-industries"
-              separator={<NavigateNextIcon fontSize="small" />}
-              aria-label="breadcrumb"
-            >
-              {breadcrumbs}
-            </Breadcrumbs>
-            <h1
-              className="sectionHeading"
-              style={{ marginTop: "3.2rem", fontSize: "48px" }}
-            >
-              BFSI App Development Services
-            </h1>
-            <p
-              className="sectionDescription"
-              style={{ fontSize: "20px", marginTop: "2rem" }}
-            >
-              We are a forward-thinking software development company focusing on
-              serving the Banking, Financial Services, and Insurance (BFSI)
-              sector. We understand the intricacies and challenges of this
-              industry, and our team is equipped with the expertise to address
-              them effectively. Our BFSI app development solutions are tailored
-              to assist banks, financial institutions, insurance companies, and
-              other stakeholders in achieving their strategic goals and
-              enhancing customer experiences.
-            </p>
-            <button
-              className="getQuoteButton industries-getQuoteButton"
-              type="button"
-              style={{ padding: ".8rem 0", fontSize: "20px" }}
-            >
-              GET QUOTE
-            </button>
-          </div>
+  return (
+    <div className="industriesPageContainer">
+      <div
+        className="landingSection-services manufacturing section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+          display: "flex",
+          gap: "5%",
+          position: "relative",
+        }}
+      >
+        <div style={{ width: isMd ? " 100%" : "60%" }}>
+          <Breadcrumbs
+            style={{ color: "#fff" }}
+            className="breadcrumb-industries"
+            separator={<NavigateNextIcon fontSize="small" />}
+            aria-label="breadcrumb"
+          >
+            {breadcrumbs}
+          </Breadcrumbs>
+          <h1
+            className="sectionHeading"
+            style={{ marginTop: "3.2rem", fontSize: "48px" }}
+          >
+            BFSI App Development Services
+          </h1>
+          <p
+            className="sectionDescription"
+            style={{ fontSize: "20px", marginTop: "2rem" }}
+          >
+            We are a forward-thinking software development company focusing on
+            serving the Banking, Financial Services, and Insurance (BFSI)
+            sector. We understand the intricacies and challenges of this
+            industry, and our team is equipped with the expertise to address
+            them effectively. Our BFSI app development solutions are tailored to
+            assist banks, financial institutions, insurance companies, and other
+            stakeholders in achieving their strategic goals and enhancing
+            customer experiences.
+          </p>
+          <button
+            className="getQuoteButton industries-getQuoteButton"
+            type="button"
+            style={{ padding: ".8rem 0", fontSize: "20px" }}
+          >
+            GET QUOTE
+          </button>
+        </div>
+        {!isMd && (
           <div
             style={{
               position: "absolute",
-              right: "22rem",
+              right: "14%",
               bottom: "0",
               width: "320px",
               height: "460px",
@@ -265,734 +258,714 @@ class BFSIIndustry extends Component {
               alt="web development image"
             />
           </div>
-        </div>
+        )}
+      </div>
 
-        <div className="solutions section" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our BFSI Solutions
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            We are pioneer in innovation and delivering tailored solutions that
-            empower the BFSI sector. Our commitment to excellence shines through
-            our unique offerings.
-          </p>
+      <div
+        className="solutions section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Our BFSI Solutions
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          We are pioneer in innovation and delivering tailored solutions that
+          empower the BFSI sector. Our commitment to excellence shines through
+          our unique offerings.
+        </p>
+        <div
+          className="cardsContainer-services"
+          style={{ marginTop: "3.2rem" }}
+        >
           <div
-            className="cardsContainer-services"
-            style={{ marginTop: "3.2rem" }}
-          >
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={QualityChain} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                BFSI Software Development Services
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We excel in developing custom software solutions for the BFSI
-                domain, incorporating cutting-edge technologies to streamline
-                operations, enhance security, and optimize customer engagement.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={SupplyChain} alt="ene" />
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Banking Software Development
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We provide comprehensive solutions from conceptualization to
-                deployment, ensuring operational efficacy and regulatory
-                compliance.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Production} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Web Development Services for BFSI
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Our tailored web development services for the BFSI sector are
-                responsive and intuitive offering a consistent experience across
-                devices.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Data} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Mobile App Development for Banking
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Our expertise in mobile app development ensures that your
-                banking applications are cutting-edge, secure, and offer
-                superior user experience.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Technoligy} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Online Banking Software Development
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We specialize in creating online banking software that offers a
-                secure, efficient, and user-friendly platform for customers to
-                manage their finances seamlessly.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section whyChooseHSB" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Why Hire HSB As Your BFSI App Development Company?
-          </h1>
-
-          <div
-            className="cardsContainer-services"
-            style={{ marginTop: "3.2rem" }}
-          >
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Comprehensive Solutions
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We offer end-to-end BFSI software development services, from
-                custom application development to integration. to enhance
-                realtime experience of possessing the property.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Comprehensive Solutions
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We offer end-to-end BFSI software development services, from
-                custom application development to integration.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Expert Guidance
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                HSB brings the expertise of building finance and fintech web and
-                mobile app solutions. Leverage our experience, in streamlining
-                the complex processes, and building a 100% compliant app that
-                ensures data security.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                User-centric Approach
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We build applications considering a balance between user’s
-                experience and product vision. Through OCR and other tools we
-                make it easier for the user to share the required details.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Prioritizing Security
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We understand the significance of customers’ data privacy and
-                therefore, our custom BFSI solutions are developed with
-                high-security standards.
-              </p>
-            </div>{" "}
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Payment Integrations
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We provide wide variety of payment integrations, such as, QR
-                code, net banking, debit or credit cards, UPI, and payment
-                wallets.
-              </p>
-            </div>{" "}
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Highly Compliance Standards
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We align software development process with BFSI regulatory
-                compliances to protect customer data and ensuring that the
-                process should comply with the standards.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Few Modules for Your Custom BFSI App
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Through our BFSI app development, we aim to create integrated
-            solutions and enhance business processes. Following are our
-            comprehensive manufacturing modules specific to the industry
-            requirement.
-          </p>
-
-          <div
-            className="moduleItems-industries"
+            className="card-service"
             style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "1.4rem",
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
             }}
           >
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Mobile accessibility </p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Real-time alerts and notifications </p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>KYC process automatio</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Integrating UPI and other digital payments</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>OCR tools</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>GPS Tracking</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Send & request money</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>QR code for scanning</p>
-            </div>
+            <img src={QualityChain} alt="ene" />
 
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Bulk upload of documents</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Real-time selfie or video update</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Transactional SMS tracking</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Digital wallet for online payments</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Utility bills payment</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Analysing financial risk to create risk score</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Bank statement analyser</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Credit score analyser</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Automated invoicing</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Subscription flow</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Automated EMI debits</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Data-driven reports</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Role based access control</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Compliance monitoring</p>
-            </div>
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              BFSI Software Development Services
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We excel in developing custom software solutions for the BFSI
+              domain, incorporating cutting-edge technologies to streamline
+              operations, enhance security, and optimize customer engagement.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={SupplyChain} alt="ene" />
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Banking Software Development
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We provide comprehensive solutions from conceptualization to
+              deployment, ensuring operational efficacy and regulatory
+              compliance.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Production} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Web Development Services for BFSI
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Our tailored web development services for the BFSI sector are
+              responsive and intuitive offering a consistent experience across
+              devices.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Data} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Mobile App Development for Banking
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Our expertise in mobile app development ensures that your banking
+              applications are cutting-edge, secure, and offer superior user
+              experience.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Technoligy} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Online Banking Software Development
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We specialize in creating online banking software that offers a
+              secure, efficient, and user-friendly platform for customers to
+              manage their finances seamlessly.
+            </p>
           </div>
         </div>
+      </div>
+
+      <div
+        className="section whyChooseHSB"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Why Hire HSB As Your BFSI App Development Company?
+        </h1>
 
         <div
-          className="technologiesSectionIndustries section"
-          style={{ paddingInline: " 14%" }}
+          className="cardsContainer-services"
+          style={{ marginTop: "3.2rem" }}
         >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Technologies and Tools We Use for Healthcare App Development
-            Services
-          </h1>
-          <Box sx={{ width: "100%", marginTop: "2rem" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={this.handleTabChange}
-                aria-label="basic tabs example"
-              >
-                <Tab label="Frontend" {...a11yProps(0)} />
-                <Tab label="Backend" {...a11yProps(1)} />
-              </Tabs>
-            </Box>
-            <CustomTabPanel
-              value={value}
-              index={0}
-              style={{ marginTop: "2rem" }}
-            >
-              <div className="technlogiesContainer-technology">
-                {frontendTab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-              <div className="technlogiesContainer-technology">
-                {backendTab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-              <div className="technlogiesContainer-technology">
-                {databasetab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-          </Box>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Comprehensive Solutions
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We offer end-to-end BFSI software development services, from
+              custom application development to integration. to enhance realtime
+              experience of possessing the property.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Comprehensive Solutions
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We offer end-to-end BFSI software development services, from
+              custom application development to integration.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Expert Guidance
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              HSB brings the expertise of building finance and fintech web and
+              mobile app solutions. Leverage our experience, in streamlining the
+              complex processes, and building a 100% compliant app that ensures
+              data security.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              User-centric Approach
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We build applications considering a balance between user’s
+              experience and product vision. Through OCR and other tools we make
+              it easier for the user to share the required details.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Prioritizing Security
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We understand the significance of customers’ data privacy and
+              therefore, our custom BFSI solutions are developed with
+              high-security standards.
+            </p>
+          </div>{" "}
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Payment Integrations
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We provide wide variety of payment integrations, such as, QR code,
+              net banking, debit or credit cards, UPI, and payment wallets.
+            </p>
+          </div>{" "}
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Highly Compliance Standards
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We align software development process with BFSI regulatory
+              compliances to protect customer data and ensuring that the process
+              should comply with the standards.
+            </p>
+          </div>
         </div>
-        {/* <div
+      </div>
+
+      <div
+        className="section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Few Modules for Your Custom BFSI App
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          Through our BFSI app development, we aim to create integrated
+          solutions and enhance business processes. Following are our
+          comprehensive manufacturing modules specific to the industry
+          requirement.
+        </p>
+
+        <div
+          className="moduleItems-industries"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "1.4rem",
+          }}
+        >
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Mobile accessibility </p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Real-time alerts and notifications </p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>KYC process automatio</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Integrating UPI and other digital payments</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>OCR tools</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>GPS Tracking</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Send & request money</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>QR code for scanning</p>
+          </div>
+
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Bulk upload of documents</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Real-time selfie or video update</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Transactional SMS tracking</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Digital wallet for online payments</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Utility bills payment</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Analysing financial risk to create risk score</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Bank statement analyser</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Credit score analyser</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Automated invoicing</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Subscription flow</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Automated EMI debits</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Data-driven reports</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Role based access control</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Compliance monitoring</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="technologiesSectionIndustries section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Technologies and Tools We Use for Healthcare App Development Services
+        </h1>
+        <Box sx={{ width: "100%", marginTop: "2rem" }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Tabs
+              value={value}
+              onChange={handleTabChange}
+              aria-label="basic tabs example"
+            >
+              <Tab label="Frontend" {...a11yProps(0)} />
+              <Tab label="Backend" {...a11yProps(1)} />
+            </Tabs>
+          </Box>
+          <CustomTabPanel value={value} index={0} style={{ marginTop: "2rem" }}>
+            <div className="technlogiesContainer-technology">
+              {frontendTab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={1}>
+            <div className="technlogiesContainer-technology">
+              {backendTab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={2}>
+            <div className="technlogiesContainer-technology">
+              {databasetab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+        </Box>
+      </div>
+      {/* <div
           // className="technologiesSectionIndustries section"
           className="closingSection"
           style={{ paddingInline: " 14%" }}
@@ -1023,8 +996,8 @@ class BFSIIndustry extends Component {
             <p> Training, support and maintenance</p>
           </Chrono>
         </div> */}
-        {/* Accordion */}
-        {/* <div
+      {/* Accordion */}
+      {/* <div
           className="technologiesSectionIndustries section"
           style={{ paddingInline: " 14%" }}
         >
@@ -1143,20 +1116,25 @@ class BFSIIndustry extends Component {
           </div>
         </div> */}
 
-        <div className="closingSection" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Connect us now to avail our BFSI app development services
-          </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            GET QUOTE
-            <FaArrowRight className="rightArrow" />
-          </button>
-        </div>
-
-        <Footer />
+      <div
+        className="closingSection"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Connect us now to avail our BFSI app development services
+        </h1>
+        <button className="letsTalkButton slideRight" type="button">
+          GET QUOTE
+          <FaArrowRight className="rightArrow" />
+        </button>
       </div>
-    );
-  }
-}
+
+      <Footer />
+    </div>
+  );
+};
 
 export default BFSIIndustry;

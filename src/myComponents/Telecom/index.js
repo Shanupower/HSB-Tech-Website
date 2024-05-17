@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import { Component } from "react";
+import { Component, useState } from "react";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
@@ -188,71 +188,64 @@ function a11yProps(index) {
   };
 }
 
-class TelecomIndustry extends Component {
-  state = {
-    value: 0,
+const TelecomIndustry = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+  const [value, setValue] = useState(0);
+  const handleTabChange = (event, newValue) => {
+    setValue(newValue);
   };
 
-  handleTabChange = (event, newValue) => {
-    this.setState({
-      value: newValue,
-    });
-  };
-
-  render() {
-    const { value } = this.state;
-
-    return (
-      <div className="industriesPageContainer">
-        <div
-          className="landingSection-services manufacturing section"
-          style={{
-            paddingInline: " 14%",
-            display: "flex",
-            gap: "5%",
-            position: "relative",
-          }}
-        >
-          <div style={{ width: "60%" }}>
-            <Breadcrumbs
-              style={{ color: "#fff" }}
-              className="breadcrumb-industries"
-              separator={<NavigateNextIcon fontSize="small" />}
-              aria-label="breadcrumb"
-            >
-              {breadcrumbs}
-            </Breadcrumbs>
-            <h1
-              className="sectionHeading"
-              style={{ marginTop: "3.2rem", fontSize: "48px" }}
-            >
-              Telecom App Development Services
-            </h1>
-            <p
-              className="sectionDescription"
-              style={{ fontSize: "20px", marginTop: "2rem" }}
-            >
-              The one and only industry that has undergone rapid change and has
-              witnessed an upserge in its demand is, the telecom. This tidal
-              shift in the telecom software development industry is forcing
-              major and ongoing upgrades to network and data storage
-              infrastructures, as exemplified by the 5G rollout, and continuing
-              new trends. Therefore, a corresponding digital transformation in
-              operations is required in areas such as customer care, sales, and
-              billing.
-            </p>
-            <button
-              className="getQuoteButton industries-getQuoteButton"
-              type="button"
-              style={{ padding: ".8rem 0", fontSize: "20px" }}
-            >
-              GET QUOTE
-            </button>
-          </div>
+  return (
+    <div className="industriesPageContainer">
+      <div
+        className="landingSection-services manufacturing section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+          display: "flex",
+          gap: "5%",
+          position: "relative",
+        }}
+      >
+        <div style={{ width: isMd ? " 100%" : "60%" }}>
+          <Breadcrumbs
+            style={{ color: "#fff" }}
+            className="breadcrumb-industries"
+            separator={<NavigateNextIcon fontSize="small" />}
+            aria-label="breadcrumb"
+          >
+            {breadcrumbs}
+          </Breadcrumbs>
+          <h1
+            className="sectionHeading"
+            style={{ marginTop: "3.2rem", fontSize: "48px" }}
+          >
+            Telecom App Development Services
+          </h1>
+          <p
+            className="sectionDescription"
+            style={{ fontSize: "20px", marginTop: "2rem" }}
+          >
+            The one and only industry that has undergone rapid change and has
+            witnessed an upserge in its demand is, the telecom. This tidal shift
+            in the telecom software development industry is forcing major and
+            ongoing upgrades to network and data storage infrastructures, as
+            exemplified by the 5G rollout, and continuing new trends. Therefore,
+            a corresponding digital transformation in operations is required in
+            areas such as customer care, sales, and billing.
+          </p>
+          <button
+            className="getQuoteButton industries-getQuoteButton"
+            type="button"
+            style={{ padding: ".8rem 0", fontSize: "20px" }}
+          >
+            GET QUOTE
+          </button>
+        </div>
+        {!isMd && (
           <div
             style={{
               position: "absolute",
-              right: "22rem",
+              right: "14%",
               bottom: "0",
               width: "320px",
               height: "460px",
@@ -265,637 +258,630 @@ class TelecomIndustry extends Component {
               alt="web development image"
             />
           </div>
-        </div>
-
-        <div className="solutions section" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Solutions We Deliver
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Connect your telecommunication business to the world of advanced
-            software solutions and accelerate your digital services
-            transformation, add competitive value to your offerings, and
-            generate new revenue streams. Start your digitalization journey and
-            keep up with the latest technologies to enhance your business
-            revenue streams.
-          </p>
-          <div
-            className="cardsContainer-services"
-            style={{ marginTop: "3.2rem" }}
-          >
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={QualityChain} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Telecom Software Development
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We can deliver software development solutions connected to
-                self-care portals, CRM, payment systems, provisioning,
-                inventory, monitoring, IN and IMS, IoT, VoIP and roaming to
-                optimize your network performance, improve customer experience
-                and streamline operations.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={SupplyChain} alt="ene" />
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Cloud Native Development
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Utilize Cloud Native architectures to migrate from legacy
-                SS7-based TDM and IN systems to software-based SIP, IMS and 5G
-                network applications. We design, develop, and deploy tailored
-                telecom enterprise software solutions specific to network
-                applications. 
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Production} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Generative AI Solutions
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Generative AI solutions can assist you with predictive
-                decision-making based on data breakdowns that will elevate your
-                company’s competitiveness. AI support automation of sales
-                services and customer support with ChatGPT or Auto-GPT.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Data} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Machine Learning for Telecom
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Optimize workflows through online and offline machine learning
-                models. Analyse photographic documentation of FTTH networks or
-                examine a set of existing cases to design an internal AI system
-                to boost your organization's effectiveness.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Technoligy} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                DevOps and CI/CD Methodologies
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                DevOps enables automated and iterative software development,
-                faster release of new features, as well as the ability to detect
-                and fix errors at the initial stages. By implementing continuous
-                integration (CI) and continuous deployment (CD), you can
-                increase your operational agility and reduce maintenance costs.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Operations Support Systems (OSS) Development n
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Customized solutions to replace excel in telecommunications OSS.
-                Boost the day-to-day operations of a telecom network, monitor
-                network performance, diagnose issues and instantly troubleshoot
-                problems to reduce downtime and improve results.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <img src={Opreation} alt="ene" />
-
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Operations Support Systems (OSS) Development n
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Accelerate the business side of telecom operations with
-                customer-facing solutions. Enable your company to efficiently
-                manage its customer base, create and manage pricing plans,
-                generate bills and invoices, process payments and resolve
-                customer queries or complaints with the BSS.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section whyChooseHSB" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Why Hire HSB As Your Telecom App Development Company?
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Accelerate your telecom business operations with customer-oriented
-            solutions. Enable your staff to efficiently manage customer
-            responses, create and manage pricing plans, generate bills and
-            invoices, process payments and resolve customer queries or
-            complaints with smart telecom solutions.
-          </p>
-          <div
-            className="cardsContainer-services"
-            style={{ marginTop: "3.2rem" }}
-          >
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Enhance Customer Relationships
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                Experience a surge in requests by implementing cloud
-                infrastructure and optimizing networks, leading to improving the
-                delivery of telecom services to end consumers. We provide robust
-                support and self-service applications that foster greater
-                customer loyalty.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Boost Management Efficiency
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We provide efficient network management tools to streamline
-                service delivery and reduce operating costs. Our advanced data
-                analytics helps in prioritizing automation across various
-                network components and operational processes.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Competitive Advantage
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                We understand that the telecom industry boasts an abundance of
-                big data sources for both internal use and monetization through
-                data-driven product offerings. By teaming up with our custom
-                telecom solutions you can unlock new revenue streams and
-                business insights from your big data.
-              </p>
-            </div>
-            <div
-              className="card-service"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-              }}
-            >
-              <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-                Reduced Operational Costs in the Long Run
-              </p>
-              <p
-                className="cardDescription-service"
-                style={{ fontSize: "22px" }}
-              >
-                By optimizing infrastructure and automating operations the
-                organization will witness reduced expenses across various levels
-                and departments. We extend support through our business
-                intelligence tools, that maximizes the financial benefits of
-                digital transformation.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="section" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Few Modules for Your Custom Telecom App
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            We deliver turnkey solutions that remove the major roadblocks in the
-            telecom business and help firms grow faster. We ensure quality
-            results that meet the expectations and emerging demands of the
-            customers in this industry. Following are the various modules that
-            can be customized for your telecom business requirement –
-          </p>
-
-          <div
-            className="moduleItems-industries"
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              gap: "1.4rem",
-            }}
-          >
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Online property booking app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>CRM and ERP system software </p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Property management app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>B2B and B2C real estate app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Property rental app</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Inventory management software</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Website for property dealers</p>
-            </div>
-            <div
-              className="moduleItem"
-              style={{
-                padding: "1rem 2rem",
-                borderRadius: "10px",
-                boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                backgroundColor: "#f4f4f4",
-                display: "flex",
-                alignItems: "center",
-                minWidth: "fit-content",
-                width: "30%",
-              }}
-            >
-              <FaArrowRight className="moduleItemBullet" />
-              <p>Real estate marketplace app</p>
-            </div>
-          </div>
-        </div>
-
-        <div
-          className="technologiesSectionIndustries section"
-          style={{ paddingInline: " 14%" }}
-        >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Technologies and Tools We Use for Telecom App Development Services
-          </h1>
-          <Box sx={{ width: "100%", marginTop: "2rem" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={this.handleTabChange}
-                aria-label="basic tabs example"
-              >
-                <Tab label="Frontend" {...a11yProps(0)} />
-                <Tab label="Backend" {...a11yProps(1)} />
-                <Tab label="Database" {...a11yProps(1)} />
-              </Tabs>
-            </Box>
-            <CustomTabPanel
-              value={value}
-              index={0}
-              style={{ marginTop: "2rem" }}
-            >
-              <div className="technlogiesContainer-technology">
-                {frontendTab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-              <div className="technlogiesContainer-technology">
-                {backendTab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-              <div className="technlogiesContainer-technology">
-                {databasetab.map((eachItem) => (
-                  <div className="technologyCard">
-                    <div className="technologyIconContainer stretch">
-                      <img
-                        className="technologyIcon"
-                        src={eachItem.imageUrl}
-                        alt="technology icon"
-                      />
-                    </div>
-                    <p className="iconName-service">{eachItem.name}</p>
-                  </div>
-                ))}
-              </div>
-            </CustomTabPanel>
-          </Box>
-        </div>
-        <div
-          // className="technologiesSectionIndustries section"
-          className="closingSection"
-          style={{ paddingInline: " 14%" }}
-        >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Our Step-by-Step Process to Build the Outstanding Telecom App
-          </h1>
-          <Chrono
-            disableToolbar="true"
-            theme={{
-              primary: "black",
-              titleColor: "black",
-            }}
-            mode="VERTICAL"
-            items={educationProcessTimelineItems}
-          >
-            <p> Research the market and learn about the competitors</p>
-            <p>List out the app features </p>
-            <p> Choose the right technology</p>
-            <p> Define project timeline and costing</p>
-            <p> Approval from healthcare and legal documentation </p>
-            <p> Design the architecture</p>
-            <p> Scrum calls and sprint planning </p>
-            <p> UI/UX designs and approval</p>
-            <p>Development phase </p>
-
-            <p> Internal testing and UAT</p>
-            <p>Deployment </p>
-            <p> Training, support and maintenance</p>
-          </Chrono>
-        </div>
-        {/* Accordion */}
-        <div
-          className="technologiesSectionIndustries section"
-          style={{ paddingInline: " 14%" }}
-        >
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            FAQs
-          </h1>
-          <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
-            Find the answers to the most commonly asked questions about our
-            services below
-          </p>
-          <div style={{ marginTop: "3.2rem" }}>
-            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2-content"
-                id="panel2-header"
-                sx={{ fontSize: "24px" }}
-              >
-                How can telecom software development services enhance the
-                customer experience?
-              </AccordionSummary>
-              <AccordionDetails sx={{ fontSize: "20px" }}>
-                A telecom company that strives to enhance the customer
-                experience embraces a cloud-native architecture for agile,
-                scalable, and easily configurable omnichannel experiences. By
-                focusing on improving the customer service through AI and
-                automation, telecom companies can bring a major difference in
-                their services.
-              </AccordionDetails>
-            </Accordion>
-
-            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2-content"
-                id="panel2-header"
-                sx={{ fontSize: "24px" }}
-              >
-                What is the role of network as a service (NaaS) for future
-                connectivity?
-              </AccordionSummary>
-              <AccordionDetails sx={{ fontSize: "20px" }}>
-                Network as a service (NaaS) simplifies network management
-                through offering networking services as a subscription. A recent
-                trend in telecommunication software development, NaaS enables
-                businesses to focus on core objectives and conserve capital.
-                Furthermore, NaaS enhances scalability, agility, and the user
-                experience while providing advanced security features.
-              </AccordionDetails>
-            </Accordion>
-            <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel2-content"
-                id="panel2-header"
-                sx={{ fontSize: "24px" }}
-              >
-                Does HSB provide software development for various levels of
-                Telecom companies?
-              </AccordionSummary>
-              <AccordionDetails sx={{ fontSize: "20px" }}>
-                Yes, HSB can develop the software as per your requirement, size
-                of the company, features, business scale, and various other
-                factors.
-              </AccordionDetails>
-            </Accordion>
-          </div>
-        </div>
-
-        <div className="closingSection" style={{ paddingInline: " 14%" }}>
-          <h1 className="sectionHeading" style={{ fontSize: "48px" }}>
-            Connect us now to avail our Telecom app development services
-          </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            GET QUOTE
-            <FaArrowRight className="rightArrow" />
-          </button>
-        </div>
-
-        <Footer />
+        )}
       </div>
-    );
-  }
-}
+
+      <div
+        className="solutions section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Solutions We Deliver
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          Connect your telecommunication business to the world of advanced
+          software solutions and accelerate your digital services
+          transformation, add competitive value to your offerings, and generate
+          new revenue streams. Start your digitalization journey and keep up
+          with the latest technologies to enhance your business revenue streams.
+        </p>
+        <div
+          className="cardsContainer-services"
+          style={{ marginTop: "3.2rem" }}
+        >
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={QualityChain} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Telecom Software Development
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We can deliver software development solutions connected to
+              self-care portals, CRM, payment systems, provisioning, inventory,
+              monitoring, IN and IMS, IoT, VoIP and roaming to optimize your
+              network performance, improve customer experience and streamline
+              operations.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={SupplyChain} alt="ene" />
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Cloud Native Development
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Utilize Cloud Native architectures to migrate from legacy
+              SS7-based TDM and IN systems to software-based SIP, IMS and 5G
+              network applications. We design, develop, and deploy tailored
+              telecom enterprise software solutions specific to network
+              applications. 
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Production} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Generative AI Solutions
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Generative AI solutions can assist you with predictive
+              decision-making based on data breakdowns that will elevate your
+              company’s competitiveness. AI support automation of sales services
+              and customer support with ChatGPT or Auto-GPT.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Data} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Machine Learning for Telecom
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Optimize workflows through online and offline machine learning
+              models. Analyse photographic documentation of FTTH networks or
+              examine a set of existing cases to design an internal AI system to
+              boost your organization's effectiveness.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Technoligy} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              DevOps and CI/CD Methodologies
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              DevOps enables automated and iterative software development,
+              faster release of new features, as well as the ability to detect
+              and fix errors at the initial stages. By implementing continuous
+              integration (CI) and continuous deployment (CD), you can increase
+              your operational agility and reduce maintenance costs.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Opreation} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Operations Support Systems (OSS) Development n
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Customized solutions to replace excel in telecommunications OSS.
+              Boost the day-to-day operations of a telecom network, monitor
+              network performance, diagnose issues and instantly troubleshoot
+              problems to reduce downtime and improve results.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <img src={Opreation} alt="ene" />
+
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Operations Support Systems (OSS) Development n
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Accelerate the business side of telecom operations with
+              customer-facing solutions. Enable your company to efficiently
+              manage its customer base, create and manage pricing plans,
+              generate bills and invoices, process payments and resolve customer
+              queries or complaints with the BSS.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="section whyChooseHSB"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Why Hire HSB As Your Telecom App Development Company?
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          Accelerate your telecom business operations with customer-oriented
+          solutions. Enable your staff to efficiently manage customer responses,
+          create and manage pricing plans, generate bills and invoices, process
+          payments and resolve customer queries or complaints with smart telecom
+          solutions.
+        </p>
+        <div
+          className="cardsContainer-services"
+          style={{ marginTop: "3.2rem" }}
+        >
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Enhance Customer Relationships
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              Experience a surge in requests by implementing cloud
+              infrastructure and optimizing networks, leading to improving the
+              delivery of telecom services to end consumers. We provide robust
+              support and self-service applications that foster greater customer
+              loyalty.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Boost Management Efficiency
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We provide efficient network management tools to streamline
+              service delivery and reduce operating costs. Our advanced data
+              analytics helps in prioritizing automation across various network
+              components and operational processes.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Competitive Advantage
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              We understand that the telecom industry boasts an abundance of big
+              data sources for both internal use and monetization through
+              data-driven product offerings. By teaming up with our custom
+              telecom solutions you can unlock new revenue streams and business
+              insights from your big data.
+            </p>
+          </div>
+          <div
+            className="card-service"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+            }}
+          >
+            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
+              Reduced Operational Costs in the Long Run
+            </p>
+            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
+              By optimizing infrastructure and automating operations the
+              organization will witness reduced expenses across various levels
+              and departments. We extend support through our business
+              intelligence tools, that maximizes the financial benefits of
+              digital transformation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Few Modules for Your Custom Telecom App
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          We deliver turnkey solutions that remove the major roadblocks in the
+          telecom business and help firms grow faster. We ensure quality results
+          that meet the expectations and emerging demands of the customers in
+          this industry. Following are the various modules that can be
+          customized for your telecom business requirement –
+        </p>
+
+        <div
+          className="moduleItems-industries"
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "1.4rem",
+          }}
+        >
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Online property booking app</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>CRM and ERP system software </p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Property management app</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>B2B and B2C real estate app</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Property rental app</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Inventory management software</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Website for property dealers</p>
+          </div>
+          <div
+            className="moduleItem"
+            style={{
+              padding: "1rem 2rem",
+              borderRadius: "10px",
+              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
+              backgroundColor: "#f4f4f4",
+              display: "flex",
+              alignItems: "center",
+              minWidth: "fit-content",
+              width: "30%",
+            }}
+          >
+            <FaArrowRight className="moduleItemBullet" />
+            <p>Real estate marketplace app</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="technologiesSectionIndustries section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Technologies and Tools We Use for Telecom App Development Services
+        </h1>
+        <Box sx={{ width: "100%", marginTop: "2rem" }}>
+          <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Tabs
+              value={value}
+              onChange={handleTabChange}
+              aria-label="basic tabs example"
+            >
+              <Tab label="Frontend" {...a11yProps(0)} />
+              <Tab label="Backend" {...a11yProps(1)} />
+              <Tab label="Database" {...a11yProps(1)} />
+            </Tabs>
+          </Box>
+          <CustomTabPanel value={value} index={0} style={{ marginTop: "2rem" }}>
+            <div className="technlogiesContainer-technology">
+              {frontendTab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={1}>
+            <div className="technlogiesContainer-technology">
+              {backendTab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+          <CustomTabPanel value={value} index={2}>
+            <div className="technlogiesContainer-technology">
+              {databasetab.map((eachItem) => (
+                <div className="technologyCard">
+                  <div className="technologyIconContainer stretch">
+                    <img
+                      className="technologyIcon"
+                      src={eachItem.imageUrl}
+                      alt="technology icon"
+                    />
+                  </div>
+                  <p className="iconName-service">{eachItem.name}</p>
+                </div>
+              ))}
+            </div>
+          </CustomTabPanel>
+        </Box>
+      </div>
+      <div
+        // className="technologiesSectionIndustries section"
+        className="closingSection"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Our Step-by-Step Process to Build the Outstanding Telecom App
+        </h1>
+        <Chrono
+          disableToolbar="true"
+          theme={{
+            primary: "black",
+            titleColor: "black",
+          }}
+          mode="VERTICAL"
+          items={educationProcessTimelineItems}
+        >
+          <p> Research the market and learn about the competitors</p>
+          <p>List out the app features </p>
+          <p> Choose the right technology</p>
+          <p> Define project timeline and costing</p>
+          <p> Approval from healthcare and legal documentation </p>
+          <p> Design the architecture</p>
+          <p> Scrum calls and sprint planning </p>
+          <p> UI/UX designs and approval</p>
+          <p>Development phase </p>
+
+          <p> Internal testing and UAT</p>
+          <p>Deployment </p>
+          <p> Training, support and maintenance</p>
+        </Chrono>
+      </div>
+      {/* Accordion */}
+      <div
+        className="technologiesSectionIndustries section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          FAQs
+        </h1>
+        <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
+          Find the answers to the most commonly asked questions about our
+          services below
+        </p>
+        <div style={{ marginTop: "3.2rem" }}>
+          <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+              sx={{ fontSize: "24px" }}
+            >
+              How can telecom software development services enhance the customer
+              experience?
+            </AccordionSummary>
+            <AccordionDetails sx={{ fontSize: "20px" }}>
+              A telecom company that strives to enhance the customer experience
+              embraces a cloud-native architecture for agile, scalable, and
+              easily configurable omnichannel experiences. By focusing on
+              improving the customer service through AI and automation, telecom
+              companies can bring a major difference in their services.
+            </AccordionDetails>
+          </Accordion>
+
+          <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+              sx={{ fontSize: "24px" }}
+            >
+              What is the role of network as a service (NaaS) for future
+              connectivity?
+            </AccordionSummary>
+            <AccordionDetails sx={{ fontSize: "20px" }}>
+              Network as a service (NaaS) simplifies network management through
+              offering networking services as a subscription. A recent trend in
+              telecommunication software development, NaaS enables businesses to
+              focus on core objectives and conserve capital. Furthermore, NaaS
+              enhances scalability, agility, and the user experience while
+              providing advanced security features.
+            </AccordionDetails>
+          </Accordion>
+          <Accordion sx={{ borderRadius: "14px", marginBlock: ".8rem" }}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel2-content"
+              id="panel2-header"
+              sx={{ fontSize: "24px" }}
+            >
+              Does HSB provide software development for various levels of
+              Telecom companies?
+            </AccordionSummary>
+            <AccordionDetails sx={{ fontSize: "20px" }}>
+              Yes, HSB can develop the software as per your requirement, size of
+              the company, features, business scale, and various other factors.
+            </AccordionDetails>
+          </Accordion>
+        </div>
+      </div>
+
+      <div
+        className="closingSection"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Connect us now to avail our Telecom app development services
+        </h1>
+        <button className="letsTalkButton slideRight" type="button">
+          GET QUOTE
+          <FaArrowRight className="rightArrow" />
+        </button>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
 
 export default TelecomIndustry;

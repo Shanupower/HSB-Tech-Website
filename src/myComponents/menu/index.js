@@ -13,6 +13,7 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import { Menu } from "antd";
+import { useMediaQuery } from "@mui/material";
 const items = [
   {
     key: "What We Do",
@@ -291,9 +292,10 @@ const items = [
 ];
 const MenuBar = () => {
   const [open, setOpen] = useState(false);
+  const isMd = useMediaQuery("(max-width:768px)");
 
   const showDrawer = () => {
-    setOpen(true);
+    setOpen(!open);
   };
 
   const onClose = () => {
@@ -317,7 +319,7 @@ const MenuBar = () => {
         >
           <MenuIcon
             style={{
-              fontSize: "50px",
+              fontSize: "30px",
               color: "#000",
               zIndex: "10000",
             }}
@@ -328,6 +330,7 @@ const MenuBar = () => {
       <Drawer
         style={{
           padding: 0,
+          width: isMd && "80%",
         }}
         title={
           <a href="/">

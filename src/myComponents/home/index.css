@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap");
+/* Hide dots */
+.ant-carousel .slick-dots {
+  display: none !important;
+}
+
+/* Customize arrow background color */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  background-color: red !important;
+  width: 30px; /* Adjust the width if necessary */
+  height: 30px; /* Adjust the height if necessary */
+  border-radius: 50%; /* Make them circular, adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optionally, change the color of the arrow icons */
+.ant-carousel .slick-prev::before,
+.ant-carousel .slick-next::before {
+  color: white; /* Change the arrow icon color */
+}
 
 .geekyantlogo {
   width: 150px;

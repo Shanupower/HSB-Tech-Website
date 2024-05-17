@@ -26,24 +26,24 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-import reactImage from '../../assets/react.png'
-import flutter from '../../assets/flutter.png'
-import kotlin from '../../assets/kotlin.svg'
-import nativeScript from '../../assets/nativescript.svg'
-import objectiveC from '../../assets/objective-c.png'
-import angularImage from '../../assets/angular.webp'
-import javaImage from '../../assets/java-logo.png'
-import javascriptImage from '../../assets/javascript-logo.png'
-import dotNet from '../../assets/dotnet.png'
-import cssImage from '../../assets/css.png'
-import sqlServer from '../../assets/sql-server.svg'
-import mySql from '../../assets/mysql.svg'
-import oracle from '../../assets/oracle-logo.png'
-import postgreSql from '../../assets/postgresql.png'
-import graphQl from '../../assets/graphql.png'
-import selenium from '../../assets/selenium.png'
-import cypress from '../../assets/cypress.png'
-import jest from '../../assets/jest.webp'
+import reactImage from "../../assets/react.png";
+import flutter from "../../assets/flutter.png";
+import kotlin from "../../assets/kotlin.svg";
+import nativeScript from "../../assets/nativescript.svg";
+import objectiveC from "../../assets/objective-c.png";
+import angularImage from "../../assets/angular.webp";
+import javaImage from "../../assets/java-logo.png";
+import javascriptImage from "../../assets/javascript-logo.png";
+import dotNet from "../../assets/dotnet.png";
+import cssImage from "../../assets/css.png";
+import sqlServer from "../../assets/sql-server.svg";
+import mySql from "../../assets/mysql.svg";
+import oracle from "../../assets/oracle-logo.png";
+import postgreSql from "../../assets/postgresql.png";
+import graphQl from "../../assets/graphql.png";
+import selenium from "../../assets/selenium.png";
+import cypress from "../../assets/cypress.png";
+import jest from "../../assets/jest.webp";
 import "./index.css";
 
 const frontendTab = [
@@ -69,8 +69,8 @@ const frontendTab = [
   },
   {
     imageUrl: cssImage,
-    name: "CSS"
-  }
+    name: "CSS",
+  },
 ];
 
 const backendTab = [
@@ -333,7 +333,7 @@ class MobileDevelopment extends Component {
 
         <div className="techAndToolsSection section">
           <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
-          
+
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
@@ -416,31 +416,48 @@ class MobileDevelopment extends Component {
 
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-          Our Mobile App Development Services
+            Our Mobile App Development Services
           </h1>
           <p className="sectionDescription">
-          We provide the best assistance with overall mobile application development for various container-based applications and server-less architectures. 
+            We provide the best assistance with overall mobile application
+            development for various container-based applications and server-less
+            architectures.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={crossImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Android mobile app development</p>
+              <p className="cardTitle-service">
+                Android mobile app development
+              </p>
               <p className="cardDescription-service">
-              We help you in hosting a highly customizable app offering a unified experience across all screens. With our eminent team, we deliver highly immersive VR experiences assuring enterprise-grade mobile security.
+                We help you in hosting a highly customizable app offering a
+                unified experience across all screens. With our eminent team, we
+                deliver highly immersive VR experiences assuring
+                enterprise-grade mobile security.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={mobileServices} alt="why choose us card image" />
               <p className="cardTitle-service">iOS mobile app development</p>
               <p className="cardDescription-service">
-              We design and deliver enterprise and consumer apps for the entire Apple product range, such as watches, smartphones, smart TVs, cars, etc. Our team is proficient with Apple’s Human Interface Guidelines which enables easy compliance as well as ensuring user satisfaction with outstanding mobile apps.
+                We design and deliver enterprise and consumer apps for the
+                entire Apple product range, such as watches, smartphones, smart
+                TVs, cars, etc. Our team is proficient with Apple’s Human
+                Interface Guidelines which enables easy compliance as well as
+                ensuring user satisfaction with outstanding mobile apps.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={appMaintenanceImage} alt="why choose us card image" />
-              <p className="cardTitle-service">Cross-platform mobile app development</p>
+              <p className="cardTitle-service">
+                Cross-platform mobile app development
+              </p>
               <p className="cardDescription-service">
-              To make your presence on diverse platforms, it is significant to develop a versatile mobile app. Reduce your development and maintenance costs by going cross-platform. Our shared iOS and Android code base allows the fragmentation of Oss and devices to accelerate the market approach without compromising user appeal.
+                To make your presence on diverse platforms, it is significant to
+                develop a versatile mobile app. Reduce your development and
+                maintenance costs by going cross-platform. Our shared iOS and
+                Android code base allows the fragmentation of Oss and devices to
+                accelerate the market approach without compromising user appeal.
               </p>
             </div>
           </div>
@@ -450,22 +467,38 @@ class MobileDevelopment extends Component {
           <h1 className="sectionHeading">
             We Know What It Takes To Build An Ideal Mobile App
           </h1>
-          <div className="subSections">
+          <div
+            className="subSections"
+            style={{ display: "flex", flexWrap: "wrap", gap: "1rem" }}
+          >
             <div className="sections">
               <h1 className="sectionSubHeading">Consulting & Strategy</h1>
-              <p className="sectionDescription">We brainstorm your requirements to align mobile app development with your chosen business strategy.</p>
+              <p className="sectionDescription">
+                We brainstorm your requirements to align mobile app development
+                with your chosen business strategy.
+              </p>
             </div>
             <div className="sections">
               <h1 className="sectionSubHeading">UI/UX Design</h1>
-              <p className="sectionDescription">Mobile apps that give omnichannel user experiences, meeting customers’ needs and your business goals.</p>
+              <p className="sectionDescription">
+                Mobile apps that give omnichannel user experiences, meeting
+                customers’ needs and your business goals.
+              </p>
             </div>
             <div className="sections">
               <h1 className="sectionSubHeading">Engineering & Delivery</h1>
-              <p className="sectionDescription">Applies a defined iterative approach that is scalable to changing requirements considering timely delivery and budget-restricted.</p>
+              <p className="sectionDescription">
+                Applies a defined iterative approach that is scalable to
+                changing requirements considering timely delivery and
+                budget-restricted.
+              </p>
             </div>
             <div className="sections">
               <h1 className="sectionSubHeading">QA & Optimization</h1>
-              <p className="sectionDescription">We integrate products into digital space, assuring quality deliverance with insightful performance for future optimization.</p>
+              <p className="sectionDescription">
+                We integrate products into digital space, assuring quality
+                deliverance with insightful performance for future optimization.
+              </p>
             </div>
           </div>
         </div>
@@ -794,10 +827,10 @@ class MobileDevelopment extends Component {
 
         <div className="closingSection">
           <h1 className="sectionHeading">
-          For impeccable mobile app experience to your users 
+            For impeccable mobile app experience to your users
           </h1>
           <button className="letsTalkButton slideRight" type="button">
-          Contact Us
+            Contact Us
             <FaArrowRight className="rightArrow" />
           </button>
         </div>

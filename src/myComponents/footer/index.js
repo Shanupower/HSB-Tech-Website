@@ -187,20 +187,22 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="finalSection">
-        <p className="rightsText">
-          2024 © All rights reserved. GeekyAnts{" "}
-          <br className="rigthsBreak-mobile" /> India Pvt Ltd
-        </p>
-        <div className="policy-TC-container">
-          <a className="footerLinkItem" href="#">
-            Privacy Policy
-          </a>
-          <span className="footerLinkItem-mobile"> | </span>
-          <a className="footerLinkItem" href="#">
-            Terms and Conditons
-          </a>
-        </div>
+      <div
+        style={{
+          display: "flex",
+          padding: isMd ? ".4rem 2rem" : ".4rem 14%",
+          flexDirection: isMd && "column",
+          flexWrap: "wrap",
+          width: "100%",
+          backgroundColor: "lightgray",
+          textAlign: "center",
+          justifyContent: !isMd ? "space-between" : "center",
+        }}
+      >
+        <p>2024 © All rights reserved. </p>
+        <p>HSB India Pvt Ltd</p>
+        <p>Privacy Policy </p>
+        <p>Terms and Conditons</p>
       </div>
     </>
   );
