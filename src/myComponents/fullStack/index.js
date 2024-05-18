@@ -807,7 +807,7 @@ const FullStackDevelopment = () => {
         </div>
       </div>
 
-      <div className="closingSection">
+      <div className="closingSection section">
         <h1 className="sectionHeading">Want to hire a Full Stack Developer?</h1>
         <h1 className="sectionSubHeading">
           We deliver a full proof and robust application that maximises your

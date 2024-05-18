@@ -825,7 +825,7 @@ class MobileDevelopment extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div className="closingSection section">
           <h1 className="sectionHeading">
             For impeccable mobile app experience to your users
           </h1>

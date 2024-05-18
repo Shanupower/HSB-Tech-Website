@@ -1,136 +1,145 @@
-.landingSection-letsTalk-Container{
-    display: flex;
-    background-color: #1F212E;
-    padding: 30px;
+.landingSection-letsTalk-Container {
+  display: flex;
+  background-color: #1f212e;
+  padding: 30px;
 }
 
-.landingSection-letsTalk{
-    background-color: #1F212E;
-    padding: 30px;
-    color: #fff;
+.landingSection-letsTalk {
+  background-color: #1f212e;
+  padding: 30px;
+  color: #fff;
 }
 
-.sectionHeading-letsTalk{
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 30px;
+.sectionHeading-letsTalk {
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 30px;
 }
 
-.hightlightItem{
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+.hightlightItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-.rightBullet{
-    border: 1px solid #fff;
-    border-radius: 10px;
-    font-size: 20px;
-    padding: 2px;
-    margin-right: 10px;
+.rightBullet {
+  border: 1px solid #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 2px;
+  margin-right: 10px;
 }
 
-.requestCallbackForm-container{
-    height: 700px;
-    background-color: #fff;
-    width: 700px;
-    color: #000;
-    border-radius: 5px;
+.requestCallbackForm-container {
+  background-color: #fff;
+  width: 700px;
+  color: #000;
+  border-radius: 5px;
 }
 
-.requestCallbackForm{
-    padding: 30px;
+.requestCallbackForm {
+  padding: 30px;
 }
 
-.formTitle{
-    color: #000;
-    background-color: #F1F2F6;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+.formTitle {
+  color: #000;
+  background-color: #f1f2f6;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 20px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
 
-.inputFileds{
-    display: flex;
-    justify-content: space-between;
+.inputFileds {
+  display: flex;
+  justify-content: space-between;
 }
 
-.requestcallback-checkbox{
-    margin-right: 10px;
+.requestcallback-checkbox {
+  margin-right: 10px;
 }
 
-.textInput{
-    margin: 8px;
+.textInput {
+  margin: 8px;
 }
 
-.requestcallback-button{
-    background-color: #2A2B3A;
-    width: 100%;
-    color: #BBBAC6;
-    padding: 10px;
-    margin-top: 20px;
-    border-radius: 5px;
+.requestcallback-button {
+  background-color: #2a2b3a;
+  width: 100%;
+  color: #bbbac6;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
 }
 
-.recordsContainer{
-    background-color: #fff;
-    padding: 70px;
-    padding-left: 120px;
-    padding-right: 120px;
-    display: flex;
-    justify-content: space-between;
+.recordsContainer {
+  background-color: #fff;
+  padding: 70px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.recordItem{
-    background-color: #F4F4F4;
+.recordItem {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 280px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.recordNumber {
+  color: #ca0515;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.reviewsContainer {
+  padding: 70px;
+  padding-left: 120px;
+  padding-right: 120px;
+  background-color: #f8fafa;
+}
+
+.starsContainer-rating {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.reviewCard {
+  padding: 20px;
+  background-color: #fff;
+  margin: 10px;
+  height: 200px;
+  box-shadow: 1px 1px 3px 1px lightgray;
+  border-radius: 3px;
+}
+
+.reviewCard:hover {
+  box-shadow: 2px 2px 5px 2px lightgray;
+}
+
+.verifiedReviewContianer {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.verifiedIcon {
+  margin-right: 10px;
+  color: #e62415;
+}
+
+@media (max-width: 768px) {
+  .recordItem {
+    background-color: #f4f4f4;
     padding: 20px;
-    width: 280px;
-    margin-right: 10px;
+    width: 80%;
     border-radius: 5px;
-}
-
-.recordNumber{
-    color: #CA0515;
-    font-size: 35px;
-    font-weight: 500;
-}
-
-.reviewsContainer{
-    padding: 70px;
-    padding-left: 120px;
-    padding-right: 120px;
-    background-color: #F8FAFA;
-}
-
-.starsContainer-rating{
-    display: flex;
-    align-items: center;
-    margin: 10px;
-}
-
-.reviewCard{
-    padding: 20px;
-    background-color: #fff;
-    margin: 10px;
-    height: 200px;
-    box-shadow: 1px 1px 3px 1px lightgray;
-    border-radius: 3px;
-}
-
-.reviewCard:hover{
-    box-shadow: 2px 2px 5px 2px lightgray;
-}
-
-.verifiedReviewContianer{
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.verifiedIcon{
-    margin-right: 10px;
-    color: #E62415;
+    margin: 0 auto;
+  }
 }

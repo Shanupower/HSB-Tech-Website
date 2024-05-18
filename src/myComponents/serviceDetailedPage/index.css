@@ -6,6 +6,7 @@
 .landingSection-services {
   display: flex;
   background-color: #a8a8eb !important;
+  padding: 0 14%;
 }
 
 .tagLine {

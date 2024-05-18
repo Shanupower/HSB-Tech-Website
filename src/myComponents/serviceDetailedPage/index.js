@@ -257,8 +257,16 @@ const WebDevelopment = () => {
         )}
       </div>
 
-      <div className="whyBuildSection section">
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }} >
+      <div
+        className="whyBuildSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Why Web App Is Significant For Your Business?
         </h1>
         <p className="sectionDescription">
@@ -270,8 +278,16 @@ const WebDevelopment = () => {
         </p>
       </div>
 
-      <div className="whyChooseSection section">
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+      <div
+        className="whyChooseSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Why You Should Hire HSB For Full Stack Development?
         </h1>
         <p className="sectionDescription">
@@ -331,8 +347,18 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="section journeySection">
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>Our Web App Development Journey</h1>
+      <div
+        className="section journeySection"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Our Web App Development Journey
+        </h1>
         <Chrono
           disableToolbar="true"
           theme={{
@@ -398,8 +424,18 @@ const WebDevelopment = () => {
         </Chrono>
       </div>
 
-      <div className="section serciesProvidedSection">
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>Our Web App Development Services</h1>
+      <div
+        className="section serciesProvidedSection"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
+          Our Web App Development Services
+        </h1>
         <p className="sectionDescription">
           Accelerate your web application development to gain competitive edge.
         </p>
@@ -464,7 +500,12 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="techAndToolsSection section">
+      <div
+        className="techAndToolsSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
         <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
         <div className="tabContainer">
           <button
@@ -499,7 +540,12 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="startBuildingSection section">
+      <div
+        className="startBuildingSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
         <div className="startBuildingSectionItem">
           <h1 className="sectionHeading">Start Building Your Web App Today</h1>
           <p className="sectionSubheading-service">
@@ -512,7 +558,12 @@ const WebDevelopment = () => {
         <img className="giftBoxImage" src={giftBox} alt="giftImages" />
       </div>
 
-      <div className="faqsSection section">
+      <div
+        className="faqsSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
         <h1 className="sectionHeading">FAQs</h1>
         <p className="sectionSubHeading">
           Find the answers to the most commonly asked questions about our
@@ -830,8 +881,13 @@ const WebDevelopment = () => {
         </div>
       </div>
 
-      <div className="closingSection">
-        <h1 className="sectionHeading">
+      <div
+        className="closingSection section"
+        style={{
+          paddingInline: isMd ? " 2rem" : " 14%",
+        }}
+      >
+        <h1 className="sectionHeading section">
           Let’s Connect to Discuss How We Can Make An Awesome Product For You.
         </h1>
         <button className="letsTalkButton slideRight" type="button">

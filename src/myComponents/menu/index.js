@@ -306,7 +306,7 @@ const MenuBar = () => {
       {!open && (
         <Space
           style={{
-            position: "sticky",
+            position: "fixed",
             top: "10px",
             left: "10px",
             zIndex: "10000",

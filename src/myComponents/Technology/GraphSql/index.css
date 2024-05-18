@@ -1,5 +1,5 @@
 .section {
-  padding: 70px;
+  padding: 4rem 14% !important;
   padding-left: 120px;
   padding-right: 120px;
 }
@@ -7,6 +7,7 @@
 .landingSection-services {
   display: flex;
   background-color: #333344;
+  padding: 4rem 14% !important;
 }
 
 .tagLine {

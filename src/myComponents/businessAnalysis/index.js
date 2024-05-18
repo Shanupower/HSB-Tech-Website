@@ -821,7 +821,7 @@ class BusinessAnalysisServices extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div className="closingSection section">
           <h1 className="sectionHeading">
           Want to hire us for Business Consulting? Leverage our expertise of Business Analytics. 
           </h1>
