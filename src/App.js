@@ -31,6 +31,9 @@ import PostgreSQLTechnoligy from "./myComponents/Technology/PostgreSQL";
 import Home from "./myComponents/home";
 import MenuBar from "./myComponents/menu";
 import { useMediaQuery } from "@mui/material";
+import TermsAndConditions from "./myComponents/TermsAndConditions/TermsAndConditions";
+import Agile from "./myComponents/ProductModel/Agile";
+import Fixed from "./myComponents/ProductModel/Fixed";
 const App = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
 
@@ -41,6 +44,15 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/agile" component={Agile} />
+        <Route exact path="/fixed" component={Fixed} />
+
+        <Route
+          exact
+          path="/terms_and_conditions"
+          component={TermsAndConditions}
+        />
+
         <Route exact path="/industries" component={Industries} />
         <Route
           exact
