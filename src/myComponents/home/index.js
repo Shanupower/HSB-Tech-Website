@@ -1,7 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable jsx-a11y/img-redundant-alt */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { Component } from "react";
 import hsbLogo from "../../assets/hsb-logo.png";
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
@@ -23,18 +19,7 @@ import devopsImage from "../../assets/devops.png";
 import laravelImage from "../../assets/laravel.svg";
 import supplyChain from "../../assets/supply-chain.png";
 import telemedicineImage from "../../assets/telemedicine.png";
-import oliveGardenImage from "../../assets/oliveGarden.svg";
-import khatabookImage from "../../assets/khatabook.svg";
-import icicImage from "../../assets/icici-bank-logo.webp";
-import amanaImage from "../../assets/amana.webp";
-import pepperfryImage from "../../assets/pepperfry.webp";
-import atsignImage from "../../assets/atsign.webp";
-import hundredmsImage from "../../assets/100ms.svg";
-import dardenImage from "../../assets/darden.svg";
-import mplImage from "../../assets/mpl.webp";
-import payPoint from "../../assets/paypoint.webp";
-import scrollNewsImage from "../../assets/scroll-news.webp";
-import ibsImage from "../../assets/ips-verlang.webp";
+
 import awsImage from "../../assets/aws-partner.webp";
 import githubImage from "../../assets/github.webp";
 
@@ -47,15 +32,25 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight } from "react-icons/fa6";
-
+import { Carousel } from "antd";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, useMediaQuery } from "@mui/material";
 import Footer from "../footer";
 import Navigationbar from "../navigationBar";
 import { Link } from "react-router-dom";
+
+// Home Trasted Image
+import Interexsemi from "../../assets/icons/Interex.svg";
+import Glance from "../../assets/icons/Glance Logo V1.jpg";
+import Aries from "../../assets/icons/Aries.png";
+import Pangu from "../../assets/icons/PGM_logo_big.png";
+import Serole from "../../assets/icons/serole-new-logo1.png";
+import Cosmosksa from "../../assets/icons/cosmos_Logo.svg";
+import Arce from "../../assets/icons/arcImgae.png";
+import WSC from "../../assets/icons/WSC.webp";
 
 import "./index.css";
 
@@ -73,212 +68,403 @@ const settings = {
 const trustedbyCompaniesList = [
   {
     id: 1,
-    imageUrl: oliveGardenImage,
-    cardTitle: "Olive Garden",
+    imageUrl: Interexsemi,
+    cardTitle: "Interes Semi",
     cardDescription:
-      "Olive Garden is an American casual dining restaurant chain. It is a subsidiary of Darden Restaurants, Inc., which is headquartered in Orange County, Florida. We have been a part of Olive Garden’s success journey by building their web and mobile applications",
+      " We are on a mission to redefine what’s possible, and we’re looking for diverse, talented individuals to join us in this exciting journey",
   },
   {
     id: 2,
-    imageUrl: khatabookImage,
-    cardTitle: "Khatabook",
+    imageUrl: Glance,
+    cardTitle: "Glance",
     cardDescription:
-      "Khatabook is an Indian initiative to make wealth management simpler for people of all walksof life.They collaborated with us to build a mobile app for their service which was built in ReactNative, a web app built in React and employed MolecularJS and MongoDB + MySQLDB in the backend.The app is live and has already helped 10M+ people manage and save money.",
+      "We are a unique hub of expertise driven by the concept of excellence since more than 20 years in providing services across multidisciplinary functions of any Business / Projects. We utilize a Best Practice approach to work with the clients to determine the appropriate size and scope of the development.",
   },
   {
     id: 3,
-    imageUrl: icicImage,
-    cardTitle: "ICICI Bank",
+    imageUrl: Aries,
+    cardTitle: "Aries",
     cardDescription:
-      "ICICI Securities is a subsidiary of ICICI Bank. They meet three critical needs of their vast customer base — investments, protection, and borrowing. The virtual financial supermarket www.icicidirect.com is part of their operation. We collaborated with them to create the frontend of their mobile app.",
+      " Aries is the largest Engineering, Inspection & Maintenance firm in the Middle East. Founded by Dr. Sohan Roy in 1998, Aries Marine is the flagship brand of Aries Group, a world-class consortium of diversified independent firms. Headquartered in Sharjah, UAE, this ISO 9001:2015, ISO 14001:2015, ISO 29001:2020 & ISO 45001:2018 certified company has business branches in Singapore, Malaysia, Indonesia, China, India, Qatar, Bahrain, Oman, Saudi Arabia, Kuwait, Azerbaijan, Germany, UK, Angola, Srilanka, Netherlands,Turkey and the USA. ",
   },
   {
     id: 4,
-    imageUrl: amanaImage,
-    cardTitle: "Amana",
+    imageUrl: Pangu,
+    cardTitle: "PGM",
     cardDescription:
-      "UK based Amana skincare is one of the fastest growing product based companies that delivers beauty products based on skin types of consumers. We built a typical e-commerce mobile app as well as a web app in React + React Native with Styled components and Firebase.",
+      "The honorable state, may God bless it, has harnessed its capabilities to serve its sons and daughters and support them materially and morally, and even provide them with scientific and practical qualifications so that they can become active and productive members of society. The state pays great attention to people with disabilities, and one of its concerns is employing them according to their abilities. Pan Gulf Marketing Company is keen to benefit from their abilities through providing them withappropriate training and work qualifications to be able to work and become productive.We believe that following this direction,blessing will come, God willing. ",
   },
   {
     id: 5,
-    imageUrl: pepperfryImage,
-    cardTitle: "Pepperfry",
+    imageUrl: WSC,
+    cardTitle: "WATANIYA SOLUTIONS COMPANY (WSC)",
     cardDescription:
-      "Pepperfry is an online marketplace specializing in home décor and furniture. Our collaboration was related to design systems. We Integrated a new design system on existing app screens and made them more responsive.",
+      " Our Vision To let WATANIYA SOLUTIONS COMPANY (WSC) for Communications and Information Technology (IT) be the leading provider of electronic solutions in the region. WATANIYA SOLUTIONS COMPANY (WSC) for Communications and Information Technology (IT) is a leading and qualified company in the integration and service field of information and communication systems. WSC for Communications and Information Technology has achieved a 100 % completion rate for projects and for several diverse projects by building all its capacities to achieve the standards that were put forward in the framework of the Kingdom's Vision 2030. All of this will be achieved by simplifying e-governance procedures through digital transformation, digital solutions, and the establishment of confidence in the distinctive Saudi talent, where 70 % of the jobs have been localized.",
   },
   {
     id: 6,
-    imageUrl: atsignImage,
+    imageUrl: Serole,
     cardTitle: "AtSign",
     cardDescription:
-      "AtSign is the creator of the atPlatform, which revolutionized how data is exchanged over the internet with its end-to-end encrypted communication protocol, called the atProtocol. We worked on two projects for the @company — a location-sharing app, and a UI/UX based project.",
+      "Serole Technologies is a Global IT Solutions and Services provider bringing Innovative and Value-added Solutions to Enterprise Customers in the areas of Application Services, Integration Services, Smart Data Visualization & Analytics, and Digital Solutions to help its Customers businesses become High-Performance Enterprises. In every business engagement, Serole seek the opportunity to build long-lasting, strategic relationships.",
   },
   {
     id: 7,
-    imageUrl: dardenImage,
-    cardTitle: "Darden",
+    imageUrl: Cosmosksa,
+    cardTitle: "Cosmos",
     cardDescription:
-      "Darden is the world's largest full-service restaurant company, with 175,000+ employees and 1,800 restaurant locations. A member of the Fortune 500 for the last 21 years, the Darden team deals with multiple operational requirements. We’ve been working with them to build their web and mobile applications.",
+      "Cosmos was formed in 2019 and is based in the Kingdom’s capital, Riyadh - and is part of the successful family-owned Lemal Holding Group. Cosmos operates a diverse portfolio of Art, Entertainment and Sports related businesses.",
   },
   {
     id: 8,
-    imageUrl: mplImage,
-    cardTitle: "MPL",
+    imageUrl: Arce,
+    cardTitle: "American Research Center ",
     cardDescription:
-      "A long term client with over 2 years of engagement, Mobile Premier League (MPL) is India's biggest online gaming platform that offers the ultimate gaming experience to users, who can play 40+ games including fantasy sports, that we helped redesign using React, React Native with Redux, Sentry, Babel and Objective C.",
-  },
-  {
-    id: 9,
-    imageUrl: payPoint,
-    cardTitle: "PayPoint",
-    cardDescription:
-      "Taking logistics to the next level with an all-encompassing web app, PayPoint is dominating as UK's largest logistics service provider, backed by React Native, Firebase, a brand new UI &amp; UX design and our guarantee.",
-  },
-  {
-    id: 10,
-    imageUrl: scrollNewsImage,
-    cardTitle: "Scroll News",
-    cardDescription:
-      "Scroll News is an independent source for news that covers news, politics, sports, culture and everything in between. We helped build an ideal mobile and web platform for it using Flutter, GCP, Firebase, NodeJS and Postgres.",
-  },
-  {
-    id: 11,
-    cardTitle: "100ms",
-    imageUrl: hundredmsImage,
-    cardDescription:
-      "Founded in 2020, 100ms is revolutionizing the live-video industry. Their products and APIs simplify real-time video conferring and allow interactive live streaming. We worked on developing video conferencing SDKs to enhance the 100ms application.",
-  },
-  {
-    id: 12,
-    imageUrl: ibsImage,
-    cardTitle: "IPS Verlang",
-    cardDescription:
-      "IPS Verlag is part of the IPS Group — Germany's largest independent national distributor of press products. They provide a wide range of services and deal with a large network of news organizations. From digital printing and press software to publishing of books, the organization is constantly growing. We’re designing and developing a mobile application for IPS.",
+      "The American Research Center in Egypt actively supports scholarship, training and conservation efforts in Egypt through grants, fieldwork and field schools",
   },
 ];
 
-class Home extends Component {
-  render() {
-    return (
-      <div className="appContainer">
+const Home = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+  const isSm = useMediaQuery("(max-width:468px)");
 
-        <Navigationbar />
-        
-        <div className="landingSection">
-          <img className="geekyantlogo" src={hsbLogo} alt="logo" />
-          <h1 className="ladingPageHeading">
-            Highly
-            <br />
-            Scalable <br />
-            Bees
-            <br />
-          </h1>
-          <p className="landingSectionSubHeading">
-            Embrace our IT & Managed Services to accelerate your business
-            growth.
-          </p>
-        </div>
-
-        <div className="navbarSection">
-          <button className="letsTalkButton slideRight" type="button">
-            LET'S TALK
-            <FaArrowRight className="rightArrow" />
-          </button>
-          <button className="navItem" type="button">
-            What we do
-          </button>
-          <button className="navItem" type="button">
-            Case studies
-          </button>
-          <button className="navItem" type="button">
-            Technologies
-          </button>
-          <button className="navItem" type="button">
-            About us
-          </button>
-          <button className="navItem" type="button">
-            Blogs
-          </button>
-        </div>
-
-        <div className="servicesSection">
-          <h3 className="serviesSectionHeading">
-            We Deliver Extraordinary Digital Experiences.
-          </h3>
-          <div className="serviesContainer">
-            <div className="serviceItem sparkle">
-              <p>Smart IT solutions for every need.</p>
-              <img className="serviceImage" src={sparkleImage} alt="sparkle" />
+  return (
+    <>
+      {!isMd && <Navigationbar />}
+      <div>
+        <div
+          className="appContainer"
+          style={{
+            paddingInline: isMd ? "2rem" : "12%",
+          }}
+        >
+          <div className="landingSection">
+            <div
+              className="landing-left-section"
+              style={{
+                paddingBlock: isMd ? "2rem" : "2rem",
+                width: isMd && "50%",
+              }}
+            >
+              <div
+                style={{
+                  width: isMd ? "7.5rem" : "8.6rem",
+                  height: isMd ? "2rem" : "2.5rem",
+                  objectFit: "cover",
+                }}
+              >
+                <img
+                  className="geekyantlogo"
+                  src={hsbLogo}
+                  alt="logo"
+                  style={{ width: "100%", height: "100%" }}
+                />
+              </div>
+              <h1
+                className="ladingPageHeading"
+                style={{
+                  fontSize: isMd ? "3rem" : "4rem",
+                }}
+              >
+                Highly
+                <br />
+                Scalable <br />
+                Bees
+                <br />
+              </h1>
+              {!isMd && (
+                <p className="landingSectionSubHeading">
+                  Embrace our IT & Managed Services to accelerate your business
+                  growth.
+                </p>
+              )}
             </div>
+            {!isSm && (
+              <div
+                style={{
+                  width: isMd ? "40%" : "40%",
+                  height: isMd ? "160px" : "200px",
+                }}
+              >
+                <img
+                  className="landing-right-logo"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
+                  }}
+                  src={hsbLogo}
+                  alt="logo"
+                />
+              </div>
+            )}
+          </div>
+          {isMd && (
+            <p className="landingSectionSubHeading" style={{ marginTop: "0" }}>
+              Embrace our IT & Managed Services to accelerate your business
+              growth.
+            </p>
+          )}
 
-            <div className="serviceItem impact">
-              <p>Seamless managed services with high-performance workspaces.</p>
-              <img className="serviceImage" src={impactImage} alt="sparkle" />
-            </div>
+          <div
+            className="navbarSection"
+            style={{
+              marginTop: isMd && "4rem",
+              padding: isMd && "0",
+            }}
+          >
+            <Link
+              to="lets_talk"
+              style={{
+                textDecoration: "none",
+                display: "flex",
+                alignItems: "center",
+                position: "relative",
+                backgroundColor: "#ca0515",
+                color: "#fff",
+                width: isMd ? "80%" : "20%",
+                textAlign: "center",
+                padding: ".8rem 1rem",
+                fontSize: "20px",
+                marginRight: "1rem",
+                borderRadius: "8px",
+              }}
+            >
+              LET'S TALK
+              <FaArrowRight
+                className="rightArrow"
+                style={{
+                  position: "absolute",
+                  right: "1rem",
+                }}
+              />
+            </Link>
+            {!isMd && (
+              <>
+                <button className="navItem" type="button">
+                  What we do
+                </button>
+                <button className="navItem" type="button">
+                  Case studies
+                </button>
+                <button className="navItem" type="button">
+                  Technologies
+                </button>
+                <button className="navItem" type="button">
+                  About us
+                </button>
+                <button className="navItem" type="button">
+                  Blogs
+                </button>
+              </>
+            )}
+          </div>
 
-            <div className="serviceItem scale">
-              <p>Customized approach across industries.</p>
-              <img className="serviceImage" src={scaleImage} alt="sparkle" />
-            </div>
+          <div
+            className="servicesSection"
+            style={{
+              padding: isMd && "0",
+            }}
+          >
+            <h3
+              className="serviesSectionHeading"
+              style={{
+                fontSize: isMd && "30px",
+              }}
+            >
+              We Deliver Extraordinary Digital Experiences.
+            </h3>
+            <div
+              className="serviesContainer"
+              style={{
+                marginTop: isMd ? "2rem" : "4rem",
+                display: "flex",
+                justifyContent: "space-between",
+                flexWrap: "wrap",
+                gap: "1rem",
+              }}
+            >
+              <div
+                className="serviceItem sparkle"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Smart IT solutions for every need.
+                </p>
+                <img
+                  className="serviceImage"
+                  src={sparkleImage}
+                  alt="sparkle"
+                />
+              </div>
 
-            <div className="serviceItem quality">
-              <p>Seasoned professionals who value business ethics.</p>
-              <img className="serviceImage" src={qualityImage} alt="sparkle" />
+              <div
+                className="serviceItem impact"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Seamless managed services with high-performance workspaces.
+                </p>
+                <img className="serviceImage" src={impactImage} alt="sparkle" />
+              </div>
+
+              <div
+                className="serviceItem scale"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Customized approach across industries.
+                </p>
+                <img className="serviceImage" src={scaleImage} alt="sparkle" />
+              </div>
+
+              <div
+                className="serviceItem quality"
+                style={{ width: isMd ? "100%" : "46%" }}
+              >
+                <p style={{ fontSize: isSm && "24px" }}>
+                  Seasoned professionals who value business ethics.
+                </p>
+                <img
+                  className="serviceImage"
+                  src={qualityImage}
+                  alt="sparkle"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="trustedBySection">
-          <h1 className="trustedByheading">Trusted By</h1>
-          <Slider {...settings}>
-            {trustedbyCompaniesList.map((eachCompany) => (
-              <HoverCard.Root>
-                <HoverCard.Trigger asChild>
-                  <div key={eachCompany.id} className="trustedbyImageContainer">
+          <div
+            className="trustedBySection"
+            style={{
+              padding: isMd && "4rem 2rem",
+            }}
+          >
+            <h1 className="trustedByheading">Trusted By</h1>
+            {isMd ? (
+              <Carousel
+                arrows
+                infinite={false}
+                dots={false}
+                className="custom-carousel"
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  width: "100%",
+                }}
+              >
+                {trustedbyCompaniesList.map((item, id) => (
+                  <div
+                    key={id}
+                    className="trustedbyImageContainer"
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      margin: "0 auto",
+                      textAlign: "center",
+                    }}
+                  >
                     <img
-                      className="trustedbyImage"
-                      src={eachCompany.imageUrl}
-                      alt="trusted by company image"
+                      style={{
+                        margin: "0 auto",
+                        widht: "80%",
+                      }}
+                      src={item.imageUrl}
+                      alt=""
                     />
                   </div>
-                </HoverCard.Trigger>
-                <HoverCard.Portal>
-                  <HoverCard.Content
-                    className="HoverCardContent"
-                    sideOffset={5}
-                  >
-                    <div className="trustedcomapnies-hovercard">
-                      <p>{eachCompany.cardTitle}</p>
-                      <p>{eachCompany.cardDescription}</p>
-                    </div>
+                ))}
+              </Carousel>
+            ) : (
+              <Slider {...settings}>
+                {trustedbyCompaniesList.map((eachCompany) => (
+                  <HoverCard.Root>
+                    <HoverCard.Trigger asChild>
+                      <div
+                        key={eachCompany.id}
+                        className="trustedbyImageContainer"
+                        style={{
+                          width: "90px",
+                          height: "50px",
+                        }}
+                      >
+                        <img
+                          className="trustedbyImage"
+                          src={eachCompany.imageUrl}
+                          alt="trusted by company image"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            filter: "grayscale(100%)",
+                            objectFit: "fill",
+                          }}
+                        />
+                      </div>
+                    </HoverCard.Trigger>
+                    <HoverCard.Portal>
+                      <HoverCard.Content
+                        className="HoverCardContent"
+                        sideOffset={5}
+                      >
+                        <div className="trustedcomapnies-hovercard">
+                          <p>{eachCompany.cardTitle}</p>
+                          <p>{eachCompany.cardDescription}</p>
+                        </div>
 
-                    <HoverCard.Arrow className="HoverCardArrow" />
-                  </HoverCard.Content>
-                </HoverCard.Portal>
-              </HoverCard.Root>
-            ))}
-          </Slider>
-        </div>
+                        <HoverCard.Arrow className="HoverCardArrow" />
+                      </HoverCard.Content>
+                    </HoverCard.Portal>
+                  </HoverCard.Root>
+                ))}
+              </Slider>
+            )}
+          </div>
 
-        <div className="appsWeDevelopedSecion section">
-          <h1 className="sectionHeading">Apps We Developed</h1>
-          <div className="appsDeveloped-images-container">
-            <div className="appDevelopedImage">
-              <img
+          <div className="appsWeDevelopedSecion section">
+            <h1
+              className="sectionHeading"
+              style={{
+                textAlign: "left",
+              }}
+            >
+              Apps We Developed
+            </h1>
+            <div className="appsDeveloped-images-container">
+              <div
                 className="appDevelopedImage"
-                src={salaryDayImage}
-                alt="app developed image"
-              />
+                style={{
+                  width: "100%",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  justifyContent: isMd ? "center" : "left",
+                }}
+              >
+                {" "}
+                <img
+                  style={{
+                    objectFit: "contain",
+                  }}
+                  className="appDevelopedImage"
+                  src={salaryDayImage}
+                  alt="app developed image"
+                />
+                <img
+                  className="appDevelopedImage ecofin"
+                  src={ecofinImage}
+                  alt="app developed image"
+                />
+              </div>
             </div>
-            <img
-              className="appDevelopedImage ecofin"
-              src={ecofinImage}
-              alt="app developed image"
-            />
           </div>
         </div>
-
-        <div className="developmentSection">
+        <div
+          className="developmentSection"
+          style={{
+            padding: isMd ? "2rem" : " 2rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">What We Do Best</h2>
           <p className="sectionDescription">
             We are well equipped with an updated technical knowledge to serve
@@ -287,7 +473,11 @@ class Home extends Component {
           </p>
 
           <div className="developmentCardsContainer">
-            <Link to="/services/web development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/web development"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -304,7 +494,11 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/mobile development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/mobile development"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -321,7 +515,11 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/uiux development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/uiux development"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -336,7 +534,11 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/fullstack development" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/fullstack development"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -351,7 +553,11 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/quality assurance" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/quality assurance"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -369,7 +575,11 @@ class Home extends Component {
               </p>
             </Link>
 
-            <Link to="/services/busines analysis services" className="deveopmentCard hoverUp cardLink">
+            <Link
+              to="/services/busines analysis services"
+              className="deveopmentCard hoverUp cardLink"
+              style={{ width: isMd ? "100%" : "46%" }}
+            >
               <div className="cardTitle">
                 <img
                   className="development-title-image"
@@ -389,9 +599,16 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="certifiedPartnersSection">
-          <h1 className="certifiedPartnersHeading">We Work With</h1>
-          <div className="comapinesContainer">
+        <div
+          className="certifiedPartnersSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
+          <h1 className="certifiedPartnersHeading" style={{ fontSize: "38px" }}>
+            We Work With
+          </h1>
+          <div className="comapinesContainer" style={{ display: "flex" }}>
             <div className="caertifiedCompany-card">
               <img
                 className="githubImage partnerCompanyImage githubImage"
@@ -407,7 +624,12 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="technologiesSection">
+        <div
+          className="technologiesSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Technologies</h2>
           <p className="sectionDescription">
             We work with prominent technologies that can solve your product
@@ -415,7 +637,10 @@ class Home extends Component {
             care of your technical aspect.
           </p>
 
-          <div className="technologiesContainer">
+          <div
+            className="technologiesContainer"
+            style={{ justifyContent: isMd && "center" }}
+          >
             <div className="tehcnologyItem">
               <div className="technologyImage react stretch">
                 <img
@@ -506,29 +731,43 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="openSourceSection">
+        <div
+          className="openSourceSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Open Source</h2>
-          <div className="customizableDescriptionContainer">
-            <p className="sectionDescription customisable-solutions-heading">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
+            <p
+              className="sectionDescription customisable-solutions-heading"
+              style={{
+                width: isMd && "100%",
+              }}
+            >
               Open-source ignites innovation, removes barriers, and fosters
               collaboration aggressively.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-view-applications"
               type="button"
             >
               View Showcase Applications
               <FaArrowRight className="rightArrowRed" />
-            </button>
-
-            <button className="viewApplicationsButton-mobile" type="button">
-              View Showcase Applications
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -559,7 +798,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -591,29 +833,38 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="customizableSolutionsSection">
+        <div
+          className="customizableSolutionsSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Customizable Solutions</h2>
-          <div className="customizableDescriptionContainer">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
             <p className="sectionDescription customisable-solutions-heading">
               A library of various solutions and clones of popular apps built by
               us which can be easily customized to fit your needs.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-view-applications"
               type="button"
             >
               View Showcase Applications
               <FaArrowRight className="rightArrowRed" />
-            </button>
-
-            <button className="viewApplicationsButton-mobile" type="button">
-              View Showcase Applications
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -643,7 +894,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 500 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "40%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -675,7 +929,12 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="ourTeamSection">
+        <div
+          className="ourTeamSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h3 className="sectionHeading">Our Team</h3>
           <p className="cardDescription">
             We bring core-specializations from different streams which makes us
@@ -683,26 +942,39 @@ class Home extends Component {
           </p>
         </div>
 
-        <div className="insightsSection">
+        <div
+          className="insightsSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h2 className="sectionHeading">Insights</h2>
-          <div className="customizableDescriptionContainer">
+          <div
+            className="customizableDescriptionContainer"
+            style={{
+              flexDirection: isMd && "column",
+            }}
+          >
             <p className="sectionDescription">
               Discover the inner workings of our brilliant minds at <br />
               GeekyAnts through our blogs, gaining a deeper understanding of who
               we are.
             </p>
 
-            <button
+            <p
               className="viewApplicationsButton slideRight-blogs"
               type="button"
             >
               More Blogs
               <FaArrowRight className="rightArrowRed" />
-            </button>
+            </p>
           </div>
 
           <div className="twoCardsContainer">
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -734,7 +1006,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -766,7 +1041,10 @@ class Home extends Component {
               </CardActionArea>
             </Card>
 
-            <Card className="hoverUp card" sx={{ maxWidth: 350 }}>
+            <Card
+              className="hoverUp card"
+              sx={{ maxWidth: isMd ? "100%" : "30%" }}
+            >
               <CardActionArea>
                 <CardMedia
                   component="img"
@@ -799,20 +1077,47 @@ class Home extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div
+          className="closingSection"
+          style={{
+            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+          }}
+        >
           <h1 className="sectionHeading">
             Let’s Connect to Discuss How We Can Make An Awesome Product For You.
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            CONTACT NOW
-            <FaArrowRight className="rightArrow" />
-          </button>
-        </div>
 
-        <Footer />
+          <Link
+            to="lets_talk"
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              position: "relative",
+              backgroundColor: "#ca0515",
+              color: "#fff",
+              width: isMd ? "80%" : "20%",
+              textAlign: "center",
+              padding: ".8rem 1rem",
+              fontSize: "20px",
+              marginRight: "1rem",
+              borderRadius: "8px",
+            }}
+          >
+            CONTACT NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{
+                position: "absolute",
+                right: "1rem",
+              }}
+            />
+          </Link>
+        </div>
       </div>
-    );
-  }
-}
+      <Footer />
+    </>
+  );
+};
 
 export default Home;

@@ -44,6 +44,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const deploymentToolsList = [
   {
@@ -167,6 +168,8 @@ class QualityAssurance extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+
         <div className="landingSection-services qualityAssurance section">
           <div>
             <Breadcrumbs
@@ -176,7 +179,7 @@ class QualityAssurance extends Component {
             >
               {breadcrumbs}
             </Breadcrumbs>
-            
+
             <h1 className="sectionHeading">
               Quality Assurance and Software Testing Services
             </h1>
@@ -202,11 +205,17 @@ class QualityAssurance extends Component {
         </div>
 
         <div className="whyBuildSection section">
-        <h1 className="sectionHeading">
-            Why is Quality Assurance and Software Testing are Important for Your Product?
+          <h1 className="sectionHeading">
+            Why is Quality Assurance and Software Testing are Important for Your
+            Product?
           </h1>
           <p className="sectionDescription">
-           Through quality testing you can ensure the performance of application in all expected scenarios and quality assurance reassures the performance of application in terms of security and scalability. A well tested application for quality displays better optimization, greater platform compatibility, and platform compliance.
+            Through quality testing you can ensure the performance of
+            application in all expected scenarios and quality assurance
+            reassures the performance of application in terms of security and
+            scalability. A well tested application for quality displays better
+            optimization, greater platform compatibility, and platform
+            compliance.
           </p>
 
           <h1 className="sectionHeading">
@@ -725,7 +734,7 @@ class QualityAssurance extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div className="closingSection section">
           <h1 className="sectionHeading">
             Leverage the technical expertise of our Quality Assurance and
             Testing Experts.

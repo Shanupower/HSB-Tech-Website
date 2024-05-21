@@ -1,0 +1,250 @@
+.section {
+  padding: 4rem 14% !important;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.landingSection-services {
+  display: flex;
+  background-color: #333344;
+  padding: 4rem 14% !important;
+}
+
+.tagLine {
+  font-size: 23px;
+}
+
+.getQuoteButton {
+  background-color: #4c49e1;
+  padding: 10px;
+  font-weight: bold;
+  width: 180px;
+  color: #292939;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.whyChooseSection {
+  background-color: #f9f9ff;
+}
+
+.cardsContainer-services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-service {
+  background-color: #fff;
+  width: 45%;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+.cardTitle-service {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.cardDescription-service {
+  color: #3f4040;
+  font-size: 18px;
+}
+
+.serciesProvidedSection {
+  background-color: #f4f4f4;
+}
+
+.cardItem-service {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.techAndToolsSection {
+  background-color: #f9f9ff;
+}
+
+.tabContainer {
+  border-bottom: 2px solid lightgray;
+  margin-bottom: 10px;
+}
+
+.tabItem {
+  font-size: 20px;
+  margin-right: 25px;
+  box-sizing: content-box;
+}
+
+.active {
+  border-bottom: 4px solid green;
+  padding-bottom: 20px;
+}
+
+.technlogiesContainer-technology {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologyCard {
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 125px;
+}
+
+.technologyIconContainer {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 125px;
+  width: 125px;
+}
+
+.technologyIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.startBuildingSection {
+  display: flex;
+  justify-content: space-between;
+  background-color: #161617;
+}
+
+.startBuildingSectionItem {
+  width: 50%;
+  color: #fff;
+}
+
+.processSection {
+  background-color: #faf9fa;
+}
+
+.getQuoteButton-startBuildingSection {
+  background-color: #ca0515;
+  color: #fff;
+  padding: 10px;
+  width: 180px;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.faqsSection {
+  background-color: #fdf6fa;
+}
+
+.journeySection {
+}
+
+.timelineContianer {
+  margin: 0px;
+  padding: 15px;
+}
+
+.TimelineContentDetailsWrapper-sc-d-93qjm1-7 {
+  align-items: flex-start !important;
+}
+
+.TimelineContentDetailsWrapper-sc-d7qjm1-7 {
+  align-items: flex-start !important;
+}
+
+.timelineContianerItem {
+  display: flex;
+  text-align: flex-start;
+  align-items: center;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tickIcon {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 1px;
+  margin-right: 10px;
+}
+
+.hHttVn {
+  height: auto !important;
+}
+
+.sectionSubheading-service {
+  font-size: 20px;
+  color: #b4b7ba;
+}
+
+.breadcrumb {
+  margin-bottom: 40px !important;
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 30px;
+  }
+
+  .giftBoxImage {
+    display: none;
+  }
+
+  .landingSectionImage-sericesPage {
+    display: none !important;
+  }
+
+  .card-service {
+    display: block;
+    width: 100%;
+  }
+
+  .timelineContianerItem {
+    padding: 0px;
+  }
+
+  .tickIcon {
+    font-size: 12px;
+    border-radius: 15px;
+  }
+
+  .cardItem-service {
+    width: 100%;
+  }
+
+  .tabContainer {
+    display: flex;
+  }
+
+  .technologyIconContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .technologyIcon {
+    height: 75px;
+    width: 75px;
+  }
+
+  .technlogiesContainer-technology {
+    justify-content: center;
+  }
+
+  .technologyCard {
+    width: 40%;
+    margin: 10px;
+  }
+
+  .iconName-service {
+    font-size: 25px;
+  }
+}
+
+.bluidtechnoligy {
+  color: #ffffff;
+  background-color: rgb(8, 8, 164);
+}

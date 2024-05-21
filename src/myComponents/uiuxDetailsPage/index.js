@@ -8,20 +8,20 @@ import whyChoose3 from "../../assets/specialized-design-uiuix.svg";
 import whyChoose2 from "../../assets/industry-agnostic.svg";
 import whyChoose4 from "../../assets/expeirenced-uiux.svg";
 
-import figmaImage from '../../assets/figma.webp'
-import illustrator from '../../assets/illustrator.webp'
-import adobexd from '../../assets/adobexd.webp'
-import photoshop from '../../assets/photoshop.webp'
+import figmaImage from "../../assets/figma.webp";
+import illustrator from "../../assets/illustrator.webp";
+import adobexd from "../../assets/adobexd.webp";
+import photoshop from "../../assets/photoshop.webp";
 import giftBox from "../../assets/collect-graphic.svg";
 
-import servicesImage1 from '../../assets/user-research-uiux.svg'
-import servicesImage2 from '../../assets/creating-information.svg'
-import servicesImage3 from '../../assets/uiux-for-web.svg'
-import servicesImage4 from '../../assets/uiux-consultancy.svg'
-import servicesImage5 from '../../assets/wireframing-uiuz.svg'
-import servicesImage6 from '../../assets/accessibility-uiux.svg'
-import servicesImage7 from '../../assets/maintenance-support-uiux.svg'
-import servicesImage8 from '../../assets/uiux-audit.svg'
+import servicesImage1 from "../../assets/user-research-uiux.svg";
+import servicesImage2 from "../../assets/creating-information.svg";
+import servicesImage3 from "../../assets/uiux-for-web.svg";
+import servicesImage4 from "../../assets/uiux-consultancy.svg";
+import servicesImage5 from "../../assets/wireframing-uiuz.svg";
+import servicesImage6 from "../../assets/accessibility-uiux.svg";
+import servicesImage7 from "../../assets/maintenance-support-uiux.svg";
+import servicesImage8 from "../../assets/uiux-audit.svg";
 
 import Accordion from "@mui/material/Accordion";
 import AccordionDetails from "@mui/material/AccordionDetails";
@@ -34,6 +34,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const tabItemsList = [
   {
@@ -82,6 +83,8 @@ class UIUXDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+
         <div className="landingSection-services uiuxLandingSection section">
           <div>
             <Breadcrumbs
@@ -95,10 +98,15 @@ class UIUXDevelopment extends Component {
               UI/UX Design And Development Services
             </h1>
             <p className="sectionDescription">
-              Creative, attractive, engaging and usable interfaces are the soul of any designs. We will help design custom user interfaces based on your business requirements for any of your device platforms, including mobile apps, tablets, desktops, etc.
+              Creative, attractive, engaging and usable interfaces are the soul
+              of any designs. We will help design custom user interfaces based
+              on your business requirements for any of your device platforms,
+              including mobile apps, tablets, desktops, etc.
             </p>
             <p className="tagLine">
-              UX drives UI. Our experienced team of UX designers collaborate the finer modules of usability and functionality in-line with business goals and end-user needs
+              UX drives UI. Our experienced team of UX designers collaborate the
+              finer modules of usability and functionality in-line with business
+              goals and end-user needs
             </p>
             <button
               className="getQuoteButton uiux-getQuoteButton"
@@ -116,106 +124,121 @@ class UIUXDevelopment extends Component {
 
         <div className="whyBuildSection section">
           <h1 className="sectionHeading">
-           How UI/UX is Prominent for Your Business?
+            How UI/UX is Prominent for Your Business?
           </h1>
           <p className="sectionDescription">
-            We all know that the user satisfaction is essential for any app to succeed, and that is achievable only through an awesome UI/UX. An outstanding UI/UX helps to leave a lasting impression in your user’s mind, elevates your digital product, and makes your brand stand out among competitors.
+            We all know that the user satisfaction is essential for any app to
+            succeed, and that is achievable only through an awesome UI/UX. An
+            outstanding UI/UX helps to leave a lasting impression in your user’s
+            mind, elevates your digital product, and makes your brand stand out
+            among competitors.
           </p>
         </div>
 
         <div className="whyChooseSection section">
           <h1 className="sectionHeading">
-           Why You Should Hire HSB For UI/UX Services?
+            Why You Should Hire HSB For UI/UX Services?
           </h1>
           <p className="sectionDescription">
-            We take into accountability the smallest aspect of the design variant to provide compelling and intuitive user experience. We offer mobile UX design, web UI design, UX design for SAAS, Product UX design for startups and more, while ensuring that the end user enjoys a great value-added experience.          </p>
+            We take into accountability the smallest aspect of the design
+            variant to provide compelling and intuitive user experience. We
+            offer mobile UX design, web UI design, UX design for SAAS, Product
+            UX design for startups and more, while ensuring that the end user
+            enjoys a great value-added experience.{" "}
+          </p>
           <div className="cardsContainer-services">
             <div className="card-service">
               <img src={whyChoose1} alt="why choose us card image" />
-              <p className="cardTitle-service">
-               User Centric Designs
-              </p>
+              <p className="cardTitle-service">User Centric Designs</p>
               <p className="cardDescription-service">
-               We always create designs that are user-friendly and eye-catching to the audience. We assure to give an amazing experience to your customers so that they can revisit often..
+                We always create designs that are user-friendly and eye-catching
+                to the audience. We assure to give an amazing experience to your
+                customers so that they can revisit often..
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose2} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Highly Functional Designs
-              </p>
+              <p className="cardTitle-service">Highly Functional Designs</p>
               <p className="cardDescription-service">
-                We create UI/UX designs that are highly functional, optimized and scalable to the enterprise. The designs are authentic to create repeated impression on the user.
+                We create UI/UX designs that are highly functional, optimized
+                and scalable to the enterprise. The designs are authentic to
+                create repeated impression on the user.
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose3} alt="why choose us card image" />
-              <p className="cardTitle-service">Experienced and Seasoned Designers</p>
+              <p className="cardTitle-service">
+                Experienced and Seasoned Designers
+              </p>
               <p className="cardDescription-service">
-               Our team of designers is experienced and updated with the latest designing technologies to create UI/UX platform leveraged with required technologies..
+                Our team of designers is experienced and updated with the latest
+                designing technologies to create UI/UX platform leveraged with
+                required technologies..
               </p>
             </div>
             <div className="card-service">
               <img src={whyChoose4} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                Scalable Across Industries
-              </p>
+              <p className="cardTitle-service">Scalable Across Industries</p>
               <p className="cardDescription-service">
-                We are proficient in creating industry-specific UI/UX designs so that the customers can feel the connectivity with the product. 
+                We are proficient in creating industry-specific UI/UX designs so
+                that the customers can feel the connectivity with the product.
               </p>
             </div>
           </div>
         </div>
 
         <div className="section serciesProvidedSection">
-          <h1 className="sectionHeading">
-            Our UI/UX Design Services
-          </h1>
+          <h1 className="sectionHeading">Our UI/UX Design Services</h1>
           <p className="sectionDescription">
-            We curate UI/UX design and development services in accordance to your unique business requirements. As our comprehensive UI/UX service we assist, design, and develop applications without compromising quality.
+            We curate UI/UX design and development services in accordance to
+            your unique business requirements. As our comprehensive UI/UX
+            service we assist, design, and develop applications without
+            compromising quality.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={servicesImage1} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                UI/UX for Web and Mobile
-              </p>
+              <p className="cardTitle-service">UI/UX for Web and Mobile</p>
               <p className="cardDescription-service">
-               Through our stunning designs, we aim to provide visual treat to your users. We create an everlasting experience of your brand using the latest tech stack and trending designs.
+                Through our stunning designs, we aim to provide visual treat to
+                your users. We create an everlasting experience of your brand
+                using the latest tech stack and trending designs.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage2} alt="why choose us card image" />
-              <p className="cardTitle-service">
-               Accessibility Testing
-              </p>
+              <p className="cardTitle-service">Accessibility Testing</p>
               <p className="cardDescription-service">
-               We repeatedly test your digital products to ensure that they are functional, dynamic, and accessible to everyone including those with disabilities.
+                We repeatedly test your digital products to ensure that they are
+                functional, dynamic, and accessible to everyone including those
+                with disabilities.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage3} alt="why choose us card image" />
-              <p className="cardTitle-service">
-                UI/UX Consulting
-              </p>
+              <p className="cardTitle-service">UI/UX Consulting</p>
               <p className="cardDescription-service">
-                Consult our team of professional UI/UX designers for expert suggestions. We provide hassle-free guidance from ideation to the finalized product.
+                Consult our team of professional UI/UX designers for expert
+                suggestions. We provide hassle-free guidance from ideation to
+                the finalized product.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage4} alt="why choose us card image" />
-              <p className="cardTitle-service">
-               Creating Architecture
-              </p>
+              <p className="cardTitle-service">Creating Architecture</p>
               <p className="cardDescription-service">
-               Before we execute any design, we create clear, intuitive information architecture so that you can access and navigate effortlessly from user’s perspective.
+                Before we execute any design, we create clear, intuitive
+                information architecture so that you can access and navigate
+                effortlessly from user’s perspective.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage5} alt="why choose us card image" />
               <p className="cardTitle-service">Maintenance and Support</p>
               <p className="cardDescription-service">
-                We extend UI/UX maintenance and support for your digital products. We ensure to keep your digital products updated and optimized.
+                We extend UI/UX maintenance and support for your digital
+                products. We ensure to keep your digital products updated and
+                optimized.
               </p>
             </div>
             <div className="cardItem-service">
@@ -251,10 +274,7 @@ class UIUXDevelopment extends Component {
         <div className="techAndToolsSection section">
           <h1 className="sectionHeading">UI/UX Tools We Use</h1>
           <div className="tabContainer">
-            <button
-              type="button"
-              className="tabItem active"
-            >
+            <button type="button" className="tabItem active">
               React Native
             </button>
           </div>
@@ -615,7 +635,7 @@ class UIUXDevelopment extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div className="closingSection section">
           <h1 className="sectionHeading">
             Let’s Connect to Discuss How We Can Make An Awesome Product For You.
           </h1>

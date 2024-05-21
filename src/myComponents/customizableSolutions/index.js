@@ -19,14 +19,16 @@ import developmentImage from '../../assets/development.svg'
 
 import { FaArrowRight } from "react-icons/fa6";
 import Footer from "../footer";
-import NavigationBar from "../navigationBar";
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 class CustomizableSolutions extends Component {
   render() {
     return (
       <div className="servicesSectionPage">
-        <NavigationBar />
+     
+        <div className="navigationBar"><Navigationbar /></div>
+         
 
         <div className="servies-landingSection">
           <h1 className="pageHeading">Customizable Solutions</h1>

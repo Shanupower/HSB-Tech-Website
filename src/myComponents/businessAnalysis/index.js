@@ -56,6 +56,7 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const tab1ItemsList = [
   {
@@ -212,6 +213,8 @@ class BusinessAnalysisServices extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+        
         <div className="landingSection-services businessAnalysisServices section">
           <div>
             <Breadcrumbs
@@ -821,7 +824,7 @@ class BusinessAnalysisServices extends Component {
           </div>
         </div>
 
-        <div className="closingSection">
+        <div className="closingSection section">
           <h1 className="sectionHeading">
           Want to hire us for Business Consulting? Leverage our expertise of Business Analytics. 
           </h1>

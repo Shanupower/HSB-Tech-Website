@@ -1,91 +1,122 @@
-.servies-landingSection{
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 70px;
+.servies-landingSection {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 70px;
 }
 
-.pageHeading{
-    font-size: 50px;
-    font-weight: bold;
+.pageHeading {
+  font-size: 50px;
+  font-weight: bold;
 }
 
-.pageDescription{
-    font-size: 23px;
+.pageDescription {
+  font-size: 23px;
 }
 
-.servicesContainer{
+.servicesContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesItem {
+  display: flex;
+  width: 80%;
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.webApp {
+  background-color: #e0e0fa;
+}
+
+.leftBorder {
+  align-self: flex-end;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+.rightBorder {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  align-self: flex-start;
+}
+
+.serviceSection-info-container {
+  width: 50%;
+}
+
+.serviceItemImage {
+  margin-right: 130px;
+}
+
+.serviceSection-heading {
+  font-size: 40px;
+}
+
+.serviceSection-description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.learnMoreButton {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ca0515;
+  color: #ca0515;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 0px;
+  padding-right: 0px;
+  align-self: flex-start;
+}
+
+.mobileApp {
+  background-color: #d3eaf4;
+}
+
+.qualityAssurance {
+  background-color: #bef5d4;
+}
+
+.uiuxApp {
+  background-color: #f9d6dc;
+}
+
+.businessAnalysis {
+  background-color: #fad8c5;
+}
+
+.fullstack {
+  background-color: #f3efcd;
+}
+
+@media (max-width: 1067px) {
+  .servicesContainer {
+    padding: 0 2rem;
+  }
+  .servicesItem {
     display: flex;
-    flex-direction: column;
-}
-
-.servicesItem{
-    display: flex;
-    width: 80%;
+    width: 100%;
     padding: 30px;
     margin-bottom: 50px;
-}
+    flex-direction: column-reverse;
+  }
+  .serviceItemImage {
+    margin: 0;
+  }
+  .serviceSection-info-container {
+    width: 100%;
+  }
 
-.webApp{
-    background-color: #E0E0FA;
-}
-
-.leftBorder{
-    align-self: flex-end;
-    border-top-left-radius: 40px;
-    border-bottom-left-radius: 40px;
-}
-
-.rightBorder{
-    border-top-right-radius: 40px;
-    border-bottom-right-radius: 40px;
-    align-self: flex-start;
-}
-
-.serviceSection-info-container{
-    width: 50%;
-}
-
-.serviceItemImage{
-    margin-right: 130px;
-}
-
-.serviceSection-heading{
-    font-size: 40px;
-}
-
-.serviceSection-description{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.learnMoreButton{
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #CA0515;
-    color: #CA0515;
-    font-size: 16px;
-    font-weight: 600;
-    padding-left: 0px;
-    padding-right: 0px;
-    align-self: flex-start;
-}
-
-.mobileApp{
-    background-color: #D3EAF4;
-}
-
-.qualityAssurance{
-    background-color: #BEF5D4;
-}
-
-.uiuxApp{
-    background-color: #F9D6DC;
-}
-
-.businessAnalysis{
-    background-color: #FAD8C5;
-}
-
-.fullstack{
-    background-color: #F3EFCD;
+  .leftBorder {
+    border-radius: 40px;
+    border-radius: 40px;
+  }
+  .rightBorder {
+    border-radius: 40px;
+    border-radius: 40px;
+  }
+  .serviceSection-heading {
+    font-size: 30px;
+  }
 }

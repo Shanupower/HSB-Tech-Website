@@ -1,6 +1,5 @@
 import { Component } from "react";
 import { Route, Switch } from "react-router-dom";
-import Home from "./myComponents/home";
 import Services from "./myComponents/services";
 import Industries from "./myComponents/industries";
 import CustomizableSolutions from "./myComponents/customizableSolutions";
@@ -17,22 +16,51 @@ import HealthcareIndustry from "./myComponents/healthcareIndustry";
 import EducationIndustry from "./myComponents/educationIndustry";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TelecomIndustry from "./myComponents/Telecom";
-import RealEstateIndustry from "./myComponents/RealEsate";
 import EcommerceIndustry from "./myComponents/Ecommerce";
 import TravelAndHospitalityIndustry from "./myComponents/Travel&Hospitality";
-class App extends Component {
-  render() {
-    return (
+import BFSIIndustry from "./myComponents/BSFI";
+import DevOpsTechnoligy from "./myComponents/Technology/DevOps";
+import FlutterTechnoligy from "./myComponents/Technology/Flutter";
+import GraphSQlTechnoligy from "./myComponents/Technology/GraphSql";
+import LaravelTechnoligy from "./myComponents/Technology/Laravel";
+import NextTechnoligy from "./myComponents/Technology/NextJs";
+import NodeJsTechnoligy from "./myComponents/Technology/NodeJS";
+import ReactNativeTechnoligy from "./myComponents/Technology/ReactNative";
+import PostgreSQLTechnoligy from "./myComponents/Technology/PostgreSQL";
+import Home from "./myComponents/home";
+import MenuBar from "./myComponents/menu";
+import { useMediaQuery } from "@mui/material";
+import TermsAndConditions from "./myComponents/TermsAndConditions/TermsAndConditions";
+import Agile from "./myComponents/ProductModel/Agile";
+import Fixed from "./myComponents/ProductModel/Fixed";
+import RealEstateIndustries from "./myComponents/RealEstateIndustries";
+
+const App = () => {
+  const isMd = useMediaQuery("(max-width:1068px)");
+
+  return (
+    <>
+      {isMd && <MenuBar />}
+
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/services" component={Services} />
+        <Route exact path="/agile" component={Agile} />
+        <Route exact path="/fixed" component={Fixed} />
+
+        <Route
+          exact
+          path="/terms_and_conditions"
+          component={TermsAndConditions}
+        />
+
         <Route exact path="/industries" component={Industries} />
         <Route
           exact
           path="/customisable solutions"
           component={CustomizableSolutions}
         />
-        <Route exact path="/lets talk" component={LetsTalk} />
+        <Route exact path="/lets_talk" component={LetsTalk} />
         <Route
           exact
           path="/services/web development"
@@ -63,7 +91,6 @@ class App extends Component {
           path="/services/fullstack development"
           component={FullStackDevelopment}
         />
-
         {/* Industries */}
         <Route
           exact
@@ -82,10 +109,11 @@ class App extends Component {
           component={EducationIndustry}
         />
         <Route exact path="/industries/telecom" component={TelecomIndustry} />
+
         <Route
           exact
           path="/industries/realEstate"
-          component={RealEstateIndustry}
+          component={RealEstateIndustries}
         />
         <Route
           exact
@@ -94,12 +122,35 @@ class App extends Component {
         />
         <Route
           exact
-          path="/industries/travel&hospitality"
+          path="/industries/travel-hospitality"
           component={TravelAndHospitalityIndustry}
         />
+        <Route exact path="/industries/bsfi" component={BFSIIndustry} />
+
+        {/* Technology */}
+        <Route exact path="/technology/devOps" component={DevOpsTechnoligy} />
+        <Route exact path="/technology/flutter" component={FlutterTechnoligy} />
+        <Route
+          exact
+          path="/technology/graphSQl"
+          component={GraphSQlTechnoligy}
+        />
+        <Route exact path="/technology/laravel" component={LaravelTechnoligy} />
+        <Route exact path="/technology/nextJs" component={NextTechnoligy} />
+        <Route exact path="/technology/nodsJs" component={NodeJsTechnoligy} />
+        <Route
+          exact
+          path="/technology/postgreSql"
+          component={PostgreSQLTechnoligy}
+        />
+        <Route
+          exact
+          path="/technology/react-native"
+          component={ReactNativeTechnoligy}
+        />
       </Switch>
-    );
-  }
-}
+    </>
+  );
+};
 
 export default App;

@@ -17,6 +17,7 @@ import foodIndustryImage from "../../assets/food-industry.svg";
 import marketingIndustryImage from "../../assets/marketing-industry.svg";
 
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const industriesList = [
   {
@@ -96,7 +97,9 @@ class Industries extends Component {
     return (
       <>
         <div className="industrySection">
-          <NavigationBar />
+          <div className="navigationBar">
+            <Navigationbar />
+          </div>
 
           <div className="industryLandingSection">
             <div className="servies-landingSection">

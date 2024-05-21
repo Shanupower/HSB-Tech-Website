@@ -1,17 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chivo:ital,wght@0,100..900;1,100..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Righteous&display=swap");
+/* Hide dots */
+.ant-carousel .slick-dots {
+  display: none !important;
+}
 
-.appContainer {}
+/* Customize arrow background color */
+.ant-carousel .slick-prev,
+.ant-carousel .slick-next {
+  background-color: red !important;
+  width: 30px; /* Adjust the width if necessary */
+  height: 30px; /* Adjust the height if necessary */
+  border-radius: 50%; /* Make them circular, adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optionally, change the color of the arrow icons */
+.ant-carousel .slick-prev::before,
+.ant-carousel .slick-next::before {
+  color: white; /* Change the arrow icon color */
+}
 
 .geekyantlogo {
   width: 150px;
 }
-
-.landingSection {
-  padding-left: 120px;
-  padding-right: 120px;
-  padding-top: 120px;
+.appContainer {
+  padding: 0 12%;
 }
-
+.landingSection {
+  padding-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: "1rem";
+}
+.landing-left-section {
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.landing-right-logo {
+  width: 50%;
+}
 .ladingPageHeading {
   font-size: 80px;
   margin-top: 10px;
@@ -19,7 +52,6 @@
   background: linear-gradient(to bottom, #2a42aa, #aa1e55);
   background-clip: text;
   color: transparent;
-
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -27,6 +59,9 @@
 
 .landingSectionSubHeading {
   font-size: 30px;
+  margin-top: 20px;
+  word-wrap: break-word;
+  text-wrap: wrap;
 }
 
 .navbarSection {
@@ -37,12 +72,11 @@
 }
 
 .letsTalkButton {
-  background-color: #CA0515;
+  background-color: #ca0515;
   border: none;
   color: #fff;
   padding: 10px;
   border-radius: 5px;
-  margin-right: 90px;
   width: 150px;
   font-weight: bold;
   font-size: 16px;
@@ -88,7 +122,7 @@
 
 .slideRight-view-applications .rightArrowRed {
   position: absolute;
-  color: #CA0515;
+  color: #ca0515;
   margin-left: 10px;
   transform: translateX(-50%);
   opacity: 0;
@@ -98,7 +132,6 @@
   opacity: 1;
   transform: translateX(0);
 }
-
 
 /* 6688888888888888888888888888888888888888888888888888 */
 
@@ -115,7 +148,7 @@
 
 .slideRight-blogs .rightArrowRed {
   position: absolute;
-  color: #CA0515;
+  color: #ca0515;
   margin-left: 10px;
   transform: translateX(-50%);
   opacity: 0;
@@ -135,7 +168,7 @@
 }
 
 .navItem:hover {
-  color: #CA0515;
+  color: #ca0515;
 }
 
 .trustedBySection {
@@ -143,7 +176,7 @@
   padding-right: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F8FAFA;
+  background-color: #f8fafa;
 }
 
 .trustedbyImageContainer {
@@ -167,11 +200,12 @@
   padding-right: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .comapinesContainer {
   display: flex;
+  align-items: center;
 }
 
 .certifiedPartnersHeading {
@@ -216,20 +250,22 @@
 .serviesContainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .serviceItem {
   display: flex;
   justify-content: space-between;
   border-radius: 5px;
-  align-items: flex-end;
-  width: 45%;
-  margin: 5px;
+  align-items: center;
+  width: 25rem;
+  margin-bottom: 0.8rem;
   height: 230px;
   font-size: 30px;
   color: #fff;
   padding: 20px;
   cursor: pointer;
+  gap: "1rem";
 }
 
 .sparkle {
@@ -271,6 +307,8 @@
 .developmentCardsContainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .deveopmentCard {
@@ -332,23 +370,23 @@
 }
 
 .react {
-  background-color: #D6F9FF;
+  background-color: #d6f9ff;
 }
 
 .nextjs {
-  background-color: #F3F3F4;
+  background-color: #f3f3f4;
 }
 
 .flutter {
-  background-color: #D6E4EF;
+  background-color: #d6e4ef;
 }
 
 .graphql {
-  background-color: #FAD6EE;
+  background-color: #fad6ee;
 }
 
 .nodejs {
-  background-color: #E7F0E6;
+  background-color: #e7f0e6;
 }
 
 .laravel {
@@ -356,11 +394,11 @@
 }
 
 .postgresql {
-  background-color: #E5EBF0;
+  background-color: #e5ebf0;
 }
 
 .devops {
-  background-color: #D7F8E5;
+  background-color: #d7f8e5;
 }
 
 .technologyName {
@@ -377,7 +415,7 @@
 }
 
 .customizableSolutionsSection {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -393,7 +431,7 @@
 .customizableDescriptionContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: "1rem";
 }
 
 .customisable-solutions-heading {
@@ -401,9 +439,8 @@
 }
 
 .viewApplicationsButton {
-  color: #CA0515;
+  color: #ca0515;
   border: none;
-  border-bottom: solid 1px #CA0515;
   background-color: transparent;
   margin: 0px;
   height: 50px;
@@ -414,6 +451,8 @@
 .twoCardsContainer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .ourTeamSection {
@@ -453,7 +492,7 @@
   padding: 120px;
   padding-top: 70px;
   padding-bottom: 70px;
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 .closingSection {
@@ -464,9 +503,6 @@
 
 .footerSection {
   background-color: #000;
-  padding: 120px;
-  padding-top: 70px;
-  padding-bottom: 70px;
 }
 
 .footerSectionLinks {
@@ -501,7 +537,7 @@
 }
 
 .footerSectionItem {
-  color: #D4D4D4;
+  color: #d4d4d4;
 }
 
 .footerItemTitle {
@@ -511,7 +547,7 @@
 }
 
 .footerLinkItem {
-  color: #D4D4D4;
+  color: #d4d4d4;
   text-decoration: none;
   display: block;
   margin: 10px;
@@ -522,7 +558,7 @@
 }
 
 .socialMediaLink {
-  color: #D4D4D4;
+  color: #d4d4d4;
   background-color: #222323;
   border-radius: 30px;
   display: flex;
@@ -548,7 +584,7 @@
 .footer-countriesContainer,
 .countryItem,
 .phoneContainer {
-  color: #A2A2A2;
+  color: #a2a2a2;
 }
 
 .phoneIcon {
@@ -572,7 +608,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0px;
-  color: #A2A2A2;
+  color: #a2a2a2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -601,7 +637,7 @@
 }
 
 .ecofin {
-  background-color: #6424A0;
+  background-color: #6424a0;
   padding: 10px;
   padding-left: 30px;
   padding-right: 30px;
@@ -614,328 +650,4 @@
 .cardLink {
   text-decoration: none;
   color: initial;
-}
-
-@media (max-width: 576px) {
-
-  .landingSection {
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    width: 100%;
-  }
-
-  .geekyantlogo {
-    height: 55px;
-    width: 150px;
-  }
-
-  .ladingPageHeading {
-    font-size: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background: linear-gradient(to bottom, #2a42aa, #aa1e55);
-    background-clip: text;
-    color: transparent;
-  }
-
-  .landingSectionSubHeading {
-    font-size: 22px;
-  }
-
-  .navbarSection {
-    display: none;
-  }
-
-  .letsTalkButton {
-    background-color: #CA0515;
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    width: 50px;
-    font-weight: bold;
-    font-size: 7px;
-    cursor: pointer;
-  }
-
-  .trustedBySection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .certifiedPartnersSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .comapinesContainer {
-    flex-wrap: wrap;
-  }
-
-  .caertifiedCompany-card {
-    height: 70px;
-  }
-
-  .partnerCompanyImage {
-    height: 50px;
-  }
-
-  .servicesSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .serviceItem {
-    width: 100%;
-    height: 150px;
-    margin: 0px;
-    margin-bottom: 5px;
-    font-size: 28px;
-    color: #fff;
-    padding: 10px;
-  }
-
-  .serviceImage {
-    height: 60px;
-    width: 60px;
-  }
-
-  .serviesSectionHeading {
-    font-size: 30px;
-  }
-
-  .developmentSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .sectionHeading {
-    font-size: 34px;
-  }
-
-  .sectionDescription {
-    font-size: 18px;
-  }
-
-  .deveopmentCard {
-    width: 100%;
-  }
-
-  .cardTitle {
-    display: flex;
-    align-items: center;
-  }
-
-  .development-title-image {
-    height: 60px;
-    width: 60px;
-  }
-
-  .developmentCardTitle {
-    font-size: 24px;
-  }
-
-  .developmentCardDescription {
-    font-size: 18px;
-  }
-
-  .technologiesSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .technologiesContainer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  .tehcnologyItem {
-    font-size: 11px;
-  }
-
-  .technologyImage {
-    width: 140px;
-    height: 140px;
-  }
-
-  .technology-mobile-image {
-    height: 50px;
-    width: 50px;
-  }
-
-  .customizableSolutionsSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .openSourceSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .customizableDescriptionContainer {
-    display: block;
-  }
-
-  .twoCardsContainer {
-    display: block;
-  }
-
-  .viewApplicationsButton {
-    display: none;
-  }
-
-  .viewApplicationsButton-mobile {
-    font-size: 8px;
-    padding: 5px;
-    margin-bottom: 10px;
-    color: #CA0515;
-    border: none;
-    border-bottom: solid 1px #CA0515;
-    background-color: transparent;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .materialuiCardTitle {
-    font-size: 12px;
-  }
-
-  .ourTeamSection {
-    padding: 30px;
-    display: block;
-    width: 100%;
-  }
-
-  .ourTeamCard {
-    margin: 0px;
-    margin-bottom: 10px;
-    width: 300px;
-  }
-
-  .cardTitle {
-    font-size: 15px;
-  }
-
-  .cardDescription {
-    font-size: 10px;
-  }
-
-  .teamSectionButton {
-    font-size: 10px;
-  }
-
-  .insightsSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .closingSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .footerSection {
-    padding: 30px;
-    width: 100%;
-  }
-
-  .line-mobile {
-    width: 100%;
-  }
-
-  .footerSectionLinks {
-    display: block;
-    font-size: 11px;
-  }
-
-  .footerCompanySection {
-    width: 100%;
-  }
-
-  .footerCompanyLogo {
-    height: 20px;
-  }
-
-  .certifiersContainer {
-    width: 30%;
-    height: 30px;
-  }
-
-  .certifierImage {
-    width: 30px;
-    height: 50px;
-  }
-
-  .socialmedia-accounts {
-    flex-wrap: wrap;
-  }
-
-  .socialmedia-icon {
-    font-size: 12px;
-  }
-
-  .socialMediaLink {
-    height: 10px;
-    width: 10px;
-    padding: 8px;
-  }
-
-  .footer-countriesContainer {
-    width: 100%;
-    display: block;
-  }
-
-  .finalSection {
-    width: 100%;
-    padding: 10px;
-    display: block;
-  }
-
-  .rightsText {
-    font-size: 11px;
-  }
-
-  .policy-TC-container {}
-
-  .footerLinkItem-mobile {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-
-  .countrItemAddress-mobile {
-    font-size: 11px;
-  }
-
-  .rigthsBreak-mobile {
-    display: block;
-  }
-
-  .footerLinkItem {
-    font-size: 11px;
-    margin: 0px;
-  }
-}
-
-@media (min-width: 577px) {
-  .landingSection {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 70px;
-  }
-
-  .navbarSection {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 70px;
-    margin-top: 50px;
-  }
-
-  .viewApplicationsButton-mobile {
-    display: none;
-  }
 }
