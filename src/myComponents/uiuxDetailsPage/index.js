@@ -34,6 +34,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const tabItemsList = [
   {
@@ -82,6 +83,8 @@ class UIUXDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+
         <div className="landingSection-services uiuxLandingSection section">
           <div>
             <Breadcrumbs

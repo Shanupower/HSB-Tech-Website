@@ -39,6 +39,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
 import Footer from "../footer";
+import Navigationbar from "../navigationBar";
 
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
@@ -196,6 +197,8 @@ const BFSIIndustry = () => {
   };
   return (
     <div className="industriesPageContainer">
+        <div className="navigationBar"><Navigationbar /></div>
+
       <div
         className="landingSection-services manufacturing section"
         style={{

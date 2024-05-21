@@ -1,17 +1,26 @@
-.mobileService{
-    background-color: #D3EAF4;
+.mobileService {
+  background-color: #d3eaf4;
 }
 
-.getQuoteButton{
-    background-color: #1784B2;
+.getQuoteButton {
+  background-color: #1784b2;
 }
 
-.subSections{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.subSections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.sections{
-    width: 50%;
+.sections {
+  width: 50%;
+}
+.navigationBar {
+  display: block;
+}
+
+@media (max-width: 1067px) {
+  .navigationBar {
+    display: none;
+  }
 }

@@ -39,6 +39,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
 import Footer from "../footer";
+import Navigationbar from "../navigationBar";
 
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
@@ -187,15 +188,15 @@ function a11yProps(index) {
     "aria-controls": `simple-tabpanel-${index}`,
   };
 }
-
-const RealEstateIndustry = () => {
+const RealEstateIndustries = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
   const [value, setValue] = useState(0);
   const handleTabChange = (event, newValue) => {
     setValue(newValue);
   };
   return (
-    <div className="industriesPageContainer">
+    <div className="servicesDetailsSection">
+      {!isMd && <Navigationbar />}
       <div
         className="landingSection-services manufacturing section"
         style={{
@@ -257,8 +258,14 @@ const RealEstateIndustry = () => {
         )}
       </div>
 
-      <div className="solutions section" style={{ paddingInline: isMd ? " 2rem" :" 14%" }}>
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+      <div
+        className="solutions section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Solutions We Deliver
         </h1>
         <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
@@ -394,8 +401,14 @@ const RealEstateIndustry = () => {
         </div>
       </div>
 
-      <div className="section whyChooseHSB" style={{ paddingInline:isMd ? " 2rem" : " 14%" }}>
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+      <div
+        className="section whyChooseHSB"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Why Hire HSB As Your Real Estate App Development Company?
         </h1>
         <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
@@ -482,8 +495,14 @@ const RealEstateIndustry = () => {
         </div>
       </div>
 
-      <div className="section" style={{ paddingInline: isMd ? " 2rem" :" 14%" }}>
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+      <div
+        className="section"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Few Modules for Your Custom Real Estate App
         </h1>
         <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
@@ -635,9 +654,12 @@ const RealEstateIndustry = () => {
 
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" :" 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
       >
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Technologies and Tools We Use for Healthcare App Development Services
         </h1>
         <Box sx={{ width: "100%", marginTop: "2rem" }}>
@@ -705,9 +727,12 @@ const RealEstateIndustry = () => {
       <div
         // className="technologiesSectionIndustries section"
         className="closingSection"
-        style={{ paddingInline:isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
       >
-        <h1 className="sectionHeading" style={{ fontSize:isMd ? " 30px" : "48px" }}>
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Our Step-by-Step Process to Build the Outstanding Healthcare App
         </h1>
         <Chrono
@@ -736,9 +761,12 @@ const RealEstateIndustry = () => {
       {/* Accordion */}
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline:isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
       >
-        <h1 className="sectionHeading" style={{ fontSize:isMd ? " 30px" : "48px" }}>
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           FAQs
         </h1>
         <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
@@ -853,8 +881,14 @@ const RealEstateIndustry = () => {
         </div>
       </div>
 
-      <div className="closingSection" style={{ paddingInline: isMd ? " 2rem" :" 14%" }}>
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" :"48px" }}>
+      <div
+        className="closingSection"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Connect us now to avail our RealEsate app development services
         </h1>
         <button className="letsTalkButton slideRight" type="button">
@@ -868,4 +902,4 @@ const RealEstateIndustry = () => {
   );
 };
 
-export default RealEstateIndustry;
+export default RealEstateIndustries;

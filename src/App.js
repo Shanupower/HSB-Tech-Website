@@ -16,7 +16,6 @@ import HealthcareIndustry from "./myComponents/healthcareIndustry";
 import EducationIndustry from "./myComponents/educationIndustry";
 import "bootstrap/dist/css/bootstrap.min.css";
 import TelecomIndustry from "./myComponents/Telecom";
-import RealEstateIndustry from "./myComponents/RealEsate";
 import EcommerceIndustry from "./myComponents/Ecommerce";
 import TravelAndHospitalityIndustry from "./myComponents/Travel&Hospitality";
 import BFSIIndustry from "./myComponents/BSFI";
@@ -34,6 +33,8 @@ import { useMediaQuery } from "@mui/material";
 import TermsAndConditions from "./myComponents/TermsAndConditions/TermsAndConditions";
 import Agile from "./myComponents/ProductModel/Agile";
 import Fixed from "./myComponents/ProductModel/Fixed";
+import RealEstateIndustries from "./myComponents/RealEstateIndustries";
+
 const App = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
 
@@ -108,10 +109,11 @@ const App = () => {
           component={EducationIndustry}
         />
         <Route exact path="/industries/telecom" component={TelecomIndustry} />
+
         <Route
           exact
           path="/industries/realEstate"
-          component={RealEstateIndustry}
+          component={RealEstateIndustries}
         />
         <Route
           exact

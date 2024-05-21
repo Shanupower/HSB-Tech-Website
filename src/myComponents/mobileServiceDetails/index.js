@@ -45,6 +45,7 @@ import selenium from "../../assets/selenium.png";
 import cypress from "../../assets/cypress.png";
 import jest from "../../assets/jest.webp";
 import "./index.css";
+import Navigationbar from "../navigationBar/index.js";
 
 const frontendTab = [
   {
@@ -204,6 +205,8 @@ class MobileDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+
         <div className="landingSection-services mobileService section">
           <div>
             <Breadcrumbs

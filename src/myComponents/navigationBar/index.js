@@ -97,6 +97,11 @@ function Navigationbar() {
                 <NavDropdown.Item href="/industries/travel-hospitality">
                   Travel and Hospitality
                 </NavDropdown.Item>
+                <NavDropdown.Divider />
+
+                <NavDropdown.Item href="/industries/bsfi">
+                  BSFI
+                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
                 <NavDropdown.Item href="/technology/devOps">

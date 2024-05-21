@@ -51,6 +51,7 @@ import { Chrono } from "react-chrono";
 
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
+import Navigationbar from "../navigationBar";
 
 const fsdProcessTimeline = [
   {
@@ -263,6 +264,7 @@ const FullStackDevelopment = () => {
   };
   return (
     <div className="servicesDetailsSection">
+          {!isMd && <Navigationbar />}
       <div className="landingSection-services fullstackLandingSection section">
         <div>
           <Breadcrumbs

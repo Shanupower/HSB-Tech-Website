@@ -44,6 +44,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 import "./index.css";
+import Navigationbar from "../navigationBar";
 
 const deploymentToolsList = [
   {
@@ -167,6 +168,8 @@ class QualityAssurance extends Component {
 
     return (
       <div className="servicesDetailsSection">
+        <div className="navigationBar"><Navigationbar /></div>
+
         <div className="landingSection-services qualityAssurance section">
           <div>
             <Breadcrumbs

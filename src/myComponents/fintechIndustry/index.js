@@ -36,6 +36,7 @@ import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
 import Footer from "../footer";
+import Navigationbar from "../navigationBar";
 
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
@@ -146,6 +147,7 @@ const FintechIndustry = () => {
   };
   return (
     <div className="industriesPageContainer">
+      {!isMd && <Navigationbar />}
       <div
         className="landingSection-services manufacturing section"
         style={{
@@ -192,7 +194,7 @@ const FintechIndustry = () => {
           <div
             style={{
               position: "absolute",
-                right: "14%",
+              right: "14%",
               bottom: "0",
               width: "320px",
               height: "460px",
