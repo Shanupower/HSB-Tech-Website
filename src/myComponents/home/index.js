@@ -39,7 +39,6 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, useMediaQuery } from "@mui/material";
 import Footer from "../footer";
-import Navigationbar from "../navigationBar";
 import { Link } from "react-router-dom";
 
 // Home Trasted Image
@@ -58,6 +57,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import Navigationbar from "../navigationBarHome";
 const settings = {
   dots: false,
   infinite: true,
@@ -220,7 +220,7 @@ const Home = () => {
             }}
           >
             <Link
-              to="lets_talk"
+              to="/lets_talk"
               style={{
                 textDecoration: "none",
                 display: "flex",
@@ -353,8 +353,6 @@ const Home = () => {
                             PostgreSQL
                           </NavDropdown.Item>
                         </NavDropdown>
-
-                        <Nav.Link href="/lets talk">Lets talk</Nav.Link>
                       </Nav>
                     </Navbar.Collapse>
                   </Container>
@@ -716,12 +714,14 @@ const Home = () => {
               <img
                 className="githubImage partnerCompanyImage githubImage"
                 src={githubImage}
+                alt=""
               />
             </div>
             <div className="caertifiedCompany-card">
               <img
                 className="awsImage partnerCompanyImage awsImage"
                 src={awsImage}
+                alt=""
               />
             </div>
           </div>

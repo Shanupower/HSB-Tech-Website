@@ -4,29 +4,16 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import hsbLogo from "../../assets/hsb-logo.png";
 import "./index.css";
-import { useEffect, useState } from "react";
 
 function Navigationbar() {
-  const [navBarShow, setNavBarShow] = useState(false);
-  const controlNavbar = () => {
-    const scrollThreshold = window.innerHeight * 1;
-    if (window.scrollY > scrollThreshold) {
-      setNavBarShow(true);
-    } else {
-      setNavBarShow(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlNavbar);
-    return () => {
-      window.removeEventListener("scroll", controlNavbar);
-    };
-  }, []);
   return (
     <div
-      className={navBarShow ? "navBarContainerShow" : "navBarContainerHide"}
-      style={{ zIndex: 1, width: "100%" }}
+      className="navBarContainerShow"
+      style={{
+        position: "sticky",
+        top: "0",
+        zIndex: "1000",
+      }}
     >
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container>
@@ -135,9 +122,7 @@ function Navigationbar() {
                 </NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href="/lets talk">About Us</Nav.Link>
-              <Nav.Link href="/lets talk">Blogs</Nav.Link>
-              <Nav.Link href="/lets talk">Lets talk</Nav.Link>
+              <Nav.Link href="/lets_talk">Lets talk</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
