@@ -34,6 +34,9 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AWS from "../../../assets/icons/images.png";
 import Azure from "../../../assets/icons/download.png";
+import React_Navigation from "../../../assets/icons/React_Navigation.jfif";
+import Lottie from "../../../assets/icons/Lottie.png";
+
 
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
@@ -52,7 +55,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -65,7 +68,7 @@ const breadcrumbs = [
 
 const commonly = [
   {
-    imageUrl: reactImage,
+    imageUrl: React_Navigation,
     name: " React Navigation",
   },
   {
@@ -73,7 +76,7 @@ const commonly = [
     name: " React Vector icons",
   },
   {
-    imageUrl: flutterImage,
+    imageUrl: Lottie,
     name: "Lottie component for React Native",
   },
   {
@@ -308,18 +311,19 @@ const ReactNativeTechnoligy = () => {
             Looking for the best cross-platform app development experience? We
             are here to help.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Hire React Native Developers
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div

@@ -52,7 +52,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -215,18 +215,19 @@ const GraphSQlTechnoligy = () => {
             have been utilizing it to deliver complex, flexible, and scalable
             apps.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your GraphQL Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div

@@ -34,6 +34,23 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AWS from "../../../assets/icons/images.png";
 import Azure from "../../../assets/icons/download.png";
+import MongoDB from "../../../assets/icons/mongo.jfif";
+import Postgres from "../../../assets/icons/Postgres.png";
+import Mysql from "../../../assets/icons/Mysql.png";
+import Prisma from "../../../assets/icons/Prisma.png";
+import Mongoose from "../../../assets/icons/Mongoose.png";
+import Github_Actions from "../../../assets/icons/Github_Actions.png";
+import Jenkins from "../../../assets/icons/Jenkins.jfif";
+import Gitlab from "../../../assets/icons/Gitlab.png";
+import AWS_Pipeline from "../../../assets/icons/AWS_Pipeline.png";
+import Bullrun from "../../../assets/icons/Bullrun.png";
+import Jest from "../../../assets/icons/Jest.png";
+import Mocha from "../../../assets/icons/Mocha.png";
+import Cypress from "../../../assets/icons/Cypress.jfif";
+import Forever from "../../../assets/icons/Forever.png";
+import PM2 from "../../../assets/icons/PM2.png";
+import Dockers from "../../../assets/icons/Dockers.png";
+import Kubernets from "../../../assets/icons/Kubernets.png";
 
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
@@ -52,7 +69,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -77,11 +94,11 @@ const FrontendStore = [
     name: " Vue.js",
   },
   {
-    imageUrl: javaScript,
+    imageUrl: HtmlImage,
     name: "HTML",
   },
   {
-    imageUrl: HtmlImage,
+    imageUrl: cssImage,
     name: "CSS",
   },
 ];
@@ -98,70 +115,71 @@ const Language = [
 ];
 const Database = [
   {
-    imageUrl: AWS,
+    imageUrl: MongoDB,
     name: "MongoDB",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Postgres,
     name: "Postgres",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Mysql,
     name: " Mysql",
   },
 ];
 
 const OMR = [
   {
-    imageUrl: AWS,
+    imageUrl: Prisma,
     name: "Prisma",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Mongoose,
     name: " Mongoose",
   },
 ];
 const CDPipelines = [
   {
-    imageUrl: AWS,
+    imageUrl: Github_Actions,
     name: "Github Actions",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Jenkins,
     name: " Jenkins",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Gitlab,
     name: "Gitlab",
   },
   {
-    imageUrl: Azure,
+    imageUrl: AWS_Pipeline,
     name: "AWS Pipeline",
   },
 ];
+
 const Cron = [
   {
-    imageUrl: AWS,
+    imageUrl: Bullrun,
     name: "Bullrun",
   },
 ];
 const Testing = [
   {
-    imageUrl: AWS,
+    imageUrl: Jest,
     name: "Jest",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Mocha,
     name: "Mocha",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Cypress,
     name: " Cypress",
   },
 ];
 const Pub = [
   {
-    imageUrl: AWS,
+    imageUrl: Azure,
     name: "Azure",
   },
   {
@@ -171,21 +189,21 @@ const Pub = [
 ];
 const ProcessManager = [
   {
-    imageUrl: AWS,
+    imageUrl: Forever,
     name: "Forever",
   },
   {
-    imageUrl: Azure,
+    imageUrl: PM2,
     name: "PM2",
   },
 ];
 const Containers = [
   {
-    imageUrl: AWS,
+    imageUrl: Dockers,
     name: "Dockers",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Kubernets,
     name: "  Kubernets",
   },
 ];
@@ -316,18 +334,19 @@ const NodeJsTechnoligy = () => {
             pushing the boundaries of innovation and excellence in the digital
             realm.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your Node.js Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div
@@ -704,22 +723,7 @@ const NodeJsTechnoligy = () => {
               ))}
             </div>
           </CustomTabPanel>
-          <CustomTabPanel value={value} index={4}>
-            <div className="technlogiesContainer-technology">
-              {CDPipelines.map((eachItem) => (
-                <div className="technologyCard">
-                  <div className="technologyIconContainer stretch">
-                    <img
-                      className="technologyIcon"
-                      src={eachItem.imageUrl}
-                      alt="technology icon"
-                    />
-                  </div>
-                  <p className="iconName-service">{eachItem.name}</p>
-                </div>
-              ))}
-            </div>
-          </CustomTabPanel>
+
           <CustomTabPanel value={value} index={5}>
             <div className="technlogiesContainer-technology">
               {Cron.map((eachItem) => (

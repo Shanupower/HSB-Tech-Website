@@ -37,10 +37,6 @@ function Navigationbar() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <NavDropdown title="What We Do" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/services">
-                  Services Page
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="/services/web development">
                   Web Development
                 </NavDropdown.Item>
@@ -49,10 +45,7 @@ function Navigationbar() {
                   Mobile Development
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/services/quality assurance">
-                  Quality Assurance & Software Testing
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
+
                 <NavDropdown.Item href="/services/uiux development">
                   UI UX Design
                 </NavDropdown.Item>
@@ -60,18 +53,32 @@ function Navigationbar() {
                 <NavDropdown.Item href="/services/fullstack development">
                   Full Stack Development
                 </NavDropdown.Item>
+
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/services/quality assurance">
+                  Quality Assurance & Software Testing
+                </NavDropdown.Item>
+
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/services/busines analysis services">
                   Business Analysis
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Industries" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/industries/manufacturing">
-                  Manufacturing
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/fintech">
                   Fintech
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/bsfi">
+                  BSFI
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/telecom">
+                  Telecom
+                </NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/industries/ecommerce">
+                  Ecommerce
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/healthcare">
@@ -82,51 +89,49 @@ function Navigationbar() {
                   Education
                 </NavDropdown.Item>{" "}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/telecom">
-                  Telecom
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/realEstate">
                   Real Estate
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/ecommerce">
-                  Ecommerce
+                <NavDropdown.Item href="/industries/manufacturing">
+                  Manufacturing
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="/industries/travel-hospitality">
                   Travel and Hospitality
                 </NavDropdown.Item>
-                <NavDropdown.Divider />
-
-                <NavDropdown.Item href="/industries/bsfi">
-                  BSFI
-                </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/technology/devOps">
-                  DevOps
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/technology/flutter">
-                  Flutter
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/technology/graphSQl">
-                  GraphSQl
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/technology/laravel">
-                  Laravel
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/technology/postgreSql">
-                  PostgreSQL
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/technology/nextJs">
-                  NextJs
-                </NavDropdown.Item>
                 <NavDropdown.Item href="/technology/nodsJs">
                   NodsJs
                 </NavDropdown.Item>{" "}
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/laravel">
+                  Laravel
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
                 <NavDropdown.Item href="/technology/react-native">
                   React Native
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/flutter">
+                  Flutter
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/nextJs">
+                  NextJs
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/devOps">
+                  DevOps
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/graphSQl">
+                  GraphSQl
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="/technology/postgreSql">
+                  PostgreSQL
                 </NavDropdown.Item>
               </NavDropdown>
 

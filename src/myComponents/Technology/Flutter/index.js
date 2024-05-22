@@ -52,7 +52,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -251,18 +251,19 @@ const FlutterTechnoligy = () => {
             Flutter team is capable of creating business-ready applications with
             an attractive and high-quality user interface.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your Flutter Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div
@@ -353,7 +354,6 @@ const FlutterTechnoligy = () => {
               fontSize: "20px",
               width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
-
             }}
           >
             <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
@@ -364,7 +364,6 @@ const FlutterTechnoligy = () => {
               fontSize: "20px",
               width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
-
             }}
           >
             <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Access to
@@ -376,7 +375,6 @@ const FlutterTechnoligy = () => {
               fontSize: "20px",
               width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
-
             }}
           >
             <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
@@ -525,9 +523,12 @@ const FlutterTechnoligy = () => {
 
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline:  isMd ? " 2rem" :" 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
       >
-        <h1 className="sectionHeading" style={{ fontSize:  isMd ? " 30px" :"48px" }}>
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Tools We Use to Build Flutter Apps
         </h1>
         <Box sx={{ width: "100%", marginTop: "2rem" }}>
@@ -671,9 +672,12 @@ const FlutterTechnoligy = () => {
       {/* Accordion */}
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline:  isMd ? " 2rem" :" 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
       >
-        <h1 className="sectionHeading" style={{ fontSize: isMd ? " 30px" : "48px" }}>
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           FAQs
         </h1>
         <p className="sectionSubHeading" style={{ fontSize: "22px" }}>
@@ -819,8 +823,14 @@ const FlutterTechnoligy = () => {
         </div>
       </div>
 
-      <div className="closingSection" style={{ paddingInline:  isMd ? " 2rem" :" 14%" }}>
-        <h1 className="sectionHeading" style={{ fontSize:  isMd ? " 30px" :"48px" }}>
+      <div
+        className="closingSection"
+        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+      >
+        <h1
+          className="sectionHeading"
+          style={{ fontSize: isMd ? " 30px" : "48px" }}
+        >
           Hire a top Flutter Development Team
         </h1>
         <p style={{ fontSize: "22px" }}>

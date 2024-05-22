@@ -162,6 +162,8 @@ const Agile = () => {
               style={{
                 width: isMd ? "90%" : "50%",
                 height: isMd ? "260px" : "460px",
+                margin: "0 auto",
+                marginTop: "3.2rem",
               }}
             />
           </div>
@@ -269,7 +271,7 @@ const Agile = () => {
             className="sectionHeading"
             style={{ fontSize: isMd ? " 30px" : "48px" }}
           >
-            Connect us now to avail our RealEsate app development services
+            Let’s Configure Your Agile Product Development Model
           </h1>
           <button className="letsTalkButton slideRight" type="button">
             Contact Now

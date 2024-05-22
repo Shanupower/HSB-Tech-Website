@@ -48,12 +48,16 @@ import Glance from "../../assets/icons/Glance Logo V1.jpg";
 import Aries from "../../assets/icons/Aries.png";
 import Pangu from "../../assets/icons/PGM_logo_big.png";
 import Serole from "../../assets/icons/serole-new-logo1.png";
-import Cosmosksa from "../../assets/icons/cosmos_Logo.svg";
+import Cosmosksa from "../../assets/icons/comos.png";
 import Arce from "../../assets/icons/arcImgae.png";
 import WSC from "../../assets/icons/WSC.webp";
 
 import "./index.css";
 
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 const settings = {
   dots: false,
   infinite: true,
@@ -146,20 +150,22 @@ const Home = () => {
                 width: isMd && "50%",
               }}
             >
-              <div
-                style={{
-                  width: isMd ? "7.5rem" : "8.6rem",
-                  height: isMd ? "2rem" : "2.5rem",
-                  objectFit: "cover",
-                }}
-              >
-                <img
-                  className="geekyantlogo"
-                  src={hsbLogo}
-                  alt="logo"
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </div>
+              {isSm && (
+                <div
+                  style={{
+                    width: isMd ? "7.5rem" : "8.6rem",
+                    height: isMd ? "2rem" : "2.5rem",
+                    objectFit: "cover",
+                  }}
+                >
+                  <img
+                    className="geekyantlogo"
+                    src={hsbLogo}
+                    alt="logo"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </div>
+              )}
               <h1
                 className="ladingPageHeading"
                 style={{
@@ -241,21 +247,118 @@ const Home = () => {
             </Link>
             {!isMd && (
               <>
-                <button className="navItem" type="button">
-                  What we do
-                </button>
-                <button className="navItem" type="button">
-                  Case studies
-                </button>
-                <button className="navItem" type="button">
-                  Technologies
-                </button>
-                <button className="navItem" type="button">
-                  About us
-                </button>
-                <button className="navItem" type="button">
-                  Blogs
-                </button>
+                <Navbar expand="lg">
+                  <Container>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                      <Nav className="me-auto">
+                        <NavDropdown title="What We Do" id="basic-nav-dropdown">
+                          <NavDropdown.Item href="/services/web development">
+                            Web Development
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/services/mobile development">
+                            Mobile Development
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+
+                          <NavDropdown.Item href="/services/uiux development">
+                            UI UX Design
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/services/fullstack development">
+                            Full Stack Development
+                          </NavDropdown.Item>
+
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/services/quality assurance">
+                            Quality Assurance & Software Testing
+                          </NavDropdown.Item>
+
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/services/busines analysis services">
+                            Business Analysis
+                          </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown title="Industries" id="basic-nav-dropdown">
+                          <NavDropdown.Item href="/industries/fintech">
+                            Fintech
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/bsfi">
+                            BSFI
+                          </NavDropdown.Item>{" "}
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/telecom">
+                            Telecom
+                          </NavDropdown.Item>{" "}
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/ecommerce">
+                            Ecommerce
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/healthcare">
+                            Healthcare
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/education">
+                            Education
+                          </NavDropdown.Item>{" "}
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/realEstate">
+                            Real Estate
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/manufacturing">
+                            Manufacturing
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/industries/travel-hospitality">
+                            Travel and Hospitality
+                          </NavDropdown.Item>
+                        </NavDropdown>
+                        <NavDropdown
+                          title="Technologies"
+                          id="basic-nav-dropdown"
+                        >
+                          <NavDropdown.Item href="/technology/nodsJs">
+                            NodsJs
+                          </NavDropdown.Item>{" "}
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/laravel">
+                            Laravel
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/react-native">
+                            React Native
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/flutter">
+                            Flutter
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/nextJs">
+                            NextJs
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/devOps">
+                            DevOps
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/graphSQl">
+                            GraphSQl
+                          </NavDropdown.Item>
+                          <NavDropdown.Divider />
+                          <NavDropdown.Item href="/technology/postgreSql">
+                            PostgreSQL
+                          </NavDropdown.Item>
+                        </NavDropdown>
+
+                        <Nav.Link href="/lets talk">Lets talk</Nav.Link>
+                      </Nav>
+                    </Navbar.Collapse>
+                  </Container>
+                </Navbar>
               </>
             )}
           </div>
@@ -384,14 +487,14 @@ const Home = () => {
                     <HoverCard.Trigger asChild>
                       <div
                         key={eachCompany.id}
-                        className="trustedbyImageContainer"
+                        // className="trustedbyImageContainer"
                         style={{
                           width: "90px",
                           height: "50px",
                         }}
                       >
                         <img
-                          className="trustedbyImage"
+                          // className="trustedbyImage"
                           src={eachCompany.imageUrl}
                           alt="trusted by company image"
                           style={{
@@ -753,14 +856,6 @@ const Home = () => {
               Open-source ignites innovation, removes barriers, and fosters
               collaboration aggressively.
             </p>
-
-            <p
-              className="viewApplicationsButton slideRight-view-applications"
-              type="button"
-            >
-              View Showcase Applications
-              <FaArrowRight className="rightArrowRed" />
-            </p>
           </div>
 
           <div className="twoCardsContainer">
@@ -768,67 +863,76 @@ const Home = () => {
               className="hoverUp card"
               sx={{ maxWidth: isMd ? "100%" : "40%" }}
             >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="250"
-                  image={supplyChain}
-                  alt="green iguana"
-                />
-                <CardContent sx={{ p: 5 }}>
-                  <Typography
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                    className="materialuiCardTitle"
-                  >
-                    Start Flutter
-                  </Typography>
-                  <Typography
-                    fontSize="18px"
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    Start Flutter is a library of free to download Flutter
-                    templates. All themes are available in the form of open
-                    source and can be used for any purpose, including
-                    commercial. Download your choice of theme and get started!
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <Link to="/technology/flutter" style={{ textDecoration: "none" }}>
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="250"
+                    image={supplyChain}
+                    alt="green iguana"
+                  />
+                  <CardContent sx={{ p: 5 }}>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      className="materialuiCardTitle"
+                      style={{ color: "#000" }}
+                    >
+                      Start Flutter
+                    </Typography>
+                    <Typography
+                      fontSize="18px"
+                      variant="body2"
+                      color="text.secondary"
+                    >
+                      Start Flutter is a library of free to download Flutter
+                      templates. All themes are available in the form of open
+                      source and can be used for any purpose, including
+                      commercial. Download your choice of theme and get started!
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Link>
             </Card>
 
             <Card
               className="hoverUp card"
               sx={{ maxWidth: isMd ? "100%" : "40%" }}
             >
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="250"
-                  image={telemedicineImage}
-                  alt="green iguana"
-                />
-                <CardContent sx={{ p: 5 }}>
-                  <Typography
-                    fontSize="25px"
-                    gutterBottom
-                    variant="h5"
-                    component="div"
-                  >
-                    React Native Seed
-                  </Typography>
-                  <Typography
-                    fontSize="18px"
-                    variant="body2"
-                    color="text.secondary"
-                  >
-                    React Native Seed is a starting point for your React Native
-                    project as it serves as a starter kit for your base app. It
-                    can be used with the technologies that you prefer.
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
+              <Link
+                to="/technology/react-native"
+                style={{ textDecoration: "none" }}
+              >
+                <CardActionArea>
+                  <CardMedia
+                    component="img"
+                    height="250"
+                    image={telemedicineImage}
+                    alt="green iguana"
+                  />
+                  <CardContent sx={{ p: 5 }}>
+                    <Typography
+                      fontSize="25px"
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      style={{ color: "#000" }}
+                    >
+                      React Native Seed
+                    </Typography>
+                    <Typography
+                      fontSize="18px"
+                      variant="body2"
+                      color="text.secondary"
+                    >
+                      React Native Seed is a starting point for your React
+                      Native project as it serves as a starter kit for your base
+                      app. It can be used with the technologies that you prefer.
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Link>
             </Card>
           </div>
         </div>
@@ -849,14 +953,6 @@ const Home = () => {
             <p className="sectionDescription customisable-solutions-heading">
               A library of various solutions and clones of popular apps built by
               us which can be easily customized to fit your needs.
-            </p>
-
-            <p
-              className="viewApplicationsButton slideRight-view-applications"
-              type="button"
-            >
-              View Showcase Applications
-              <FaArrowRight className="rightArrowRed" />
             </p>
           </div>
 

@@ -34,12 +34,26 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AWS from "../../../assets/icons/images.png";
 import Azure from "../../../assets/icons/download.png";
-
+import MongoDB from "../../../assets/icons/mongo.jfif";
+import Postgres from "../../../assets/icons/Postgres.png";
+import Mysql from "../../../assets/icons/Mysql.png";
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
 import Footer from "../../footer";
 import Navigationbar from "../../navigationBar";
+import Github_Actions from "../../../assets/icons/Github_Actions.png";
+import Jenkins from "../../../assets/icons/Jenkins.jfif";
+import Gitlab from "../../../assets/icons/Gitlab.png";
+import Bullrun from "../../../assets/icons/Bullrun.png";
+import Jest from "../../../assets/icons/Jest.png";
+import Mocha from "../../../assets/icons/Mocha.png";
+import Cypress from "../../../assets/icons/Cypress.jfif";
+import AWS_Pipeline from "../../../assets/icons/AWS_Pipeline.png";
+import Dockers from "../../../assets/icons/Dockers.png";
+import Kubernets from "../../../assets/icons/Kubernets.png";
+import Forever from "../../../assets/icons/Forever.png";
+import PM2 from "../../../assets/icons/PM2.png";
 
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
@@ -52,7 +66,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -65,19 +79,19 @@ const breadcrumbs = [
 
 const Pipelines = [
   {
-    imageUrl: reactImage,
+    imageUrl: Github_Actions,
     name: "Github Actions",
   },
   {
-    imageUrl: reactImage,
+    imageUrl: Jenkins,
     name: "Jenkins",
   },
   {
-    imageUrl: flutterImage,
+    imageUrl: Gitlab,
     name: "Gitlab",
   },
   {
-    imageUrl: javaScript,
+    imageUrl: AWS_Pipeline,
     name: "AWS Pipeline",
   },
 ];
@@ -85,57 +99,58 @@ const Pipelines = [
 const OMR = [];
 const Database = [
   {
-    imageUrl: AWS,
+    imageUrl: MongoDB,
     name: "MongoDB",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Postgres,
     name: "Postgres",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Mysql,
     name: "Mysql",
   },
 ];
 
 const Cron = [
   {
-    imageUrl: AWS,
+    imageUrl: Bullrun,
     name: "Bullrun",
   },
 ];
+
 const Testing = [
   {
-    imageUrl: AWS,
+    imageUrl: Jest,
     name: "Jest",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Mocha,
     name: "Mocha",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Cypress,
     name: "Cypress",
   },
 ];
 
 const Containers = [
   {
-    imageUrl: AWS,
+    imageUrl: Dockers,
     name: "Dockers",
   },
   {
-    imageUrl: Azure,
+    imageUrl: Kubernets,
     name: " Kubernets",
   },
 ];
 const Process = [
   {
-    imageUrl: AWS,
+    imageUrl: Forever,
     name: "Forever",
   },
   {
-    imageUrl: Azure,
+    imageUrl: PM2,
     name: "PM2",
   },
 ];
@@ -151,7 +166,7 @@ const Platform = [
 ];
 const Pub = [
   {
-    imageUrl: AWS,
+    imageUrl: Azure,
     name: "Azure",
   },
   {
@@ -239,18 +254,19 @@ const LaravelTechnoligy = () => {
             features through dependency. Laravel is a Full Stack Framework,
             Which helps a developer create Full Stack Applications.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your Laravel Development Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div

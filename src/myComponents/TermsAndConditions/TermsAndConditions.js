@@ -59,7 +59,7 @@ const TermsAndConditions = () => {
           paddingInline: isMd ? " 2rem" : " 14%",
           display: "flex",
           gap: "5%",
-          flexDirection: "column",
+          flexDirection: "column",   
           marginBlock: "2rem",
         }}
       >
@@ -155,31 +155,7 @@ const TermsAndConditions = () => {
             are under the age of 18, you are not permitted to use the Services
             without parental permission.
           </p>
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "1.5",
-              marginTop: "1rem",
-            }}
-          >
-            Additional policies which also apply to your use of the Site
-            include:
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              lineHeight: "1.5",
-              marginTop: "1rem",
-            }}
-          >
-            Our Privacy Notice{" "}
-            <Link
-              to="terms_and_conditions"
-              style={{ textDecoration: "none", color: "lightblack" }}
-            >
-              https://hsbinfotech.com/privacy-policy
-            </Link>
-          </p>
+       
         </div>
 
         <div

@@ -34,6 +34,10 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AWS from "../../../assets/icons/images.png";
 import Azure from "../../../assets/icons/download.png";
+import Windows from "../../../assets/icons/window.jfif";
+import MacOs from "../../../assets/icons/macOs.jfif";
+import ubuntu from "../../../assets/icons/ubuntu.png";
+import Amozon from "../../../assets/icons/amazon.png";
 
 import FiberManualRecordIcon from "@mui/icons-material/FiberManualRecord";
 import "./index.css";
@@ -52,7 +56,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -131,12 +135,20 @@ const Containers = [
 ];
 const Os = [
   {
-    imageUrl: AWS,
-    name: "AWS",
+    imageUrl: Windows,
+    name: "Windows",
   },
   {
-    imageUrl: Azure,
-    name: "Azure",
+    imageUrl: MacOs,
+    name: "Mac",
+  },
+  {
+    imageUrl: ubuntu,
+    name: "Ubuntu",
+  },
+  {
+    imageUrl: Amozon,
+    name: "Amazon Linux",
   },
 ];
 function CustomTabPanel(props) {
@@ -258,18 +270,19 @@ const DevOpsTechnoligy = () => {
             confidence, creating a synergy between development, IT operations,
             and security that is unparalleled in the market.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your DevOps Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div
