@@ -1,0 +1,10 @@
+.navbarCompanyLogo {
+  width: 120px;
+}
+.navBarContainerHide {
+  display: none;
+}
+.navBarContainerShow {
+  position: fixed;
+  width: 100%;
+}
