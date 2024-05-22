@@ -248,7 +248,8 @@ const Fixed = () => {
             className="sectionHeading"
             style={{ fontSize: isMd ? " 30px" : "48px" }}
           >
-            Connect us now to avail our RealEsate app development services
+            Let’s Connect to Strategize Fixed Scope Engagement Model for Your
+            Project.
           </h1>
           <button className="letsTalkButton slideRight" type="button">
             Contact Now

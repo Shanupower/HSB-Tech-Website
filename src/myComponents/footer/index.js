@@ -39,6 +39,10 @@ const Footer = () => {
               src={geekyAntLogoLight}
               alt="logo"
             />
+            <h2 style={{ fontSize: "22px", marginTop: "1rem" }}>
+              {" "}
+              HSB Information Technologies Pvt Ltd
+            </h2>
             <p style={{ marginTop: "1rem" }}>
               We are an emerging services and product development company aimed
               to provide highly scalable technological solutions and
@@ -152,9 +156,6 @@ const Footer = () => {
                 style={{ width: "46px", height: "28px", borderRadius: "4px" }}
                 alt="flag"
               />{" "}
-              HSB Information Technologies Pvt Ltd
-            </p>
-            <p className="countrItemAddress-mobile">
               INDIA: Plot 47, HACP Colony, Karkhana, Hyderabad – 500015,
               Telangana, India.
             </p>
@@ -173,9 +174,6 @@ const Footer = () => {
                 style={{ width: "46px", height: "28px", borderRadius: "4px" }}
                 alt="flag"
               />{" "}
-              HSB Information Technologies Pvt Ltd
-            </p>
-            <p className="countrItemAddress-mobile">
               SAUDI ARABIA: Raqtan Building, 5th floor, Dabab Street, P.O.Box
               12612, Riyadh – KSA.
             </p>
@@ -196,10 +194,10 @@ const Footer = () => {
         }}
       >
         <p>2024 ©All rights reserved.</p>
-        <p>HSB Information Technologies Pvt Ltd</p>
+        <p> Information Technologies Pvt Ltd</p>
         <Link
-          to="terms_and_conditions"
-          style={{ textDecoration: "none", color: "lightblack" }}
+          to="/terms_and_conditions"
+          style={{ textDecoration: "none", color: "black" }}
         >
           Terms and Conditons
         </Link>

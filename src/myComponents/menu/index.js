@@ -26,14 +26,14 @@ const items = [
       />
     ),
     children: [
-      {
-        key: "1",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/services">
-            Services
-          </Link>
-        ),
-      },
+      // {
+      //   key: "1",
+      //   label: (
+      //     <Link style={{ textDecoration: "none" }} to="/services">
+      //       Services
+      //     </Link>
+      //   ),
+      // },
       {
         key: "2",
         label: (
@@ -56,17 +56,7 @@ const items = [
           </Link>
         ),
       },
-      {
-        key: "4",
-        label: (
-          <Link
-            style={{ textDecoration: "none" }}
-            to="/services/quality assurance"
-          >
-            Quality Assurance & Software Testing
-          </Link>
-        ),
-      },
+
       {
         key: "5",
         label: (
@@ -90,13 +80,25 @@ const items = [
         ),
       },
       {
+        key: "4",
+        label: (
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/services/quality assurance"
+          >
+            Quality Assurance & Software Testing
+          </Link>
+        ),
+      },
+
+      {
         key: "7",
         label: (
           <Link
             style={{ textDecoration: "none" }}
             to="/services/busines analysis services"
           >
-            Business Analysis
+            Business Analysis & Consulting
           </Link>
         ),
       },
@@ -114,21 +116,34 @@ const items = [
     ),
     children: [
       {
-        key: "1",
-        label: (
-          <Link
-            style={{ textDecoration: "none" }}
-            to="/industries/manufacturing"
-          >
-            Manufacturing
-          </Link>
-        ),
-      },
-      {
         key: "2",
         label: (
           <Link style={{ textDecoration: "none" }} to="/industries/fintech">
             Fintech
+          </Link>
+        ),
+      },
+      {
+        key: "9",
+        label: (
+          <Link style={{ textDecoration: "none" }} to="/industries/bsfi">
+            BSFI
+          </Link>
+        ),
+      },
+      {
+        key: "5",
+        label: (
+          <Link style={{ textDecoration: "none" }} to="/industries/telecom">
+            Telecom
+          </Link>
+        ),
+      },
+      {
+        key: "7",
+        label: (
+          <Link style={{ textDecoration: "none" }} to="/industries/ecommerce">
+            E-commerce
           </Link>
         ),
       },
@@ -148,14 +163,7 @@ const items = [
           </Link>
         ),
       },
-      {
-        key: "5",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/industries/telecom">
-            Telecom
-          </Link>
-        ),
-      },
+
       {
         key: "6",
         label: (
@@ -164,14 +172,19 @@ const items = [
           </Link>
         ),
       },
+
       {
-        key: "7",
+        key: "1",
         label: (
-          <Link style={{ textDecoration: "none" }} to="/industries/ecommerce">
-            Ecommerce
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/industries/manufacturing"
+          >
+            Manufacturing
           </Link>
         ),
       },
+
       {
         key: "8",
         label: (
@@ -180,14 +193,6 @@ const items = [
             to="/industries/travel-hospitality"
           >
             Travel & Hospitality
-          </Link>
-        ),
-      },
-      {
-        key: "9",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/industries/bsfi">
-            BSFI
           </Link>
         ),
       },
@@ -205,10 +210,30 @@ const items = [
     ),
     children: [
       {
-        key: "1",
+        key: "7",
         label: (
-          <Link style={{ textDecoration: "none" }} to="/technology/devOps">
-            DevOps
+          <Link style={{ textDecoration: "none" }} to="/technology/nodsJs">
+            NodeJs
+          </Link>
+        ),
+      },
+      {
+        key: "4",
+        label: (
+          <Link style={{ textDecoration: "none" }} to="/technology/laravel">
+            Laravel
+          </Link>
+        ),
+      },
+
+      {
+        key: "8",
+        label: (
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/technology/react-native"
+          >
+            React Native
           </Link>
         ),
       },
@@ -221,30 +246,6 @@ const items = [
         ),
       },
       {
-        key: "3",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/technology/graphSQl">
-            GraphSQL
-          </Link>
-        ),
-      },
-      {
-        key: "4",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/technology/laravel">
-            Laravel
-          </Link>
-        ),
-      },
-      {
-        key: "5",
-        label: (
-          <Link style={{ textDecoration: "none" }} to="/technology/postgreSql">
-            PostgreSQL
-          </Link>
-        ),
-      },
-      {
         key: "6",
         label: (
           <Link style={{ textDecoration: "none" }} to="/technology/nextJs">
@@ -253,36 +254,43 @@ const items = [
         ),
       },
       {
-        key: "7",
+        key: "1",
         label: (
-          <Link style={{ textDecoration: "none" }} to="/technology/nodsJs">
-            NodeJs
+          <Link style={{ textDecoration: "none" }} to="/technology/devOps">
+            DeveOps
           </Link>
         ),
       },
+
       {
-        key: "8",
+        key: "3",
         label: (
-          <Link
-            style={{ textDecoration: "none" }}
-            to="/technology/react-native"
-          >
-            React Native
+          <Link style={{ textDecoration: "none" }} to="/technology/graphSQl">
+            GraphSQL
+          </Link>
+        ),
+      },
+
+      {
+        key: "5",
+        label: (
+          <Link style={{ textDecoration: "none" }} to="/technology/postgreSql">
+            PostgreSQL
           </Link>
         ),
       },
     ],
   },
-  {
-    key: "about",
-    label: "About",
-  },
-  {
-    key: "blogs",
-    label: "Blogs",
-  },
+
   {
     key: "Lets Talk",
+    icon: (
+      <img
+        style={{ width: "20px", height: "20px" }}
+        src="data:image/png;base64,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"
+        alt=""
+      />
+    ),
     label: (
       <Link style={{ textDecoration: "none" }} to="/lets_talk">
         Lets talk

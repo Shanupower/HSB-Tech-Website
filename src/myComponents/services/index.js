@@ -11,6 +11,7 @@ import Footer from "../footer";
 import NavigationBar from "../navigationBar";
 import "./index.css";
 import { useMediaQuery } from "@mui/material";
+import manufacturingImage from "../../assets/manufacturing-landingpage.webp";
 
 const Services = () => {
   const isMd = useMediaQuery("(max-width:1067px)");
@@ -58,11 +59,22 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="servicesItem mobileApp leftBorder">
+        <div
+          className="servicesItem mobileApp leftBorder"
+          style={{
+            position: "relative",
+          }}
+        >
           <img
             className="serviceItemImage"
-            src={mobileAppImage}
+            src={manufacturingImage}
             alt="service image"
+            style={{
+              height: "320px",
+              width: "300px",
+              left: "0",
+              bottom: "0",
+            }}
           />
           <div className="serviceSection-info-container rightBorder">
             <h2 className="serviceSection-heading">

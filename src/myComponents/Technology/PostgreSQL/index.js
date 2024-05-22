@@ -52,7 +52,7 @@ const breadcrumbs = [
     href="/services"
     style={{ color: "#e8e8e8" }}
   >
-    Technoligy
+    Technology
   </Link>,
   <Typography
     key="3"
@@ -253,18 +253,19 @@ const PostgreSQLTechnoligy = () => {
             part of PostgreSQL open-source community, allowing us to build
             mobile and web applications that scale from idea to enterprise fast.
           </p>
-          <button
-            className="getQuoteButton industries-getQuoteButton"
-            type="button"
+          <Link
+            href="/lets_talk"
             style={{
               padding: ".8rem 1rem",
               fontSize: "20px",
               width: "fit-content",
               backgroundColor: "#fff",
+              color: "black",
+              textDecoration: "none",
             }}
           >
             Build Your Laravel Development Team Today
-          </button>
+          </Link>
         </div>
         {!isMd && (
           <div
