@@ -34,6 +34,7 @@ import TermsAndConditions from "./myComponents/TermsAndConditions/TermsAndCondit
 import Agile from "./myComponents/ProductModel/Agile";
 import Fixed from "./myComponents/ProductModel/Fixed";
 import RealEstateIndustries from "./myComponents/RealEstateIndustries";
+import Blog from "./myComponents/Blog/Blog";
 
 const App = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
@@ -47,6 +48,7 @@ const App = () => {
         <Route exact path="/services" component={Services} />
         <Route exact path="/agile" component={Agile} />
         <Route exact path="/fixed" component={Fixed} />
+        <Route exact path="/blog" component={Blog} />
 
         <Route
           exact
