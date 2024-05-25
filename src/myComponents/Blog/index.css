@@ -1,0 +1,9 @@
+.iframe-container {
+  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.iframe-container::-webkit-scrollbar {
+  height: 0px;
+}

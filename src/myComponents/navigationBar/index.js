@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import hsbLogo from "../../assets/hsb-logo.png";
 import "./index.css";
-
+import { Link } from "react-router-dom";
 function Navigationbar() {
   return (
     <div
@@ -16,115 +16,141 @@ function Navigationbar() {
       }}
     >
       <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="/">
-            <img className="navbarCompanyLogo" src={hsbLogo} alt="logo" />
-          </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <NavDropdown title="What We Do" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/services/web development">
-                  Web Development
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services/mobile development">
-                  Mobile Development
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
+        <Container
+          style={{
+            display: "flex",
+            alignItems: "center",
+            padding: ".4rem 0",
+          }}
+        >
+          <div>
+            <Link to="/">
+              <img className="navbarCompanyLogo" src={hsbLogo} alt="logo" />
+            </Link>
+          </div>
 
-                <NavDropdown.Item href="/services/uiux development">
-                  UI UX Design
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services/fullstack development">
-                  Full Stack Development
-                </NavDropdown.Item>
+          <div>
+            <Navbar.Collapse id="basic-navbar-nav">
+              <Nav className="me-auto">
+                <NavDropdown title="What We Do" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/services/web development">
+                    Web Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/services/mobile development">
+                    Mobile Development
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
 
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services/quality assurance">
-                  Quality Assurance & Software Testing
-                </NavDropdown.Item>
+                  <NavDropdown.Item href="/services/uiux development">
+                    UI UX Design
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/services/fullstack development">
+                    Full Stack Development
+                  </NavDropdown.Item>
 
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/services/busines analysis services">
-                  Business Analysis
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Industries" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/industries/fintech">
-                  Fintech
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/bsfi">
-                  BSFI
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/telecom">
-                  Telecom
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/ecommerce">
-                  Ecommerce
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/healthcare">
-                  Healthcare
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/education">
-                  Education
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/realEstate">
-                  Real Estate
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/manufacturing">
-                  Manufacturing
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/industries/travel-hospitality">
-                  Travel and Hospitality
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="Technologies" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/technology/nodsJs">
-                  NodsJs
-                </NavDropdown.Item>{" "}
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/laravel">
-                  Laravel
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/react-native">
-                  React Native
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/flutter">
-                  Flutter
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/nextJs">
-                  NextJs
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/devOps">
-                  DevOps
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/graphSQl">
-                  GraphSQl
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/technology/postgreSql">
-                  PostgreSQL
-                </NavDropdown.Item>
-              </NavDropdown>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/services/quality assurance">
+                    Quality Assurance & Software Testing
+                  </NavDropdown.Item>
 
-              <Nav.Link href="/lets_talk">Lets talk</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/services/busines analysis services">
+                    Business Analysis
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Industries" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/industries/fintech">
+                    Fintech
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/bsfi">
+                    BSFI
+                  </NavDropdown.Item>{" "}
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/telecom">
+                    Telecom
+                  </NavDropdown.Item>{" "}
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/ecommerce">
+                    Ecommerce
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/healthcare">
+                    Healthcare
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/education">
+                    Education
+                  </NavDropdown.Item>{" "}
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/realEstate">
+                    Real Estate
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/manufacturing">
+                    Manufacturing
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/industries/travel-hospitality">
+                    Travel and Hospitality
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <NavDropdown title="Technologies" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="/technology/nodsJs">
+                    NodsJs
+                  </NavDropdown.Item>{" "}
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/laravel">
+                    Laravel
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/react-native">
+                    React Native
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/flutter">
+                    Flutter
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/nextJs">
+                    NextJs
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/devOps">
+                    DevOps
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/graphSQl">
+                    GraphSQl
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="/technology/postgreSql">
+                    PostgreSQL
+                  </NavDropdown.Item>
+                </NavDropdown>
+                <Nav.Link href="/blog">Blogs</Nav.Link>
+              </Nav>
+            </Navbar.Collapse>
+          </div>
+
+          <div>
+            <Link
+              to="lets_talk"
+              style={{
+                textDecoration: "none",
+                color: "#fff",
+                backgroundColor: "#ca0515",
+                padding: ".4rem 1.6rem",
+                fontSize: "20px",
+                fontWeight: "600",
+                borderRadius: "8px",
+              }}
+            >
+              Lets talk
+            </Link>
+          </div>
         </Container>
       </Navbar>
     </div>
