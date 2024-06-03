@@ -374,72 +374,79 @@ const NextTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "space-between",
             gap: "1rem",
+            alignItems: "flex-start",
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Server-side
-            and client-side routing
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Server-side and client-side routing
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Code
-            splitting
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Code splitting
+            
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
-              minWidth: "fit-content",
-
               marginBottom: "2.4rem",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Efficient
-            component reuse
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Optimized
-            code to enhance loading experience
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Efficient component reuse
+            
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
-
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> TypeScript
-            support
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Optimized code to enhance loading experience
+            
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Built-in CSS
-            support
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> TypeScript support
+            
+          </p>
+          <p
+            style={{
+              display: "flex",
+              alignItems: "center",
+              width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
+              minWidth: "fit-content",
+            }}
+          >
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Built-in CSS support
+            
           </p>
         </div>
         <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>

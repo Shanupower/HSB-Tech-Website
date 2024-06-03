@@ -334,59 +334,67 @@ const DevOpsTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "left",
             gap: "1rem",
+            alignItems: "flex-start",
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster time
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Faster time
             to market through automation
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Enhanced
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Enhanced
             collaboration
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Increased scalability and flexibility
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Improved security, reliability, and stability
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Faster time
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Faster time
             to market through automation
           </p>
         </div>

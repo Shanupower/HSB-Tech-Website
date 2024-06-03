@@ -1,11 +1,11 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Component } from "react";
-import webAppImage from "../../assets/webapp-sevice.webp";
-import mobileAppImage from "../../assets/mobileApp.webp";
-import qualityAssuranceImage from "../../assets/quality-assurance.webp";
-import uiuxImage from "../../assets/uiux.webp";
-import businessAnalysis from "../../assets/business-analysis.webp";
-import fullstackImage from "../../assets/fullstack.webp";
+import webAppImage from "../../assets/Picture1.jpg";
+import mobileAppImage from "../../assets/Picture2.png";
+import qualityAssuranceImage from "../../assets/Picture3.png";
+import uiuxImage from "../../assets/Picture4.jpg";
+import businessAnalysis from "../../assets/Picture5.png";
+import fullstackImage from "../../assets/Picture6.png";
 import { FaArrowRight } from "react-icons/fa6";
 import Footer from "../footer";
 import NavigationBar from "../navigationBar";

@@ -264,7 +264,7 @@ const PostgreSQLTechnoligy = () => {
               textDecoration: "none",
             }}
           >
-            Build Your Laravel Development Team Today
+            Build Your PostgreSQL Development Team Today
           </Link>
         </div>
         {!isMd && (
@@ -317,70 +317,80 @@ const PostgreSQLTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "space-between",
             gap: "1rem",
+            alignItems: "flex-start",
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Enriched
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Enriched
             with features and extensions
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly fault
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Highly fault
             tolerant database
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Support of
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Support of
             open source license and community
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Multi-version concurrency control (MVCC)
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Support for
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Support for
             full-text search and geospatial data
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Advanced
-            data types — hstore, json, and jsonb
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Advanced
+            data types-hstore, json, and jsonb
           </p>
         </div>
         <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>

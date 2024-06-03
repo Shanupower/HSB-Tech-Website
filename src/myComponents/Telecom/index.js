@@ -418,7 +418,7 @@ const TelecomIndustry = () => {
             <img src={Opreation} alt="ene" />
 
             <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-              Operations Support Systems (OSS) Development n
+              Customer-oriented Solutions
             </p>
             <p className="cardDescription-service" style={{ fontSize: "22px" }}>
               Accelerate the business side of telecom operations with

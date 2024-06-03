@@ -258,7 +258,7 @@ const FintechIndustry = () => {
           >
             <img src={SupplyChain} alt="ene" />
             <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-              Fintech Software Development
+              Fintech Comprehensive Solutions
             </p>
             <p className="cardDescription-service" style={{ fontSize: "22px" }}>
               We provide comprehensive solutions from conceptualization to
@@ -277,7 +277,7 @@ const FintechIndustry = () => {
             <img src={Production} alt="ene" />
 
             <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-              Web Development Services for Finech
+              Web Development Services for Fintech
             </p>
             <p className="cardDescription-service" style={{ fontSize: "22px" }}>
               Our tailored web development services for the fintech sector are

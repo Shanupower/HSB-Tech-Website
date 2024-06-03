@@ -17,7 +17,7 @@ import reactImage from "../../../assets/react.png";
 import flutterImage from "../../../assets/flutter.png";
 import javaScript from "../../../assets/javascript-logo.png";
 import HtmlImage from "../../../assets/html.webp";
-import angular from "../../../assets/angular.webp";
+import angular from "../../../assets/angular.webp"
 import cssImage from "../../../assets/css.png";
 import nodeJs from "../../../assets/nodejs.png";
 import goLang from "../../../assets/goLanguage.png";
@@ -87,7 +87,7 @@ const FrontendStore = [
   },
   {
     imageUrl: reactImage,
-    name: "Angular",
+    name: "angular",
   },
   {
     imageUrl: flutterImage,
@@ -387,84 +387,79 @@ const NodeJsTechnoligy = () => {
           Node.js offers comprehensive enterprise solutions that elevate
           end-user experiences and drive exceptional business growth.
         </p>
-        <h2>Benefits of Node.js</h2>
-        <div
-          style={{
-            backgroundColor: "#fff",
-            minHeight: "20vh",
-            width: "100%",
-            marginTop: "1rem",
-            display: "flex",
-            flexWrap: "wrap",
-            borderRadius: "8px",
-            padding: "2rem 1.4rem",
-            justifyContent: "space-between",
-            gap: "1rem",
-          }}
-        >
-          <p
-            style={{
-              fontSize: "20px",
-              width: "calc(100%/3 - 1rem)",
-              marginBottom: "2.4rem",
-              minWidth: "fit-content",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Exceptional
-            user experience
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              width: "calc(100%/3 - 1rem)",
-              minWidth: "fit-content",
-              marginBottom: "2.4rem",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Hassle-free
-            server-side development
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              width: "calc(100%/3 - 1rem)",
-              minWidth: "fit-content",
-              marginBottom: "2.4rem",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy
-            scalable for microservices
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
-              width: "calc(100%/3 - 1rem)",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Rich
-            ecosystem of tools
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
-              width: "calc(100%/3 - 1rem)",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
-            customizable
-          </p>
-          <p
-            style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
-              width: "calc(100%/3 - 1rem)",
-            }}
-          >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
-            Support building cross
-          </p>
+        <div>
+            <h2>Benefits of Node.js</h2>
+            <div style={{
+                backgroundColor: "#fff",
+                minHeight: "20vh",
+                width: "100%",
+                marginTop: "1rem",
+                display: "flex",
+                flexWrap: "wrap",
+                borderRadius: "8px",
+                padding: "2rem 1.4rem",
+                justifyContent: "space-between",
+                gap: "1rem",
+                alignItems: "flex-start" 
+            }}>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                    marginBottom: "2.4rem",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Exceptional user experience</p>
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                    marginBottom: "2.4rem",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Hassle-free server-side development</p>
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                    marginBottom: "2.4rem",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Easy scalable for microservices</p>
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Rich ecosystem of tools</p>
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Highly customizable</p>
+                </div>
+                <div style={{
+                    display: "flex",
+                    alignItems: "center",
+                    width: "calc(100%/3 - 1rem)",
+                    minWidth: "fit-content",
+                }}>
+                    <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> 
+                    <p style={{ margin: 0 }}>Support building cross</p>
+                </div>
+            </div>
         </div>
         <h2 style={{ marginTop: "2rem", fontSize: "24px" }}>
           Engage our skilled Node.js development team to construct powerful

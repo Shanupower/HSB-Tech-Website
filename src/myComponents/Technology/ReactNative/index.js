@@ -374,69 +374,79 @@ const ReactNativeTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "space-between",
             gap: "1rem",
+            alignItems: "flex-start",
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Support cross-platform
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
-              minWidth: "fit-content",
               marginBottom: "2.4rem",
+              minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Native
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Native
             components for everyone
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
-              minWidth: "fit-content",
               marginBottom: "2.4rem",
+              minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Reusable
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Reusable
             codebase
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
+              minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Widely
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Widely
             accepted
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
+              minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy and
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Easy and
             affordable maintenance
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
+              minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Community driven
           </p>
         </div>

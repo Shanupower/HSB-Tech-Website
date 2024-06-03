@@ -277,99 +277,115 @@ const GraphSQlTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "space-between",
             gap: "1rem",
+            alignItems: "flex-start"
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Efficient communication transactions
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Fast and robust framework
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Unified APIs
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Autogeneration of API documentation
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Excels over REST
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Specific data retrieval
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             API callouts are secure and easy to use
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Highly tailored queries
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              marginBottom: "2.4rem",
               minWidth: "fit-content",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             Stable and lightweight
           </p>
         </div>
@@ -491,7 +507,7 @@ const GraphSQlTechnoligy = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Tools We Use to Build Flutter Apps
+          Tools We Use to Build GraphQL Apps
         </h1>
         <Box sx={{ width: "100%", marginTop: "2rem" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>

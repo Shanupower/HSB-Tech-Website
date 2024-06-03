@@ -318,69 +318,79 @@ const LaravelTechnoligy = () => {
             padding: "2rem 1.4rem",
             justifyContent: "space-between",
             gap: "1rem",
+            alignItems: "flex-start",
           }}
         >
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
               marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Highly
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Highly
             secure PHP framework
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              minWidth: "fit-content",
               marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} />
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} />
             MVC based PHP framework
           </p>
           <p
             style={{
-              fontSize: "20px",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
               minWidth: "fit-content",
               marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Efficient
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Efficient
             queuing system for excellent traffic management
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              minWidth: "fit-content",
+              marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Flexibility
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Flexibility
             to build advanced features
           </p>
           <p
             style={{
-              fontSize: "20px",
-              minWidth: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              minWidth: "fit-content",
+              marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy third
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Easy third
             party integrations
           </p>
           <p
             style={{
-              fontSize: "20px",
-              width: "fit-content",
+              display: "flex",
+              alignItems: "center",
               width: "calc(100%/3 - 1rem)",
+              minWidth: "fit-content",
+              marginBottom: "2.4rem",
             }}
           >
-            <CheckCircleOutlineIcon style={{ color: "#1bd9c9" }} /> Easy unit
+            <CheckCircleOutlineIcon style={{ color: "#1bd9c9", marginRight: "0.5rem" }} /> Easy unit
             testing
           </p>
         </div>

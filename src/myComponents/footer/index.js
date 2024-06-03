@@ -96,6 +96,9 @@ const Footer = () => {
             <a className="footerLinkItem" href="/industries/bsfi">
               BSFI
             </a>
+            <a className="footerLinkItem" href="/industries/fintech">
+              Fintech
+            </a>
           </div>
 
           <div className="footerSectionItem">
@@ -120,6 +123,9 @@ const Footer = () => {
             </a>
             <a className="footerLinkItem" href="/technology/devOps">
               DevOps
+            </a>
+            <a className="footerLinkItem" href="/technology/laravel">
+              Laravel
             </a>
           </div>
 

@@ -782,7 +782,7 @@ const EcommerceIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Our Step-by-Step Process to Build the Outstanding Healthcare App
+          Our Step-by-Step Process to Build the Outstanding E-Commerce App
         </h1>
         <Chrono
           disableToolbar="true"
@@ -904,7 +904,7 @@ const EcommerceIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Connect us now to avail our Healthcare app development services
+          Connect us now to avail our E-commerce app development services
         </h1>
         <button className="letsTalkButton slideRight" type="button">
           GET QUOTE

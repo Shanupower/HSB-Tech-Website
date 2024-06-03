@@ -17,8 +17,8 @@ import nodejsImage from "../../assets/nodejs.png";
 import postgresqlImage from "../../assets/postgresql.png";
 import devopsImage from "../../assets/devops.png";
 import laravelImage from "../../assets/laravel.svg";
-import supplyChain from "../../assets/supply-chain.png";
-import telemedicineImage from "../../assets/telemedicine.png";
+import supplyChain from "../../assets/Picture7.png";
+import telemedicineImage from "../../assets/Picture8.png";
 
 import awsImage from "../../assets/aws-partner.webp";
 import githubImage from "../../assets/github.webp";
@@ -961,6 +961,7 @@ const Home = () => {
               className="hoverUp card"
               sx={{ maxWidth: isMd ? "100%" : "40%" }}
             >
+              
               <CardActionArea>
                 <CardMedia
                   component="img"

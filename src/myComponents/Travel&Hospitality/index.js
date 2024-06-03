@@ -707,7 +707,7 @@ const TravelAndHospitalityIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Technologies and Tools We Use for Healthcare App Development Services
+          Technologies and Tools We Use for Travel and Hospitality App Development Services
         </h1>
         <Box sx={{ width: "100%", marginTop: "2rem" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -780,7 +780,7 @@ const TravelAndHospitalityIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Our Step-by-Step Process to Build the Outstanding Healthcare App
+          Our Step-by-Step Process to Build the Outstanding Travel and Hospitality App
         </h1>
         <Chrono
           disableToolbar="true"
