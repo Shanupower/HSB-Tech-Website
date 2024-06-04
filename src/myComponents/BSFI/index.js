@@ -236,8 +236,6 @@ const BFSIIndustry = () => {
             stakeholders in achieving their strategic goals and enhancing
             customer experiences.
           </p>
-          <Link
-            to="letsTalk">
           <button
             className="getQuoteButton industries-getQuoteButton"
             type="button"
@@ -245,7 +243,6 @@ const BFSIIndustry = () => {
           >
             GET QUOTE
           </button>
-          </Link>
         </div>
         {!isMd && (
           <div
@@ -1116,14 +1113,11 @@ const BFSIIndustry = () => {
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
           Connect us now to avail our BFSI app development services
-        </h1>
-        <Link
-            to="lets_talk">
+        </h1>qr2tb rhn2
         <button className="letsTalkButton slideRight" type="button">
           GET QUOTE
           <FaArrowRight className="rightArrow" />
         </button>
-        </Link>
       </div>
 
       <Footer />
