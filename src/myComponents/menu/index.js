@@ -1,17 +1,11 @@
-import { Button, Drawer, Space } from "antd";
+import { Drawer, Space } from "antd";
 import { useState } from "react";
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import WarehouseIcon from "@mui/icons-material/Warehouse";
-import SettingsSuggestIcon from "@mui/icons-material/SettingsSuggest";
+
 import hsbLogo from "../../assets/hsb-logo.png";
 import { Link } from "react-router-dom";
-import {
-  AppstoreOutlined,
-  MailOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
+
 import { Menu } from "antd";
 import { useMediaQuery } from "@mui/material";
 const items = [

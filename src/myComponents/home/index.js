@@ -43,12 +43,12 @@ import { Link } from "react-router-dom";
 
 // Home Trasted Image
 import Interexsemi from "../../assets/icons/Interex.svg";
-import Glance from "../../assets/icons/Glance Logo V1.jpg";
-import Aries from "../../assets/icons/Aries.png";
+import Glance from "../../assets/icons/Glanse.jpg";
+import Aries from "../../assets/icons/aries2.jpg";
 import Pangu from "../../assets/icons/PGM_logo_big.png";
 import Serole from "../../assets/icons/serole-new-logo1.png";
 import Cosmosksa from "../../assets/icons/comos.png";
-import Arce from "../../assets/icons/arcImgae.png";
+import Arce from "../../assets/icons/arc3.jfif";
 import WSC from "../../assets/icons/WSC.webp";
 
 import "./index.css";
@@ -385,9 +385,10 @@ const Home = () => {
                 gap: "1rem",
               }}
             >
-              <div
+              <Link
+                to="/services/web development"
                 className="serviceItem sparkle"
-                style={{ width: isMd ? "100%" : "46%" }}
+                style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
                 <p style={{ fontSize: isSm && "24px" }}>
                   Smart IT solutions for every need.
@@ -397,31 +398,34 @@ const Home = () => {
                   src={sparkleImage}
                   alt="sparkle"
                 />
-              </div>
+              </Link>
 
-              <div
+              <Link
+                to="/services"
                 className="serviceItem impact"
-                style={{ width: isMd ? "100%" : "46%" }}
+                style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
                 <p style={{ fontSize: isSm && "24px" }}>
                   Seamless managed services with high-performance workspaces.
                 </p>
                 <img className="serviceImage" src={impactImage} alt="sparkle" />
-              </div>
+              </Link>
 
-              <div
+              <Link
+                to="/industries/manufacturing"
                 className="serviceItem scale"
-                style={{ width: isMd ? "100%" : "46%" }}
+                style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
                 <p style={{ fontSize: isSm && "24px" }}>
                   Customized approach across industries.
                 </p>
                 <img className="serviceImage" src={scaleImage} alt="sparkle" />
-              </div>
+              </Link>
 
-              <div
+              <Link
+                to="/lets_talk"
                 className="serviceItem quality"
-                style={{ width: isMd ? "100%" : "46%" }}
+                style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
                 <p style={{ fontSize: isSm && "24px" }}>
                   Seasoned professionals who value business ethics.
@@ -431,7 +435,7 @@ const Home = () => {
                   src={qualityImage}
                   alt="sparkle"
                 />
-              </div>
+              </Link>
             </div>
           </div>
 
@@ -492,14 +496,14 @@ const Home = () => {
                         }}
                       >
                         <img
-                          // className="trustedbyImage"
+                          className="trustedbyImage"
                           src={eachCompany.imageUrl}
                           alt="trusted by company image"
                           style={{
                             width: "100%",
-                            height: "100%",
+                            height: "90%",
                             filter: "grayscale(100%)",
-                            objectFit: "fill",
+                            objectFit: "contain",
                           }}
                         />
                       </div>
@@ -870,7 +874,11 @@ const Home = () => {
                     height="250"
                     image={supplyChain}
                     alt="green iguana"
+                    sx={{
+                      filter: "none",
+                    }}
                   />
+
                   <CardContent sx={{ p: 5 }}>
                     <Typography
                       gutterBottom
@@ -893,6 +901,23 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
+                <CardActionArea>
+        <CardMedia
+          component="img"
+          height="140"
+          image="/static/images/cards/contemplative-reptile.jpg"
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
               </Link>
             </Card>
 
@@ -961,7 +986,6 @@ const Home = () => {
               className="hoverUp card"
               sx={{ maxWidth: isMd ? "100%" : "40%" }}
             >
-              
               <CardActionArea>
                 <CardMedia
                   component="img"
