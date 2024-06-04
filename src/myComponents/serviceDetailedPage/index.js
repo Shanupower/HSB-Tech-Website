@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import { Component, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
-import webDevelopmentImage from "../../assets/webapp-sevice.webp";
+import webDevelopmentImage from "../../assets/Picture1.jpg";
 import NavigationBar from "../navigationBar";
 import whyChoose1 from "../../assets/whychoose-webapp-1.svg";
 import whyChoose2 from "../../assets/whychoose-webapp-2.svg";

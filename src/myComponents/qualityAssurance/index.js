@@ -2,7 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import mobileDevelopmentImage from "../../assets/mobileApp.webp";
-import qualitAssuranceImage from "../../assets/quality-assurance.webp";
+import qualitAssuranceImage from "../../assets/Picture3.png";
 
 import testRail from "../../assets/testrail.webp";
 import kobiton from "../../assets/kobiton.webp";

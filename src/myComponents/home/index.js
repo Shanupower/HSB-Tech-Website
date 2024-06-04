@@ -1,4 +1,9 @@
 import hsbLogo from "../../assets/hsb-logo.png";
+import custom1 from "../../assets/supply-chain.png"
+import custom2 from "../../assets/telemedicine.png"
+import insight1 from "../../assets/Picture9.png"
+import insight2 from "../../assets/Picture10.jpg"
+import insight3 from "../../assets/Picture11.png"
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
 import qualityImage from "../../assets/quality.svg";
@@ -966,7 +971,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="250"
-                  image={supplyChain}
+                  image={custom1}
                   alt="green iguana"
                 />
                 <CardContent sx={{ p: 5 }}>
@@ -999,7 +1004,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="250"
-                  image={telemedicineImage}
+                  image={custom2}
                   alt="green iguana"
                 />
                 <CardContent sx={{ p: 5 }}>
@@ -1076,7 +1081,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="250"
-                  image={supplyChain}
+                  image={insight1}
                   alt="green iguana"
                 />
                 <CardContent sx={{ p: 5 }}>
@@ -1111,7 +1116,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="250"
-                  image={supplyChain}
+                  image={insight2}
                   alt="green iguana"
                 />
                 <CardContent sx={{ p: 5 }}>
@@ -1146,7 +1151,7 @@ const Home = () => {
                 <CardMedia
                   component="img"
                   height="250"
-                  image={telemedicineImage}
+                  image={insight3}
                   alt="green iguana"
                 />
                 <CardContent sx={{ p: 5 }}>

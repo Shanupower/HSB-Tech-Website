@@ -2,7 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-import BusinessAnalysisServicesImage from "../../assets/business-analysis.webp";
+import BusinessAnalysisServicesImage from "../../assets/Picture5.png";
 import whyChoose1 from "../../assets/domainKnowledge-ba.svg";
 import whyChoose3 from "../../assets/collaborativePhilosophy-ba.svg";
 import whyChoose2 from "../../assets/experRequirement-ba.svg";

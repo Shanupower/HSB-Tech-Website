@@ -2,7 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-import uiuxDevelopmentImage from "../../assets/uiux.webp";
+import uiuxDevelopmentImage from "../../assets/Picture4.jpg";
 import whyChoose1 from "../../assets/user-centric-uiux.svg";
 import whyChoose3 from "../../assets/specialized-design-uiuix.svg";
 import whyChoose2 from "../../assets/industry-agnostic.svg";
