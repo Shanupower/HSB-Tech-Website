@@ -231,12 +231,16 @@ class BusinessAnalysisServices extends Component {
               identifying core areas of improvement in your business, we uncover
               new potential and guarantee the best outcomes in the long run.
             </p>
+            <Link 
+              to="/lets_talk"
+            >
             <button
               className="getQuoteButton businessAnalysisServices-getQuoteButton"
               type="button"
             >
               Get Quote
             </button>
+            </Link>
           </div>
           <img
             className="landingSectionImage-sericesPage"

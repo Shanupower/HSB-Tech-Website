@@ -10,7 +10,7 @@ import isoImage from "../../assets/iso.svg";
 import gmsImage from "../../assets/gms.svg";
 import aiaoImage from "../../assets/aiao.svg";
 import { useMediaQuery } from "@mui/material";
-import geekyAntLogoLight from "../../assets/hsb-logo.png";
+import geekyAntLogoLight from "../../assets/hsb.png";
 import Flag from "../../assets/icons/aa.png";
 import { Link } from "react-router-dom";
 const Footer = () => {
@@ -200,7 +200,7 @@ const Footer = () => {
         }}
       >
         <p>2024 ©All rights reserved.</p>
-        <p> Information Technologies Pvt Ltd</p>
+        <p> HSB Information Technologies Pvt Ltd</p>
         <Link
           to="/terms_and_conditions"
           style={{ textDecoration: "none", color: "black" }}
