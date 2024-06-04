@@ -412,22 +412,7 @@ const BFSIIndustry = () => {
               experience of possessing the property.
             </p>
           </div>
-          <div
-            className="card-service"
-            style={{
-              padding: "1rem 2rem",
-              borderRadius: "10px",
-              boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-            }}
-          >
-            <p className="cardTitle-service" style={{ fontSize: "28px" }}>
-              Comprehensive Solutions
-            </p>
-            <p className="cardDescription-service" style={{ fontSize: "22px" }}>
-              We offer end-to-end BFSI software development services, from
-              custom application development to integration.
-            </p>
-          </div>
+          
           <div
             className="card-service"
             style={{

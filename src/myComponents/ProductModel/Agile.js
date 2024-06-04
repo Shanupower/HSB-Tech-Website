@@ -92,7 +92,7 @@ const Agile = () => {
           }}
         >
           <div style={{ marginBlock: "0rem 2rem" }}>
-            <h1>How Effectively We Execute Fixed Scope Engagement Model</h1>
+            <h1>How Effectively We Execute Agile Product Engagement Model</h1>
             <p
               style={{
                 fontSize: "20px",

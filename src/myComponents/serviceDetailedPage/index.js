@@ -288,7 +288,7 @@ const WebDevelopment = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Why You Should Hire HSB For Full Stack Development?
+          Why You Should Hire HSB For Web App Development?
         </h1>
         <p className="sectionDescription">
           HSB offers the development of high-quality customized websites, web
@@ -345,83 +345,6 @@ const WebDevelopment = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div
-        className="section journeySection"
-        style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
-        }}
-      >
-        <h1
-          className="sectionHeading"
-          style={{ fontSize: isMd ? " 30px" : "48px" }}
-        >
-          Our Web App Development Journey
-        </h1>
-        <Chrono
-          disableToolbar="true"
-          theme={{
-            primary: "black",
-            titleColor: "black",
-          }}
-          mode="VERTICAL"
-          items={journeyTimelineItems}
-        >
-          <ul className="timelineContianer">
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>
-                Recognized the advantages of Next.js in building SEO-friendly
-                web applications
-              </p>
-            </li>
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>
-                Experiments with server-side rendering and static site
-                generation
-              </p>
-            </li>
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>Used Next.js in our first project</p>
-            </li>
-          </ul>
-
-          <ul className="timelineContianer">
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>
-                Next.js 9 delivers improved performance and dynamic imports for
-                faster page rendering
-              </p>
-            </li>
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>
-                Next.js becomes our top choice for building complex and
-                high-performance web apps
-              </p>
-            </li>
-          </ul>
-
-          <ul className="timelineContianer">
-            <li>
-              <div className="timelineContianerItem">
-                <MdOutlineDone className="tickIcon" />
-                <p>Transitioned our website www.geekyants.com to Next.js</p>
-              </div>
-            </li>
-          </ul>
-
-          <ul className="timelineContianer">
-            <li className="timelineContianerItem">
-              <MdOutlineDone className="tickIcon" />
-              <p>Partnership with Vercel</p>
-            </li>
-          </ul>
-        </Chrono>
       </div>
 
       <div
@@ -882,19 +805,31 @@ const WebDevelopment = () => {
       </div>
 
       <div
-        className="closingSection section"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'left',
+        textAlign: 'left',
+        padding: '2rem',
+        paddingInline: isMd ? '2rem' : '14%',
+      }}
+    >
+      <h1
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          fontSize: '2rem',
+          fontWeight: 'bold',
+          marginBottom: '1.5rem',
+          lineHeight: '1.2',
+          textAlign: 'left',
         }}
       >
-        <h1 className="sectionHeading section">
-          Let’s Connect to Discuss How We Can Make An Awesome Product For You.
-        </h1>
-        <button className="letsTalkButton slideRight" type="button">
-          CONTACT NOW
-          <FaArrowRight className="rightArrow" />
-        </button>
-      </div>
+        Let’s Connect to Discuss How We Can Make An Awesome Product For You.
+      </h1>
+      <button className="letsTalkButton slideRight" type="button">
+          Contact Now
+        <FaArrowRight className="rightArrow" />
+      </button>
+    </div>
 
       <Footer />
     </div>
