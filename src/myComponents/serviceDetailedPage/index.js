@@ -246,8 +246,8 @@ const WebDevelopment = () => {
           <div
             style={{
               position: "absolute",
-              right: "14%",
-              bottom: "0",
+              right: "15%",
+              bottom: "-17%",
               width: "320px",
               height: "460px",
             }}

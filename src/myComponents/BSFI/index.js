@@ -236,19 +236,16 @@ const BFSIIndustry = () => {
             stakeholders in achieving their strategic goals and enhancing
             customer experiences.
           </p>
-          
+          <Link
+            to="letsTalk">
           <button
-         
             className="getQuoteButton industries-getQuoteButton"
             type="button"
             style={{ padding: ".8rem 0", fontSize: "20px" }}
           >
-             <Link
-          to="/letsTalk">
             GET QUOTE
-            </Link>
           </button>
-          
+          </Link>
         </div>
         {!isMd && (
           <div

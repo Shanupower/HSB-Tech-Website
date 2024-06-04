@@ -198,10 +198,10 @@ const Manufacturing = () => {
           <div
             style={{
               position: "absolute",
-              right: "14%",
-              bottom: "0",
-              width: "320px",
-              height: "460px",
+              right: "15%",
+              bottom: "25%",
+              width: "344px",
+              height: "230px",
             }}
           >
             <img

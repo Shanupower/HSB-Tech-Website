@@ -194,10 +194,10 @@ const FintechIndustry = () => {
           <div
             style={{
               position: "absolute",
-              right: "14%",
-              bottom: "0",
-              width: "320px",
-              height: "460px",
+              right: "20%",
+              bottom: "15%",
+              width: "230px",
+              height: "370px",
             }}
           >
             <img

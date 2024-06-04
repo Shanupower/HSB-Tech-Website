@@ -249,9 +249,9 @@ const EducationIndustry = () => {
             style={{
               position: "absolute",
               right: "14%",
-              bottom: "0",
-              width: "320px",
-              height: "460px",
+              bottom: "25%",
+              width: "360px",
+              height: "230px",
             }}
           >
             <img
