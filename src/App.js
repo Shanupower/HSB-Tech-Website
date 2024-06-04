@@ -129,6 +129,8 @@ const App = () => {
         />
         <Route exact path="/industries/bsfi" component={BFSIIndustry} />
 
+        
+
         {/* Technology */}
         <Route exact path="/technology/devOps" component={DevOpsTechnoligy} />
         <Route exact path="/technology/flutter" component={FlutterTechnoligy} />
