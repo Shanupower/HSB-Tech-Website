@@ -5,7 +5,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Typography from "@mui/material/Typography";
 
-import manufacturingImage from "../../assets/Picture16.png";
+import manufacturingImage from "../../assets/img/education/5.png";
 import { FaArrowRight } from "react-icons/fa";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";

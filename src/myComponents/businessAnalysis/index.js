@@ -2,7 +2,7 @@
 import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-import BusinessAnalysisServicesImage from "../../assets/Picture5.png";
+import BusinessAnalysisServicesImage from "../../assets/img/MAD/3.png"
 import whyChoose1 from "../../assets/domainKnowledge-ba.svg";
 import whyChoose3 from "../../assets/collaborativePhilosophy-ba.svg";
 import whyChoose2 from "../../assets/experRequirement-ba.svg";
@@ -504,6 +504,24 @@ class BusinessAnalysisServices extends Component {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="startBuildingSection section">
+          <div className="startBuildingSectionItem">
+            <h1 className="sectionHeading">
+              Start Building Your Web App Today
+            </h1>
+            <p className="sectionSubheading-service">
+              Book a free discovery session.
+            </p>
+            <button
+              type="button"
+              className="getQuoteButton-startBuildingSection"
+            >
+              GET QUOTE
+            </button>
+          </div>
+          <img src={giftBox} alt="giftImages" />
         </div>
 
         <div className="faqsSection section">

@@ -1113,7 +1113,7 @@ const BFSIIndustry = () => {
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
           Connect us now to avail our BFSI app development services
-        </h1>qr2tb rhn2
+        </h1>
         <button className="letsTalkButton slideRight" type="button">
           GET QUOTE
           <FaArrowRight className="rightArrow" />

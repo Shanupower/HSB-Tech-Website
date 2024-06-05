@@ -4,7 +4,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Typography from "@mui/material/Typography";
 
-import manufacturingImage from "../../assets/Picture15.png";
+import manufacturingImage from "../../assets/img/HC/3.png";
 import { FaArrowRight } from "react-icons/fa";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";

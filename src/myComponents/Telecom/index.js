@@ -5,7 +5,7 @@ import Link from "@mui/material/Link";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Typography from "@mui/material/Typography";
 
-import manufacturingImage from "../../assets/manufacturing-landingpage.webp";
+import manufacturingImage from "../../assets/img/teleco/2.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -248,10 +248,10 @@ const TelecomIndustry = () => {
           <div
             style={{
               position: "absolute",
-              right: "14%",
-              bottom: "0",
-              width: "320px",
-              height: "460px",
+              right: "17%",
+              bottom: "28%",
+              width: "325px",
+              height: "200px",
             }}
           >
             <img
