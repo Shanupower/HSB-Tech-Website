@@ -35,6 +35,7 @@ import Agile from "./myComponents/ProductModel/Agile";
 import Fixed from "./myComponents/ProductModel/Fixed";
 import RealEstateIndustries from "./myComponents/RealEstateIndustries";
 import Blog from "./myComponents/Blog/Blog";
+import ManagedService from "./myComponents/ProductModel/ManagedService";
 
 const App = () => {
   const isMd = useMediaQuery("(max-width:1068px)");
@@ -49,6 +50,7 @@ const App = () => {
         <Route exact path="/agile" component={Agile} />
         <Route exact path="/fixed" component={Fixed} />
         <Route exact path="/blog" component={Blog} />
+        <Route exact path="/managed_service" component={ManagedService} />
 
         <Route
           exact
@@ -128,8 +130,6 @@ const App = () => {
           component={TravelAndHospitalityIndustry}
         />
         <Route exact path="/industries/bsfi" component={BFSIIndustry} />
-
-        
 
         {/* Technology */}
         <Route exact path="/technology/devOps" component={DevOpsTechnoligy} />

@@ -138,6 +138,10 @@ const Footer = () => {
             <a className="footerLinkItem" href="/agile">
               Agile Product
             </a>
+
+            <a className="footerLinkItem" href="/managed_service">
+              Managed Services
+            </a>
           </div>
         </div>
 

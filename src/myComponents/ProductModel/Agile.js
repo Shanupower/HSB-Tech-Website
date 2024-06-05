@@ -192,6 +192,7 @@ const Agile = () => {
               marginBlock: "2rem",
               flexDirection: isMd && "column",
               gap: "1rem",
+           
             }}
           >
             <div
@@ -201,8 +202,20 @@ const Agile = () => {
                 borderRadius: "8px",
                 width: isMd ? "100%" : "calc(100%/3 - 1rem )",
                 boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 6px",
+                backgroundColor: "rgb(43, 69, 107)",
+                color: "#fff",
               }}
             >
+              <img
+                src="https://geekyants.com/images/engagement-model/project-management.svg"
+                alt=""
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                }}
+              />
               <h3>Our agile methods are adaptable</h3>
               <p style={{ fontSize: "18px" }}>
                 We allow you to shift strategies quickly, without disturbing the
@@ -216,8 +229,20 @@ const Agile = () => {
                 borderRadius: "8px",
                 width: isMd ? "100%" : "calc(100%/3 - 1rem )",
                 boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 6px",
+                backgroundColor: "rgb(43, 69, 107)",
+                color: "#fff",
               }}
             >
+              <img
+                src="https://geekyants.com/images/engagement-model/seo.svg"
+                alt=""
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                }}
+              />
               <h3>We foster collaborative teamwork</h3>
               <p style={{ fontSize: "18px" }}>
                 We encourage team to communicate effectively for better
@@ -231,8 +256,20 @@ const Agile = () => {
                 borderRadius: "8px",
                 width: isMd ? "100%" : "calc(100%/3 - 1rem )",
                 boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 6px",
+                backgroundColor: "rgb(43, 69, 107)",
+                color: "#fff",
               }}
             >
+              <img
+                src="https://geekyants.com/images/engagement-model/security.svg"
+                alt=""
+                style={{
+                  width: "80px",
+                  height: "80px",
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                }}
+              />
               <h3>Our methods are customer-centric</h3>
               <p style={{ fontSize: "18px" }}>
                 We prioritize features that focus on customer needs. When these
@@ -242,25 +279,193 @@ const Agile = () => {
             </div>
           </div>
 
-          <div style={{ marginTop: "4rem" }}>
+          <div>
             <h1>Tools We Use</h1>
-            <h3 style={{ fontSize: "22px", marginTop: "2rem" }}>
-              For effective communication between teams{" "}
-            </h3>
-            <p style={{ fontSize: "18px" }}>Slack</p>
+            <div
+              style={{
+                backgroundColor: "#fff",
+                borderRadius: "6px",
+                padding: "3rem 2rem",
+                boxShadow: "0 2px 3px gray",
+                marginTop: "2rem",
+              }}
+            >
+              <h1 style={{ fontSize: "28px" }}>All Tools</h1>
 
-            <h3 style={{ fontSize: "22px", marginTop: "2rem" }}>
-              For daily standup calls, weekly demos and other meetings
-            </h3>
-            <p style={{ fontSize: "18px" }}>Google meet / Zoom</p>
-            <h3 style={{ fontSize: "22px", marginTop: "2rem" }}>
-              To assign task and share project updates
-            </h3>
-            <p style={{ fontSize: "18px" }}>JIRA / Trello / AirTable</p>
-            <h3 style={{ fontSize: "22px", marginTop: "2rem" }}>
-              To control version
-            </h3>
-            <p style={{ fontSize: "18px" }}>GitHub / GitLab</p>
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  marginTop: "2rem",
+                  // flexWrap: "wrap",
+                }}
+              >
+                <div
+                  style={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  <img
+                    src="https://geekyants.com/images/fixed-scope/tools/slack.svg"
+                    alt=""
+                    style={{
+                      boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                      width: "80px",
+                      height: "80px",
+                      padding: "1rem",
+                    }}
+                  />
+                  <h1 style={{ color: "#080808c4", fontSize: "22px" }}>
+                    Slack
+                  </h1>
+                  <p style={{ color: "#080808c4", fontSize: "18px" }}>
+                    For effective communication between teams that may be in
+                    different time zones
+                  </p>
+                </div>
+                <div
+                  style={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1.6rem",
+                    }}
+                  >
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/meet.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/zoom.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                  </div>
+
+                  <h1 style={{ color: "#080808c4", fontSize: "22px" }}>
+                    Google meet / Zoom
+                  </h1>
+                  <p style={{ color: "#080808c4", fontSize: "18px" }}>
+                    For daily standup calls, weekly demos and other meetings
+                  </p>
+                </div>
+              </div>
+
+              <div
+                style={{
+                  display: "flex",
+                  gap: "1rem",
+                  marginTop: "2rem",
+                  // flexWrap: "wrap",
+                }}
+              >
+                <div
+                  style={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1.6rem",
+                    }}
+                  >
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/jira.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/trello.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                  </div>
+                  <h1 style={{ color: "#080808c4", fontSize: "22px" }}>
+                    JIRA / Trello / AirTable
+                  </h1>
+                  <p style={{ color: "#080808c4", fontSize: "18px" }}>
+                    For task assignment and project management
+                  </p>
+                </div>
+                <div
+                  style={{
+                    width: "50%",
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "1rem",
+                  }}
+                >
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "1.6rem",
+                    }}
+                  >
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/git.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                    <img
+                      src="https://geekyants.com/images/engagement-model/tools/gitlab.svg"
+                      alt=""
+                      style={{
+                        boxShadow: "0 2px 3px rgba(0,0,0,.1)",
+                        width: "80px",
+                        height: "80px",
+                        padding: "1rem",
+                      }}
+                    />
+                  </div>
+
+                  <h1 style={{ color: "#080808c4", fontSize: "22px" }}>
+                    GitHub / GitLab
+                  </h1>
+                  <p style={{ color: "#080808c4", fontSize: "18px" }}>
+                    For version control
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div
