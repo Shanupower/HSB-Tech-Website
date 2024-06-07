@@ -471,13 +471,13 @@ const FintechIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -486,14 +486,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Mobile accessibility </p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -502,14 +501,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Real-time alerts and notifications</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -518,14 +516,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>KYC process automation</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -534,14 +531,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Integrating UPI and other digital payments</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -550,14 +546,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>OCR tools</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -566,14 +561,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>GPS Tracking</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -582,14 +576,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Send & request money</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -598,14 +591,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>QR code for scanning</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -614,14 +606,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Bulk upload of documents</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -630,7 +621,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -638,7 +628,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -647,7 +637,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -655,7 +644,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -664,7 +653,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -672,7 +660,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -681,7 +669,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -689,7 +676,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -698,7 +685,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -706,7 +692,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -715,7 +701,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -723,7 +708,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -732,7 +717,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -740,7 +724,7 @@ const FintechIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -749,14 +733,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Subscription flow</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -765,14 +748,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Automated EMI debits</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -781,14 +763,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Data-driven reports</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -797,14 +778,13 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Role based access control</p>
           </div>
           <div
-            className="moduleItem"
+         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -813,7 +793,6 @@ const FintechIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />

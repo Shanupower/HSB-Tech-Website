@@ -21,7 +21,9 @@
 .ant-carousel .slick-next::before {
   color: white; /* Change the arrow icon color */
 }
-
+#basic-nav-dropdown:hover {
+  color: rgb(202, 5, 21);
+}
 .geekyantlogo {
   width: 150px;
 }

@@ -551,13 +551,13 @@ const TelecomIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -566,14 +566,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Online property booking app</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -582,14 +582,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>CRM and ERP system software </p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -598,14 +598,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Property management app</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -614,14 +614,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>B2B and B2C real estate app</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -630,14 +630,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Property rental app</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -646,14 +646,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Inventory management software</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -662,14 +662,14 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Website for property dealers</p>
           </div>
           <div
-            className="moduleItem"
+        
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -678,7 +678,7 @@ const TelecomIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+         gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />

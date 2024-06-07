@@ -199,7 +199,7 @@ const HealthcareIndustry = () => {
   };
   return (
     <div className="industriesPageContainer">
-          {!isMd && <Navigationbar />}
+      {!isMd && <Navigationbar />}
       <div
         className="landingSection-services manufacturing section"
         style={{
@@ -539,13 +539,13 @@ const HealthcareIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -554,14 +554,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>EHR/EMR </p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -570,14 +570,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Pharmacy app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -586,14 +586,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Health and wellness app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -602,14 +602,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Healthcare updates and mental wellness practices</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -618,14 +618,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Telemedicine</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -634,14 +634,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Doctor dashboards</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -650,14 +650,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Billing and payments</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -666,14 +666,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Learning management</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -682,14 +682,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Clinic assistance app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -698,7 +698,7 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -706,7 +706,7 @@ const HealthcareIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -715,14 +715,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Workflow management</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -731,14 +731,14 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Documentation and integration</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -747,7 +747,7 @@ const HealthcareIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />

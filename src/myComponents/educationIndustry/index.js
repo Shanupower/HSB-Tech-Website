@@ -540,13 +540,13 @@ const EducationIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -555,14 +555,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Learning management system</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -571,14 +571,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>School management system</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -587,14 +587,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Course selling app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -603,14 +603,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Educational portal development</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -619,14 +619,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Self-learning app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -635,14 +635,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Student information system</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -651,14 +651,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Corporate training app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -667,14 +667,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Mobile eLearning solutions</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -683,14 +683,14 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>eBooks library app</p>
           </div>
           <div
-            className="moduleItem"
+           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -699,7 +699,7 @@ const EducationIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+            gap:".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />

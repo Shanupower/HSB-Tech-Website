@@ -1,9 +1,9 @@
 import hsbLogo from "../../assets/hsb-logo.png";
-import custom1 from "../../assets/supply-chain.png"
-import custom2 from "../../assets/telemedicine.png"
-import insight1 from "../../assets/Picture9.png"
-import insight2 from "../../assets/Picture10.jpg"
-import insight3 from "../../assets/Picture11.png"
+import custom1 from "../../assets/supply-chain.png";
+import custom2 from "../../assets/telemedicine.png";
+import insight1 from "../../assets/Picture9.png";
+import insight2 from "../../assets/Picture10.jpg";
+import insight3 from "../../assets/Picture11.png";
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
 import qualityImage from "../../assets/quality.svg";
@@ -428,7 +428,7 @@ const Home = () => {
               </Link>
 
               <Link
-                to="/lets_talk"
+                to="/about"
                 className="serviceItem quality"
                 style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
@@ -906,23 +906,6 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
               </Link>
             </Card>
 
