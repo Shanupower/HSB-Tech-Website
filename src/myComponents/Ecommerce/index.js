@@ -235,11 +235,23 @@ const EcommerceIndustry = () => {
             creativity and technical prowess.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -893,9 +905,24 @@ const EcommerceIndustry = () => {
         >
           Connect us now to avail our E-commerce app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

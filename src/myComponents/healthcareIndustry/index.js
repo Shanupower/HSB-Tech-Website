@@ -237,11 +237,23 @@ const HealthcareIndustry = () => {
             operative and clear prominence across stakeholders.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -545,7 +557,6 @@ const HealthcareIndustry = () => {
           }}
         >
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -561,7 +572,6 @@ const HealthcareIndustry = () => {
             <p>EHR/EMR </p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -577,7 +587,6 @@ const HealthcareIndustry = () => {
             <p>Pharmacy app</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -593,7 +602,6 @@ const HealthcareIndustry = () => {
             <p>Health and wellness app</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -609,7 +617,6 @@ const HealthcareIndustry = () => {
             <p>Healthcare updates and mental wellness practices</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -625,7 +632,6 @@ const HealthcareIndustry = () => {
             <p>Telemedicine</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -641,7 +647,6 @@ const HealthcareIndustry = () => {
             <p>Doctor dashboards</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -657,7 +662,6 @@ const HealthcareIndustry = () => {
             <p>Billing and payments</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -673,7 +677,6 @@ const HealthcareIndustry = () => {
             <p>Learning management</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -689,7 +692,6 @@ const HealthcareIndustry = () => {
             <p>Clinic assistance app</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -706,7 +708,6 @@ const HealthcareIndustry = () => {
           </div>
 
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -722,7 +723,6 @@ const HealthcareIndustry = () => {
             <p>Workflow management</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -738,7 +738,6 @@ const HealthcareIndustry = () => {
             <p>Documentation and integration</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -1001,9 +1000,24 @@ const HealthcareIndustry = () => {
         >
           Connect us now to avail our Healthcare app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

@@ -213,8 +213,10 @@ class BusinessAnalysisServices extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <div className="navigationBar"><Navigationbar /></div>
-        
+        <div className="navigationBar">
+          <Navigationbar />
+        </div>
+
         <div className="landingSection-services businessAnalysisServices section">
           <div>
             <Breadcrumbs
@@ -231,15 +233,26 @@ class BusinessAnalysisServices extends Component {
               identifying core areas of improvement in your business, we uncover
               new potential and guarantee the best outcomes in the long run.
             </p>
-            <Link 
-              to="/lets_talk"
-            >
-            <button
-              className="getQuoteButton businessAnalysisServices-getQuoteButton"
-              type="button"
-            >
-              Get Quote
-            </button>
+            <Link to="/lets_talk" style={{ textDecoration: "none" }}>
+              <button
+                className="letsTalkButton slideRight"
+                type="button"
+                style={{
+                  display: "flex",
+                  position: "relative",
+                  alignItems: "center",
+                  textAlign: "center",
+                  paddingLeft: "1.2rem",
+                  textWrap: "nowrap",
+                  minWidth: "fit-content",
+                }}
+              >
+                GET QUOTE
+                <FaArrowRight
+                  className="rightArrow"
+                  style={{ position: "absolute", right: ".6rem" }}
+                />
+              </button>
             </Link>
           </div>
           <img
@@ -331,9 +344,24 @@ class BusinessAnalysisServices extends Component {
             Let’s discuss how our Business Analysis services contribute to your
             business growth.
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            Connect Now
-            <FaArrowRight className="rightArrow" />
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            Contact NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 
@@ -441,66 +469,89 @@ class BusinessAnalysisServices extends Component {
 
         <div className="section serciesProvidedSection">
           <h1 className="sectionHeading">
-          What Our Business Analysis & Consulting Service Include?
+            What Our Business Analysis & Consulting Service Include?
           </h1>
           <p className="sectionDescription">
-          We offer a comprehensive suite of business analysis and consulting services that help organizations unleash the power of data to be ready for a data-driven tomorrow.
+            We offer a comprehensive suite of business analysis and consulting
+            services that help organizations unleash the power of data to be
+            ready for a data-driven tomorrow.
           </p>
           <div className="cardsContainer-services">
             <div className="cardItem-service">
               <img src={servicesImage1} alt="why choose us card image" />
               <p className="cardTitle-service">Collecting and Analysing</p>
               <p className="cardDescription-service">
-              Initially, we collect all the required information and analyze your business requirements. Based on your business needs and project objectives we provide tailored solutions that meet and exceed expectations.
+                Initially, we collect all the required information and analyze
+                your business requirements. Based on your business needs and
+                project objectives we provide tailored solutions that meet and
+                exceed expectations.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage2} alt="why choose us card image" />
               <p className="cardTitle-service">Engaging with Stakeholders</p>
               <p className="cardDescription-service">
-              We value the insights and feedback of stakeholders. By engaging with them directly, we create products that truly resonate with our clients and their users.
+                We value the insights and feedback of stakeholders. By engaging
+                with them directly, we create products that truly resonate with
+                our clients and their users.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage3} alt="why choose us card image" />
               <p className="cardTitle-service">Project Management</p>
               <p className="cardDescription-service">
-              We bring the efficiency to manage projects meticulously, on-time and on-budget delivery. We ensure client satisfaction through effective planning, task allocation, and progress tracking.
+                We bring the efficiency to manage projects meticulously, on-time
+                and on-budget delivery. We ensure client satisfaction through
+                effective planning, task allocation, and progress tracking.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage4} alt="why choose us card image" />
               <p className="cardTitle-service">Process Management</p>
               <p className="cardDescription-service">
-              We follow process-oriented approach to streamline workflows, boost productivity, and maintain the highest standards in everything we do.
+                We follow process-oriented approach to streamline workflows,
+                boost productivity, and maintain the highest standards in
+                everything we do.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage5} alt="why choose us card image" />
               <p className="cardTitle-service">Product Management</p>
               <p className="cardDescription-service">
-              The scope of our product management includes market research, customer feedback analysis, and roadmap planning. Through innovative and tested solutions we help companies in staying ahead of industry trends and user demands.
+                The scope of our product management includes market research,
+                customer feedback analysis, and roadmap planning. Through
+                innovative and tested solutions we help companies in staying
+                ahead of industry trends and user demands.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage6} alt="why choose us card image" />
               <p className="cardTitle-service">Documentation</p>
               <p className="cardDescription-service">
-              Well-structured documentation is the key to every successful project. By meticulously documenting business, product, and software requirements, we ensure that everyone involved has a clear and unified vision.
+                Well-structured documentation is the key to every successful
+                project. By meticulously documenting business, product, and
+                software requirements, we ensure that everyone involved has a
+                clear and unified vision.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage7} alt="why choose us card image" />
               <p className="cardTitle-service">Releasing the Product</p>
               <p className="cardDescription-service">
-              We are expertise in release management process. Through our experience we guarantee seamless product launches and updates. We ensure rigorous testing and feedback collection to deliver reliable and user-friendly software.
+                We are expertise in release management process. Through our
+                experience we guarantee seamless product launches and updates.
+                We ensure rigorous testing and feedback collection to deliver
+                reliable and user-friendly software.
               </p>
             </div>
             <div className="cardItem-service">
               <img src={servicesImage8} alt="why choose us card image" />
               <p className="cardTitle-service">Analysing the Root Cause</p>
               <p className="cardDescription-service">
-              As we understand that continuous improving the processes is crucial for business growth. Through root cause analysis, we identify, analyse, and address underlying issues, and help in streamlining process for long-term success and efficiency.
+                As we understand that continuous improving the processes is
+                crucial for business growth. Through root cause analysis, we
+                identify, analyse, and address underlying issues, and help in
+                streamlining process for long-term success and efficiency.
               </p>
             </div>
           </div>
@@ -830,12 +881,29 @@ class BusinessAnalysisServices extends Component {
 
         <div className="closingSection section">
           <h1 className="sectionHeading">
-          Want to hire us for Business Consulting? Leverage our expertise of Business Analytics. 
+            Want to hire us for Business Consulting? Leverage our expertise of
+            Business Analytics.
           </h1>
           <p className="sectionSubHeading">Book a free session now. </p>
-          <button className="letsTalkButton slideRight" type="button">
-          Here You Go!
-            <FaArrowRight className="rightArrow" />
+
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            Here You Go!
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 

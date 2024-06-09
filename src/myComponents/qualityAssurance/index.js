@@ -168,7 +168,9 @@ class QualityAssurance extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <div className="navigationBar"><Navigationbar /></div>
+        <div className="navigationBar">
+          <Navigationbar />
+        </div>
 
         <div className="landingSection-services qualityAssurance section">
           <div>
@@ -191,10 +193,23 @@ class QualityAssurance extends Component {
               leaving a lasting impact on your users and stakeholders.
             </p>
             <button
-              className="getQuoteButton qualityAssurance-getQuoteButton"
+              className="letsTalkButton slideRight"
               type="button"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.2rem",
+                textWrap: "nowrap",
+                minWidth: "fit-content",
+              }}
             >
-              Get Quote
+              GET QUOTE
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: ".6rem" }}
+              />
             </button>
           </div>
           <img
@@ -266,9 +281,24 @@ class QualityAssurance extends Component {
             Let’s understand how we can Quality Assurance and Software Testing
             services add value to your product.
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            Connect Now
-            <FaArrowRight className="rightArrow" />
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            Contect US
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 
@@ -742,9 +772,25 @@ class QualityAssurance extends Component {
           <p className="sectionSubHeading">
             Let’s talk more about the requirement.
           </p>
-          <button className="letsTalkButton slideRight" type="button">
+
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
             Here You Go!
-            <FaArrowRight className="rightArrow" />
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 

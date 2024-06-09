@@ -238,11 +238,23 @@ const TravelAndHospitalityIndustry = () => {
             tourism-related operations.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -569,7 +581,6 @@ const TravelAndHospitalityIndustry = () => {
           }}
         >
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -585,7 +596,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Travel and tourism guidance</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -601,7 +611,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Hotel accommodation booking </p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -617,7 +626,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Travel booking</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -633,7 +641,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Flight booking</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -649,7 +656,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Car rental or fleet management </p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -665,7 +671,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>Custom travel planning</p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -681,7 +686,6 @@ const TravelAndHospitalityIndustry = () => {
             <p>CRM for hotels </p>
           </div>
           <div
-           
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -904,9 +908,24 @@ const TravelAndHospitalityIndustry = () => {
         >
           Hire Us for Travel and Hospitality Software Development Requirements.
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

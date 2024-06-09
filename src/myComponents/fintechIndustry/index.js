@@ -183,11 +183,23 @@ const FintechIndustry = () => {
             and bring them to mainstream business.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -477,7 +489,6 @@ const FintechIndustry = () => {
           }}
         >
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -492,7 +503,6 @@ const FintechIndustry = () => {
             <p>Mobile accessibility </p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -507,7 +517,6 @@ const FintechIndustry = () => {
             <p>Real-time alerts and notifications</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -522,7 +531,6 @@ const FintechIndustry = () => {
             <p>KYC process automation</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -537,7 +545,6 @@ const FintechIndustry = () => {
             <p>Integrating UPI and other digital payments</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -552,7 +559,6 @@ const FintechIndustry = () => {
             <p>OCR tools</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -567,7 +573,6 @@ const FintechIndustry = () => {
             <p>GPS Tracking</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -582,7 +587,6 @@ const FintechIndustry = () => {
             <p>Send & request money</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -597,7 +601,6 @@ const FintechIndustry = () => {
             <p>QR code for scanning</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -612,7 +615,6 @@ const FintechIndustry = () => {
             <p>Bulk upload of documents</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -628,7 +630,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -644,7 +645,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -660,7 +660,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -676,7 +675,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -692,7 +690,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -708,7 +705,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -724,7 +720,6 @@ const FintechIndustry = () => {
           </div>
 
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -739,7 +734,6 @@ const FintechIndustry = () => {
             <p>Subscription flow</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -754,7 +748,6 @@ const FintechIndustry = () => {
             <p>Automated EMI debits</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -769,7 +762,6 @@ const FintechIndustry = () => {
             <p>Data-driven reports</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -784,7 +776,6 @@ const FintechIndustry = () => {
             <p>Role based access control</p>
           </div>
           <div
-         
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -1048,9 +1039,24 @@ const FintechIndustry = () => {
         >
           Connect us now to avail our Fintech app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

@@ -1198,28 +1198,22 @@ const Home = () => {
 
           <Link
             to="lets_talk"
+            className="letsTalkButton slideRight"
             style={{
-              textDecoration: "none",
               display: "flex",
-              alignItems: "center",
               position: "relative",
-              backgroundColor: "#ca0515",
-              color: "#fff",
-              width: isMd ? "80%" : "20%",
+              alignItems: "center",
               textAlign: "center",
-              padding: ".8rem 1rem",
-              fontSize: "20px",
-              marginRight: "1rem",
-              borderRadius: "8px",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+              textDecoration: "none",
             }}
           >
             CONTACT NOW
             <FaArrowRight
               className="rightArrow"
-              style={{
-                position: "absolute",
-                right: "1rem",
-              }}
+              style={{ position: "absolute", right: ".6rem" }}
             />
           </Link>
         </div>

@@ -83,7 +83,9 @@ class UIUXDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <div className="navigationBar"><Navigationbar /></div>
+        <div className="navigationBar">
+          <Navigationbar />
+        </div>
 
         <div className="landingSection-services uiuxLandingSection section">
           <div>
@@ -109,10 +111,21 @@ class UIUXDevelopment extends Component {
               goals and end-user needs
             </p>
             <button
-              className="getQuoteButton uiux-getQuoteButton"
+              className="letsTalkButton slideRight"
               type="button"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.8rem",
+              }}
             >
-              Get Quote
+              GET QUOTE
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: ".6rem" }}
+              />
             </button>
           </div>
           <img
@@ -304,10 +317,23 @@ class UIUXDevelopment extends Component {
               Book a free discovery session.
             </p>
             <button
+              className="letsTalkButton slideRight"
               type="button"
-              className="getQuoteButton-startBuildingSection"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.8rem",
+                textWrap: "nowrap",
+                minWidth: "fit-content",
+              }}
             >
-              GET QUOTE
+              Contact NOW
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: ".6rem" }}
+              />
             </button>
           </div>
           <img src={giftBox} alt="giftImages" />
@@ -639,9 +665,24 @@ class UIUXDevelopment extends Component {
           <h1 className="sectionHeading">
             Let’s Connect to Discuss How We Can Make An Awesome Product For You.
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
-            CONTACT NOW
-            <FaArrowRight className="rightArrow" />
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.8rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            Contact NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 

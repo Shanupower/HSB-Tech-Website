@@ -3,13 +3,15 @@ import "./index.css";
 import { useMediaQuery } from "@mui/material";
 import React from "react";
 import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Navigationbar from "../navigationBar";
 import Footer from "../footer";
+import Logo from "../../assets/hsb-logo.png";
+import Part1 from "../../assets/icons/Screenshot 2024-06-09 134925.png";
+import Par2 from "../../assets/icons/Screenshot 2024-06-09 135034.png";
 import { FaArrowRight } from "react-icons/fa";
-import Mehtod from "../../assets/icons/method.png";
+
 const breadcrumbs = [
   <Link underline="hover" key="1" href="/" style={{ color: "#e8e8e8" }}>
     Home
@@ -41,6 +43,8 @@ const About = () => {
             gap: "5%",
             position: "relative",
             backgroundColor: "#2b456b",
+            alignItems: "center",
+            justifyContent: "space-between",
           }}
         >
           <div style={{ width: isMd ? " 100%" : "60%" }}>
@@ -87,10 +91,27 @@ const About = () => {
               multi-directional, and differential. By standing out ourselves, we
               make our clients grow.
             </p>
-            <p style={{ fontSize: "20px", marginTop: "2rem", color: "#fff" }}>
-              Email your queries:{" "}
-              <a href="MailTo:Info@hsbinfotech.com">Info@hsbinfotech.com</a>{" "}
-            </p>
+
+            <button
+              className="letsTalkButton slideRight"
+              type="button"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.8rem",
+              }}
+            >
+              GET QUOTE
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: ".6rem" }}
+              />
+            </button>
+          </div>
+          <div style={{ width: "36%", display: isMd && "none" }}>
+            <img src={Logo} alt="" />
           </div>
         </div>
         <div
@@ -297,6 +318,47 @@ const About = () => {
               technological partner for our clients. We are synonymous with
               top-quality and high-end products & services.
             </p>
+          </div>
+
+          <div style={{ marginTop: "4rem" }}>
+            <h1>Our Technical Partners</h1>
+            <div
+              style={{
+                display: "flex",
+                gap: "2rem",
+                marginTop: "2rem",
+                flexWrap: "wrap",
+              }}
+            >
+              <img src={Part1} alt="" />
+              <img src={Par2} alt="" />
+            </div>
+          </div>
+
+          <div className="" style={{ marginTop: "3.2rem" }}>
+            <h1
+              className="sectionHeading"
+              style={{ fontSize: isMd ? " 30px" : "48px" }}
+            >
+              Connect us now to avail our BFSI app development services
+            </h1>
+            <button
+              className="letsTalkButton slideRight"
+              type="button"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.8rem",
+              }}
+            >
+              GET QUOTE
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: "1rem" }}
+              />
+            </button>
           </div>
         </div>
       </div>

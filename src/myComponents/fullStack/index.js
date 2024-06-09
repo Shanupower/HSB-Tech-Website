@@ -264,7 +264,7 @@ const FullStackDevelopment = () => {
   };
   return (
     <div className="servicesDetailsSection">
-          {!isMd && <Navigationbar />}
+      {!isMd && <Navigationbar />}
       <div className="landingSection-services fullstackLandingSection section">
         <div>
           <Breadcrumbs
@@ -283,11 +283,31 @@ const FullStackDevelopment = () => {
             expertise in all areas, identifying roles and responsibilities with
             corresponding challenges.
           </p>
-          <button
+          {/* <button
             className="getQuoteButton fullstack-getQuoteButton"
             type="button"
           >
             Get Quote
+          </button> */}
+
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            CONTACT NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         <img
@@ -363,8 +383,24 @@ const FullStackDevelopment = () => {
           <h1 className="sectionHeading">
             Let’s develop your Full Stack app today.
           </h1>
-          <button type="button" className="getQuoteButton-startBuildingSection">
-            Connect Now
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
+          >
+            CONTACT NOW
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && <img src={giftBox} alt="giftImages" />}
@@ -815,9 +851,25 @@ const FullStackDevelopment = () => {
           We deliver a full proof and robust application that maximises your
           ROI.
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           CONTACT NOW
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 
