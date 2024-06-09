@@ -3,7 +3,7 @@ import { Component } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 import Footer from "../footer/index.js";
 
-import mobileDevelopmentImage from "../../assets/Picture2.png";
+import mobileDevelopmentImage from "../../assets/img/MAD/1.png";
 import whyChoose1 from "../../assets/wellversedImage.svg";
 import whyChoose3 from "../../assets/openSourceProducrs-in-mobile.svg";
 import whyChoose2 from "../../assets/strong-mobile-portfolio.svg";

@@ -1,9 +1,9 @@
 import hsbLogo from "../../assets/hsb-logo.png";
 import custom1 from "../../assets/supply-chain.png";
 import custom2 from "../../assets/telemedicine.png";
-import insight1 from "../../assets/Picture9.png";
-import insight2 from "../../assets/Picture10.jpg";
-import insight3 from "../../assets/Picture11.png";
+import insight1 from "../../assets/img/education/5.png";
+import insight2 from "../../assets/img/education/3.jpeg";
+import insight3 from "../../assets/img/HC/2.png";
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
 import qualityImage from "../../assets/quality.svg";
@@ -22,8 +22,8 @@ import nodejsImage from "../../assets/nodejs.png";
 import postgresqlImage from "../../assets/postgresql.png";
 import devopsImage from "../../assets/devops.png";
 import laravelImage from "../../assets/laravel.svg";
-import supplyChain from "../../assets/Picture7.png";
-import telemedicineImage from "../../assets/Picture8.png";
+import supplyChain from "../../assets/img/education/1.png";
+import telemedicineImage from "../../assets/img/HC/3.png";
 
 import awsImage from "../../assets/aws-partner.webp";
 import githubImage from "../../assets/github.webp";
