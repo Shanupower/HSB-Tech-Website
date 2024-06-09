@@ -203,7 +203,7 @@ const TelecomIndustry = () => {
       <div
         className="landingSection-services manufacturing section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           position: "relative",
@@ -278,7 +278,7 @@ const TelecomIndustry = () => {
 
       <div
         className="solutions section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -445,7 +445,7 @@ const TelecomIndustry = () => {
 
       <div
         className="section whyChooseHSB"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -544,7 +544,7 @@ const TelecomIndustry = () => {
 
       <div
         className="section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -693,7 +693,7 @@ const TelecomIndustry = () => {
 
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -766,7 +766,7 @@ const TelecomIndustry = () => {
       <div
         // className="technologiesSectionIndustries section"
         className="closingSection"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -801,7 +801,7 @@ const TelecomIndustry = () => {
       {/* Accordion */}
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -872,7 +872,7 @@ const TelecomIndustry = () => {
 
       <div
         className="closingSection"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"

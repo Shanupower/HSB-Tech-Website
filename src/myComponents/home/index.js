@@ -144,7 +144,7 @@ const Home = () => {
         <div
           className="appContainer"
           style={{
-            paddingInline: isMd ? "2rem" : "12%",
+            paddingInline: isMd ? "2rem" : "18%",
           }}
         >
           <div className="landingSection">
@@ -218,10 +218,11 @@ const Home = () => {
           )}
 
           <div
-            className="navbarSection"
+            className=""
             style={{
               marginTop: isMd && "4rem",
               padding: isMd && "0",
+              display: "flex",
             }}
           >
             <Link
@@ -367,9 +368,10 @@ const Home = () => {
           </div>
 
           <div
-            className="servicesSection"
+            className="servicesSections"
             style={{
               padding: isMd && "0",
+              marginBlock: "4rem",
             }}
           >
             <h3
@@ -532,7 +534,12 @@ const Home = () => {
             )}
           </div>
 
-          <div className="appsWeDevelopedSecion section">
+          <div
+            className="appsWeDevelopedSecion "
+            style={{
+              marginBlock: "4rem",
+            }}
+          >
             <h1
               className="sectionHeading"
               style={{
@@ -572,7 +579,7 @@ const Home = () => {
         <div
           className="developmentSection"
           style={{
-            padding: isMd ? "2rem" : " 2rem 12%",
+            padding: isMd ? "2rem" : " 2rem 18%",
           }}
         >
           <h2 className="sectionHeading">What We Do Best</h2>
@@ -712,7 +719,7 @@ const Home = () => {
         <div
           className="certifiedPartnersSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h1 className="certifiedPartnersHeading" style={{ fontSize: "38px" }}>
@@ -739,7 +746,7 @@ const Home = () => {
         <div
           className="technologiesSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h2 className="sectionHeading">Technologies</h2>
@@ -846,7 +853,7 @@ const Home = () => {
         <div
           className="openSourceSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h2 className="sectionHeading">Open Source</h2>
@@ -953,7 +960,7 @@ const Home = () => {
         <div
           className="customizableSolutionsSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h2 className="sectionHeading">Customizable Solutions</h2>
@@ -1041,7 +1048,7 @@ const Home = () => {
         <div
           className="ourTeamSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h3 className="sectionHeading">Our Team</h3>
@@ -1054,7 +1061,7 @@ const Home = () => {
         <div
           className="insightsSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h2 className="sectionHeading">Insights</h2>
@@ -1189,7 +1196,7 @@ const Home = () => {
         <div
           className="closingSection"
           style={{
-            padding: isMd ? " 2rem 2rem" : "2.6rem 12%",
+            padding: isMd ? " 2rem 2rem" : "2.6rem 18%",
           }}
         >
           <h1 className="sectionHeading">

@@ -38,7 +38,7 @@ const About = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
             display: "flex",
             gap: "5%",
             position: "relative",
@@ -117,7 +117,7 @@ const About = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
           }}
         >
           <div

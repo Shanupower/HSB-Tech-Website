@@ -22,7 +22,7 @@ const Footer = () => {
       <div
         className="footerSection"
         style={{
-          padding: isMd ? "4rem 2rem " : "6rem 12%",
+          padding: isMd ? "4rem 2rem " : "6rem 18%",
         }}
       >
         <div

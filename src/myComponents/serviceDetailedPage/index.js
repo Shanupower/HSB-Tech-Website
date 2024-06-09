@@ -200,7 +200,7 @@ const WebDevelopment = () => {
       <div
         className="landingSection-services section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           position: "relative",
@@ -271,7 +271,7 @@ const WebDevelopment = () => {
       <div
         className="whyBuildSection section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <h1
@@ -292,7 +292,7 @@ const WebDevelopment = () => {
       <div
         className="whyChooseSection section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <h1
@@ -361,7 +361,7 @@ const WebDevelopment = () => {
       <div
         className="section serciesProvidedSection"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <h1
@@ -437,7 +437,7 @@ const WebDevelopment = () => {
       <div
         className="techAndToolsSection section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <h1 className="sectionHeading">Tech Stacks and Tools We Use</h1>
@@ -477,7 +477,7 @@ const WebDevelopment = () => {
       <div
         className="startBuildingSection section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <div className="startBuildingSectionItem">
@@ -495,7 +495,7 @@ const WebDevelopment = () => {
       <div
         className="faqsSection section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
         }}
       >
         <h1 className="sectionHeading">FAQs</h1>

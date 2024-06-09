@@ -30,7 +30,7 @@ const TermsAndConditions = () => {
       <div
         className="  section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           position: "relative",
@@ -56,7 +56,7 @@ const TermsAndConditions = () => {
       </div>
       <div
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           flexDirection: "column",   
