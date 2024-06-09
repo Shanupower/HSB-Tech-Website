@@ -2,7 +2,7 @@
 import { Component, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
 
-import fullStackImage from "../../assets/Picture6.png";
+import fullStackImage from "../../assets/img/MAD/6.png";
 import whyChoose1 from "../../assets/user-centric-uiux.svg";
 import whyChoose3 from "../../assets/specialized-design-uiuix.svg";
 import whyChoose2 from "../../assets/industry-agnostic.svg";
