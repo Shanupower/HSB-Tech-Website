@@ -238,11 +238,23 @@ const TravelAndHospitalityIndustry = () => {
             tourism-related operations.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -563,13 +575,12 @@ const TravelAndHospitalityIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -578,14 +589,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Travel and tourism guidance</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -594,14 +604,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Hotel accommodation booking </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -610,14 +619,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Travel booking</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -626,14 +634,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Flight booking</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -642,14 +649,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Car rental or fleet management </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -658,14 +664,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Custom travel planning</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -674,14 +679,13 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>CRM for hotels </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -690,7 +694,7 @@ const TravelAndHospitalityIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -707,7 +711,8 @@ const TravelAndHospitalityIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Technologies and Tools We Use for Travel and Hospitality App Development Services
+          Technologies and Tools We Use for Travel and Hospitality App
+          Development Services
         </h1>
         <Box sx={{ width: "100%", marginTop: "2rem" }}>
           <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
@@ -780,7 +785,8 @@ const TravelAndHospitalityIndustry = () => {
           className="sectionHeading"
           style={{ fontSize: isMd ? " 30px" : "48px" }}
         >
-          Our Step-by-Step Process to Build the Outstanding Travel and Hospitality App
+          Our Step-by-Step Process to Build the Outstanding Travel and
+          Hospitality App
         </h1>
         <Chrono
           disableToolbar="true"
@@ -902,9 +908,24 @@ const TravelAndHospitalityIndustry = () => {
         >
           Hire Us for Travel and Hospitality Software Development Requirements.
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

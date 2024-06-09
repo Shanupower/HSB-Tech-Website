@@ -231,11 +231,23 @@ const RealEstateIndustries = () => {
             estate buyers, sellers, and other stakeholders.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -516,13 +528,12 @@ const RealEstateIndustries = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -531,14 +542,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Online property booking app </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -547,14 +557,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>CRM and ERP system software </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -563,14 +572,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Property management app</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -579,14 +587,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>B2B and B2C real estate app</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -595,14 +602,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Property rental app</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -611,14 +617,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Inventory management software</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -627,14 +632,13 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Website for property dealers</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -643,7 +647,7 @@ const RealEstateIndustries = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -891,9 +895,24 @@ const RealEstateIndustries = () => {
         >
           Connect us now to avail our RealEsate app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

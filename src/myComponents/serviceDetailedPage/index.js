@@ -234,12 +234,23 @@ const WebDevelopment = () => {
           {/* <p className="tagLine">
               Looking to build a powerful web application in the UK?
             </p> */}
+
           <button
-            className="getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px", color: "#fff" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.8rem",
+            }}
           >
-            Get Quote
+            GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -805,31 +816,44 @@ const WebDevelopment = () => {
       </div>
 
       <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'left',
-        textAlign: 'left',
-        padding: '2rem',
-        paddingInline: isMd ? '2rem' : '14%',
-      }}
-    >
-      <h1
         style={{
-          fontSize: '2rem',
-          fontWeight: 'bold',
-          marginBottom: '1.5rem',
-          lineHeight: '1.2',
-          textAlign: 'left',
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "left",
+          textAlign: "left",
+          padding: "2rem",
+          paddingInline: isMd ? "2rem" : "14%",
         }}
       >
-        Let’s Connect to Discuss How We Can Make An Awesome Product For You.
-      </h1>
-      <button className="letsTalkButton slideRight" type="button">
-          Contact Now
-        <FaArrowRight className="rightArrow" />
-      </button>
-    </div>
+        <h1
+          style={{
+            fontSize: "2rem",
+            fontWeight: "bold",
+            marginBottom: "1.5rem",
+            lineHeight: "1.2",
+            textAlign: "left",
+          }}
+        >
+          Let’s Connect to Discuss How We Can Make An Awesome Product For You.
+        </h1>
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.8rem",
+          }}
+        >
+          GET QUOTE
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
+        </button>
+      </div>
 
       <Footer />
     </div>

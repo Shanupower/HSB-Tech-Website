@@ -197,7 +197,9 @@ const BFSIIndustry = () => {
   };
   return (
     <div className="industriesPageContainer">
-        <div className="navigationBar"><Navigationbar /></div>
+      <div className="navigationBar">
+        <Navigationbar />
+      </div>
 
       <div
         className="landingSection-services manufacturing section"
@@ -237,11 +239,23 @@ const BFSIIndustry = () => {
             customer experiences.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
         {!isMd && (
@@ -412,7 +426,6 @@ const BFSIIndustry = () => {
               experience of possessing the property.
             </p>
           </div>
-          
           <div
             className="card-service"
             style={{
@@ -521,13 +534,12 @@ const BFSIIndustry = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -536,14 +548,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Mobile accessibility </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -552,14 +563,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Real-time alerts and notifications </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -568,14 +578,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>KYC process automatio</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -584,14 +593,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Integrating UPI and other digital payments</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -600,14 +608,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>OCR tools</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -616,14 +623,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>GPS Tracking</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -632,14 +638,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Send & request money</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -648,7 +653,7 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -656,7 +661,6 @@ const BFSIIndustry = () => {
           </div>
 
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -665,14 +669,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Bulk upload of documents</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -681,14 +684,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Real-time selfie or video update</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -697,14 +699,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Transactional SMS tracking</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -713,14 +714,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Digital wallet for online payments</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -729,14 +729,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Utility bills payment</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -745,14 +744,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Analysing financial risk to create risk score</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -761,14 +759,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Bank statement analyser</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -777,14 +774,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Credit score analyser</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -793,14 +789,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Automated invoicing</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -809,14 +804,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Subscription flow</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -825,14 +819,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Automated EMI debits</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -841,14 +834,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Data-driven reports</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -857,14 +849,13 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Role based access control</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -873,7 +864,7 @@ const BFSIIndustry = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -1114,9 +1105,24 @@ const BFSIIndustry = () => {
         >
           Connect us now to avail our BFSI app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

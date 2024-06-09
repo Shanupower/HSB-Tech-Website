@@ -205,7 +205,9 @@ class MobileDevelopment extends Component {
 
     return (
       <div className="servicesDetailsSection">
-        <div className="navigationBar"><Navigationbar /></div>
+        <div className="navigationBar">
+          <Navigationbar />
+        </div>
 
         <div className="landingSection-services mobileService section">
           <div>
@@ -227,10 +229,21 @@ class MobileDevelopment extends Component {
               and exhibits top-notch technologies with proven approaches.
             </p>
             <button
-              className="getQuoteButton mobile-getQuoteButton"
+              className="letsTalkButton slideRight"
               type="button"
+              style={{
+                display: "flex",
+                position: "relative",
+                alignItems: "center",
+                textAlign: "center",
+                paddingLeft: "1.8rem",
+              }}
             >
-              Get Quote
+              GET QUOTE
+              <FaArrowRight
+                className="rightArrow"
+                style={{ position: "absolute", right: ".6rem" }}
+              />
             </button>
           </div>
           <img
@@ -832,9 +845,22 @@ class MobileDevelopment extends Component {
           <h1 className="sectionHeading">
             For impeccable mobile app experience to your users
           </h1>
-          <button className="letsTalkButton slideRight" type="button">
+          <button
+            className="letsTalkButton slideRight"
+            type="button"
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.8rem",
+            }}
+          >
             Contact Us
-            <FaArrowRight className="rightArrow" />
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 
