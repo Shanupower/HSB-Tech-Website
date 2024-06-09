@@ -203,7 +203,7 @@ const HealthcareIndustry = () => {
       <div
         className="landingSection-services manufacturing section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           position: "relative",
@@ -278,7 +278,7 @@ const HealthcareIndustry = () => {
 
       <div
         className="solutions section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -419,7 +419,7 @@ const HealthcareIndustry = () => {
 
       <div
         className="section whyChooseHSB"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -533,7 +533,7 @@ const HealthcareIndustry = () => {
 
       <div
         className="section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -757,7 +757,7 @@ const HealthcareIndustry = () => {
 
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -830,7 +830,7 @@ const HealthcareIndustry = () => {
       <div
         // className="technologiesSectionIndustries section"
         className="closingSection"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -865,7 +865,7 @@ const HealthcareIndustry = () => {
       {/* Accordion */}
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -992,7 +992,7 @@ const HealthcareIndustry = () => {
 
       <div
         className="closingSection"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"

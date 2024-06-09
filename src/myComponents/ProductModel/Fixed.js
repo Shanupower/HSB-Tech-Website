@@ -34,7 +34,7 @@ const Fixed = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
             display: "flex",
             gap: "5%",
             position: "relative",
@@ -71,7 +71,7 @@ const Fixed = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
           }}
         >
           <h1>What is the Fixed Scope Development Model?</h1>
@@ -90,7 +90,7 @@ const Fixed = () => {
         </div>
         <div
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
           }}
         >
           <h1>In What Conditions Fixed Scope Development Model Is Suitable?</h1>
@@ -446,7 +446,7 @@ const Fixed = () => {
         </div>
         <div
           className="closingSection"
-          style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+          style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
         >
           <h1
             className="sectionHeading"

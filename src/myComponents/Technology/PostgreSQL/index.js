@@ -223,7 +223,7 @@ const PostgreSQLTechnoligy = () => {
       <div
         className="landingSection-services manufacturing section"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           display: "flex",
           gap: "5%",
           position: "relative",
@@ -289,7 +289,7 @@ const PostgreSQLTechnoligy = () => {
 
       <div
         className="solutions section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -411,7 +411,7 @@ const PostgreSQLTechnoligy = () => {
       <div
         className="section whyChooseHSB"
         style={{
-          paddingInline: isMd ? " 2rem" : " 14%",
+          paddingInline: isMd ? " 2rem" : " 18%",
           backgroundColor: "#fff",
         }}
       >
@@ -491,7 +491,7 @@ const PostgreSQLTechnoligy = () => {
       {/* Accordion */}
       <div
         className="technologiesSectionIndustries section"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"
@@ -580,7 +580,7 @@ const PostgreSQLTechnoligy = () => {
 
       <div
         className="closingSection"
-        style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+        style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
       >
         <h1
           className="sectionHeading"

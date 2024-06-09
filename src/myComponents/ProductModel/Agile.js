@@ -34,7 +34,7 @@ const Agile = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
             display: "flex",
             gap: "5%",
             position: "relative",
@@ -70,7 +70,7 @@ const Agile = () => {
         <div
           className="  section"
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
           }}
         >
           <h1>What is the Agile Product Development Model?</h1>
@@ -88,7 +88,7 @@ const Agile = () => {
         </div>
         <div
           style={{
-            paddingInline: isMd ? " 2rem" : " 14%",
+            paddingInline: isMd ? " 2rem" : " 18%",
           }}
         >
           <div style={{ marginBlock: "0rem 2rem" }}>
@@ -470,7 +470,7 @@ const Agile = () => {
         </div>
         <div
           className="closingSection"
-          style={{ paddingInline: isMd ? " 2rem" : " 14%" }}
+          style={{ paddingInline: isMd ? " 2rem" : " 18%" }}
         >
           <h1
             className="sectionHeading"
