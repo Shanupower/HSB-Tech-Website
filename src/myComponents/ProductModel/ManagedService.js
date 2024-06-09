@@ -277,28 +277,26 @@ const ManagedService = () => {
             <div
               className="moduleItems-industries"
               style={{
-                display: "flex",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
                 gap: "1.4rem",
               }}
             >
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
-                  backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
+                  padding: " 1rem",
+                  backgroundColor: "#f4f4f4",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Subject matter experts for any domain </p>
               </div>
               <div
-                className="moduleItem"
                 style={{
                   padding: "1rem 2rem",
                   borderRadius: "10px",
@@ -306,14 +304,13 @@ const ManagedService = () => {
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Flexible and scalable hiring.</p>
               </div>
               <div
-                className="moduleItem"
                 style={{
                   padding: "1rem 2rem",
                   borderRadius: "10px",
@@ -321,7 +318,7 @@ const ManagedService = () => {
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
@@ -335,51 +332,48 @@ const ManagedService = () => {
             <div
               className="moduleItems-industries"
               style={{
-                display: "flex",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
                 gap: "1.4rem",
               }}
             >
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Best of technology without upfront investment. </p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem ",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Ensuring value delivery throughout the project/duration</p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
+                  gap: ".3rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
@@ -392,21 +386,20 @@ const ManagedService = () => {
             <div
               className="moduleItems-industries"
               style={{
-                display: "flex",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
                 gap: "1.4rem",
               }}
             >
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem ",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
@@ -416,30 +409,28 @@ const ManagedService = () => {
                 </p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Real-time visibility and control on your processes.</p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
@@ -452,51 +443,49 @@ const ManagedService = () => {
             <div
               className="moduleItems-industries"
               style={{
-                display: "flex",
-                flexWrap: "wrap",
+                display: "grid",
+                gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
                 gap: "1.4rem",
               }}
             >
               <div
-                className="moduleItem"
+              
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem ",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Flexibility in approach. </p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />
                 <p>Identifying opportunities to save working capital.</p>
               </div>
               <div
-                className="moduleItem"
                 style={{
-                  padding: "1rem 2rem",
+                  padding: "1rem",
                   borderRadius: "10px",
                   boxShadow: " 0 4px 12px #080a0d0d, 0 8px 16px #080a0d0d",
                   backgroundColor: "#f4f4f4",
                   display: "flex",
                   alignItems: "center",
-                  width: "30%",
+                  gap: ".3rem",
                 }}
               >
                 <FaArrowRight className="moduleItemBullet" />

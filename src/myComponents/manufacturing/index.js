@@ -146,7 +146,7 @@ const Manufacturing = () => {
   };
   return (
     <div className="industriesPageContainer">
-          {!isMd && <Navigationbar />}
+      {!isMd && <Navigationbar />}
       <div
         className="landingSection-services manufacturing section"
         style={{
@@ -185,11 +185,23 @@ const Manufacturing = () => {
             of expertise and experience to boost your ROI.
           </p>
           <button
-            className="getQuoteButton industries-getQuoteButton"
+            className="letsTalkButton slideRight"
             type="button"
-            style={{ padding: ".8rem 0", fontSize: "20px" }}
+            style={{
+              display: "flex",
+              position: "relative",
+              alignItems: "center",
+              textAlign: "center",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+            }}
           >
             GET QUOTE
+            <FaArrowRight
+              className="rightArrow"
+              style={{ position: "absolute", right: ".6rem" }}
+            />
           </button>
         </div>
 
@@ -545,13 +557,12 @@ const Manufacturing = () => {
         <div
           className="moduleItems-industries"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
+            display: "grid",
+            gridTemplateColumns: isMd ? "1fr" : "repeat(3, 1fr)",
             gap: "1.4rem",
           }}
         >
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -560,14 +571,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Mobile accessibility </p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -576,14 +586,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Real-time alerts and notifications</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -592,14 +601,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Predictive analytics and forecasting</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -608,14 +616,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Task assignment and management</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -624,14 +631,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Data-driven reports</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -640,14 +646,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Monitoring KPIs and assessment</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -656,14 +661,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Role based access control</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -672,14 +676,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Compliance monitoring</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -688,14 +691,13 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
             <p>Documentation and integration</p>
           </div>
           <div
-            className="moduleItem"
             style={{
               padding: "1rem 2rem",
               borderRadius: "10px",
@@ -704,7 +706,7 @@ const Manufacturing = () => {
               display: "flex",
               alignItems: "center",
               minWidth: "fit-content",
-              width: "30%",
+              gap: ".3rem",
             }}
           >
             <FaArrowRight className="moduleItemBullet" />
@@ -918,9 +920,24 @@ const Manufacturing = () => {
         >
           Connect us now to avail our manufacturing app development services
         </h1>
-        <button className="letsTalkButton slideRight" type="button">
+        <button
+          className="letsTalkButton slideRight"
+          type="button"
+          style={{
+            display: "flex",
+            position: "relative",
+            alignItems: "center",
+            textAlign: "center",
+            paddingLeft: "1.2rem",
+            textWrap: "nowrap",
+            minWidth: "fit-content",
+          }}
+        >
           GET QUOTE
-          <FaArrowRight className="rightArrow" />
+          <FaArrowRight
+            className="rightArrow"
+            style={{ position: "absolute", right: ".6rem" }}
+          />
         </button>
       </div>
 

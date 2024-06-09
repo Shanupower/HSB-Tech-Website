@@ -1,9 +1,17 @@
 import hsbLogo from "../../assets/hsb-logo.png";
+
+import custom1 from "../../assets/supply-chain.png";
+import custom2 from "../../assets/telemedicine.png";
+import insight1 from "../../assets/Picture9.png";
+import insight2 from "../../assets/Picture10.jpg";
+import insight3 from "../../assets/Picture11.png";
+
 import custom1 from "../../assets/supply-chain.png"
 import custom2 from "../../assets/telemedicine.png"
 import insight1 from "../../assets/img/education/5.png"
 import insight2 from "../../assets/img/education/3.jpeg"
 import insight3 from "../../assets/img/HC/2.png"
+
 import sparkleImage from "../../assets/sparkle.svg";
 import impactImage from "../../assets/impact.svg";
 import qualityImage from "../../assets/quality.svg";
@@ -428,7 +436,7 @@ const Home = () => {
               </Link>
 
               <Link
-                to="/lets_talk"
+                to="/about"
                 className="serviceItem quality"
                 style={{ width: isMd ? "100%" : "46%", textDecoration: "none" }}
               >
@@ -906,23 +914,6 @@ const Home = () => {
                     </Typography>
                   </CardContent>
                 </CardActionArea>
-                <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
               </Link>
             </Card>
 
@@ -1215,28 +1206,22 @@ const Home = () => {
 
           <Link
             to="lets_talk"
+            className="letsTalkButton slideRight"
             style={{
-              textDecoration: "none",
               display: "flex",
-              alignItems: "center",
               position: "relative",
-              backgroundColor: "#ca0515",
-              color: "#fff",
-              width: isMd ? "80%" : "20%",
+              alignItems: "center",
               textAlign: "center",
-              padding: ".8rem 1rem",
-              fontSize: "20px",
-              marginRight: "1rem",
-              borderRadius: "8px",
+              paddingLeft: "1.2rem",
+              textWrap: "nowrap",
+              minWidth: "fit-content",
+              textDecoration: "none",
             }}
           >
             CONTACT NOW
             <FaArrowRight
               className="rightArrow"
-              style={{
-                position: "absolute",
-                right: "1rem",
-              }}
+              style={{ position: "absolute", right: ".6rem" }}
             />
           </Link>
         </div>
