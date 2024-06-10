@@ -6,9 +6,12 @@ import hsbLogo from "../../assets/hsb-logo.png";
 import "./index.css";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { useMediaQuery } from "@mui/material";
 
 function Navigationbar() {
   const [navBarShow, setNavBarShow] = useState(false);
+  const isMd = useMediaQuery("(max-width:1068px)");
+
   const controlNavbar = () => {
     const scrollThreshold = window.innerHeight * 1;
     if (window.scrollY > scrollThreshold) {
@@ -29,7 +32,11 @@ function Navigationbar() {
       className={navBarShow ? "navBarContainerShow" : "navBarContainerHide"}
       style={{ zIndex: 1, width: "100%" }}
     >
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar
+        expand="lg"
+        className="bg-body-tertiary"
+        style={{ padding: !isMd && "0 18%" }}
+      >
         <Container
           style={{
             display: "flex",
@@ -145,6 +152,7 @@ function Navigationbar() {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="/blog">Blogs</Nav.Link>
+                <Nav.Link href="/about">About Us</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </div>
