@@ -359,6 +359,8 @@ const Home = () => {
                             PostgreSQL
                           </NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link href="/blog">Blogs</Nav.Link>
+                        <Nav.Link href="/about">About Us</Nav.Link>
                       </Nav>
                     </Navbar.Collapse>
                   </Container>
