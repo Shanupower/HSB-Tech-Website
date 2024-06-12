@@ -47,7 +47,7 @@ const Blog = () => {
           </Breadcrumbs>
           <div className="iframe-container">
             <iframe
-              src="https://geekyants.com/blog"
+              src="http://blog.hsbinfotech.com/"
               width="100%"
               height="800"
               style={{ border: "none" }}
