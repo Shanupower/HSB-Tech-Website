@@ -7,3 +7,23 @@
 .iframe-container::-webkit-scrollbar {
   height: 0px;
 }
+.css-bvyohc-MuiTypography-root-MuiLink-root {
+  color: black !important;
+  scale: 1.3;
+}
+
+.MuiBreadcrumbs-separator {
+  color: #0d0d0d !important;
+}
+
+.MuiTypography-root,
+.MuiTypography-inherit,
+.MuiLink-root,
+.MuiLink-underlineHover,
+.css-11iau0r-MuiTypography-root-MuiLink-root {
+  color: rgb(24, 24, 24) !important;
+}
+
+.css-1xylxj1-MuiTypography-root-MuiLink-root {
+  color: #ffffff !important;
+}

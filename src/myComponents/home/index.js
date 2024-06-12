@@ -1075,8 +1075,8 @@ const Home = () => {
           >
             <p className="sectionDescription">
               Discover the inner workings of our brilliant minds at <br />
-              GeekyAnts through our blogs, gaining a deeper understanding of who
-              we are.
+              HSB through our blogs, gaining a deeper understanding of who we
+              are.
             </p>
 
             <p
