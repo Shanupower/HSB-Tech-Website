@@ -15,7 +15,11 @@ function Navigationbar() {
         zIndex: "1000",
       }}
     >
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar
+        expand="lg"
+        className="bg-body-tertiary"
+        style={{ padding: "0 18%" }}
+      >
         <Container
           style={{
             display: "flex",
